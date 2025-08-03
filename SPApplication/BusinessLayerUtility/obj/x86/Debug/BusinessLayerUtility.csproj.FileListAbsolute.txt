@@ -156,3 +156,10 @@ D:\BitBucketProjects\SKPI\SPApplication\BusinessLayerUtility\obj\x86\Debug\Busin
 D:\BitBucketProjects\SKPI\SPApplication\BusinessLayerUtility\obj\x86\Debug\BusinessLayerUtility.csproj.GenerateResource.Cache
 D:\BitBucketProjects\SKPI\SPApplication\BusinessLayerUtility\obj\x86\Debug\BusinessLayerUtility.dll
 D:\BitBucketProjects\SKPI\SPApplication\BusinessLayerUtility\obj\x86\Debug\BusinessLayerUtility.pdb
+D:\GitProjects\SKPI\SPApplication\BusinessLayerUtility\bin\x86\Debug\BusinessLayerUtility.dll
+D:\GitProjects\SKPI\SPApplication\BusinessLayerUtility\bin\x86\Debug\BusinessLayerUtility.pdb
+D:\GitProjects\SKPI\SPApplication\BusinessLayerUtility\obj\x86\Debug\BusinessLayerUtility.csprojResolveAssemblyReference.cache
+D:\GitProjects\SKPI\SPApplication\BusinessLayerUtility\obj\x86\Debug\BusinessLayerUtility.BusinessResources.resources
+D:\GitProjects\SKPI\SPApplication\BusinessLayerUtility\obj\x86\Debug\BusinessLayerUtility.csproj.GenerateResource.Cache
+D:\GitProjects\SKPI\SPApplication\BusinessLayerUtility\obj\x86\Debug\BusinessLayerUtility.dll
+D:\GitProjects\SKPI\SPApplication\BusinessLayerUtility\obj\x86\Debug\BusinessLayerUtility.pdb
