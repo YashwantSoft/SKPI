@@ -1,0 +1,1410 @@
+D:\MDApps\SPApplication\SPApplication\obj\Debug\ResolveAssemblyReference.cache
+D:\MDApps\SPApplication\SPApplication\obj\Debug\SPApplication.Authentication.ChangePassword.resources
+D:\MDApps\SPApplication\SPApplication\obj\Debug\SPApplication.LoginWindow.resources
+D:\MDApps\SPApplication\SPApplication\obj\Debug\SPApplication.Dashboard.resources
+D:\MDApps\SPApplication\SPApplication\obj\Debug\SPApplication.FollowUp.resources
+D:\MDApps\SPApplication\SPApplication\obj\Debug\SPApplication.Form1.resources
+D:\MDApps\SPApplication\SPApplication\obj\Debug\SPApplication.Master.HospitalMaster.resources
+D:\MDApps\SPApplication\SPApplication\obj\Debug\SPApplication.Master.Medicine.resources
+D:\MDApps\SPApplication\SPApplication\obj\Debug\SPApplication.MenuSettings.resources
+D:\MDApps\SPApplication\SPApplication\obj\Debug\SPApplication.Master.NewPatient.resources
+D:\MDApps\SPApplication\SPApplication\obj\Debug\SEApplication.BasicDetailsFollowUp.resources
+D:\MDApps\SPApplication\SPApplication\obj\Debug\SEApplication.Certificate.resources
+D:\MDApps\SPApplication\SPApplication\obj\Debug\SEApplication.CurrentMedications.resources
+D:\MDApps\SPApplication\SPApplication\obj\Debug\SEApplication.Examination.resources
+D:\MDApps\SPApplication\SPApplication\obj\Debug\SEApplication.GeneralExamination.resources
+D:\MDApps\SPApplication\SPApplication\obj\Debug\SEApplication.HistoryOfPresentSymptoms.resources
+D:\MDApps\SPApplication\SPApplication\obj\Debug\SEApplication.Investigation.resources
+D:\MDApps\SPApplication\SPApplication\obj\Debug\SEApplication.MedicalHistory.resources
+D:\MDApps\SPApplication\SPApplication\obj\Debug\SEApplication.PatientRegistration.resources
+D:\MDApps\SPApplication\SPApplication\obj\Debug\SEApplication.PersonalHistory.resources
+D:\MDApps\SPApplication\SPApplication\obj\Debug\SEApplication.Prescription.resources
+D:\MDApps\SPApplication\SPApplication\obj\Debug\SPApplication.Properties.Resources.resources
+D:\MDApps\SPApplication\SPApplication\obj\Debug\SPApplication.ReportList.resources
+D:\MDApps\SPApplication\SPApplication\obj\Debug\SPApplication.BirthdayAndAniversaryReport.resources
+D:\MDApps\SPApplication\SPApplication\obj\Debug\SPApplication.ProvisionalDiagnosisReport.resources
+D:\MDApps\SPApplication\SPApplication\obj\Debug\SPApplication.Settings.EmailCredentials.resources
+D:\MDApps\SPApplication\SPApplication\obj\Debug\SPApplication.csproj.GenerateResource.Cache
+D:\MDApps\SPApplication\SPApplication\bin\Debug\SPApplication.exe
+D:\MDApps\SPApplication\SPApplication\bin\Debug\SPApplication.pdb
+D:\MDApps\SPApplication\SPApplication\bin\Debug\BusinessLayerUtility.dll
+D:\MDApps\SPApplication\SPApplication\bin\Debug\Microsoft.Office.Interop.Excel.dll
+D:\MDApps\SPApplication\SPApplication\bin\Debug\Office.dll
+D:\MDApps\SPApplication\SPApplication\bin\Debug\Microsoft.Vbe.Interop.dll
+D:\MDApps\SPApplication\SPApplication\bin\Debug\Microsoft.Office.Interop.Excel.xml
+D:\MDApps\SPApplication\SPApplication\bin\Debug\Office.xml
+D:\MDApps\SPApplication\SPApplication\bin\Debug\BusinessLayerUtility.pdb
+D:\MDApps\SPApplication\SPApplication\obj\Debug\SPApplication.exe
+D:\MDApps\SPApplication\SPApplication\obj\Debug\SPApplication.pdb
+D:\MDApps\SPApplication\SPApplication\bin\Debug\SPApplication.exe.config
+D:\Yashwant\Projects\MDApps\SPApplication\SPApplication\bin\Debug\SPApplication.exe.config
+D:\Yashwant\Projects\MDApps\SPApplication\SPApplication\bin\Debug\SPApplication.exe
+D:\Yashwant\Projects\MDApps\SPApplication\SPApplication\bin\Debug\SPApplication.pdb
+D:\Yashwant\Projects\MDApps\SPApplication\SPApplication\bin\Debug\BusinessLayerUtility.dll
+D:\Yashwant\Projects\MDApps\SPApplication\SPApplication\bin\Debug\Microsoft.Office.Interop.Excel.dll
+D:\Yashwant\Projects\MDApps\SPApplication\SPApplication\bin\Debug\Office.dll
+D:\Yashwant\Projects\MDApps\SPApplication\SPApplication\bin\Debug\Microsoft.Vbe.Interop.dll
+D:\Yashwant\Projects\MDApps\SPApplication\SPApplication\bin\Debug\Microsoft.Office.Interop.Excel.xml
+D:\Yashwant\Projects\MDApps\SPApplication\SPApplication\bin\Debug\Office.xml
+D:\Yashwant\Projects\MDApps\SPApplication\SPApplication\bin\Debug\BusinessLayerUtility.pdb
+D:\Yashwant\Projects\MDApps\SPApplication\SPApplication\obj\Debug\ResolveAssemblyReference.cache
+D:\Yashwant\Projects\MDApps\SPApplication\SPApplication\obj\Debug\SPApplication.Authentication.ChangePassword.resources
+D:\Yashwant\Projects\MDApps\SPApplication\SPApplication\obj\Debug\SPApplication.LoginWindow.resources
+D:\Yashwant\Projects\MDApps\SPApplication\SPApplication\obj\Debug\SPApplication.Dashboard.resources
+D:\Yashwant\Projects\MDApps\SPApplication\SPApplication\obj\Debug\SPApplication.FollowUp.resources
+D:\Yashwant\Projects\MDApps\SPApplication\SPApplication\obj\Debug\SPApplication.Master.HospitalMaster.resources
+D:\Yashwant\Projects\MDApps\SPApplication\SPApplication\obj\Debug\SPApplication.Master.Medicine.resources
+D:\Yashwant\Projects\MDApps\SPApplication\SPApplication\obj\Debug\SPApplication.MenuSettings.resources
+D:\Yashwant\Projects\MDApps\SPApplication\SPApplication\obj\Debug\SPApplication.Master.NewPatient.resources
+D:\Yashwant\Projects\MDApps\SPApplication\SPApplication\obj\Debug\SEApplication.BasicDetailsFollowUp.resources
+D:\Yashwant\Projects\MDApps\SPApplication\SPApplication\obj\Debug\SEApplication.Certificate.resources
+D:\Yashwant\Projects\MDApps\SPApplication\SPApplication\obj\Debug\SEApplication.CurrentMedications.resources
+D:\Yashwant\Projects\MDApps\SPApplication\SPApplication\obj\Debug\SEApplication.Examination.resources
+D:\Yashwant\Projects\MDApps\SPApplication\SPApplication\obj\Debug\SEApplication.GeneralExamination.resources
+D:\Yashwant\Projects\MDApps\SPApplication\SPApplication\obj\Debug\SEApplication.HistoryOfPresentSymptoms.resources
+D:\Yashwant\Projects\MDApps\SPApplication\SPApplication\obj\Debug\SEApplication.Investigation.resources
+D:\Yashwant\Projects\MDApps\SPApplication\SPApplication\obj\Debug\SEApplication.MedicalHistory.resources
+D:\Yashwant\Projects\MDApps\SPApplication\SPApplication\obj\Debug\SEApplication.PatientRegistration.resources
+D:\Yashwant\Projects\MDApps\SPApplication\SPApplication\obj\Debug\SEApplication.PersonalHistory.resources
+D:\Yashwant\Projects\MDApps\SPApplication\SPApplication\obj\Debug\SEApplication.Prescription.resources
+D:\Yashwant\Projects\MDApps\SPApplication\SPApplication\obj\Debug\SPApplication.Properties.Resources.resources
+D:\Yashwant\Projects\MDApps\SPApplication\SPApplication\obj\Debug\SPApplication.ReportList.resources
+D:\Yashwant\Projects\MDApps\SPApplication\SPApplication\obj\Debug\SPApplication.BirthdayAndAniversaryReport.resources
+D:\Yashwant\Projects\MDApps\SPApplication\SPApplication\obj\Debug\SPApplication.ProvisionalDiagnosisReport.resources
+D:\Yashwant\Projects\MDApps\SPApplication\SPApplication\obj\Debug\SPApplication.Settings.EmailCredentials.resources
+D:\Yashwant\Projects\MDApps\SPApplication\SPApplication\obj\Debug\SPApplication.csproj.GenerateResource.Cache
+D:\Yashwant\Projects\MDApps\SPApplication\SPApplication\obj\Debug\SPApplication.exe
+D:\Yashwant\Projects\MDApps\SPApplication\SPApplication\obj\Debug\SPApplication.pdb
+D:\Yashwant\Projects\Surya Hospital\SPApplication\SPApplication\bin\Debug\SPApplication.exe.config
+D:\Yashwant\Projects\Surya Hospital\SPApplication\SPApplication\bin\Debug\SPApplication.exe
+D:\Yashwant\Projects\Surya Hospital\SPApplication\SPApplication\bin\Debug\SPApplication.pdb
+D:\Yashwant\Projects\Surya Hospital\SPApplication\SPApplication\bin\Debug\BusinessLayerUtility.dll
+D:\Yashwant\Projects\Surya Hospital\SPApplication\SPApplication\bin\Debug\BusinessLayerUtility.pdb
+D:\Yashwant\Projects\Surya Hospital\SPApplication\SPApplication\obj\Debug\ResolveAssemblyReference.cache
+D:\Yashwant\Projects\Surya Hospital\SPApplication\SPApplication\obj\Debug\SPApplication.Authentication.ChangePassword.resources
+D:\Yashwant\Projects\Surya Hospital\SPApplication\SPApplication\obj\Debug\SPApplication.LoginWindow.resources
+D:\Yashwant\Projects\Surya Hospital\SPApplication\SPApplication\obj\Debug\SPApplication.Comman.Patient.resources
+D:\Yashwant\Projects\Surya Hospital\SPApplication\SPApplication\obj\Debug\SPApplication.Comman.PatientInformation.resources
+D:\Yashwant\Projects\Surya Hospital\SPApplication\SPApplication\obj\Debug\BusinessLayerUtility.DischargeCard.resources
+D:\Yashwant\Projects\Surya Hospital\SPApplication\SPApplication\obj\Debug\SPApplication.IPD.NewPatientWindow.HistorySheet.resources
+D:\Yashwant\Projects\Surya Hospital\SPApplication\SPApplication\obj\Debug\SPApplication.Master.IntravenousInfusionTherapy.resources
+D:\Yashwant\Projects\Surya Hospital\SPApplication\SPApplication\obj\Debug\SPApplication.Master.NursesNotes.resources
+D:\Yashwant\Projects\Surya Hospital\SPApplication\SPApplication\obj\Debug\SPApplication.Master.ClinicalNotes.resources
+D:\Yashwant\Projects\Surya Hospital\SPApplication\SPApplication\obj\Debug\SPApplication.IPD.IPDForms.ProvisionalDiagnosis.resources
+D:\Yashwant\Projects\Surya Hospital\SPApplication\SPApplication\obj\Debug\SPApplication.Master.TPRChart.resources
+D:\Yashwant\Projects\Surya Hospital\SPApplication\SPApplication\obj\Debug\SPApplication.IPD.IPD_Registration.resources
+D:\Yashwant\Projects\Surya Hospital\SPApplication\SPApplication\obj\Debug\SPApplication.IPD.ProgressNotesIPD.resources
+D:\Yashwant\Projects\Surya Hospital\SPApplication\SPApplication\obj\Debug\SPApplication.HelthCard.resources
+D:\Yashwant\Projects\Surya Hospital\SPApplication\SPApplication\obj\Debug\SPApplication.Master.CompanyMaster.resources
+D:\Yashwant\Projects\Surya Hospital\SPApplication\SPApplication\obj\Debug\SPApplication.Master.DoctorMaster.resources
+D:\Yashwant\Projects\Surya Hospital\SPApplication\SPApplication\obj\Debug\SPApplication.Master.StaffMaster.resources
+D:\Yashwant\Projects\Surya Hospital\SPApplication\SPApplication\obj\Debug\SPApplication.Master.Ward.resources
+D:\Yashwant\Projects\Surya Hospital\SPApplication\SPApplication\obj\Debug\SPApplication.Dashboard.resources
+D:\Yashwant\Projects\Surya Hospital\SPApplication\SPApplication\obj\Debug\SPApplication.FollowUp.resources
+D:\Yashwant\Projects\Surya Hospital\SPApplication\SPApplication\obj\Debug\SPApplication.Master.HospitalMaster.resources
+D:\Yashwant\Projects\Surya Hospital\SPApplication\SPApplication\obj\Debug\SPApplication.Master.Medicine.resources
+D:\Yashwant\Projects\Surya Hospital\SPApplication\SPApplication\obj\Debug\SPApplication.OPD.PatientDetails.OBGYHistory.resources
+D:\Yashwant\Projects\Surya Hospital\SPApplication\SPApplication\obj\Debug\SPApplication.OPD.PatientDetails.MedicolegalRecord.resources
+D:\Yashwant\Projects\Surya Hospital\SPApplication\SPApplication\obj\Debug\SPApplication.MenuSettings.resources
+D:\Yashwant\Projects\Surya Hospital\SPApplication\SPApplication\obj\Debug\SPApplication.Master.OPD_Registration.resources
+D:\Yashwant\Projects\Surya Hospital\SPApplication\SPApplication\obj\Debug\SEApplication.OPD_FollowUp.resources
+D:\Yashwant\Projects\Surya Hospital\SPApplication\SPApplication\obj\Debug\SEApplication.Certificate.resources
+D:\Yashwant\Projects\Surya Hospital\SPApplication\SPApplication\obj\Debug\SEApplication.CurrentMedications.resources
+D:\Yashwant\Projects\Surya Hospital\SPApplication\SPApplication\obj\Debug\SEApplication.Examination.resources
+D:\Yashwant\Projects\Surya Hospital\SPApplication\SPApplication\obj\Debug\SEApplication.GeneralExamination.resources
+D:\Yashwant\Projects\Surya Hospital\SPApplication\SPApplication\obj\Debug\SEApplication.HistoryOfPresentSymptoms.resources
+D:\Yashwant\Projects\Surya Hospital\SPApplication\SPApplication\obj\Debug\SEApplication.Investigation.resources
+D:\Yashwant\Projects\Surya Hospital\SPApplication\SPApplication\obj\Debug\SEApplication.MedicalHistory.resources
+D:\Yashwant\Projects\Surya Hospital\SPApplication\SPApplication\obj\Debug\SEApplication.PersonalHistory.resources
+D:\Yashwant\Projects\Surya Hospital\SPApplication\SPApplication\obj\Debug\SEApplication.Prescription.resources
+D:\Yashwant\Projects\Surya Hospital\SPApplication\SPApplication\obj\Debug\SPApplication.Properties.Resources.resources
+D:\Yashwant\Projects\Surya Hospital\SPApplication\SPApplication\obj\Debug\SPApplication.ReportList.resources
+D:\Yashwant\Projects\Surya Hospital\SPApplication\SPApplication\obj\Debug\SPApplication.BirthdayAndAniversaryReport.resources
+D:\Yashwant\Projects\Surya Hospital\SPApplication\SPApplication\obj\Debug\SPApplication.ProvisionalDiagnosisReport.resources
+D:\Yashwant\Projects\Surya Hospital\SPApplication\SPApplication\obj\Debug\SPApplication.Settings.EmailCredentials.resources
+D:\Yashwant\Projects\Surya Hospital\SPApplication\SPApplication\obj\Debug\SPApplication.csproj.GenerateResource.Cache
+D:\Yashwant\Projects\Surya Hospital\SPApplication\SPApplication\obj\Debug\SPApplication.exe
+D:\Yashwant\Projects\Surya Hospital\SPApplication\SPApplication\obj\Debug\SPApplication.pdb
+D:\P\Surya Hospital\Project\SPApplication\SPApplication\bin\Debug\SPApplication.exe.config
+D:\P\Surya Hospital\Project\SPApplication\SPApplication\obj\Debug\SPApplication.exe
+D:\P\Surya Hospital\Project\SPApplication\SPApplication\obj\Debug\SPApplication.pdb
+D:\P\Surya Hospital\Project\SPApplication\SPApplication\bin\Debug\SPApplication.exe
+D:\P\Surya Hospital\Project\SPApplication\SPApplication\bin\Debug\SPApplication.pdb
+D:\P\Surya Hospital\Project\SPApplication\SPApplication\bin\Debug\BusinessLayerUtility.dll
+D:\P\Surya Hospital\Project\SPApplication\SPApplication\bin\Debug\BusinessLayerUtility.pdb
+D:\P\Surya Hospital\Project\SPApplication\SPApplication\obj\Debug\ResolveAssemblyReference.cache
+D:\P\Surya Hospital\Project\SPApplication\SPApplication\obj\Debug\SPApplication.Authentication.ChangePassword.resources
+D:\P\Surya Hospital\Project\SPApplication\SPApplication\obj\Debug\SPApplication.LoginWindow.resources
+D:\P\Surya Hospital\Project\SPApplication\SPApplication\obj\Debug\SPApplication.Comman.Patient.resources
+D:\P\Surya Hospital\Project\SPApplication\SPApplication\obj\Debug\SPApplication.Comman.PatientInformation.resources
+D:\P\Surya Hospital\Project\SPApplication\SPApplication\obj\Debug\BusinessLayerUtility.DischargeCard.resources
+D:\P\Surya Hospital\Project\SPApplication\SPApplication\obj\Debug\SPApplication.IPD.NewPatientWindow.HistorySheet.resources
+D:\P\Surya Hospital\Project\SPApplication\SPApplication\obj\Debug\SPApplication.Master.IntravenousInfusionTherapy.resources
+D:\P\Surya Hospital\Project\SPApplication\SPApplication\obj\Debug\SPApplication.Master.NursesNotes.resources
+D:\P\Surya Hospital\Project\SPApplication\SPApplication\obj\Debug\SPApplication.Master.ClinicalNotes.resources
+D:\P\Surya Hospital\Project\SPApplication\SPApplication\obj\Debug\SPApplication.IPD.IPDForms.ProvisionalDiagnosis.resources
+D:\P\Surya Hospital\Project\SPApplication\SPApplication\obj\Debug\SPApplication.Master.TPRChart.resources
+D:\P\Surya Hospital\Project\SPApplication\SPApplication\obj\Debug\SPApplication.IPD.IPD_Registration.resources
+D:\P\Surya Hospital\Project\SPApplication\SPApplication\obj\Debug\SPApplication.IPD.IPD_ProgressNotes.resources
+D:\P\Surya Hospital\Project\SPApplication\SPApplication\obj\Debug\SPApplication.HelthCard.resources
+D:\P\Surya Hospital\Project\SPApplication\SPApplication\obj\Debug\SPApplication.Master.CompanyMaster.resources
+D:\P\Surya Hospital\Project\SPApplication\SPApplication\obj\Debug\SPApplication.Master.DoctorMaster.resources
+D:\P\Surya Hospital\Project\SPApplication\SPApplication\obj\Debug\SPApplication.Master.StaffMaster.resources
+D:\P\Surya Hospital\Project\SPApplication\SPApplication\obj\Debug\SPApplication.Master.Ward.resources
+D:\P\Surya Hospital\Project\SPApplication\SPApplication\obj\Debug\SPApplication.Dashboard.resources
+D:\P\Surya Hospital\Project\SPApplication\SPApplication\obj\Debug\SPApplication.FollowUp.resources
+D:\P\Surya Hospital\Project\SPApplication\SPApplication\obj\Debug\SPApplication.Master.HospitalMaster.resources
+D:\P\Surya Hospital\Project\SPApplication\SPApplication\obj\Debug\SPApplication.Master.Medicine.resources
+D:\P\Surya Hospital\Project\SPApplication\SPApplication\obj\Debug\SPApplication.OPD.PatientDetails.OBGYHistory.resources
+D:\P\Surya Hospital\Project\SPApplication\SPApplication\obj\Debug\SPApplication.OPD.PatientDetails.MedicolegalRecord.resources
+D:\P\Surya Hospital\Project\SPApplication\SPApplication\obj\Debug\SPApplication.MenuSettings.resources
+D:\P\Surya Hospital\Project\SPApplication\SPApplication\obj\Debug\SPApplication.Master.OPD_Registration.resources
+D:\P\Surya Hospital\Project\SPApplication\SPApplication\obj\Debug\SEApplication.OPD_FollowUp.resources
+D:\P\Surya Hospital\Project\SPApplication\SPApplication\obj\Debug\SEApplication.Certificate.resources
+D:\P\Surya Hospital\Project\SPApplication\SPApplication\obj\Debug\SEApplication.CurrentMedications.resources
+D:\P\Surya Hospital\Project\SPApplication\SPApplication\obj\Debug\SEApplication.Examination.resources
+D:\P\Surya Hospital\Project\SPApplication\SPApplication\obj\Debug\SEApplication.GeneralExamination.resources
+D:\P\Surya Hospital\Project\SPApplication\SPApplication\obj\Debug\SEApplication.HistoryOfPresentSymptoms.resources
+D:\P\Surya Hospital\Project\SPApplication\SPApplication\obj\Debug\SEApplication.Investigation.resources
+D:\P\Surya Hospital\Project\SPApplication\SPApplication\obj\Debug\SEApplication.MedicalHistory.resources
+D:\P\Surya Hospital\Project\SPApplication\SPApplication\obj\Debug\SEApplication.PersonalHistory.resources
+D:\P\Surya Hospital\Project\SPApplication\SPApplication\obj\Debug\SEApplication.Prescription.resources
+D:\P\Surya Hospital\Project\SPApplication\SPApplication\obj\Debug\SPApplication.Properties.Resources.resources
+D:\P\Surya Hospital\Project\SPApplication\SPApplication\obj\Debug\SPApplication.ReportList.resources
+D:\P\Surya Hospital\Project\SPApplication\SPApplication\obj\Debug\SPApplication.BirthdayAndAniversaryReport.resources
+D:\P\Surya Hospital\Project\SPApplication\SPApplication\obj\Debug\SPApplication.ProvisionalDiagnosisReport.resources
+D:\P\Surya Hospital\Project\SPApplication\SPApplication\obj\Debug\SPApplication.Settings.EmailCredentials.resources
+D:\P\Surya Hospital\Project\SPApplication\SPApplication\obj\Debug\SPApplication.csproj.GenerateResource.Cache
+D:\P\Ekdant\Project\SPApplication\SPApplication\bin\Debug\SPApplication.exe.config
+D:\P\Ekdant\Project\SPApplication\SPApplication\bin\Debug\SPApplication.exe
+D:\P\Ekdant\Project\SPApplication\SPApplication\bin\Debug\SPApplication.pdb
+D:\P\Ekdant\Project\SPApplication\SPApplication\bin\Debug\BusinessLayerUtility.dll
+D:\P\Ekdant\Project\SPApplication\SPApplication\bin\Debug\BusinessLayerUtility.pdb
+D:\P\Ekdant\Project\SPApplication\SPApplication\obj\Debug\ResolveAssemblyReference.cache
+D:\P\Ekdant\Project\SPApplication\SPApplication\obj\Debug\SPApplication.Authentication.ChangePassword.resources
+D:\P\Ekdant\Project\SPApplication\SPApplication\obj\Debug\SPApplication.LoginWindow.resources
+D:\P\Ekdant\Project\SPApplication\SPApplication\obj\Debug\SPApplication.Comman.Bill.resources
+D:\P\Ekdant\Project\SPApplication\SPApplication\obj\Debug\SPApplication.Expenses.Expenses.resources
+D:\P\Ekdant\Project\SPApplication\SPApplication\obj\Debug\SPApplication.Comman.BillParticulars.resources
+D:\P\Ekdant\Project\SPApplication\SPApplication\obj\Debug\SPApplication.Comman.InvestigationNew.resources
+D:\P\Ekdant\Project\SPApplication\SPApplication\obj\Debug\SPApplication.Comman.InvestigationT.resources
+D:\P\Ekdant\Project\SPApplication\SPApplication\obj\Debug\SPApplication.Comman.InvestigationTandtPlan.resources
+D:\P\Ekdant\Project\SPApplication\SPApplication\obj\Debug\SPApplication.Comman.Patient.resources
+D:\P\Ekdant\Project\SPApplication\SPApplication\obj\Debug\SPApplication.Comman.PatientInformation.resources
+D:\P\Ekdant\Project\SPApplication\SPApplication\obj\Debug\SPApplication.Master.ChiefComplaintMaster.resources
+D:\P\Ekdant\Project\SPApplication\SPApplication\obj\Debug\SPApplication.Master.DoctorMaster.resources
+D:\P\Ekdant\Project\SPApplication\SPApplication\obj\Debug\SPApplication.ExpencesHead.resources
+D:\P\Ekdant\Project\SPApplication\SPApplication\obj\Debug\SPApplication.Master.InvestigationMaster.resources
+D:\P\Ekdant\Project\SPApplication\SPApplication\obj\Debug\SPApplication.Master.StaffMaster.resources
+D:\P\Ekdant\Project\SPApplication\SPApplication\obj\Debug\SPApplication.Dashboard.resources
+D:\P\Ekdant\Project\SPApplication\SPApplication\obj\Debug\SPApplication.Master.Medicine.resources
+D:\P\Ekdant\Project\SPApplication\SPApplication\obj\Debug\SPApplication.OPD.PatientDetails.MedicolegalRecord.resources
+D:\P\Ekdant\Project\SPApplication\SPApplication\obj\Debug\SPApplication.MenuSettings.resources
+D:\P\Ekdant\Project\SPApplication\SPApplication\obj\Debug\SPApplication.Master.Treatment.resources
+D:\P\Ekdant\Project\SPApplication\SPApplication\obj\Debug\SPApplication.OPD.Appointment.resources
+D:\P\Ekdant\Project\SPApplication\SPApplication\obj\Debug\SPApplication.Master.OPD_Registration.resources
+D:\P\Ekdant\Project\SPApplication\SPApplication\obj\Debug\SEApplication.Prescription.resources
+D:\P\Ekdant\Project\SPApplication\SPApplication\obj\Debug\SPApplication.Properties.Resources.resources
+D:\P\Ekdant\Project\SPApplication\SPApplication\obj\Debug\SPApplication.ReportList.resources
+D:\P\Ekdant\Project\SPApplication\SPApplication\obj\Debug\SPApplication.Report.BillCollectionReport.resources
+D:\P\Ekdant\Project\SPApplication\SPApplication\obj\Debug\SPApplication.BirthdayAndAniversaryReport.resources
+D:\P\Ekdant\Project\SPApplication\SPApplication\obj\Debug\SPApplication.Report.ExpensesReport.resources
+D:\P\Ekdant\Project\SPApplication\SPApplication\obj\Debug\SPApplication.Report.ProfitLossReport.resources
+D:\P\Ekdant\Project\SPApplication\SPApplication\obj\Debug\SPApplication.ProvisionalDiagnosisReport.resources
+D:\P\Ekdant\Project\SPApplication\SPApplication\obj\Debug\SPApplication.Settings.EmailCredentials.resources
+D:\P\Ekdant\Project\SPApplication\SPApplication\obj\Debug\SPApplication.csproj.GenerateResource.Cache
+D:\P\Ekdant\Project\SPApplication\SPApplication\obj\Debug\SPApplication.exe
+D:\P\Ekdant\Project\SPApplication\SPApplication\obj\Debug\SPApplication.pdb
+E:\Yashwant Data\Projects\Ekdant\Project\SPApplication\SPApplication\bin\Debug\SPApplication.exe.config
+E:\Yashwant Data\Projects\Ekdant\Project\SPApplication\SPApplication\bin\Debug\SPApplication.exe
+E:\Yashwant Data\Projects\Ekdant\Project\SPApplication\SPApplication\bin\Debug\SPApplication.pdb
+E:\Yashwant Data\Projects\Ekdant\Project\SPApplication\SPApplication\bin\Debug\BusinessLayerUtility.dll
+E:\Yashwant Data\Projects\Ekdant\Project\SPApplication\SPApplication\bin\Debug\Microsoft.Office.Interop.Excel.dll
+E:\Yashwant Data\Projects\Ekdant\Project\SPApplication\SPApplication\bin\Debug\Office.dll
+E:\Yashwant Data\Projects\Ekdant\Project\SPApplication\SPApplication\bin\Debug\Microsoft.Vbe.Interop.dll
+E:\Yashwant Data\Projects\Ekdant\Project\SPApplication\SPApplication\bin\Debug\Microsoft.Office.Interop.Excel.xml
+E:\Yashwant Data\Projects\Ekdant\Project\SPApplication\SPApplication\bin\Debug\Office.xml
+E:\Yashwant Data\Projects\Ekdant\Project\SPApplication\SPApplication\bin\Debug\BusinessLayerUtility.pdb
+E:\Yashwant Data\Projects\Ekdant\Project\SPApplication\SPApplication\obj\Debug\ResolveAssemblyReference.cache
+E:\Yashwant Data\Projects\Ekdant\Project\SPApplication\SPApplication\obj\Debug\SPApplication.Authentication.ChangePassword.resources
+E:\Yashwant Data\Projects\Ekdant\Project\SPApplication\SPApplication\obj\Debug\SPApplication.LoginWindow.resources
+E:\Yashwant Data\Projects\Ekdant\Project\SPApplication\SPApplication\obj\Debug\SPApplication.Comman.Bill.resources
+E:\Yashwant Data\Projects\Ekdant\Project\SPApplication\SPApplication\obj\Debug\SPApplication.Expenses.Expenses.resources
+E:\Yashwant Data\Projects\Ekdant\Project\SPApplication\SPApplication\obj\Debug\SPApplication.Comman.BillParticulars.resources
+E:\Yashwant Data\Projects\Ekdant\Project\SPApplication\SPApplication\obj\Debug\SPApplication.Comman.InvestigationNew.resources
+E:\Yashwant Data\Projects\Ekdant\Project\SPApplication\SPApplication\obj\Debug\SPApplication.Comman.InvestigationT.resources
+E:\Yashwant Data\Projects\Ekdant\Project\SPApplication\SPApplication\obj\Debug\SPApplication.Comman.InvestigationTandtPlan.resources
+E:\Yashwant Data\Projects\Ekdant\Project\SPApplication\SPApplication\obj\Debug\SPApplication.Comman.Patient.resources
+E:\Yashwant Data\Projects\Ekdant\Project\SPApplication\SPApplication\obj\Debug\SPApplication.Comman.PatientInformation.resources
+E:\Yashwant Data\Projects\Ekdant\Project\SPApplication\SPApplication\obj\Debug\SPApplication.Master.ChiefComplaintMaster.resources
+E:\Yashwant Data\Projects\Ekdant\Project\SPApplication\SPApplication\obj\Debug\SPApplication.Master.DoctorMaster.resources
+E:\Yashwant Data\Projects\Ekdant\Project\SPApplication\SPApplication\obj\Debug\SPApplication.ExpencesHead.resources
+E:\Yashwant Data\Projects\Ekdant\Project\SPApplication\SPApplication\obj\Debug\SPApplication.Master.InvestigationMaster.resources
+E:\Yashwant Data\Projects\Ekdant\Project\SPApplication\SPApplication\obj\Debug\SPApplication.Master.StaffMaster.resources
+E:\Yashwant Data\Projects\Ekdant\Project\SPApplication\SPApplication\obj\Debug\SPApplication.Dashboard.resources
+E:\Yashwant Data\Projects\Ekdant\Project\SPApplication\SPApplication\obj\Debug\SPApplication.Master.Medicine.resources
+E:\Yashwant Data\Projects\Ekdant\Project\SPApplication\SPApplication\obj\Debug\SPApplication.OPD.PatientDetails.MedicolegalRecord.resources
+E:\Yashwant Data\Projects\Ekdant\Project\SPApplication\SPApplication\obj\Debug\SPApplication.MenuSettings.resources
+E:\Yashwant Data\Projects\Ekdant\Project\SPApplication\SPApplication\obj\Debug\SPApplication.Master.Treatment.resources
+E:\Yashwant Data\Projects\Ekdant\Project\SPApplication\SPApplication\obj\Debug\SPApplication.OPD.Appointment.resources
+E:\Yashwant Data\Projects\Ekdant\Project\SPApplication\SPApplication\obj\Debug\SPApplication.Master.OPD_Registration.resources
+E:\Yashwant Data\Projects\Ekdant\Project\SPApplication\SPApplication\obj\Debug\SEApplication.Prescription.resources
+E:\Yashwant Data\Projects\Ekdant\Project\SPApplication\SPApplication\obj\Debug\SPApplication.Properties.Resources.resources
+E:\Yashwant Data\Projects\Ekdant\Project\SPApplication\SPApplication\obj\Debug\SPApplication.ReportList.resources
+E:\Yashwant Data\Projects\Ekdant\Project\SPApplication\SPApplication\obj\Debug\SPApplication.Report.BillCollectionReport.resources
+E:\Yashwant Data\Projects\Ekdant\Project\SPApplication\SPApplication\obj\Debug\SPApplication.BirthdayAndAniversaryReport.resources
+E:\Yashwant Data\Projects\Ekdant\Project\SPApplication\SPApplication\obj\Debug\SPApplication.Report.ExpensesReport.resources
+E:\Yashwant Data\Projects\Ekdant\Project\SPApplication\SPApplication\obj\Debug\SPApplication.Report.ProfitLossReport.resources
+E:\Yashwant Data\Projects\Ekdant\Project\SPApplication\SPApplication\obj\Debug\SPApplication.ProvisionalDiagnosisReport.resources
+E:\Yashwant Data\Projects\Ekdant\Project\SPApplication\SPApplication\obj\Debug\SPApplication.Settings.EmailCredentials.resources
+E:\Yashwant Data\Projects\Ekdant\Project\SPApplication\SPApplication\obj\Debug\SPApplication.csproj.GenerateResource.Cache
+E:\Yashwant Data\Projects\Ekdant\Project\SPApplication\SPApplication\obj\Debug\SPApplication.exe
+E:\Yashwant Data\Projects\Ekdant\Project\SPApplication\SPApplication\obj\Debug\SPApplication.pdb
+E:\Yashwant Data\Projects\DrTambe\Project\SPApplication\SPApplication\bin\Debug\SPApplication.exe.config
+E:\Yashwant Data\Projects\DrTambe\Project\SPApplication\SPApplication\bin\Debug\SPApplication.exe
+E:\Yashwant Data\Projects\DrTambe\Project\SPApplication\SPApplication\bin\Debug\SPApplication.pdb
+E:\Yashwant Data\Projects\DrTambe\Project\SPApplication\SPApplication\bin\Debug\BusinessLayerUtility.dll
+E:\Yashwant Data\Projects\DrTambe\Project\SPApplication\SPApplication\bin\Debug\Microsoft.Office.Interop.Excel.dll
+E:\Yashwant Data\Projects\DrTambe\Project\SPApplication\SPApplication\bin\Debug\Office.dll
+E:\Yashwant Data\Projects\DrTambe\Project\SPApplication\SPApplication\bin\Debug\Microsoft.Vbe.Interop.dll
+E:\Yashwant Data\Projects\DrTambe\Project\SPApplication\SPApplication\bin\Debug\Microsoft.Office.Interop.Excel.xml
+E:\Yashwant Data\Projects\DrTambe\Project\SPApplication\SPApplication\bin\Debug\Office.xml
+E:\Yashwant Data\Projects\DrTambe\Project\SPApplication\SPApplication\bin\Debug\BusinessLayerUtility.pdb
+E:\Yashwant Data\Projects\DrTambe\Project\SPApplication\SPApplication\obj\Debug\ResolveAssemblyReference.cache
+E:\Yashwant Data\Projects\DrTambe\Project\SPApplication\SPApplication\obj\Debug\SPApplication.Authentication.ChangePassword.resources
+E:\Yashwant Data\Projects\DrTambe\Project\SPApplication\SPApplication\obj\Debug\SPApplication.LoginWindow.resources
+E:\Yashwant Data\Projects\DrTambe\Project\SPApplication\SPApplication\obj\Debug\SPApplication.Comman.Bill.resources
+E:\Yashwant Data\Projects\DrTambe\Project\SPApplication\SPApplication\obj\Debug\SPApplication.Expenses.Expenses.resources
+E:\Yashwant Data\Projects\DrTambe\Project\SPApplication\SPApplication\obj\Debug\SPApplication.Comman.BillParticulars.resources
+E:\Yashwant Data\Projects\DrTambe\Project\SPApplication\SPApplication\obj\Debug\SPApplication.Comman.InvestigationNew.resources
+E:\Yashwant Data\Projects\DrTambe\Project\SPApplication\SPApplication\obj\Debug\SPApplication.Comman.InvestigationT.resources
+E:\Yashwant Data\Projects\DrTambe\Project\SPApplication\SPApplication\obj\Debug\SPApplication.Comman.InvestigationTandtPlan.resources
+E:\Yashwant Data\Projects\DrTambe\Project\SPApplication\SPApplication\obj\Debug\SPApplication.Comman.Patient.resources
+E:\Yashwant Data\Projects\DrTambe\Project\SPApplication\SPApplication\obj\Debug\SPApplication.Comman.PatientInformation.resources
+E:\Yashwant Data\Projects\DrTambe\Project\SPApplication\SPApplication\obj\Debug\SPApplication.Master.ChiefComplaintMaster.resources
+E:\Yashwant Data\Projects\DrTambe\Project\SPApplication\SPApplication\obj\Debug\SPApplication.Master.DoctorMaster.resources
+E:\Yashwant Data\Projects\DrTambe\Project\SPApplication\SPApplication\obj\Debug\SPApplication.ExpencesHead.resources
+E:\Yashwant Data\Projects\DrTambe\Project\SPApplication\SPApplication\obj\Debug\SPApplication.Master.InvestigationMaster.resources
+E:\Yashwant Data\Projects\DrTambe\Project\SPApplication\SPApplication\obj\Debug\SPApplication.Master.StaffMaster.resources
+E:\Yashwant Data\Projects\DrTambe\Project\SPApplication\SPApplication\obj\Debug\SPApplication.Dashboard.resources
+E:\Yashwant Data\Projects\DrTambe\Project\SPApplication\SPApplication\obj\Debug\SPApplication.Master.Medicine.resources
+E:\Yashwant Data\Projects\DrTambe\Project\SPApplication\SPApplication\obj\Debug\SPApplication.OPD.PatientDetails.MedicolegalRecord.resources
+E:\Yashwant Data\Projects\DrTambe\Project\SPApplication\SPApplication\obj\Debug\SPApplication.MenuSettings.resources
+E:\Yashwant Data\Projects\DrTambe\Project\SPApplication\SPApplication\obj\Debug\SPApplication.Master.Treatment.resources
+E:\Yashwant Data\Projects\DrTambe\Project\SPApplication\SPApplication\obj\Debug\SPApplication.OPD.Appointment.resources
+E:\Yashwant Data\Projects\DrTambe\Project\SPApplication\SPApplication\obj\Debug\SPApplication.Master.OPD_Registration.resources
+E:\Yashwant Data\Projects\DrTambe\Project\SPApplication\SPApplication\obj\Debug\SEApplication.Prescription.resources
+E:\Yashwant Data\Projects\DrTambe\Project\SPApplication\SPApplication\obj\Debug\SPApplication.Properties.Resources.resources
+E:\Yashwant Data\Projects\DrTambe\Project\SPApplication\SPApplication\obj\Debug\SPApplication.ReportList.resources
+E:\Yashwant Data\Projects\DrTambe\Project\SPApplication\SPApplication\obj\Debug\SPApplication.Report.BillCollectionReport.resources
+E:\Yashwant Data\Projects\DrTambe\Project\SPApplication\SPApplication\obj\Debug\SPApplication.BirthdayAndAniversaryReport.resources
+E:\Yashwant Data\Projects\DrTambe\Project\SPApplication\SPApplication\obj\Debug\SPApplication.Report.ExpensesReport.resources
+E:\Yashwant Data\Projects\DrTambe\Project\SPApplication\SPApplication\obj\Debug\SPApplication.Report.ProfitLossReport.resources
+E:\Yashwant Data\Projects\DrTambe\Project\SPApplication\SPApplication\obj\Debug\SPApplication.ProvisionalDiagnosisReport.resources
+E:\Yashwant Data\Projects\DrTambe\Project\SPApplication\SPApplication\obj\Debug\SPApplication.Settings.EmailCredentials.resources
+E:\Yashwant Data\Projects\DrTambe\Project\SPApplication\SPApplication\obj\Debug\SPApplication.csproj.GenerateResource.Cache
+E:\Yashwant Data\Projects\DrTambe\Project\SPApplication\SPApplication\obj\Debug\SPApplication.exe
+E:\Yashwant Data\Projects\DrTambe\Project\SPApplication\SPApplication\obj\Debug\SPApplication.pdb
+D:\P\DrTambe\Project\SPApplication\SPApplication\bin\Debug\SPApplication.exe.config
+D:\P\DrTambe\Project\SPApplication\SPApplication\bin\Debug\SPApplication.exe
+D:\P\DrTambe\Project\SPApplication\SPApplication\bin\Debug\SPApplication.pdb
+D:\P\DrTambe\Project\SPApplication\SPApplication\bin\Debug\BusinessLayerUtility.dll
+D:\P\DrTambe\Project\SPApplication\SPApplication\bin\Debug\Microsoft.Office.Interop.Excel.dll
+D:\P\DrTambe\Project\SPApplication\SPApplication\bin\Debug\Office.dll
+D:\P\DrTambe\Project\SPApplication\SPApplication\bin\Debug\BusinessLayerUtility.pdb
+D:\P\DrTambe\Project\SPApplication\SPApplication\obj\Debug\ResolveAssemblyReference.cache
+D:\P\DrTambe\Project\SPApplication\SPApplication\obj\Debug\SPApplication.Authentication.ChangePassword.resources
+D:\P\DrTambe\Project\SPApplication\SPApplication\obj\Debug\SPApplication.LoginWindow.resources
+D:\P\DrTambe\Project\SPApplication\SPApplication\obj\Debug\SPApplication.Comman.Bill.resources
+D:\P\DrTambe\Project\SPApplication\SPApplication\obj\Debug\SPApplication.Comman.DoctorTreatment.resources
+D:\P\DrTambe\Project\SPApplication\SPApplication\obj\Debug\SPApplication.Expenses.Expenses.resources
+D:\P\DrTambe\Project\SPApplication\SPApplication\obj\Debug\SPApplication.Comman.BillParticulars.resources
+D:\P\DrTambe\Project\SPApplication\SPApplication\obj\Debug\SPApplication.Comman.Patient.resources
+D:\P\DrTambe\Project\SPApplication\SPApplication\obj\Debug\SPApplication.Comman.PatientInformation.resources
+D:\P\DrTambe\Project\SPApplication\SPApplication\obj\Debug\SPApplication.Master.DoctorMaster.resources
+D:\P\DrTambe\Project\SPApplication\SPApplication\obj\Debug\SPApplication.ExpencesHead.resources
+D:\P\DrTambe\Project\SPApplication\SPApplication\obj\Debug\SPApplication.Master.StaffMaster.resources
+D:\P\DrTambe\Project\SPApplication\SPApplication\obj\Debug\SPApplication.Dashboard.resources
+D:\P\DrTambe\Project\SPApplication\SPApplication\obj\Debug\SPApplication.Master.Medicine.resources
+D:\P\DrTambe\Project\SPApplication\SPApplication\obj\Debug\SPApplication.MenuSettings.resources
+D:\P\DrTambe\Project\SPApplication\SPApplication\obj\Debug\SPApplication.OPD.Appointment.resources
+D:\P\DrTambe\Project\SPApplication\SPApplication\obj\Debug\SPApplication.Master.OPD_Registration.resources
+D:\P\DrTambe\Project\SPApplication\SPApplication\obj\Debug\SEApplication.Prescription.resources
+D:\P\DrTambe\Project\SPApplication\SPApplication\obj\Debug\SPApplication.Properties.Resources.resources
+D:\P\DrTambe\Project\SPApplication\SPApplication\obj\Debug\SPApplication.ReportList.resources
+D:\P\DrTambe\Project\SPApplication\SPApplication\obj\Debug\SPApplication.Report.BillCollectionReport.resources
+D:\P\DrTambe\Project\SPApplication\SPApplication\obj\Debug\SPApplication.BirthdayAndAniversaryReport.resources
+D:\P\DrTambe\Project\SPApplication\SPApplication\obj\Debug\SPApplication.Report.ExpensesReport.resources
+D:\P\DrTambe\Project\SPApplication\SPApplication\obj\Debug\SPApplication.Report.ProfitLossReport.resources
+D:\P\DrTambe\Project\SPApplication\SPApplication\obj\Debug\SPApplication.ProvisionalDiagnosisReport.resources
+D:\P\DrTambe\Project\SPApplication\SPApplication\obj\Debug\SPApplication.Settings.EmailCredentials.resources
+D:\P\DrTambe\Project\SPApplication\SPApplication\obj\Debug\SPApplication.csproj.GenerateResource.Cache
+D:\P\DrTambe\Project\SPApplication\SPApplication\obj\Debug\SPApplication.exe
+D:\P\DrTambe\Project\SPApplication\SPApplication\obj\Debug\SPApplication.pdb
+D:\Data\P\DrTambe\Project\SPApplication\SPApplication\bin\Debug\SPApplication.exe.config
+D:\Data\P\DrTambe\Project\SPApplication\SPApplication\obj\Debug\SPApplication.exe
+D:\Data\P\DrTambe\Project\SPApplication\SPApplication\obj\Debug\SPApplication.pdb
+D:\Data\P\DrTambe\Project\SPApplication\SPApplication\bin\Debug\SPApplication.exe
+D:\Data\P\DrTambe\Project\SPApplication\SPApplication\bin\Debug\SPApplication.pdb
+D:\Data\P\DrTambe\Project\SPApplication\SPApplication\bin\Debug\BusinessLayerUtility.dll
+D:\Data\P\DrTambe\Project\SPApplication\SPApplication\bin\Debug\Microsoft.Office.Interop.Excel.dll
+D:\Data\P\DrTambe\Project\SPApplication\SPApplication\bin\Debug\Office.dll
+D:\Data\P\DrTambe\Project\SPApplication\SPApplication\bin\Debug\Microsoft.Vbe.Interop.dll
+D:\Data\P\DrTambe\Project\SPApplication\SPApplication\bin\Debug\BusinessLayerUtility.pdb
+D:\Data\P\DrTambe\Project\SPApplication\SPApplication\obj\Debug\ResolveAssemblyReference.cache
+D:\Data\P\DrTambe\Project\SPApplication\SPApplication\obj\Debug\SPApplication.Authentication.ChangePassword.resources
+D:\Data\P\DrTambe\Project\SPApplication\SPApplication\obj\Debug\SPApplication.LoginWindow.resources
+D:\Data\P\DrTambe\Project\SPApplication\SPApplication\obj\Debug\SPApplication.Comman.Bill.resources
+D:\Data\P\DrTambe\Project\SPApplication\SPApplication\obj\Debug\SPApplication.Comman.DoctorTreatment.resources
+D:\Data\P\DrTambe\Project\SPApplication\SPApplication\obj\Debug\SPApplication.Expenses.Expenses.resources
+D:\Data\P\DrTambe\Project\SPApplication\SPApplication\obj\Debug\SPApplication.Comman.BillParticulars.resources
+D:\Data\P\DrTambe\Project\SPApplication\SPApplication\obj\Debug\SPApplication.Comman.Patient.resources
+D:\Data\P\DrTambe\Project\SPApplication\SPApplication\obj\Debug\SPApplication.Comman.PatientInformation.resources
+D:\Data\P\DrTambe\Project\SPApplication\SPApplication\obj\Debug\SPApplication.Master.DoctorMaster.resources
+D:\Data\P\DrTambe\Project\SPApplication\SPApplication\obj\Debug\SPApplication.ExpencesHead.resources
+D:\Data\P\DrTambe\Project\SPApplication\SPApplication\obj\Debug\SPApplication.Master.StaffMaster.resources
+D:\Data\P\DrTambe\Project\SPApplication\SPApplication\obj\Debug\SPApplication.Dashboard.resources
+D:\Data\P\DrTambe\Project\SPApplication\SPApplication\obj\Debug\SPApplication.Master.Medicine.resources
+D:\Data\P\DrTambe\Project\SPApplication\SPApplication\obj\Debug\SPApplication.MenuSettings.resources
+D:\Data\P\DrTambe\Project\SPApplication\SPApplication\obj\Debug\SPApplication.OPD.Appointment.resources
+D:\Data\P\DrTambe\Project\SPApplication\SPApplication\obj\Debug\SPApplication.Master.OPD_Registration.resources
+D:\Data\P\DrTambe\Project\SPApplication\SPApplication\obj\Debug\SEApplication.Prescription.resources
+D:\Data\P\DrTambe\Project\SPApplication\SPApplication\obj\Debug\SPApplication.Properties.Resources.resources
+D:\Data\P\DrTambe\Project\SPApplication\SPApplication\obj\Debug\SPApplication.ReportList.resources
+D:\Data\P\DrTambe\Project\SPApplication\SPApplication\obj\Debug\SPApplication.Report.BillCollectionReport.resources
+D:\Data\P\DrTambe\Project\SPApplication\SPApplication\obj\Debug\SPApplication.BirthdayAndAniversaryReport.resources
+D:\Data\P\DrTambe\Project\SPApplication\SPApplication\obj\Debug\SPApplication.Report.ExpensesReport.resources
+D:\Data\P\DrTambe\Project\SPApplication\SPApplication\obj\Debug\SPApplication.Report.ProfitLossReport.resources
+D:\Data\P\DrTambe\Project\SPApplication\SPApplication\obj\Debug\SPApplication.ProvisionalDiagnosisReport.resources
+D:\Data\P\DrTambe\Project\SPApplication\SPApplication\obj\Debug\SPApplication.Settings.EmailCredentials.resources
+D:\Data\P\DrTambe\Project\SPApplication\SPApplication\obj\Debug\SPApplication.csproj.GenerateResource.Cache
+D:\Projects\DrTambe\Project\SPApplication\SPApplication\bin\Debug\SPApplication.exe.config
+D:\Projects\DrTambe\Project\SPApplication\SPApplication\bin\Debug\SPApplication.exe
+D:\Projects\DrTambe\Project\SPApplication\SPApplication\bin\Debug\SPApplication.pdb
+D:\Projects\DrTambe\Project\SPApplication\SPApplication\bin\Debug\BusinessLayerUtility.dll
+D:\Projects\DrTambe\Project\SPApplication\SPApplication\bin\Debug\Microsoft.Office.Interop.Excel.dll
+D:\Projects\DrTambe\Project\SPApplication\SPApplication\bin\Debug\Office.dll
+D:\Projects\DrTambe\Project\SPApplication\SPApplication\bin\Debug\Microsoft.Vbe.Interop.dll
+D:\Projects\DrTambe\Project\SPApplication\SPApplication\bin\Debug\BusinessLayerUtility.pdb
+D:\Projects\DrTambe\Project\SPApplication\SPApplication\obj\Debug\ResolveAssemblyReference.cache
+D:\Projects\DrTambe\Project\SPApplication\SPApplication\obj\Debug\SPApplication.Authentication.ChangePassword.resources
+D:\Projects\DrTambe\Project\SPApplication\SPApplication\obj\Debug\SPApplication.LoginWindow.resources
+D:\Projects\DrTambe\Project\SPApplication\SPApplication\obj\Debug\SPApplication.Comman.Bill.resources
+D:\Projects\DrTambe\Project\SPApplication\SPApplication\obj\Debug\SPApplication.Comman.DoctorTreatment.resources
+D:\Projects\DrTambe\Project\SPApplication\SPApplication\obj\Debug\SPApplication.Expenses.Expenses.resources
+D:\Projects\DrTambe\Project\SPApplication\SPApplication\obj\Debug\SPApplication.Comman.BillParticulars.resources
+D:\Projects\DrTambe\Project\SPApplication\SPApplication\obj\Debug\SPApplication.Comman.Patient.resources
+D:\Projects\DrTambe\Project\SPApplication\SPApplication\obj\Debug\SPApplication.Comman.PatientInformation.resources
+D:\Projects\DrTambe\Project\SPApplication\SPApplication\obj\Debug\SPApplication.Master.DoctorMaster.resources
+D:\Projects\DrTambe\Project\SPApplication\SPApplication\obj\Debug\SPApplication.ExpencesHead.resources
+D:\Projects\DrTambe\Project\SPApplication\SPApplication\obj\Debug\SPApplication.Master.StaffMaster.resources
+D:\Projects\DrTambe\Project\SPApplication\SPApplication\obj\Debug\SPApplication.Dashboard.resources
+D:\Projects\DrTambe\Project\SPApplication\SPApplication\obj\Debug\SPApplication.Master.Medicine.resources
+D:\Projects\DrTambe\Project\SPApplication\SPApplication\obj\Debug\SPApplication.MenuSettings.resources
+D:\Projects\DrTambe\Project\SPApplication\SPApplication\obj\Debug\SPApplication.OPD.Appointment.resources
+D:\Projects\DrTambe\Project\SPApplication\SPApplication\obj\Debug\SPApplication.Master.OPD_Registration.resources
+D:\Projects\DrTambe\Project\SPApplication\SPApplication\obj\Debug\SEApplication.Prescription.resources
+D:\Projects\DrTambe\Project\SPApplication\SPApplication\obj\Debug\SPApplication.Properties.Resources.resources
+D:\Projects\DrTambe\Project\SPApplication\SPApplication\obj\Debug\SPApplication.ReportList.resources
+D:\Projects\DrTambe\Project\SPApplication\SPApplication\obj\Debug\SPApplication.Report.BillCollectionReport.resources
+D:\Projects\DrTambe\Project\SPApplication\SPApplication\obj\Debug\SPApplication.BirthdayAndAniversaryReport.resources
+D:\Projects\DrTambe\Project\SPApplication\SPApplication\obj\Debug\SPApplication.Report.ExpensesReport.resources
+D:\Projects\DrTambe\Project\SPApplication\SPApplication\obj\Debug\SPApplication.Report.ProfitLossReport.resources
+D:\Projects\DrTambe\Project\SPApplication\SPApplication\obj\Debug\SPApplication.ProvisionalDiagnosisReport.resources
+D:\Projects\DrTambe\Project\SPApplication\SPApplication\obj\Debug\SPApplication.Settings.EmailCredentials.resources
+D:\Projects\DrTambe\Project\SPApplication\SPApplication\obj\Debug\SPApplication.Report.TreatmentReport.resources
+D:\Projects\DrTambe\Project\SPApplication\SPApplication\obj\Debug\SPApplication.csproj.GenerateResource.Cache
+D:\Projects\DrTambe\Project\SPApplication\SPApplication\obj\Debug\SPApplication.exe
+D:\Projects\DrTambe\Project\SPApplication\SPApplication\obj\Debug\SPApplication.pdb
+D:\Projects\Krushi Seva Kendra\SPApplication\SPApplication\bin\Debug\SPApplication.exe.config
+D:\Projects\Krushi Seva Kendra\SPApplication\SPApplication\obj\Debug\SPApplication.exe
+D:\Projects\Krushi Seva Kendra\SPApplication\SPApplication\bin\Debug\SPApplication.exe
+D:\Projects\Krushi Seva Kendra\SPApplication\SPApplication\bin\Debug\SPApplication.pdb
+D:\Projects\Krushi Seva Kendra\SPApplication\SPApplication\bin\Debug\BusinessLayerUtility.dll
+D:\Projects\Krushi Seva Kendra\SPApplication\SPApplication\bin\Debug\Microsoft.Office.Interop.Excel.dll
+D:\Projects\Krushi Seva Kendra\SPApplication\SPApplication\bin\Debug\Office.dll
+D:\Projects\Krushi Seva Kendra\SPApplication\SPApplication\bin\Debug\Microsoft.Vbe.Interop.dll
+D:\Projects\Krushi Seva Kendra\SPApplication\SPApplication\bin\Debug\BusinessLayerUtility.pdb
+D:\Projects\Krushi Seva Kendra\SPApplication\SPApplication\obj\Debug\ResolveAssemblyReference.cache
+D:\Projects\Krushi Seva Kendra\SPApplication\SPApplication\obj\Debug\SPApplication.Authentication.ChangePassword.resources
+D:\Projects\Krushi Seva Kendra\SPApplication\SPApplication\obj\Debug\SPApplication.LoginWindow.resources
+D:\Projects\Krushi Seva Kendra\SPApplication\SPApplication\obj\Debug\SPApplication.Expenses.Expenses.resources
+D:\Projects\Krushi Seva Kendra\SPApplication\SPApplication\obj\Debug\SPApplication.ExpencesHead.resources
+D:\Projects\Krushi Seva Kendra\SPApplication\SPApplication\obj\Debug\SPApplication.Master.StaffMaster.resources
+D:\Projects\Krushi Seva Kendra\SPApplication\SPApplication\obj\Debug\SPApplication.Dashboard.resources
+D:\Projects\Krushi Seva Kendra\SPApplication\SPApplication\obj\Debug\SPApplication.Properties.Resources.resources
+D:\Projects\Krushi Seva Kendra\SPApplication\SPApplication\obj\Debug\SPApplication.ReportList.resources
+D:\Projects\Krushi Seva Kendra\SPApplication\SPApplication\obj\Debug\SPApplication.BirthdayAndAniversaryReport.resources
+D:\Projects\Krushi Seva Kendra\SPApplication\SPApplication\obj\Debug\SPApplication.Report.ExpensesReport.resources
+D:\Projects\Krushi Seva Kendra\SPApplication\SPApplication\obj\Debug\SPApplication.Report.ProfitLossReport.resources
+D:\Projects\Krushi Seva Kendra\SPApplication\SPApplication\obj\Debug\SPApplication.Settings.EmailCredentials.resources
+D:\Projects\Krushi Seva Kendra\SPApplication\SPApplication\obj\Debug\SPApplication.csproj.GenerateResource.Cache
+D:\Projects\Krushi Seva Kendra\SPApplication\SPApplication\obj\Debug\SPApplication.pdb
+D:\Projects\Krushi Seva Kendra\SPApplication\SPApplication\obj\Debug\SPApplication.Master.CompanyInformation.resources
+D:\Projects\Krushi Seva Kendra\SPApplication\SPApplication\obj\Debug\SPApplication.Master.Customer.resources
+D:\Projects\Krushi Seva Kendra\SPApplication\SPApplication\obj\Debug\SPApplication.Master.Supplier.resources
+F:\New\SPApplication\SPApplication\bin\Debug\SPApplication.exe.config
+F:\New\SPApplication\SPApplication\obj\Debug\SPApplication.exe
+F:\New\SPApplication\SPApplication\obj\Debug\SPApplication.pdb
+F:\Backup\New\SPApplication\SPApplication\bin\Debug\SPApplication.exe.config
+F:\Backup\New\SPApplication\SPApplication\obj\Debug\SPApplication.exe
+F:\Backup\New\SPApplication\SPApplication\obj\Debug\SPApplication.pdb
+F:\Backup\New\SPApplication\SPApplication\obj\Debug\ResolveAssemblyReference.cache
+F:\Backup\New\SPApplication\SPApplication\obj\Debug\SPApplication.Authentication.ChangePassword.resources
+F:\Backup\New\SPApplication\SPApplication\obj\Debug\SPApplication.LoginWindow.resources
+F:\Backup\New\SPApplication\SPApplication\obj\Debug\SPApplication.Expenses.Expenses.resources
+F:\Backup\New\SPApplication\SPApplication\obj\Debug\SPApplication.Master.CompanyInformation.resources
+F:\Backup\New\SPApplication\SPApplication\obj\Debug\SPApplication.Master.Customer.resources
+F:\Backup\New\SPApplication\SPApplication\obj\Debug\SPApplication.ExpencesHead.resources
+F:\Backup\New\SPApplication\SPApplication\obj\Debug\SPApplication.Master.StaffMaster.resources
+F:\Backup\New\SPApplication\SPApplication\obj\Debug\SPApplication.Dashboard.resources
+F:\Backup\New\SPApplication\SPApplication\obj\Debug\SPApplication.MenuSettings.resources
+F:\Backup\New\SPApplication\SPApplication\obj\Debug\SPApplication.Master.Supplier.resources
+F:\Backup\New\SPApplication\SPApplication\obj\Debug\SPApplication.Properties.Resources.resources
+F:\Backup\New\SPApplication\SPApplication\obj\Debug\SPApplication.ReportList.resources
+F:\Backup\New\SPApplication\SPApplication\obj\Debug\SPApplication.BirthdayAndAniversaryReport.resources
+F:\Backup\New\SPApplication\SPApplication\obj\Debug\SPApplication.Report.ExpensesReport.resources
+F:\Backup\New\SPApplication\SPApplication\obj\Debug\SPApplication.Report.ProfitLossReport.resources
+F:\Backup\New\SPApplication\SPApplication\obj\Debug\SPApplication.Settings.EmailCredentials.resources
+F:\Backup\New\SPApplication\SPApplication\obj\Debug\SPApplication.csproj.GenerateResource.Cache
+F:\Backup\New\SPApplication\SPApplication\bin\Debug\SPApplication.exe
+F:\Backup\New\SPApplication\SPApplication\bin\Debug\SPApplication.pdb
+F:\Backup\New\SPApplication\SPApplication\bin\Debug\BusinessLayerUtility.dll
+F:\Backup\New\SPApplication\SPApplication\bin\Debug\Microsoft.Office.Interop.Excel.dll
+F:\Backup\New\SPApplication\SPApplication\bin\Debug\Office.dll
+F:\Backup\New\SPApplication\SPApplication\bin\Debug\Microsoft.Vbe.Interop.dll
+F:\Backup\New\SPApplication\SPApplication\bin\Debug\BusinessLayerUtility.pdb
+F:\Backup\New\SPApplication\SPApplication\obj\Debug\SPApplication.Transaction.PurchaseKrishi.resources
+F:\Backup\New\SPApplication\SPApplication\obj\Debug\SPApplication.Transaction.SalesKrishi.resources
+F:\Backup\New\SPApplication\SPApplication\obj\Debug\SPApplication.Transaction.PurchaseCloth.resources
+F:\Backup\New\SPApplication\SPApplication\obj\Debug\SPApplication.Transaction.SalesCloth.resources
+F:\Backup\New\SPApplication\SPApplication\obj\Debug\SPApplication.Item.resources
+F:\Backup\New\SPApplication\SPApplication\obj\Debug\SPApplication.Reports.GSTReport.resources
+F:\Backup\New\SPApplication\SPApplication\obj\Debug\SPApplication.Reports.ItemQuantityReport.resources
+F:\Backup\New\SPApplication\SPApplication\obj\Debug\SPApplication.Reports.PurchaseReport.resources
+F:\Backup\New\SPApplication\SPApplication\obj\Debug\SPApplication.Reports.SaleReport.resources
+F:\Backup\New\SPApplication\SPApplication\obj\Debug\SPApplication.Transaction.CRNote.resources
+F:\Backup\New\SPApplication\SPApplication\obj\Debug\SPApplication.MasterMenuWindow.resources
+F:\Backup\New\SPApplication\SPApplication\obj\Debug\SPApplication.TransactionMenuWindow.resources
+D:\Projects\Krushi Seva Kendra\SPApplication\SPApplication\obj\Debug\SPApplication.Transaction.CRNote.resources
+D:\Projects\Krushi Seva Kendra\SPApplication\SPApplication\obj\Debug\SPApplication.Item.resources
+D:\Projects\Krushi Seva Kendra\SPApplication\SPApplication\obj\Debug\SPApplication.MasterMenuWindow.resources
+D:\Projects\Krushi Seva Kendra\SPApplication\SPApplication\obj\Debug\SPApplication.Reports.GSTReport.resources
+D:\Projects\Krushi Seva Kendra\SPApplication\SPApplication\obj\Debug\SPApplication.Reports.ItemQuantityReport.resources
+D:\Projects\Krushi Seva Kendra\SPApplication\SPApplication\obj\Debug\SPApplication.Reports.PurchaseReport.resources
+D:\Projects\Krushi Seva Kendra\SPApplication\SPApplication\obj\Debug\SPApplication.Reports.SaleReport.resources
+D:\Projects\Krushi Seva Kendra\SPApplication\SPApplication\obj\Debug\SPApplication.TransactionMenuWindow.resources
+D:\Projects\Krushi Seva Kendra\SPApplication\SPApplication\obj\Debug\SPApplication.Transaction.Purchase.resources
+D:\Projects\Krushi Seva Kendra\SPApplication\SPApplication\obj\Debug\SPApplication.MenuWindow.resources
+D:\Projects\Krushi Seva Kendra\SPApplication\SPApplication\obj\Debug\SPApplication.SettingsList.resources
+D:\Projects\Krushi Seva Kendra\SPApplication\SPApplication\obj\Debug\SPApplication.Transaction.Sale.resources
+D:\Projects\Jagdamba Krushi Seva Kendra\SPApplication\SPApplication\bin\Debug\SPApplication.exe.config
+D:\Projects\Jagdamba Krushi Seva Kendra\SPApplication\SPApplication\bin\Debug\SPApplication.exe
+D:\Projects\Jagdamba Krushi Seva Kendra\SPApplication\SPApplication\bin\Debug\SPApplication.pdb
+D:\Projects\Jagdamba Krushi Seva Kendra\SPApplication\SPApplication\bin\Debug\BusinessLayerUtility.dll
+D:\Projects\Jagdamba Krushi Seva Kendra\SPApplication\SPApplication\bin\Debug\Microsoft.Office.Interop.Excel.dll
+D:\Projects\Jagdamba Krushi Seva Kendra\SPApplication\SPApplication\bin\Debug\Office.dll
+D:\Projects\Jagdamba Krushi Seva Kendra\SPApplication\SPApplication\bin\Debug\Microsoft.Vbe.Interop.dll
+D:\Projects\Jagdamba Krushi Seva Kendra\SPApplication\SPApplication\bin\Debug\BusinessLayerUtility.pdb
+D:\Projects\Jagdamba Krushi Seva Kendra\SPApplication\SPApplication\obj\Debug\ResolveAssemblyReference.cache
+D:\Projects\Jagdamba Krushi Seva Kendra\SPApplication\SPApplication\obj\Debug\SPApplication.Authentication.ChangePassword.resources
+D:\Projects\Jagdamba Krushi Seva Kendra\SPApplication\SPApplication\obj\Debug\SPApplication.LoginWindow.resources
+D:\Projects\Jagdamba Krushi Seva Kendra\SPApplication\SPApplication\obj\Debug\SPApplication.Transaction.CRNote.resources
+D:\Projects\Jagdamba Krushi Seva Kendra\SPApplication\SPApplication\obj\Debug\SPApplication.Expenses.resources
+D:\Projects\Jagdamba Krushi Seva Kendra\SPApplication\SPApplication\obj\Debug\SPApplication.Master.CompanyInformation.resources
+D:\Projects\Jagdamba Krushi Seva Kendra\SPApplication\SPApplication\obj\Debug\SPApplication.Master.Customer.resources
+D:\Projects\Jagdamba Krushi Seva Kendra\SPApplication\SPApplication\obj\Debug\SPApplication.ExpencesHead.resources
+D:\Projects\Jagdamba Krushi Seva Kendra\SPApplication\SPApplication\obj\Debug\SPApplication.Item.resources
+D:\Projects\Jagdamba Krushi Seva Kendra\SPApplication\SPApplication\obj\Debug\SPApplication.Master.StaffMaster.resources
+D:\Projects\Jagdamba Krushi Seva Kendra\SPApplication\SPApplication\obj\Debug\SPApplication.Dashboard.resources
+D:\Projects\Jagdamba Krushi Seva Kendra\SPApplication\SPApplication\obj\Debug\SPApplication.MasterMenuWindow.resources
+D:\Projects\Jagdamba Krushi Seva Kendra\SPApplication\SPApplication\obj\Debug\SPApplication.MenuWindow.resources
+D:\Projects\Jagdamba Krushi Seva Kendra\SPApplication\SPApplication\obj\Debug\SPApplication.SettingsList.resources
+D:\Projects\Jagdamba Krushi Seva Kendra\SPApplication\SPApplication\obj\Debug\SPApplication.Master.Supplier.resources
+D:\Projects\Jagdamba Krushi Seva Kendra\SPApplication\SPApplication\obj\Debug\SPApplication.Properties.Resources.resources
+D:\Projects\Jagdamba Krushi Seva Kendra\SPApplication\SPApplication\obj\Debug\SPApplication.BirthdayAndAniversaryReport.resources
+D:\Projects\Jagdamba Krushi Seva Kendra\SPApplication\SPApplication\obj\Debug\SPApplication.Report.ExpensesReport.resources
+D:\Projects\Jagdamba Krushi Seva Kendra\SPApplication\SPApplication\obj\Debug\SPApplication.Reports.GSTReport.resources
+D:\Projects\Jagdamba Krushi Seva Kendra\SPApplication\SPApplication\obj\Debug\SPApplication.Reports.ItemQuantityReport.resources
+D:\Projects\Jagdamba Krushi Seva Kendra\SPApplication\SPApplication\obj\Debug\SPApplication.Report.ProfitLossReport.resources
+D:\Projects\Jagdamba Krushi Seva Kendra\SPApplication\SPApplication\obj\Debug\SPApplication.Settings.EmailCredentials.resources
+D:\Projects\Jagdamba Krushi Seva Kendra\SPApplication\SPApplication\obj\Debug\SPApplication.Reports.PurchaseReport.resources
+D:\Projects\Jagdamba Krushi Seva Kendra\SPApplication\SPApplication\obj\Debug\SPApplication.ReportList.resources
+D:\Projects\Jagdamba Krushi Seva Kendra\SPApplication\SPApplication\obj\Debug\SPApplication.Reports.SaleReport.resources
+D:\Projects\Jagdamba Krushi Seva Kendra\SPApplication\SPApplication\obj\Debug\SPApplication.Transaction.Sale.resources
+D:\Projects\Jagdamba Krushi Seva Kendra\SPApplication\SPApplication\obj\Debug\SPApplication.TransactionMenuWindow.resources
+D:\Projects\Jagdamba Krushi Seva Kendra\SPApplication\SPApplication\obj\Debug\SPApplication.csproj.GenerateResource.Cache
+D:\Projects\Jagdamba Krushi Seva Kendra\SPApplication\SPApplication\obj\Debug\SPApplication.exe
+D:\Projects\Jagdamba Krushi Seva Kendra\SPApplication\SPApplication\obj\Debug\SPApplication.pdb
+D:\Projects\Jagdamba Krushi Seva Kendra\SPApplication\SPApplication\obj\Debug\SPApplication.Transaction.Purchase.resources
+G:\Ketan Tailoring\SPApplication\SPApplication\bin\Debug\SPApplication.exe.config
+G:\Ketan Tailoring\SPApplication\SPApplication\obj\Debug\SPApplication.exe
+G:\Ketan Tailoring\SPApplication\SPApplication\obj\Debug\SPApplication.pdb
+E:\For Tejashri\02-09-2017\Ketan Tailoring\SPApplication\SPApplication\bin\Debug\SPApplication.exe.config
+E:\For Tejashri\02-09-2017\Ketan Tailoring\SPApplication\SPApplication\obj\Debug\SPApplication.exe
+E:\For Tejashri\02-09-2017\Ketan Tailoring\SPApplication\SPApplication\obj\Debug\SPApplication.pdb
+E:\For Tejashri\02-09-2017\Ketan Tailoring\SPApplication\SPApplication\bin\Debug\SPApplication.exe
+E:\For Tejashri\02-09-2017\Ketan Tailoring\SPApplication\SPApplication\bin\Debug\SPApplication.pdb
+E:\For Tejashri\02-09-2017\Ketan Tailoring\SPApplication\SPApplication\bin\Debug\BusinessLayerUtility.dll
+E:\For Tejashri\02-09-2017\Ketan Tailoring\SPApplication\SPApplication\bin\Debug\Microsoft.Office.Interop.Excel.dll
+E:\For Tejashri\02-09-2017\Ketan Tailoring\SPApplication\SPApplication\bin\Debug\Office.dll
+E:\For Tejashri\02-09-2017\Ketan Tailoring\SPApplication\SPApplication\bin\Debug\Microsoft.Vbe.Interop.dll
+E:\For Tejashri\02-09-2017\Ketan Tailoring\SPApplication\SPApplication\bin\Debug\BusinessLayerUtility.pdb
+E:\For Tejashri\02-09-2017\Ketan Tailoring\SPApplication\SPApplication\obj\Debug\ResolveAssemblyReference.cache
+E:\For Tejashri\02-09-2017\Ketan Tailoring\SPApplication\SPApplication\obj\Debug\SPApplication.Authentication.ChangePassword.resources
+E:\For Tejashri\02-09-2017\Ketan Tailoring\SPApplication\SPApplication\obj\Debug\SPApplication.LoginWindow.resources
+E:\For Tejashri\02-09-2017\Ketan Tailoring\SPApplication\SPApplication\obj\Debug\SPApplication.Transaction.CRNote.resources
+E:\For Tejashri\02-09-2017\Ketan Tailoring\SPApplication\SPApplication\obj\Debug\SPApplication.Expenses.resources
+E:\For Tejashri\02-09-2017\Ketan Tailoring\SPApplication\SPApplication\obj\Debug\SPApplication.Master.CompanyInformation.resources
+E:\For Tejashri\02-09-2017\Ketan Tailoring\SPApplication\SPApplication\obj\Debug\SPApplication.Master.Customer.resources
+E:\For Tejashri\02-09-2017\Ketan Tailoring\SPApplication\SPApplication\obj\Debug\SPApplication.ExpencesHead.resources
+E:\For Tejashri\02-09-2017\Ketan Tailoring\SPApplication\SPApplication\obj\Debug\SPApplication.Item.resources
+E:\For Tejashri\02-09-2017\Ketan Tailoring\SPApplication\SPApplication\obj\Debug\SPApplication.Master.StaffMaster.resources
+E:\For Tejashri\02-09-2017\Ketan Tailoring\SPApplication\SPApplication\obj\Debug\SPApplication.Transaction.Sale.resources
+E:\For Tejashri\02-09-2017\Ketan Tailoring\SPApplication\SPApplication\obj\Debug\SPApplication.Dashboard.resources
+E:\For Tejashri\02-09-2017\Ketan Tailoring\SPApplication\SPApplication\obj\Debug\SPApplication.MasterMenuWindow.resources
+E:\For Tejashri\02-09-2017\Ketan Tailoring\SPApplication\SPApplication\obj\Debug\SPApplication.MenuWindow.resources
+E:\For Tejashri\02-09-2017\Ketan Tailoring\SPApplication\SPApplication\obj\Debug\SPApplication.SettingsList.resources
+E:\For Tejashri\02-09-2017\Ketan Tailoring\SPApplication\SPApplication\obj\Debug\SPApplication.Master.Supplier.resources
+E:\For Tejashri\02-09-2017\Ketan Tailoring\SPApplication\SPApplication\obj\Debug\SPApplication.Properties.Resources.resources
+E:\For Tejashri\02-09-2017\Ketan Tailoring\SPApplication\SPApplication\obj\Debug\SPApplication.BirthdayAndAniversaryReport.resources
+E:\For Tejashri\02-09-2017\Ketan Tailoring\SPApplication\SPApplication\obj\Debug\SPApplication.Report.ExpensesReport.resources
+E:\For Tejashri\02-09-2017\Ketan Tailoring\SPApplication\SPApplication\obj\Debug\SPApplication.Reports.GSTReport.resources
+E:\For Tejashri\02-09-2017\Ketan Tailoring\SPApplication\SPApplication\obj\Debug\SPApplication.Reports.ItemQuantityReport.resources
+E:\For Tejashri\02-09-2017\Ketan Tailoring\SPApplication\SPApplication\obj\Debug\SPApplication.Report.ProfitLossReport.resources
+E:\For Tejashri\02-09-2017\Ketan Tailoring\SPApplication\SPApplication\obj\Debug\SPApplication.Settings.EmailCredentials.resources
+E:\For Tejashri\02-09-2017\Ketan Tailoring\SPApplication\SPApplication\obj\Debug\SPApplication.Reports.PurchaseReport.resources
+E:\For Tejashri\02-09-2017\Ketan Tailoring\SPApplication\SPApplication\obj\Debug\SPApplication.ReportList.resources
+E:\For Tejashri\02-09-2017\Ketan Tailoring\SPApplication\SPApplication\obj\Debug\SPApplication.Reports.SaleReport.resources
+E:\For Tejashri\02-09-2017\Ketan Tailoring\SPApplication\SPApplication\obj\Debug\SPApplication.Transaction.Purchase.resources
+E:\For Tejashri\02-09-2017\Ketan Tailoring\SPApplication\SPApplication\obj\Debug\SPApplication.TransactionMenuWindow.resources
+E:\For Tejashri\02-09-2017\Ketan Tailoring\SPApplication\SPApplication\obj\Debug\SPApplication.csproj.GenerateResource.Cache
+E:\For Tejashri\02-09-2017\Ketan Tailoring\SPApplication\SPApplication\obj\Debug\SPApplication.Transaction.Payment.resources
+E:\For Tejashri\02-09-2017\Ketan Tailoring\SPApplication\SPApplication\obj\Debug\SPApplication.Transaction.Receipt.resources
+D:\Projects\Ketan Tailoring\SPApplication\SPApplication\bin\Debug\SPApplication.exe.config
+D:\Projects\Ketan Tailoring\SPApplication\SPApplication\bin\Debug\SPApplication.exe
+D:\Projects\Ketan Tailoring\SPApplication\SPApplication\bin\Debug\SPApplication.pdb
+D:\Projects\Ketan Tailoring\SPApplication\SPApplication\bin\Debug\BusinessLayerUtility.dll
+D:\Projects\Ketan Tailoring\SPApplication\SPApplication\bin\Debug\Microsoft.Office.Interop.Excel.dll
+D:\Projects\Ketan Tailoring\SPApplication\SPApplication\bin\Debug\Office.dll
+D:\Projects\Ketan Tailoring\SPApplication\SPApplication\bin\Debug\Microsoft.Vbe.Interop.dll
+D:\Projects\Ketan Tailoring\SPApplication\SPApplication\bin\Debug\BusinessLayerUtility.pdb
+D:\Projects\Ketan Tailoring\SPApplication\SPApplication\obj\Debug\ResolveAssemblyReference.cache
+D:\Projects\Ketan Tailoring\SPApplication\SPApplication\obj\Debug\SPApplication.Authentication.ChangePassword.resources
+D:\Projects\Ketan Tailoring\SPApplication\SPApplication\obj\Debug\SPApplication.LoginWindow.resources
+D:\Projects\Ketan Tailoring\SPApplication\SPApplication\obj\Debug\SPApplication.BankAccounts.resources
+D:\Projects\Ketan Tailoring\SPApplication\SPApplication\obj\Debug\SPApplication.Report.CustomerDetails.resources
+D:\Projects\Ketan Tailoring\SPApplication\SPApplication\obj\Debug\SPApplication.Report.CustomerReport.resources
+D:\Projects\Ketan Tailoring\SPApplication\SPApplication\obj\Debug\SPApplication.Report.SupplierDetails.resources
+D:\Projects\Ketan Tailoring\SPApplication\SPApplication\obj\Debug\SPApplication.Report.SupplierReport.resources
+D:\Projects\Ketan Tailoring\SPApplication\SPApplication\obj\Debug\SPApplication.Transaction.CRNote.resources
+D:\Projects\Ketan Tailoring\SPApplication\SPApplication\obj\Debug\SPApplication.Transaction.Expenses.resources
+D:\Projects\Ketan Tailoring\SPApplication\SPApplication\obj\Debug\SPApplication.Master.CompanyInformation.resources
+D:\Projects\Ketan Tailoring\SPApplication\SPApplication\obj\Debug\SPApplication.Master.Customer.resources
+D:\Projects\Ketan Tailoring\SPApplication\SPApplication\obj\Debug\SPApplication.ExpensesHead.resources
+D:\Projects\Ketan Tailoring\SPApplication\SPApplication\obj\Debug\SPApplication.Item.resources
+D:\Projects\Ketan Tailoring\SPApplication\SPApplication\obj\Debug\SPApplication.Master.StaffMaster.resources
+D:\Projects\Ketan Tailoring\SPApplication\SPApplication\obj\Debug\SPApplication.Transaction.Payment.resources
+D:\Projects\Ketan Tailoring\SPApplication\SPApplication\obj\Debug\SPApplication.Transaction.Sale.resources
+D:\Projects\Ketan Tailoring\SPApplication\SPApplication\obj\Debug\SPApplication.Dashboard.resources
+D:\Projects\Ketan Tailoring\SPApplication\SPApplication\obj\Debug\SPApplication.MasterMenuWindow.resources
+D:\Projects\Ketan Tailoring\SPApplication\SPApplication\obj\Debug\SPApplication.MenuWindow.resources
+D:\Projects\Ketan Tailoring\SPApplication\SPApplication\obj\Debug\SPApplication.SettingsList.resources
+D:\Projects\Ketan Tailoring\SPApplication\SPApplication\obj\Debug\SPApplication.Master.Supplier.resources
+D:\Projects\Ketan Tailoring\SPApplication\SPApplication\obj\Debug\SPApplication.Properties.Resources.resources
+D:\Projects\Ketan Tailoring\SPApplication\SPApplication\obj\Debug\SPApplication.BirthdayAndAniversaryReport.resources
+D:\Projects\Ketan Tailoring\SPApplication\SPApplication\obj\Debug\SPApplication.Report.ExpensesReport.resources
+D:\Projects\Ketan Tailoring\SPApplication\SPApplication\obj\Debug\SPApplication.Reports.GSTReport.resources
+D:\Projects\Ketan Tailoring\SPApplication\SPApplication\obj\Debug\SPApplication.Reports.ItemQuantityReport.resources
+D:\Projects\Ketan Tailoring\SPApplication\SPApplication\obj\Debug\SPApplication.Report.ProfitLossReport.resources
+D:\Projects\Ketan Tailoring\SPApplication\SPApplication\obj\Debug\SPApplication.Settings.EmailCredentials.resources
+D:\Projects\Ketan Tailoring\SPApplication\SPApplication\obj\Debug\SPApplication.Reports.PurchaseReport.resources
+D:\Projects\Ketan Tailoring\SPApplication\SPApplication\obj\Debug\SPApplication.ReportList.resources
+D:\Projects\Ketan Tailoring\SPApplication\SPApplication\obj\Debug\SPApplication.Reports.SaleReport.resources
+D:\Projects\Ketan Tailoring\SPApplication\SPApplication\obj\Debug\SPApplication.Transaction.Purchase.resources
+D:\Projects\Ketan Tailoring\SPApplication\SPApplication\obj\Debug\SPApplication.TransactionMenuWindow.resources
+D:\Projects\Ketan Tailoring\SPApplication\SPApplication\obj\Debug\SPApplication.csproj.GenerateResource.Cache
+D:\Projects\Ketan Tailoring\SPApplication\SPApplication\obj\Debug\SPApplication.exe
+D:\Projects\Ketan Tailoring\SPApplication\SPApplication\obj\Debug\SPApplication.pdb
+D:\data\06-01-2018\Projects\Ketan Tailoring\SPApplication\SPApplication\bin\Debug\SPApplication.exe.config
+D:\data\06-01-2018\Projects\Ketan Tailoring\SPApplication\SPApplication\obj\Debug\SPApplication.exe
+D:\data\06-01-2018\Projects\Ketan Tailoring\SPApplication\SPApplication\obj\Debug\SPApplication.pdb
+D:\Projects\Maharaja\Latest\SPApplication\SPApplication\bin\Debug\SPApplication.exe.config
+D:\Projects\Maharaja\Latest\SPApplication\SPApplication\obj\Debug\SPApplication.exe
+D:\Projects\Maharaja\Latest\SPApplication\SPApplication\obj\Debug\SPApplication.pdb
+D:\Projects\Maharaja\Latest\SPApplication\SPApplication\bin\Debug\SPApplication.exe
+D:\Projects\Maharaja\Latest\SPApplication\SPApplication\bin\Debug\SPApplication.pdb
+D:\Projects\Maharaja\Latest\SPApplication\SPApplication\bin\Debug\BusinessLayerUtility.dll
+D:\Projects\Maharaja\Latest\SPApplication\SPApplication\bin\Debug\Microsoft.Office.Interop.Excel.dll
+D:\Projects\Maharaja\Latest\SPApplication\SPApplication\bin\Debug\Office.dll
+D:\Projects\Maharaja\Latest\SPApplication\SPApplication\bin\Debug\Microsoft.Vbe.Interop.dll
+D:\Projects\Maharaja\Latest\SPApplication\SPApplication\bin\Debug\BusinessLayerUtility.pdb
+D:\Projects\Maharaja\Latest\SPApplication\SPApplication\obj\Debug\ResolveAssemblyReference.cache
+D:\Projects\Maharaja\Latest\SPApplication\SPApplication\obj\Debug\SPApplication.Authentication.ChangePassword.resources
+D:\Projects\Maharaja\Latest\SPApplication\SPApplication\obj\Debug\SPApplication.LoginWindow.resources
+D:\Projects\Maharaja\Latest\SPApplication\SPApplication\obj\Debug\SPApplication.BankAccounts.resources
+D:\Projects\Maharaja\Latest\SPApplication\SPApplication\obj\Debug\SPApplication.Report.CustomerDetails.resources
+D:\Projects\Maharaja\Latest\SPApplication\SPApplication\obj\Debug\SPApplication.Report.CustomerReport.resources
+D:\Projects\Maharaja\Latest\SPApplication\SPApplication\obj\Debug\SPApplication.Report.SupplierDetails.resources
+D:\Projects\Maharaja\Latest\SPApplication\SPApplication\obj\Debug\SPApplication.Report.SupplierReport.resources
+D:\Projects\Maharaja\Latest\SPApplication\SPApplication\obj\Debug\SPApplication.Transaction.CRNote.resources
+D:\Projects\Maharaja\Latest\SPApplication\SPApplication\obj\Debug\SPApplication.Transaction.Expenses.resources
+D:\Projects\Maharaja\Latest\SPApplication\SPApplication\obj\Debug\SPApplication.Master.CompanyInformation.resources
+D:\Projects\Maharaja\Latest\SPApplication\SPApplication\obj\Debug\SPApplication.Master.Customer.resources
+D:\Projects\Maharaja\Latest\SPApplication\SPApplication\obj\Debug\SPApplication.ExpensesHead.resources
+D:\Projects\Maharaja\Latest\SPApplication\SPApplication\obj\Debug\SPApplication.Item.resources
+D:\Projects\Maharaja\Latest\SPApplication\SPApplication\obj\Debug\SPApplication.Master.StaffMaster.resources
+D:\Projects\Maharaja\Latest\SPApplication\SPApplication\obj\Debug\SPApplication.Transaction.Payment.resources
+D:\Projects\Maharaja\Latest\SPApplication\SPApplication\obj\Debug\SPApplication.Transaction.Sale.resources
+D:\Projects\Maharaja\Latest\SPApplication\SPApplication\obj\Debug\SPApplication.Dashboard.resources
+D:\Projects\Maharaja\Latest\SPApplication\SPApplication\obj\Debug\SPApplication.MasterMenuWindow.resources
+D:\Projects\Maharaja\Latest\SPApplication\SPApplication\obj\Debug\SPApplication.MenuWindow.resources
+D:\Projects\Maharaja\Latest\SPApplication\SPApplication\obj\Debug\SPApplication.SettingsList.resources
+D:\Projects\Maharaja\Latest\SPApplication\SPApplication\obj\Debug\SPApplication.Master.Supplier.resources
+D:\Projects\Maharaja\Latest\SPApplication\SPApplication\obj\Debug\SPApplication.Properties.Resources.resources
+D:\Projects\Maharaja\Latest\SPApplication\SPApplication\obj\Debug\SPApplication.BirthdayAndAniversaryReport.resources
+D:\Projects\Maharaja\Latest\SPApplication\SPApplication\obj\Debug\SPApplication.Report.ExpensesReport.resources
+D:\Projects\Maharaja\Latest\SPApplication\SPApplication\obj\Debug\SPApplication.Reports.GSTReport.resources
+D:\Projects\Maharaja\Latest\SPApplication\SPApplication\obj\Debug\SPApplication.Reports.ItemQuantityReport.resources
+D:\Projects\Maharaja\Latest\SPApplication\SPApplication\obj\Debug\SPApplication.Report.ProfitLossReport.resources
+D:\Projects\Maharaja\Latest\SPApplication\SPApplication\obj\Debug\SPApplication.Settings.EmailCredentials.resources
+D:\Projects\Maharaja\Latest\SPApplication\SPApplication\obj\Debug\SPApplication.Reports.PurchaseReport.resources
+D:\Projects\Maharaja\Latest\SPApplication\SPApplication\obj\Debug\SPApplication.ReportList.resources
+D:\Projects\Maharaja\Latest\SPApplication\SPApplication\obj\Debug\SPApplication.Reports.SaleReport.resources
+D:\Projects\Maharaja\Latest\SPApplication\SPApplication\obj\Debug\SPApplication.Transaction.Purchase.resources
+D:\Projects\Maharaja\Latest\SPApplication\SPApplication\obj\Debug\SPApplication.TransactionMenuWindow.resources
+D:\Projects\Maharaja\Latest\SPApplication\SPApplication\obj\Debug\SPApplication.csproj.GenerateResource.Cache
+D:\Projects\Maharaja\Latest\SPApplication\SPApplication\obj\Debug\SPApplication.Transaction.OpeningStock.resources
+D:\Projects\Maharaja\Latest\SPApplication\SPApplication\obj\Debug\TestApplication.DailyBookEntry.resources
+D:\Projects\Maharaja\Latest\SPApplication\SPApplication\obj\Debug\TestApplication.BillDetails.resources
+D:\Projects\Sukhada Tyre\Project\SPApplication\SPApplication\bin\Debug\SPApplication.exe.config
+D:\Projects\Sukhada Tyre\Project\SPApplication\SPApplication\bin\Debug\SPApplication.exe
+D:\Projects\Sukhada Tyre\Project\SPApplication\SPApplication\bin\Debug\SPApplication.pdb
+D:\Projects\Sukhada Tyre\Project\SPApplication\SPApplication\bin\Debug\BusinessLayerUtility.dll
+D:\Projects\Sukhada Tyre\Project\SPApplication\SPApplication\bin\Debug\Microsoft.Office.Interop.Excel.dll
+D:\Projects\Sukhada Tyre\Project\SPApplication\SPApplication\bin\Debug\Office.dll
+D:\Projects\Sukhada Tyre\Project\SPApplication\SPApplication\bin\Debug\Microsoft.Vbe.Interop.dll
+D:\Projects\Sukhada Tyre\Project\SPApplication\SPApplication\bin\Debug\BusinessLayerUtility.pdb
+D:\Projects\Sukhada Tyre\Project\SPApplication\SPApplication\obj\Debug\ResolveAssemblyReference.cache
+D:\Projects\Sukhada Tyre\Project\SPApplication\SPApplication\obj\Debug\SPApplication.Authentication.ChangePassword.resources
+D:\Projects\Sukhada Tyre\Project\SPApplication\SPApplication\obj\Debug\SPApplication.LoginWindow.resources
+D:\Projects\Sukhada Tyre\Project\SPApplication\SPApplication\obj\Debug\SPApplication.Master.Manufracturer.resources
+D:\Projects\Sukhada Tyre\Project\SPApplication\SPApplication\obj\Debug\SPApplication.BankAccounts.resources
+D:\Projects\Sukhada Tyre\Project\SPApplication\SPApplication\obj\Debug\SPApplication.Report.CustomerDetails.resources
+D:\Projects\Sukhada Tyre\Project\SPApplication\SPApplication\obj\Debug\SPApplication.Report.CustomerReport.resources
+D:\Projects\Sukhada Tyre\Project\SPApplication\SPApplication\obj\Debug\SPApplication.Report.SupplierDetails.resources
+D:\Projects\Sukhada Tyre\Project\SPApplication\SPApplication\obj\Debug\SPApplication.Report.SupplierReport.resources
+D:\Projects\Sukhada Tyre\Project\SPApplication\SPApplication\obj\Debug\TestApplication.BillDetails.resources
+D:\Projects\Sukhada Tyre\Project\SPApplication\SPApplication\obj\Debug\SPApplication.Transaction.CRNote.resources
+D:\Projects\Sukhada Tyre\Project\SPApplication\SPApplication\obj\Debug\TestApplication.DailyBookEntry.resources
+D:\Projects\Sukhada Tyre\Project\SPApplication\SPApplication\obj\Debug\SPApplication.Transaction.Expenses.resources
+D:\Projects\Sukhada Tyre\Project\SPApplication\SPApplication\obj\Debug\SPApplication.Master.CompanyInformation.resources
+D:\Projects\Sukhada Tyre\Project\SPApplication\SPApplication\obj\Debug\SPApplication.Master.Customer.resources
+D:\Projects\Sukhada Tyre\Project\SPApplication\SPApplication\obj\Debug\SPApplication.ExpensesHead.resources
+D:\Projects\Sukhada Tyre\Project\SPApplication\SPApplication\obj\Debug\SPApplication.Item.resources
+D:\Projects\Sukhada Tyre\Project\SPApplication\SPApplication\obj\Debug\SPApplication.Master.StaffMaster.resources
+D:\Projects\Sukhada Tyre\Project\SPApplication\SPApplication\obj\Debug\SPApplication.Transaction.OpeningStock.resources
+D:\Projects\Sukhada Tyre\Project\SPApplication\SPApplication\obj\Debug\SPApplication.Transaction.Payment.resources
+D:\Projects\Sukhada Tyre\Project\SPApplication\SPApplication\obj\Debug\SPApplication.Transaction.Sale.resources
+D:\Projects\Sukhada Tyre\Project\SPApplication\SPApplication\obj\Debug\SPApplication.Dashboard.resources
+D:\Projects\Sukhada Tyre\Project\SPApplication\SPApplication\obj\Debug\SPApplication.MasterMenuWindow.resources
+D:\Projects\Sukhada Tyre\Project\SPApplication\SPApplication\obj\Debug\SPApplication.MenuWindow.resources
+D:\Projects\Sukhada Tyre\Project\SPApplication\SPApplication\obj\Debug\SPApplication.SettingsList.resources
+D:\Projects\Sukhada Tyre\Project\SPApplication\SPApplication\obj\Debug\SPApplication.Master.Supplier.resources
+D:\Projects\Sukhada Tyre\Project\SPApplication\SPApplication\obj\Debug\SPApplication.Properties.Resources.resources
+D:\Projects\Sukhada Tyre\Project\SPApplication\SPApplication\obj\Debug\SPApplication.BirthdayAndAniversaryReport.resources
+D:\Projects\Sukhada Tyre\Project\SPApplication\SPApplication\obj\Debug\SPApplication.Report.ExpensesReport.resources
+D:\Projects\Sukhada Tyre\Project\SPApplication\SPApplication\obj\Debug\SPApplication.Reports.GSTReport.resources
+D:\Projects\Sukhada Tyre\Project\SPApplication\SPApplication\obj\Debug\SPApplication.Reports.ItemQuantityReport.resources
+D:\Projects\Sukhada Tyre\Project\SPApplication\SPApplication\obj\Debug\SPApplication.Report.ProfitLossReport.resources
+D:\Projects\Sukhada Tyre\Project\SPApplication\SPApplication\obj\Debug\SPApplication.Settings.EmailCredentials.resources
+D:\Projects\Sukhada Tyre\Project\SPApplication\SPApplication\obj\Debug\SPApplication.Reports.PurchaseReport.resources
+D:\Projects\Sukhada Tyre\Project\SPApplication\SPApplication\obj\Debug\SPApplication.ReportList.resources
+D:\Projects\Sukhada Tyre\Project\SPApplication\SPApplication\obj\Debug\SPApplication.Reports.SaleReport.resources
+D:\Projects\Sukhada Tyre\Project\SPApplication\SPApplication\obj\Debug\SPApplication.Transaction.Purchase.resources
+D:\Projects\Sukhada Tyre\Project\SPApplication\SPApplication\obj\Debug\SPApplication.TransactionMenuWindow.resources
+D:\Projects\Sukhada Tyre\Project\SPApplication\SPApplication\obj\Debug\SPApplication.csproj.GenerateResource.Cache
+D:\Projects\Sukhada Tyre\Project\SPApplication\SPApplication\obj\Debug\SPApplication.exe
+D:\Projects\Sukhada Tyre\Project\SPApplication\SPApplication\obj\Debug\SPApplication.pdb
+D:\Projects\YBJewellers\Project\SPApplication\SPApplication\bin\Debug\SPApplication.exe.config
+D:\Projects\YBJewellers\Project\SPApplication\SPApplication\obj\Debug\SPApplication.exe
+D:\Projects\YBJewellers\Project\SPApplication\SPApplication\obj\Debug\SPApplication.pdb
+D:\Projects\YBJewellers\Project\SPApplication\SPApplication\bin\Debug\SPApplication.exe
+D:\Projects\YBJewellers\Project\SPApplication\SPApplication\bin\Debug\SPApplication.pdb
+D:\Projects\YBJewellers\Project\SPApplication\SPApplication\bin\Debug\BusinessLayerUtility.dll
+D:\Projects\YBJewellers\Project\SPApplication\SPApplication\bin\Debug\Microsoft.Office.Interop.Excel.dll
+D:\Projects\YBJewellers\Project\SPApplication\SPApplication\bin\Debug\Office.dll
+D:\Projects\YBJewellers\Project\SPApplication\SPApplication\bin\Debug\Microsoft.Vbe.Interop.dll
+D:\Projects\YBJewellers\Project\SPApplication\SPApplication\bin\Debug\BusinessLayerUtility.pdb
+D:\Projects\YBJewellers\Project\SPApplication\SPApplication\obj\Debug\ResolveAssemblyReference.cache
+D:\Projects\YBJewellers\Project\SPApplication\SPApplication\obj\Debug\SPApplication.Authentication.ChangePassword.resources
+D:\Projects\YBJewellers\Project\SPApplication\SPApplication\obj\Debug\SPApplication.LoginWindow.resources
+D:\Projects\YBJewellers\Project\SPApplication\SPApplication\obj\Debug\SPApplication.Master.Manufracturer.resources
+D:\Projects\YBJewellers\Project\SPApplication\SPApplication\obj\Debug\SPApplication.BankAccounts.resources
+D:\Projects\YBJewellers\Project\SPApplication\SPApplication\obj\Debug\SPApplication.Report.CustomerDetails.resources
+D:\Projects\YBJewellers\Project\SPApplication\SPApplication\obj\Debug\SPApplication.Report.CustomerReport.resources
+D:\Projects\YBJewellers\Project\SPApplication\SPApplication\obj\Debug\SPApplication.Report.SupplierDetails.resources
+D:\Projects\YBJewellers\Project\SPApplication\SPApplication\obj\Debug\SPApplication.Report.SupplierReport.resources
+D:\Projects\YBJewellers\Project\SPApplication\SPApplication\obj\Debug\TestApplication.BillDetails.resources
+D:\Projects\YBJewellers\Project\SPApplication\SPApplication\obj\Debug\SPApplication.Transaction.CRNote.resources
+D:\Projects\YBJewellers\Project\SPApplication\SPApplication\obj\Debug\TestApplication.DailyBookEntry.resources
+D:\Projects\YBJewellers\Project\SPApplication\SPApplication\obj\Debug\SPApplication.Transaction.Expenses.resources
+D:\Projects\YBJewellers\Project\SPApplication\SPApplication\obj\Debug\SPApplication.Master.CompanyInformation.resources
+D:\Projects\YBJewellers\Project\SPApplication\SPApplication\obj\Debug\SPApplication.Master.Customer.resources
+D:\Projects\YBJewellers\Project\SPApplication\SPApplication\obj\Debug\SPApplication.ExpensesHead.resources
+D:\Projects\YBJewellers\Project\SPApplication\SPApplication\obj\Debug\SPApplication.Item.resources
+D:\Projects\YBJewellers\Project\SPApplication\SPApplication\obj\Debug\SPApplication.Master.StaffMaster.resources
+D:\Projects\YBJewellers\Project\SPApplication\SPApplication\obj\Debug\SPApplication.Transaction.OpeningStock.resources
+D:\Projects\YBJewellers\Project\SPApplication\SPApplication\obj\Debug\SPApplication.Transaction.Payment.resources
+D:\Projects\YBJewellers\Project\SPApplication\SPApplication\obj\Debug\SPApplication.Transaction.Sale.resources
+D:\Projects\YBJewellers\Project\SPApplication\SPApplication\obj\Debug\SPApplication.Dashboard.resources
+D:\Projects\YBJewellers\Project\SPApplication\SPApplication\obj\Debug\SPApplication.MasterMenuWindow.resources
+D:\Projects\YBJewellers\Project\SPApplication\SPApplication\obj\Debug\SPApplication.MenuWindow.resources
+D:\Projects\YBJewellers\Project\SPApplication\SPApplication\obj\Debug\SPApplication.SettingsList.resources
+D:\Projects\YBJewellers\Project\SPApplication\SPApplication\obj\Debug\SPApplication.Master.Supplier.resources
+D:\Projects\YBJewellers\Project\SPApplication\SPApplication\obj\Debug\SPApplication.Properties.Resources.resources
+D:\Projects\YBJewellers\Project\SPApplication\SPApplication\obj\Debug\SPApplication.BirthdayAndAniversaryReport.resources
+D:\Projects\YBJewellers\Project\SPApplication\SPApplication\obj\Debug\SPApplication.Report.ExpensesReport.resources
+D:\Projects\YBJewellers\Project\SPApplication\SPApplication\obj\Debug\SPApplication.Reports.GSTReport.resources
+D:\Projects\YBJewellers\Project\SPApplication\SPApplication\obj\Debug\SPApplication.Reports.ItemQuantityReport.resources
+D:\Projects\YBJewellers\Project\SPApplication\SPApplication\obj\Debug\SPApplication.Report.ProfitLossReport.resources
+D:\Projects\YBJewellers\Project\SPApplication\SPApplication\obj\Debug\SPApplication.Settings.EmailCredentials.resources
+D:\Projects\YBJewellers\Project\SPApplication\SPApplication\obj\Debug\SPApplication.Reports.PurchaseReport.resources
+D:\Projects\YBJewellers\Project\SPApplication\SPApplication\obj\Debug\SPApplication.ReportList.resources
+D:\Projects\YBJewellers\Project\SPApplication\SPApplication\obj\Debug\SPApplication.Reports.SaleReport.resources
+D:\Projects\YBJewellers\Project\SPApplication\SPApplication\obj\Debug\SPApplication.Transaction.Purchase.resources
+D:\Projects\YBJewellers\Project\SPApplication\SPApplication\obj\Debug\SPApplication.TransactionMenuWindow.resources
+D:\Projects\YBJewellers\Project\SPApplication\SPApplication\obj\Debug\SPApplication.csproj.GenerateResource.Cache
+D:\Projects\YBJewellers\Project\SPApplication\SPApplication\obj\Debug\SPApplication.Authentication.Users.resources
+D:\Projects\Shree Rajput Enterprises\Project\Latest Application\SPApplication\SPApplication\bin\Debug\SPApplication.exe.config
+D:\Projects\Shree Rajput Enterprises\Project\Latest Application\SPApplication\SPApplication\obj\Debug\SPApplication.exe
+D:\Projects\Shree Rajput Enterprises\Project\Latest Application\SPApplication\SPApplication\obj\Debug\SPApplication.pdb
+D:\Projects\Shree Rajput Enterprises\Project\Latest Application\SPApplication\SPApplication\bin\Debug\SPApplication.exe
+D:\Projects\Shree Rajput Enterprises\Project\Latest Application\SPApplication\SPApplication\bin\Debug\SPApplication.pdb
+D:\Projects\Shree Rajput Enterprises\Project\Latest Application\SPApplication\SPApplication\bin\Debug\BusinessLayerUtility.dll
+D:\Projects\Shree Rajput Enterprises\Project\Latest Application\SPApplication\SPApplication\bin\Debug\Microsoft.Office.Interop.Excel.dll
+D:\Projects\Shree Rajput Enterprises\Project\Latest Application\SPApplication\SPApplication\bin\Debug\Office.dll
+D:\Projects\Shree Rajput Enterprises\Project\Latest Application\SPApplication\SPApplication\bin\Debug\Microsoft.Vbe.Interop.dll
+D:\Projects\Shree Rajput Enterprises\Project\Latest Application\SPApplication\SPApplication\bin\Debug\BusinessLayerUtility.pdb
+D:\Projects\Shree Rajput Enterprises\Project\Latest Application\SPApplication\SPApplication\obj\Debug\ResolveAssemblyReference.cache
+D:\Projects\Shree Rajput Enterprises\Project\Latest Application\SPApplication\SPApplication\obj\Debug\SPApplication.Authentication.ChangePassword.resources
+D:\Projects\Shree Rajput Enterprises\Project\Latest Application\SPApplication\SPApplication\obj\Debug\SPApplication.LoginWindow.resources
+D:\Projects\Shree Rajput Enterprises\Project\Latest Application\SPApplication\SPApplication\obj\Debug\SPApplication.Authentication.Users.resources
+D:\Projects\Shree Rajput Enterprises\Project\Latest Application\SPApplication\SPApplication\obj\Debug\SPApplication.Master.Manufracturer.resources
+D:\Projects\Shree Rajput Enterprises\Project\Latest Application\SPApplication\SPApplication\obj\Debug\SPApplication.BankAccounts.resources
+D:\Projects\Shree Rajput Enterprises\Project\Latest Application\SPApplication\SPApplication\obj\Debug\SPApplication.Report.CustomerDetails.resources
+D:\Projects\Shree Rajput Enterprises\Project\Latest Application\SPApplication\SPApplication\obj\Debug\SPApplication.Report.CustomerReport.resources
+D:\Projects\Shree Rajput Enterprises\Project\Latest Application\SPApplication\SPApplication\obj\Debug\SPApplication.Report.SupplierDetails.resources
+D:\Projects\Shree Rajput Enterprises\Project\Latest Application\SPApplication\SPApplication\obj\Debug\SPApplication.Report.SupplierReport.resources
+D:\Projects\Shree Rajput Enterprises\Project\Latest Application\SPApplication\SPApplication\obj\Debug\TestApplication.BillDetails.resources
+D:\Projects\Shree Rajput Enterprises\Project\Latest Application\SPApplication\SPApplication\obj\Debug\SPApplication.Transaction.CRNote.resources
+D:\Projects\Shree Rajput Enterprises\Project\Latest Application\SPApplication\SPApplication\obj\Debug\TestApplication.DailyBookEntry.resources
+D:\Projects\Shree Rajput Enterprises\Project\Latest Application\SPApplication\SPApplication\obj\Debug\SPApplication.Transaction.Expenses.resources
+D:\Projects\Shree Rajput Enterprises\Project\Latest Application\SPApplication\SPApplication\obj\Debug\SPApplication.Master.CompanyInformation.resources
+D:\Projects\Shree Rajput Enterprises\Project\Latest Application\SPApplication\SPApplication\obj\Debug\SPApplication.Master.Customer.resources
+D:\Projects\Shree Rajput Enterprises\Project\Latest Application\SPApplication\SPApplication\obj\Debug\SPApplication.ExpensesHead.resources
+D:\Projects\Shree Rajput Enterprises\Project\Latest Application\SPApplication\SPApplication\obj\Debug\SPApplication.Master.StaffMaster.resources
+D:\Projects\Shree Rajput Enterprises\Project\Latest Application\SPApplication\SPApplication\obj\Debug\SPApplication.Transaction.OpeningStock.resources
+D:\Projects\Shree Rajput Enterprises\Project\Latest Application\SPApplication\SPApplication\obj\Debug\SPApplication.Transaction.Payment.resources
+D:\Projects\Shree Rajput Enterprises\Project\Latest Application\SPApplication\SPApplication\obj\Debug\SPApplication.Transaction.Sale.resources
+D:\Projects\Shree Rajput Enterprises\Project\Latest Application\SPApplication\SPApplication\obj\Debug\SPApplication.Dashboard.resources
+D:\Projects\Shree Rajput Enterprises\Project\Latest Application\SPApplication\SPApplication\obj\Debug\SPApplication.MasterMenuWindow.resources
+D:\Projects\Shree Rajput Enterprises\Project\Latest Application\SPApplication\SPApplication\obj\Debug\SPApplication.MenuWindow.resources
+D:\Projects\Shree Rajput Enterprises\Project\Latest Application\SPApplication\SPApplication\obj\Debug\SPApplication.SettingsList.resources
+D:\Projects\Shree Rajput Enterprises\Project\Latest Application\SPApplication\SPApplication\obj\Debug\SPApplication.Master.Supplier.resources
+D:\Projects\Shree Rajput Enterprises\Project\Latest Application\SPApplication\SPApplication\obj\Debug\SPApplication.Properties.Resources.resources
+D:\Projects\Shree Rajput Enterprises\Project\Latest Application\SPApplication\SPApplication\obj\Debug\SPApplication.BirthdayAndAniversaryReport.resources
+D:\Projects\Shree Rajput Enterprises\Project\Latest Application\SPApplication\SPApplication\obj\Debug\SPApplication.Report.ExpensesReport.resources
+D:\Projects\Shree Rajput Enterprises\Project\Latest Application\SPApplication\SPApplication\obj\Debug\SPApplication.Reports.GSTReport.resources
+D:\Projects\Shree Rajput Enterprises\Project\Latest Application\SPApplication\SPApplication\obj\Debug\SPApplication.Reports.ItemQuantityReport.resources
+D:\Projects\Shree Rajput Enterprises\Project\Latest Application\SPApplication\SPApplication\obj\Debug\SPApplication.Report.ProfitLossReport.resources
+D:\Projects\Shree Rajput Enterprises\Project\Latest Application\SPApplication\SPApplication\obj\Debug\SPApplication.Settings.EmailCredentials.resources
+D:\Projects\Shree Rajput Enterprises\Project\Latest Application\SPApplication\SPApplication\obj\Debug\SPApplication.Reports.PurchaseReport.resources
+D:\Projects\Shree Rajput Enterprises\Project\Latest Application\SPApplication\SPApplication\obj\Debug\SPApplication.ReportList.resources
+D:\Projects\Shree Rajput Enterprises\Project\Latest Application\SPApplication\SPApplication\obj\Debug\SPApplication.Reports.SaleReport.resources
+D:\Projects\Shree Rajput Enterprises\Project\Latest Application\SPApplication\SPApplication\obj\Debug\SPApplication.Transaction.Purchase.resources
+D:\Projects\Shree Rajput Enterprises\Project\Latest Application\SPApplication\SPApplication\obj\Debug\SPApplication.TransactionMenuWindow.resources
+D:\Projects\Shree Rajput Enterprises\Project\Latest Application\SPApplication\SPApplication\obj\Debug\SPApplication.csproj.GenerateResource.Cache
+D:\Projects\Shree Rajput Enterprises\Project\Latest Application\SPApplication\SPApplication\obj\Debug\SPApplication.Transaction.SalesTransaction.resources
+D:\Projects\Shree Rajput Enterprises\Project\Latest Application\SPApplication\SPApplication\obj\Debug\SPApplication.UnitOfMessurement.resources
+D:\Projects\Shree Rajput Enterprises\Project\Latest Application\SPApplication\SPApplication\obj\Debug\SPApplication.ItemOld.resources
+D:\Projects\Shree Rajput Enterprises\Project\Latest Application\SPApplication\SPApplication\obj\Debug\SPApplication.Item.resources
+D:\Projects\Shree Rajput Enterprises\Project\Latest Application\2012\SPApplication\SPApplication\bin\Debug\SPApplication.exe.config
+D:\Projects\Shree Rajput Enterprises\Project\Latest Application\2012\SPApplication\SPApplication\obj\Debug\SPApplication.exe
+D:\Projects\Shree Rajput Enterprises\Project\Latest Application\2012\SPApplication\SPApplication\obj\Debug\SPApplication.pdb
+D:\Projects\Shree Rajput Enterprises\Project\Latest Application\2012\SPApplication\SPApplication\bin\Debug\SPApplication.exe
+D:\Projects\Shree Rajput Enterprises\Project\Latest Application\2012\SPApplication\SPApplication\bin\Debug\SPApplication.pdb
+D:\Projects\Shree Rajput Enterprises\Project\Latest Application\2012\SPApplication\SPApplication\bin\Debug\BusinessLayerUtility.dll
+D:\Projects\Shree Rajput Enterprises\Project\Latest Application\2012\SPApplication\SPApplication\bin\Debug\Microsoft.Office.Interop.Excel.dll
+D:\Projects\Shree Rajput Enterprises\Project\Latest Application\2012\SPApplication\SPApplication\bin\Debug\Office.dll
+D:\Projects\Shree Rajput Enterprises\Project\Latest Application\2012\SPApplication\SPApplication\bin\Debug\Microsoft.Vbe.Interop.dll
+D:\Projects\Shree Rajput Enterprises\Project\Latest Application\2012\SPApplication\SPApplication\bin\Debug\BusinessLayerUtility.pdb
+D:\Projects\Shree Rajput Enterprises\Project\Latest Application\2012\SPApplication\SPApplication\bin\Debug\Microsoft.Office.Interop.Excel.xml
+D:\Projects\Shree Rajput Enterprises\Project\Latest Application\2012\SPApplication\SPApplication\bin\Debug\Office.xml
+D:\Projects\Shree Rajput Enterprises\Project\Latest Application\2012\SPApplication\SPApplication\obj\Debug\SPApplication.csprojResolveAssemblyReference.cache
+D:\Projects\Shree Rajput Enterprises\Project\Latest Application\2012\SPApplication\SPApplication\obj\Debug\SPApplication.Authentication.ChangePassword.resources
+D:\Projects\Shree Rajput Enterprises\Project\Latest Application\2012\SPApplication\SPApplication\obj\Debug\SPApplication.LoginWindow.resources
+D:\Projects\Shree Rajput Enterprises\Project\Latest Application\2012\SPApplication\SPApplication\obj\Debug\SPApplication.Authentication.Users.resources
+D:\Projects\Shree Rajput Enterprises\Project\Latest Application\2012\SPApplication\SPApplication\obj\Debug\SPApplication.Master.Customer.resources
+D:\Projects\Shree Rajput Enterprises\Project\Latest Application\2012\SPApplication\SPApplication\obj\Debug\SPApplication.Item.resources
+D:\Projects\Shree Rajput Enterprises\Project\Latest Application\2012\SPApplication\SPApplication\obj\Debug\SPApplication.ItemOld.resources
+D:\Projects\Shree Rajput Enterprises\Project\Latest Application\2012\SPApplication\SPApplication\obj\Debug\SPApplication.Master.Manufracturer.resources
+D:\Projects\Shree Rajput Enterprises\Project\Latest Application\2012\SPApplication\SPApplication\obj\Debug\SPApplication.UnitOfMessurement.resources
+D:\Projects\Shree Rajput Enterprises\Project\Latest Application\2012\SPApplication\SPApplication\obj\Debug\SPApplication.BankAccounts.resources
+D:\Projects\Shree Rajput Enterprises\Project\Latest Application\2012\SPApplication\SPApplication\obj\Debug\SPApplication.Report.CustomerDetails.resources
+D:\Projects\Shree Rajput Enterprises\Project\Latest Application\2012\SPApplication\SPApplication\obj\Debug\SPApplication.Report.CustomerReport.resources
+D:\Projects\Shree Rajput Enterprises\Project\Latest Application\2012\SPApplication\SPApplication\obj\Debug\SPApplication.Report.SupplierDetails.resources
+D:\Projects\Shree Rajput Enterprises\Project\Latest Application\2012\SPApplication\SPApplication\obj\Debug\SPApplication.Report.SupplierReport.resources
+D:\Projects\Shree Rajput Enterprises\Project\Latest Application\2012\SPApplication\SPApplication\obj\Debug\TestApplication.BillDetails.resources
+D:\Projects\Shree Rajput Enterprises\Project\Latest Application\2012\SPApplication\SPApplication\obj\Debug\SPApplication.Transaction.CRNote.resources
+D:\Projects\Shree Rajput Enterprises\Project\Latest Application\2012\SPApplication\SPApplication\obj\Debug\TestApplication.DailyBookEntry.resources
+D:\Projects\Shree Rajput Enterprises\Project\Latest Application\2012\SPApplication\SPApplication\obj\Debug\SPApplication.Transaction.Expenses.resources
+D:\Projects\Shree Rajput Enterprises\Project\Latest Application\2012\SPApplication\SPApplication\obj\Debug\SPApplication.Master.CompanyInformation.resources
+D:\Projects\Shree Rajput Enterprises\Project\Latest Application\2012\SPApplication\SPApplication\obj\Debug\SPApplication.ExpensesHead.resources
+D:\Projects\Shree Rajput Enterprises\Project\Latest Application\2012\SPApplication\SPApplication\obj\Debug\SPApplication.Master.StaffMaster.resources
+D:\Projects\Shree Rajput Enterprises\Project\Latest Application\2012\SPApplication\SPApplication\obj\Debug\SPApplication.Transaction.OpeningStock.resources
+D:\Projects\Shree Rajput Enterprises\Project\Latest Application\2012\SPApplication\SPApplication\obj\Debug\SPApplication.Transaction.Payment.resources
+D:\Projects\Shree Rajput Enterprises\Project\Latest Application\2012\SPApplication\SPApplication\obj\Debug\SPApplication.Transaction.Sale.resources
+D:\Projects\Shree Rajput Enterprises\Project\Latest Application\2012\SPApplication\SPApplication\obj\Debug\SPApplication.Transaction.SalesTransaction.resources
+D:\Projects\Shree Rajput Enterprises\Project\Latest Application\2012\SPApplication\SPApplication\obj\Debug\SPApplication.Dashboard.resources
+D:\Projects\Shree Rajput Enterprises\Project\Latest Application\2012\SPApplication\SPApplication\obj\Debug\SPApplication.MasterMenuWindow.resources
+D:\Projects\Shree Rajput Enterprises\Project\Latest Application\2012\SPApplication\SPApplication\obj\Debug\SPApplication.MenuWindow.resources
+D:\Projects\Shree Rajput Enterprises\Project\Latest Application\2012\SPApplication\SPApplication\obj\Debug\SPApplication.SettingsList.resources
+D:\Projects\Shree Rajput Enterprises\Project\Latest Application\2012\SPApplication\SPApplication\obj\Debug\SPApplication.Master.Supplier.resources
+D:\Projects\Shree Rajput Enterprises\Project\Latest Application\2012\SPApplication\SPApplication\obj\Debug\SPApplication.Properties.Resources.resources
+D:\Projects\Shree Rajput Enterprises\Project\Latest Application\2012\SPApplication\SPApplication\obj\Debug\SPApplication.BirthdayAndAniversaryReport.resources
+D:\Projects\Shree Rajput Enterprises\Project\Latest Application\2012\SPApplication\SPApplication\obj\Debug\SPApplication.Report.ExpensesReport.resources
+D:\Projects\Shree Rajput Enterprises\Project\Latest Application\2012\SPApplication\SPApplication\obj\Debug\SPApplication.Reports.GSTReport.resources
+D:\Projects\Shree Rajput Enterprises\Project\Latest Application\2012\SPApplication\SPApplication\obj\Debug\SPApplication.Reports.ItemQuantityReport.resources
+D:\Projects\Shree Rajput Enterprises\Project\Latest Application\2012\SPApplication\SPApplication\obj\Debug\SPApplication.Report.ProfitLossReport.resources
+D:\Projects\Shree Rajput Enterprises\Project\Latest Application\2012\SPApplication\SPApplication\obj\Debug\SPApplication.Settings.EmailCredentials.resources
+D:\Projects\Shree Rajput Enterprises\Project\Latest Application\2012\SPApplication\SPApplication\obj\Debug\SPApplication.Reports.PurchaseReport.resources
+D:\Projects\Shree Rajput Enterprises\Project\Latest Application\2012\SPApplication\SPApplication\obj\Debug\SPApplication.ReportList.resources
+D:\Projects\Shree Rajput Enterprises\Project\Latest Application\2012\SPApplication\SPApplication\obj\Debug\SPApplication.Reports.SaleReport.resources
+D:\Projects\Shree Rajput Enterprises\Project\Latest Application\2012\SPApplication\SPApplication\obj\Debug\SPApplication.Transaction.Purchase.resources
+D:\Projects\Shree Rajput Enterprises\Project\Latest Application\2012\SPApplication\SPApplication\obj\Debug\SPApplication.TransactionMenuWindow.resources
+D:\Projects\Shree Rajput Enterprises\Project\Latest Application\2012\SPApplication\SPApplication\obj\Debug\SPApplication.csproj.GenerateResource.Cache
+E:\Projects\Madhura Agro Tourism\Projects\SPApplication\SPApplication\bin\Debug\SPApplication.exe.config
+E:\Projects\Madhura Agro Tourism\Projects\SPApplication\SPApplication\bin\Debug\SPApplication.exe
+E:\Projects\Madhura Agro Tourism\Projects\SPApplication\SPApplication\bin\Debug\SPApplication.pdb
+E:\Projects\Madhura Agro Tourism\Projects\SPApplication\SPApplication\bin\Debug\BusinessLayerUtility.dll
+E:\Projects\Madhura Agro Tourism\Projects\SPApplication\SPApplication\bin\Debug\BusinessLayerUtility.pdb
+E:\Projects\Madhura Agro Tourism\Projects\SPApplication\SPApplication\obj\Debug\SPApplication.Authentication.ChangePassword.resources
+E:\Projects\Madhura Agro Tourism\Projects\SPApplication\SPApplication\obj\Debug\SPApplication.LoginWindow.resources
+E:\Projects\Madhura Agro Tourism\Projects\SPApplication\SPApplication\obj\Debug\SPApplication.Authentication.Users.resources
+E:\Projects\Madhura Agro Tourism\Projects\SPApplication\SPApplication\obj\Debug\SPApplication.Master.Customer.resources
+E:\Projects\Madhura Agro Tourism\Projects\SPApplication\SPApplication\obj\Debug\SPApplication.Item.resources
+E:\Projects\Madhura Agro Tourism\Projects\SPApplication\SPApplication\obj\Debug\SPApplication.Master.Manufracturer.resources
+E:\Projects\Madhura Agro Tourism\Projects\SPApplication\SPApplication\obj\Debug\SPApplication.UnitOfMessurement.resources
+E:\Projects\Madhura Agro Tourism\Projects\SPApplication\SPApplication\obj\Debug\SPApplication.Report.CustomerDetails.resources
+E:\Projects\Madhura Agro Tourism\Projects\SPApplication\SPApplication\obj\Debug\SPApplication.Report.CustomerReport.resources
+E:\Projects\Madhura Agro Tourism\Projects\SPApplication\SPApplication\obj\Debug\SPApplication.Report.SupplierDetails.resources
+E:\Projects\Madhura Agro Tourism\Projects\SPApplication\SPApplication\obj\Debug\SPApplication.Report.SupplierReport.resources
+E:\Projects\Madhura Agro Tourism\Projects\SPApplication\SPApplication\obj\Debug\TestApplication.BillDetails.resources
+E:\Projects\Madhura Agro Tourism\Projects\SPApplication\SPApplication\obj\Debug\SPApplication.Transaction.CRNote.resources
+E:\Projects\Madhura Agro Tourism\Projects\SPApplication\SPApplication\obj\Debug\TestApplication.DailyBookEntry.resources
+E:\Projects\Madhura Agro Tourism\Projects\SPApplication\SPApplication\obj\Debug\SPApplication.Transaction.OutwardMaterial.resources
+E:\Projects\Madhura Agro Tourism\Projects\SPApplication\SPApplication\obj\Debug\SPApplication.Transaction.Expenses.resources
+E:\Projects\Madhura Agro Tourism\Projects\SPApplication\SPApplication\obj\Debug\SPApplication.Master.CompanyInformation.resources
+E:\Projects\Madhura Agro Tourism\Projects\SPApplication\SPApplication\obj\Debug\SPApplication.ExpensesHead.resources
+E:\Projects\Madhura Agro Tourism\Projects\SPApplication\SPApplication\obj\Debug\SPApplication.Transaction.InwardMaterial.resources
+E:\Projects\Madhura Agro Tourism\Projects\SPApplication\SPApplication\obj\Debug\SPApplication.Transaction.OpeningStock.resources
+E:\Projects\Madhura Agro Tourism\Projects\SPApplication\SPApplication\obj\Debug\SPApplication.Transaction.Payment.resources
+E:\Projects\Madhura Agro Tourism\Projects\SPApplication\SPApplication\obj\Debug\SPApplication.Transaction.Sale.resources
+E:\Projects\Madhura Agro Tourism\Projects\SPApplication\SPApplication\obj\Debug\SPApplication.Transaction.SalesTransaction.resources
+E:\Projects\Madhura Agro Tourism\Projects\SPApplication\SPApplication\obj\Debug\SPApplication.Dashboard.resources
+E:\Projects\Madhura Agro Tourism\Projects\SPApplication\SPApplication\obj\Debug\SPApplication.MasterMenuWindow.resources
+E:\Projects\Madhura Agro Tourism\Projects\SPApplication\SPApplication\obj\Debug\SPApplication.MenuWindow.resources
+E:\Projects\Madhura Agro Tourism\Projects\SPApplication\SPApplication\obj\Debug\SPApplication.SettingsList.resources
+E:\Projects\Madhura Agro Tourism\Projects\SPApplication\SPApplication\obj\Debug\SPApplication.Master.Supplier.resources
+E:\Projects\Madhura Agro Tourism\Projects\SPApplication\SPApplication\obj\Debug\SPApplication.Properties.Resources.resources
+E:\Projects\Madhura Agro Tourism\Projects\SPApplication\SPApplication\obj\Debug\SPApplication.BirthdayAndAniversaryReport.resources
+E:\Projects\Madhura Agro Tourism\Projects\SPApplication\SPApplication\obj\Debug\SPApplication.Report.ExpensesReport.resources
+E:\Projects\Madhura Agro Tourism\Projects\SPApplication\SPApplication\obj\Debug\SPApplication.Reports.GSTReport.resources
+E:\Projects\Madhura Agro Tourism\Projects\SPApplication\SPApplication\obj\Debug\SPApplication.Reports.ItemQuantityReport.resources
+E:\Projects\Madhura Agro Tourism\Projects\SPApplication\SPApplication\obj\Debug\SPApplication.Report.ProfitLossReport.resources
+E:\Projects\Madhura Agro Tourism\Projects\SPApplication\SPApplication\obj\Debug\SPApplication.Settings.EmailCredentials.resources
+E:\Projects\Madhura Agro Tourism\Projects\SPApplication\SPApplication\obj\Debug\SPApplication.Reports.PurchaseReport.resources
+E:\Projects\Madhura Agro Tourism\Projects\SPApplication\SPApplication\obj\Debug\SPApplication.ReportList.resources
+E:\Projects\Madhura Agro Tourism\Projects\SPApplication\SPApplication\obj\Debug\SPApplication.Reports.SaleReport.resources
+E:\Projects\Madhura Agro Tourism\Projects\SPApplication\SPApplication\obj\Debug\SPApplication.Transaction.Purchase.resources
+E:\Projects\Madhura Agro Tourism\Projects\SPApplication\SPApplication\obj\Debug\SPApplication.TransactionMenuWindow.resources
+E:\Projects\Madhura Agro Tourism\Projects\SPApplication\SPApplication\obj\Debug\SPApplication.csproj.GenerateResource.Cache
+E:\Projects\Madhura Agro Tourism\Projects\SPApplication\SPApplication\obj\Debug\SPApplication.exe
+E:\Projects\Madhura Agro Tourism\Projects\SPApplication\SPApplication\obj\Debug\SPApplication.pdb
+E:\Projects\Madhura Agro Tourism\Projects\Convert\SPApplication\SPApplication\bin\Debug\SPApplication.exe.config
+E:\Projects\Madhura Agro Tourism\Projects\Convert\SPApplication\SPApplication\bin\Debug\SPApplication.exe
+E:\Projects\Madhura Agro Tourism\Projects\Convert\SPApplication\SPApplication\bin\Debug\SPApplication.pdb
+E:\Projects\Madhura Agro Tourism\Projects\Convert\SPApplication\SPApplication\bin\Debug\BusinessLayerUtility.dll
+E:\Projects\Madhura Agro Tourism\Projects\Convert\SPApplication\SPApplication\bin\Debug\BusinessLayerUtility.pdb
+E:\Projects\Madhura Agro Tourism\Projects\Convert\SPApplication\SPApplication\obj\Debug\SPApplication.Authentication.ChangePassword.resources
+E:\Projects\Madhura Agro Tourism\Projects\Convert\SPApplication\SPApplication\obj\Debug\SPApplication.LoginWindow.resources
+E:\Projects\Madhura Agro Tourism\Projects\Convert\SPApplication\SPApplication\obj\Debug\SPApplication.Authentication.Users.resources
+E:\Projects\Madhura Agro Tourism\Projects\Convert\SPApplication\SPApplication\obj\Debug\SPApplication.Master.Customer.resources
+E:\Projects\Madhura Agro Tourism\Projects\Convert\SPApplication\SPApplication\obj\Debug\SPApplication.Item.resources
+E:\Projects\Madhura Agro Tourism\Projects\Convert\SPApplication\SPApplication\obj\Debug\SPApplication.Master.Manufracturer.resources
+E:\Projects\Madhura Agro Tourism\Projects\Convert\SPApplication\SPApplication\obj\Debug\SPApplication.UnitOfMessurement.resources
+E:\Projects\Madhura Agro Tourism\Projects\Convert\SPApplication\SPApplication\obj\Debug\SPApplication.BankAccounts.resources
+E:\Projects\Madhura Agro Tourism\Projects\Convert\SPApplication\SPApplication\obj\Debug\SPApplication.Report.CustomerDetails.resources
+E:\Projects\Madhura Agro Tourism\Projects\Convert\SPApplication\SPApplication\obj\Debug\SPApplication.Report.CustomerReport.resources
+E:\Projects\Madhura Agro Tourism\Projects\Convert\SPApplication\SPApplication\obj\Debug\SPApplication.Report.SupplierDetails.resources
+E:\Projects\Madhura Agro Tourism\Projects\Convert\SPApplication\SPApplication\obj\Debug\SPApplication.Report.SupplierReport.resources
+E:\Projects\Madhura Agro Tourism\Projects\Convert\SPApplication\SPApplication\obj\Debug\TestApplication.BillDetails.resources
+E:\Projects\Madhura Agro Tourism\Projects\Convert\SPApplication\SPApplication\obj\Debug\SPApplication.Transaction.CRNote.resources
+E:\Projects\Madhura Agro Tourism\Projects\Convert\SPApplication\SPApplication\obj\Debug\TestApplication.DailyBookEntry.resources
+E:\Projects\Madhura Agro Tourism\Projects\Convert\SPApplication\SPApplication\obj\Debug\SPApplication.Transaction.OutwardMaterial.resources
+E:\Projects\Madhura Agro Tourism\Projects\Convert\SPApplication\SPApplication\obj\Debug\SPApplication.Transaction.Expenses.resources
+E:\Projects\Madhura Agro Tourism\Projects\Convert\SPApplication\SPApplication\obj\Debug\SPApplication.Master.CompanyInformation.resources
+E:\Projects\Madhura Agro Tourism\Projects\Convert\SPApplication\SPApplication\obj\Debug\SPApplication.ExpensesHead.resources
+E:\Projects\Madhura Agro Tourism\Projects\Convert\SPApplication\SPApplication\obj\Debug\SPApplication.Transaction.InwardMaterial.resources
+E:\Projects\Madhura Agro Tourism\Projects\Convert\SPApplication\SPApplication\obj\Debug\SPApplication.Transaction.OpeningStock.resources
+E:\Projects\Madhura Agro Tourism\Projects\Convert\SPApplication\SPApplication\obj\Debug\SPApplication.Transaction.Payment.resources
+E:\Projects\Madhura Agro Tourism\Projects\Convert\SPApplication\SPApplication\obj\Debug\SPApplication.Transaction.Sale.resources
+E:\Projects\Madhura Agro Tourism\Projects\Convert\SPApplication\SPApplication\obj\Debug\SPApplication.Transaction.SalesTransaction.resources
+E:\Projects\Madhura Agro Tourism\Projects\Convert\SPApplication\SPApplication\obj\Debug\SPApplication.Dashboard.resources
+E:\Projects\Madhura Agro Tourism\Projects\Convert\SPApplication\SPApplication\obj\Debug\SPApplication.MasterMenuWindow.resources
+E:\Projects\Madhura Agro Tourism\Projects\Convert\SPApplication\SPApplication\obj\Debug\SPApplication.MenuWindow.resources
+E:\Projects\Madhura Agro Tourism\Projects\Convert\SPApplication\SPApplication\obj\Debug\SPApplication.SettingsList.resources
+E:\Projects\Madhura Agro Tourism\Projects\Convert\SPApplication\SPApplication\obj\Debug\SPApplication.Master.Supplier.resources
+E:\Projects\Madhura Agro Tourism\Projects\Convert\SPApplication\SPApplication\obj\Debug\SPApplication.Properties.Resources.resources
+E:\Projects\Madhura Agro Tourism\Projects\Convert\SPApplication\SPApplication\obj\Debug\SPApplication.BirthdayAndAniversaryReport.resources
+E:\Projects\Madhura Agro Tourism\Projects\Convert\SPApplication\SPApplication\obj\Debug\SPApplication.Report.ExpensesReport.resources
+E:\Projects\Madhura Agro Tourism\Projects\Convert\SPApplication\SPApplication\obj\Debug\SPApplication.Reports.GSTReport.resources
+E:\Projects\Madhura Agro Tourism\Projects\Convert\SPApplication\SPApplication\obj\Debug\SPApplication.Reports.ItemQuantityReport.resources
+E:\Projects\Madhura Agro Tourism\Projects\Convert\SPApplication\SPApplication\obj\Debug\SPApplication.Report.ProfitLossReport.resources
+E:\Projects\Madhura Agro Tourism\Projects\Convert\SPApplication\SPApplication\obj\Debug\SPApplication.Settings.EmailCredentials.resources
+E:\Projects\Madhura Agro Tourism\Projects\Convert\SPApplication\SPApplication\obj\Debug\SPApplication.Reports.PurchaseReport.resources
+E:\Projects\Madhura Agro Tourism\Projects\Convert\SPApplication\SPApplication\obj\Debug\SPApplication.ReportList.resources
+E:\Projects\Madhura Agro Tourism\Projects\Convert\SPApplication\SPApplication\obj\Debug\SPApplication.Reports.SaleReport.resources
+E:\Projects\Madhura Agro Tourism\Projects\Convert\SPApplication\SPApplication\obj\Debug\SPApplication.Transaction.Purchase.resources
+E:\Projects\Madhura Agro Tourism\Projects\Convert\SPApplication\SPApplication\obj\Debug\SPApplication.TransactionMenuWindow.resources
+E:\Projects\Madhura Agro Tourism\Projects\Convert\SPApplication\SPApplication\obj\Debug\SPApplication.csproj.GenerateResource.cache
+E:\Projects\Madhura Agro Tourism\Projects\Convert\SPApplication\SPApplication\obj\Debug\SPApplication.exe
+E:\Projects\Madhura Agro Tourism\Projects\Convert\SPApplication\SPApplication\obj\Debug\SPApplication.pdb
+E:\Projects\Madhura Agro Tourism\Projects\Convert\SPApplication\SPApplication\bin\Debug\stdole.dll
+E:\Projects\Madhura Agro Tourism\Projects\Convert\SPApplication\SPApplication\obj\Debug\SPApplication.csprojAssemblyReference.cache
+E:\Projects\Madhura Agro Tourism\Projects\Convert\SPApplication\SPApplication\obj\Debug\SPApplication.csproj.CoreCompileInputs.cache
+E:\Projects\Madhura Agro Tourism\Projects\Convert\SPApplication\SPApplication\obj\Debug\SPApplication.csproj.CopyComplete
+E:\Projects\Madhura Agro Tourism\Projects\Convert\SPApplication\SPApplication\obj\Debug\SPApplication.Transaction.CheckInOut.resources
+E:\Projects\Madhura Agro Tourism\Projects\Convert\SPApplication\SPApplication\obj\Debug\SPApplication.Master.City.resources
+E:\Projects\Madhura Agro Tourism\Projects\Convert\SPApplication\SPApplication\obj\Debug\SPApplication.Master.Room.resources
+E:\Projects\Madhura Agro Tourism\Projects\Convert\SPApplication\SPApplication\obj\Debug\SPApplication.Master.TableMaster.resources
+E:\Projects\Madhura Agro Tourism\Projects\Convert\SPApplication\SPApplication\obj\Debug\SPApplication.Master.HotelTable.resources
+E:\Projects\Madhura Agro Tourism\Projects\Convert\SPApplication\SPApplication\obj\Debug\SPApplication.Master.AddUser.resources
+E:\Projects\Madhura Agro Tourism\Projects\Convert\SPApplication\SPApplication\obj\Debug\SPApplication.Employee.resources
+E:\Projects\Madhura Agro Tourism\Projects\Convert\SPApplication\SPApplication\obj\Debug\SPApplication.Transaction.EnployeeAttendance.resources
+E:\Projects\Madhura Agro Tourism\Projects\Convert\SPApplication\SPApplication\obj\Debug\SPApplication.EmployeeAttendanceReportMonthwise.resources
+E:\Projects\Madhura Agro Tourism\Projects\Convert\SPApplication\SPApplication\obj\Debug\SPApplication.Transaction.EventBooking.resources
+E:\Projects\Madhura Agro Tourism\Projects\Convert\SPApplication\SPApplication\obj\Debug\SPApplication.FunctionMaster.resources
+E:\Projects\Madhura Agro Tourism\Projects\Convert\SPApplication\SPApplication\obj\Debug\SPApplication.Transaction.AmountCollection.resources
+E:\Projects\Madhura Agro Tourism\Projects\Convert\SPApplication\SPApplication\obj\Debug\SPApplication.View.CheckAvailability.resources
+E:\Projects\Madhura Agro Tourism\Projects\Convert\SPApplication\SPApplication\obj\Debug\SPApplication.Master.PackageMaster.resources
+E:\Projects\Madhura Agro Tourism\Projects\Convert\SPApplication\SPApplication\obj\Debug\SPApplication.Transaction.BankDeposit.resources
+E:\Projects\Madhura Agro Tourism\Projects\Convert\SPApplication\SPApplication\obj\Debug\SPApplication.Transaction.BankWithdraw.resources
+E:\Projects\Madhura Agro Tourism\Projects\Convert\SPApplication\SPApplication\obj\Debug\SPApplication.Report.BankDepositWithdrawReport.resources
+E:\Projects\Madhura Agro Tourism\Projects\Convert\SPApplication\SPApplication\obj\Debug\SPApplication.Report.EventBookingReport.resources
+E:\Projects\Madhura Agro Tourism\Projects\SPApplication\SPApplication\bin\Debug\stdole.dll
+E:\Projects\Madhura Agro Tourism\Projects\SPApplication\SPApplication\obj\Debug\SPApplication.csprojAssemblyReference.cache
+E:\Projects\Madhura Agro Tourism\Projects\SPApplication\SPApplication\obj\Debug\SPApplication.Master.City.resources
+E:\Projects\Madhura Agro Tourism\Projects\SPApplication\SPApplication\obj\Debug\SPApplication.FunctionMaster.resources
+E:\Projects\Madhura Agro Tourism\Projects\SPApplication\SPApplication\obj\Debug\SPApplication.Master.HotelTable.resources
+E:\Projects\Madhura Agro Tourism\Projects\SPApplication\SPApplication\obj\Debug\SPApplication.Master.PackageMaster.resources
+E:\Projects\Madhura Agro Tourism\Projects\SPApplication\SPApplication\obj\Debug\SPApplication.Master.Room.resources
+E:\Projects\Madhura Agro Tourism\Projects\SPApplication\SPApplication\obj\Debug\SPApplication.Employee.resources
+E:\Projects\Madhura Agro Tourism\Projects\SPApplication\SPApplication\obj\Debug\SPApplication.Master.TableMaster.resources
+E:\Projects\Madhura Agro Tourism\Projects\SPApplication\SPApplication\obj\Debug\SPApplication.Report.BankDepositWithdrawReport.resources
+E:\Projects\Madhura Agro Tourism\Projects\SPApplication\SPApplication\obj\Debug\SPApplication.Report.EventBookingReport.resources
+E:\Projects\Madhura Agro Tourism\Projects\SPApplication\SPApplication\obj\Debug\SPApplication.EmployeeAttendanceReportMonthwise.resources
+E:\Projects\Madhura Agro Tourism\Projects\SPApplication\SPApplication\obj\Debug\SPApplication.Transaction.AmountCollection.resources
+E:\Projects\Madhura Agro Tourism\Projects\SPApplication\SPApplication\obj\Debug\SPApplication.Transaction.BankDeposit.resources
+E:\Projects\Madhura Agro Tourism\Projects\SPApplication\SPApplication\obj\Debug\SPApplication.Transaction.BankWithdraw.resources
+E:\Projects\Madhura Agro Tourism\Projects\SPApplication\SPApplication\obj\Debug\SPApplication.Transaction.CheckInOut.resources
+E:\Projects\Madhura Agro Tourism\Projects\SPApplication\SPApplication\obj\Debug\SPApplication.Transaction.EventBooking.resources
+E:\Projects\Madhura Agro Tourism\Projects\SPApplication\SPApplication\obj\Debug\SPApplication.Master.AddUser.resources
+E:\Projects\Madhura Agro Tourism\Projects\SPApplication\SPApplication\obj\Debug\SPApplication.Transaction.EnployeeAttendance.resources
+E:\Projects\Madhura Agro Tourism\Projects\SPApplication\SPApplication\obj\Debug\SPApplication.View.CheckAvailability.resources
+E:\Projects\Madhura Agro Tourism\Projects\SPApplication\SPApplication\obj\Debug\SPApplication.csproj.CoreCompileInputs.cache
+E:\Projects\Madhura Agro Tourism\Projects\SPApplication\SPApplication\obj\Debug\SPApplication.csproj.CopyComplete
+E:\Projects\Madhura Agro Tourism\Projects\SPApplication\SPApplication\obj\Debug\SPApplication.Master.CollectionTypeMaster.resources
+E:\Projects\Madhura Agro Tourism\Projects\SPApplication\SPApplication\obj\Debug\SPApplication.Report.BookingCheckInCheckOutReport.resources
+E:\Projects\Madhura Agro Tourism\Projects\SPApplication\SPApplication\obj\Debug\SPApplication.Report.AmountCollectionReport.resources
+E:\Projects\Madhura Agro Tourism\Projects\SPApplication\SPApplication\obj\Debug\SPApplication.Report.MaterialOutwardReport.resources
+E:\Projects\Madhura Agro Tourism\Projects\SPApplication\SPApplication\obj\Debug\SPApplication.DebitAndCreditPaymentWiseReport.resources
+E:\Projects\SKPI Projects\SPApplication\SPApplication\obj\Debug\SPApplication.csprojAssemblyReference.cache
+E:\Projects\SKPI Projects\SPApplication\SPApplication\obj\Debug\SPApplication.Authentication.ChangePassword.resources
+E:\Projects\SKPI Projects\SPApplication\SPApplication\obj\Debug\SPApplication.LoginWindow.resources
+E:\Projects\SKPI Projects\SPApplication\SPApplication\obj\Debug\SPApplication.Authentication.Users.resources
+E:\Projects\SKPI Projects\SPApplication\SPApplication\obj\Debug\SPApplication.Master.City.resources
+E:\Projects\SKPI Projects\SPApplication\SPApplication\obj\Debug\SPApplication.Master.CollectionTypeMaster.resources
+E:\Projects\SKPI Projects\SPApplication\SPApplication\obj\Debug\SPApplication.Master.Customer.resources
+E:\Projects\SKPI Projects\SPApplication\SPApplication\obj\Debug\SPApplication.FunctionMaster.resources
+E:\Projects\SKPI Projects\SPApplication\SPApplication\obj\Debug\SPApplication.Master.HotelTable.resources
+E:\Projects\SKPI Projects\SPApplication\SPApplication\obj\Debug\SPApplication.Master.Manufracturer.resources
+E:\Projects\SKPI Projects\SPApplication\SPApplication\obj\Debug\SPApplication.Master.MouldMaster.resources
+E:\Projects\SKPI Projects\SPApplication\SPApplication\obj\Debug\SPApplication.Master.PackageMaster.resources
+E:\Projects\SKPI Projects\SPApplication\SPApplication\obj\Debug\SPApplication.Master.Room.resources
+E:\Projects\SKPI Projects\SPApplication\SPApplication\obj\Debug\SPApplication.Employee.resources
+E:\Projects\SKPI Projects\SPApplication\SPApplication\obj\Debug\SPApplication.Master.TableMaster.resources
+E:\Projects\SKPI Projects\SPApplication\SPApplication\obj\Debug\SPApplication.UnitOfMessurement.resources
+E:\Projects\SKPI Projects\SPApplication\SPApplication\obj\Debug\SPApplication.Report.AmountCollectionReport.resources
+E:\Projects\SKPI Projects\SPApplication\SPApplication\obj\Debug\SPApplication.DebitAndCreditPaymentWiseReport.resources
+E:\Projects\SKPI Projects\SPApplication\SPApplication\obj\Debug\SPApplication.Report.BankDepositWithdrawReport.resources
+E:\Projects\SKPI Projects\SPApplication\SPApplication\obj\Debug\SPApplication.Report.BookingCheckInCheckOutReport.resources
+E:\Projects\SKPI Projects\SPApplication\SPApplication\obj\Debug\SPApplication.Report.CustomerDetails.resources
+E:\Projects\SKPI Projects\SPApplication\SPApplication\obj\Debug\SPApplication.Report.CustomerReport.resources
+E:\Projects\SKPI Projects\SPApplication\SPApplication\obj\Debug\SPApplication.Report.EventBookingReport.resources
+E:\Projects\SKPI Projects\SPApplication\SPApplication\obj\Debug\SPApplication.Report.MaterialOutwardReport.resources
+E:\Projects\SKPI Projects\SPApplication\SPApplication\obj\Debug\SPApplication.Report.SupplierDetails.resources
+E:\Projects\SKPI Projects\SPApplication\SPApplication\obj\Debug\SPApplication.Report.SupplierReport.resources
+E:\Projects\SKPI Projects\SPApplication\SPApplication\obj\Debug\SPApplication.EmployeeAttendanceReportMonthwise.resources
+E:\Projects\SKPI Projects\SPApplication\SPApplication\obj\Debug\SPApplication.Transaction.AmountCollection.resources
+E:\Projects\SKPI Projects\SPApplication\SPApplication\obj\Debug\SPApplication.Transaction.BankDeposit.resources
+E:\Projects\SKPI Projects\SPApplication\SPApplication\obj\Debug\SPApplication.Transaction.BankWithdraw.resources
+E:\Projects\SKPI Projects\SPApplication\SPApplication\obj\Debug\TestApplication.BillDetails.resources
+E:\Projects\SKPI Projects\SPApplication\SPApplication\obj\Debug\SPApplication.Transaction.CheckInOut.resources
+E:\Projects\SKPI Projects\SPApplication\SPApplication\obj\Debug\SPApplication.Transaction.CRNote.resources
+E:\Projects\SKPI Projects\SPApplication\SPApplication\obj\Debug\TestApplication.DailyBookEntry.resources
+E:\Projects\SKPI Projects\SPApplication\SPApplication\obj\Debug\SPApplication.Transaction.EventBooking.resources
+E:\Projects\SKPI Projects\SPApplication\SPApplication\obj\Debug\SPApplication.Transaction.OutwardMaterial.resources
+E:\Projects\SKPI Projects\SPApplication\SPApplication\obj\Debug\SPApplication.Transaction.Expenses.resources
+E:\Projects\SKPI Projects\SPApplication\SPApplication\obj\Debug\SPApplication.Master.CompanyInformation.resources
+E:\Projects\SKPI Projects\SPApplication\SPApplication\obj\Debug\SPApplication.ExpensesHead.resources
+E:\Projects\SKPI Projects\SPApplication\SPApplication\obj\Debug\SPApplication.Master.AddUser.resources
+E:\Projects\SKPI Projects\SPApplication\SPApplication\obj\Debug\SPApplication.Transaction.InwardMaterial.resources
+E:\Projects\SKPI Projects\SPApplication\SPApplication\obj\Debug\SPApplication.Transaction.OpeningStock.resources
+E:\Projects\SKPI Projects\SPApplication\SPApplication\obj\Debug\SPApplication.Transaction.Payment.resources
+E:\Projects\SKPI Projects\SPApplication\SPApplication\obj\Debug\SPApplication.Transaction.Sale.resources
+E:\Projects\SKPI Projects\SPApplication\SPApplication\obj\Debug\SPApplication.Transaction.SalesTransaction.resources
+E:\Projects\SKPI Projects\SPApplication\SPApplication\obj\Debug\SPApplication.Transaction.EnployeeAttendance.resources
+E:\Projects\SKPI Projects\SPApplication\SPApplication\obj\Debug\SPApplication.Dashboard.resources
+E:\Projects\SKPI Projects\SPApplication\SPApplication\obj\Debug\SPApplication.MasterMenuWindow.resources
+E:\Projects\SKPI Projects\SPApplication\SPApplication\obj\Debug\SPApplication.MenuWindow.resources
+E:\Projects\SKPI Projects\SPApplication\SPApplication\obj\Debug\SPApplication.View.CheckAvailability.resources
+E:\Projects\SKPI Projects\SPApplication\SPApplication\obj\Debug\SPApplication.SettingsList.resources
+E:\Projects\SKPI Projects\SPApplication\SPApplication\obj\Debug\SPApplication.Master.Supplier.resources
+E:\Projects\SKPI Projects\SPApplication\SPApplication\obj\Debug\SPApplication.Properties.Resources.resources
+E:\Projects\SKPI Projects\SPApplication\SPApplication\obj\Debug\SPApplication.BirthdayAndAniversaryReport.resources
+E:\Projects\SKPI Projects\SPApplication\SPApplication\obj\Debug\SPApplication.Report.ExpensesReport.resources
+E:\Projects\SKPI Projects\SPApplication\SPApplication\obj\Debug\SPApplication.Reports.GSTReport.resources
+E:\Projects\SKPI Projects\SPApplication\SPApplication\obj\Debug\SPApplication.Reports.ItemQuantityReport.resources
+E:\Projects\SKPI Projects\SPApplication\SPApplication\obj\Debug\SPApplication.Report.ProfitLossReport.resources
+E:\Projects\SKPI Projects\SPApplication\SPApplication\obj\Debug\SPApplication.Settings.EmailCredentials.resources
+E:\Projects\SKPI Projects\SPApplication\SPApplication\obj\Debug\SPApplication.Reports.PurchaseReport.resources
+E:\Projects\SKPI Projects\SPApplication\SPApplication\obj\Debug\SPApplication.ReportList.resources
+E:\Projects\SKPI Projects\SPApplication\SPApplication\obj\Debug\SPApplication.Reports.SaleReport.resources
+E:\Projects\SKPI Projects\SPApplication\SPApplication\obj\Debug\SPApplication.Transaction.Purchase.resources
+E:\Projects\SKPI Projects\SPApplication\SPApplication\obj\Debug\SPApplication.TransactionMenuWindow.resources
+E:\Projects\SKPI Projects\SPApplication\SPApplication\obj\Debug\SPApplication.csproj.GenerateResource.cache
+E:\Projects\SKPI Projects\SPApplication\SPApplication\obj\Debug\SPApplication.csproj.CoreCompileInputs.cache
+E:\Projects\SKPI Projects\SPApplication\SPApplication\obj\Debug\SPApplication.exe
+E:\Projects\SKPI Projects\SPApplication\SPApplication\obj\Debug\SPApplication.pdb
+E:\Projects\SKPI Projects\SPApplication\SPApplication\bin\Debug\SPApplication.exe.config
+E:\Projects\SKPI Projects\SPApplication\SPApplication\bin\Debug\SPApplication.exe
+E:\Projects\SKPI Projects\SPApplication\SPApplication\bin\Debug\SPApplication.pdb
+E:\Projects\SKPI Projects\SPApplication\SPApplication\bin\Debug\BusinessLayerUtility.dll
+E:\Projects\SKPI Projects\SPApplication\SPApplication\bin\Debug\stdole.dll
+E:\Projects\SKPI Projects\SPApplication\SPApplication\bin\Debug\BusinessLayerUtility.pdb
+E:\Projects\SKPI Projects\SPApplication\SPApplication\obj\Debug\SPApplication.csproj.CopyComplete
+E:\Projects\SKPI Projects\SPApplication\SPApplication\obj\Debug\SPApplication.Transaction.QualityAnalysis.resources
+E:\Projects\SKPI Projects\SPApplication\SPApplication\obj\Debug\SPApplication.Product.resources
+E:\Projects\SKPI Projects\SPApplication\SPApplication\obj\Debug\SPApplication.Master.Preform.resources
+E:\Projects\SKPI Projects\SPApplication\SPApplication\bin\Debug\Zen.Barcode.Core.dll
+E:\Projects\SKPI Projects\SPApplication\SPApplication\obj\Debug\SPApplication.Master.ProductionLabel.resources
+D:\Projects 2012\SKPI Projects\SPApplication\SPApplication\bin\Debug\SPApplication.exe.config
+D:\Projects 2012\SKPI Projects\SPApplication\SPApplication\obj\Debug\SPApplication.exe
+D:\Projects 2012\SKPI Projects\SPApplication\SPApplication\obj\Debug\SPApplication.pdb
+D:\Projects 2012\SKPI Projects\SPApplication\SPApplication\bin\Debug\SPApplication.exe
+D:\Projects 2012\SKPI Projects\SPApplication\SPApplication\bin\Debug\SPApplication.pdb
+D:\Projects 2012\SKPI Projects\SPApplication\SPApplication\bin\Debug\BusinessLayerUtility.dll
+D:\Projects 2012\SKPI Projects\SPApplication\SPApplication\bin\Debug\Zen.Barcode.Core.dll
+D:\Projects 2012\SKPI Projects\SPApplication\SPApplication\bin\Debug\BusinessLayerUtility.pdb
+D:\Projects 2012\SKPI Projects\SPApplication\SPApplication\obj\Debug\SPApplication.csprojResolveAssemblyReference.cache
+D:\Projects 2012\SKPI Projects\SPApplication\SPApplication\obj\Debug\SPApplication.Authentication.ChangePassword.resources
+D:\Projects 2012\SKPI Projects\SPApplication\SPApplication\obj\Debug\SPApplication.LoginWindow.resources
+D:\Projects 2012\SKPI Projects\SPApplication\SPApplication\obj\Debug\SPApplication.Authentication.Users.resources
+D:\Projects 2012\SKPI Projects\SPApplication\SPApplication\obj\Debug\SPApplication.Master.ProductionLabel.resources
+D:\Projects 2012\SKPI Projects\SPApplication\SPApplication\obj\Debug\SPApplication.Master.City.resources
+D:\Projects 2012\SKPI Projects\SPApplication\SPApplication\obj\Debug\SPApplication.Master.Preform.resources
+D:\Projects 2012\SKPI Projects\SPApplication\SPApplication\obj\Debug\SPApplication.Product.resources
+D:\Projects 2012\SKPI Projects\SPApplication\SPApplication\obj\Debug\SPApplication.Master.Manufracturer.resources
+D:\Projects 2012\SKPI Projects\SPApplication\SPApplication\obj\Debug\SPApplication.Master.MouldMaster.resources
+D:\Projects 2012\SKPI Projects\SPApplication\SPApplication\obj\Debug\SPApplication.Employee.resources
+D:\Projects 2012\SKPI Projects\SPApplication\SPApplication\obj\Debug\SPApplication.UnitOfMessurement.resources
+D:\Projects 2012\SKPI Projects\SPApplication\SPApplication\obj\Debug\SPApplication.Master.CompanyInformation.resources
+D:\Projects 2012\SKPI Projects\SPApplication\SPApplication\obj\Debug\SPApplication.Master.AddUser.resources
+D:\Projects 2012\SKPI Projects\SPApplication\SPApplication\obj\Debug\SPApplication.Transaction.QualityAnalysis.resources
+D:\Projects 2012\SKPI Projects\SPApplication\SPApplication\obj\Debug\SPApplication.Transaction.CapLabel.resources
+D:\Projects 2012\SKPI Projects\SPApplication\SPApplication\obj\Debug\SPApplication.Dashboard.resources
+D:\Projects 2012\SKPI Projects\SPApplication\SPApplication\obj\Debug\SPApplication.MasterMenuWindow.resources
+D:\Projects 2012\SKPI Projects\SPApplication\SPApplication\obj\Debug\SPApplication.SettingsList.resources
+D:\Projects 2012\SKPI Projects\SPApplication\SPApplication\obj\Debug\SPApplication.Properties.Resources.resources
+D:\Projects 2012\SKPI Projects\SPApplication\SPApplication\obj\Debug\SPApplication.Settings.EmailCredentials.resources
+D:\Projects 2012\SKPI Projects\SPApplication\SPApplication\obj\Debug\SPApplication.ReportList.resources
+D:\Projects 2012\SKPI Projects\SPApplication\SPApplication\obj\Debug\SPApplication.TransactionMenuWindow.resources
+D:\Projects 2012\SKPI Projects\SPApplication\SPApplication\obj\Debug\SPApplication.csproj.GenerateResource.Cache
+D:\Projects 2012\SKPI Projects\SPApplication\SPApplication\obj\Debug\SPApplication.Report.COAReport.resources
+D:\Projects 2012\SKPI Projects\SPApplication\SPApplication\obj\Debug\SPApplication.Master.Customer.resources
+D:\BitBucketProjects\SPApplication\SPApplication\bin\Debug\SPApplication.exe.config
+D:\BitBucketProjects\SPApplication\SPApplication\obj\Debug\SPApplication.exe
+D:\BitBucketProjects\SPApplication\SPApplication\obj\Debug\SPApplication.pdb
+D:\BitBucketProjects\SPApplication\SPApplication\bin\Debug\SPApplication.exe
+D:\BitBucketProjects\SPApplication\SPApplication\bin\Debug\SPApplication.pdb
+D:\BitBucketProjects\SPApplication\SPApplication\bin\Debug\BusinessLayerUtility.dll
+D:\BitBucketProjects\SPApplication\SPApplication\bin\Debug\Zen.Barcode.Core.dll
+D:\BitBucketProjects\SPApplication\SPApplication\bin\Debug\BusinessLayerUtility.pdb
+D:\BitBucketProjects\SPApplication\SPApplication\obj\Debug\SPApplication.csprojResolveAssemblyReference.cache
+D:\BitBucketProjects\SPApplication\SPApplication\obj\Debug\SPApplication.Authentication.ChangePassword.resources
+D:\BitBucketProjects\SPApplication\SPApplication\obj\Debug\SPApplication.LoginWindow.resources
+D:\BitBucketProjects\SPApplication\SPApplication\obj\Debug\SPApplication.Authentication.ImportTallyData.resources
+D:\BitBucketProjects\SPApplication\SPApplication\obj\Debug\SPApplication.Authentication.Users.resources
+D:\BitBucketProjects\SPApplication\SPApplication\obj\Debug\SPApplication.Backup.BackupEXE.resources
+D:\BitBucketProjects\SPApplication\SPApplication\obj\Debug\SPApplication.Backup.ScheduleServerBackup.resources
+D:\BitBucketProjects\SPApplication\SPApplication\obj\Debug\SPApplication.KanBan.KanBanEntry.resources
+D:\BitBucketProjects\SPApplication\SPApplication\obj\Debug\SPApplication.Transaction.KB_CommercialOrder.resources
+D:\BitBucketProjects\SPApplication\SPApplication\obj\Debug\SPApplication.Transaction.KB_MunufacturingOrder.resources
+D:\BitBucketProjects\SPApplication\SPApplication\obj\Debug\SPApplication.KanBan.KB_ProductionOrder.resources
+D:\BitBucketProjects\SPApplication\SPApplication\obj\Debug\SPApplication.KanBan.KB_PurchaseOrder.resources
+D:\BitBucketProjects\SPApplication\SPApplication\obj\Debug\SPApplication.Transaction.KB_SalesOrder.resources
+D:\BitBucketProjects\SPApplication\SPApplication\obj\Debug\SPApplication.Master.CapMaster.resources
+D:\BitBucketProjects\SPApplication\SPApplication\obj\Debug\SPApplication.Master.CatalogueProductMaster.resources
+D:\BitBucketProjects\SPApplication\SPApplication\obj\Debug\SPApplication.Master.Customer.resources
+D:\BitBucketProjects\SPApplication\SPApplication\obj\Debug\SPApplication.Master.EquipmentMaster.resources
+D:\BitBucketProjects\SPApplication\SPApplication\obj\Debug\SPApplication.PartMaster.resources
+D:\BitBucketProjects\SPApplication\SPApplication\obj\Debug\SPApplication.Master.PlannerMaster.resources
+D:\BitBucketProjects\SPApplication\SPApplication\obj\Debug\SPApplication.Master.PreformPartyMaster.resources
+D:\BitBucketProjects\SPApplication\SPApplication\obj\Debug\SPApplication.Master.PlaceMaster.resources
+D:\BitBucketProjects\SPApplication\SPApplication\obj\Debug\SPApplication.Master.Supplier.resources
+D:\BitBucketProjects\SPApplication\SPApplication\obj\Debug\SPApplication.Master.TaskMaster.resources
+D:\BitBucketProjects\SPApplication\SPApplication\obj\Debug\SPApplication.Report.AssignTaskReport.resources
+D:\BitBucketProjects\SPApplication\SPApplication\obj\Debug\SPApplication.Report.COAReport.resources
+D:\BitBucketProjects\SPApplication\SPApplication\obj\Debug\SPApplication.Reports.DueDateReport.resources
+D:\BitBucketProjects\SPApplication\SPApplication\obj\Debug\SPApplication.Report.LogReport.resources
+D:\BitBucketProjects\SPApplication\SPApplication\obj\Debug\SPApplication.Report.MonthlyProductionReport.resources
+D:\BitBucketProjects\SPApplication\SPApplication\obj\Debug\SPApplication.Report.ProgressCardReport.resources
+D:\BitBucketProjects\SPApplication\SPApplication\obj\Debug\SPApplication.Report.QualityControlProductWiseReport.resources
+D:\BitBucketProjects\SPApplication\SPApplication\obj\Debug\SPApplication.Report.TemperatureReport.resources
+D:\BitBucketProjects\SPApplication\SPApplication\obj\Debug\SPApplication.Transaction.AssignTask.resources
+D:\BitBucketProjects\SPApplication\SPApplication\obj\Debug\SPApplication.Transaction.OEECalculation.resources
+D:\BitBucketProjects\SPApplication\SPApplication\obj\Debug\SPApplication.Transaction.PartRenewalEntry.resources
+D:\BitBucketProjects\SPApplication\SPApplication\obj\Debug\SPApplication.Transaction.EmployeeTemperature.resources
+D:\BitBucketProjects\SPApplication\SPApplication\obj\Debug\SPApplication.Transaction.OrderView.resources
+D:\BitBucketProjects\SPApplication\SPApplication\obj\Debug\SPApplication.Transaction.Planner.resources
+D:\BitBucketProjects\SPApplication\SPApplication\obj\Debug\SPApplication.Master.ProductionLabel.resources
+D:\BitBucketProjects\SPApplication\SPApplication\obj\Debug\SPApplication.Master.City.resources
+D:\BitBucketProjects\SPApplication\SPApplication\obj\Debug\SPApplication.Master.Preform.resources
+D:\BitBucketProjects\SPApplication\SPApplication\obj\Debug\SPApplication.Product.resources
+D:\BitBucketProjects\SPApplication\SPApplication\obj\Debug\SPApplication.Master.UsedForMaster.resources
+D:\BitBucketProjects\SPApplication\SPApplication\obj\Debug\SPApplication.Master.MouldMaster.resources
+D:\BitBucketProjects\SPApplication\SPApplication\obj\Debug\SPApplication.Employee.resources
+D:\BitBucketProjects\SPApplication\SPApplication\obj\Debug\SPApplication.UnitOfMessurement.resources
+D:\BitBucketProjects\SPApplication\SPApplication\obj\Debug\SPApplication.Report.QualityControlMachineWiseReport.resources
+D:\BitBucketProjects\SPApplication\SPApplication\obj\Debug\SPApplication.Master.CompanyInformation.resources
+D:\BitBucketProjects\SPApplication\SPApplication\obj\Debug\SPApplication.Master.AddUser.resources
+D:\BitBucketProjects\SPApplication\SPApplication\obj\Debug\SPApplication.Transaction.PurchaseOrder.resources
+D:\BitBucketProjects\SPApplication\SPApplication\obj\Debug\SPApplication.Transaction.QualityControl.resources
+D:\BitBucketProjects\SPApplication\SPApplication\obj\Debug\SPApplication.Transaction.QualityAnalysis.resources
+D:\BitBucketProjects\SPApplication\SPApplication\obj\Debug\SPApplication.Transaction.CapLabel.resources
+D:\BitBucketProjects\SPApplication\SPApplication\obj\Debug\SPApplication.Transaction.SalesOrder.resources
+D:\BitBucketProjects\SPApplication\SPApplication\obj\Debug\SPApplication.Transaction.AssignTask_Old.resources
+D:\BitBucketProjects\SPApplication\SPApplication\obj\Debug\SPApplication.Transaction.ShiftEntry.resources
+D:\BitBucketProjects\SPApplication\SPApplication\obj\Debug\SPApplication.Transaction.ProductSwitchReason.resources
+D:\BitBucketProjects\SPApplication\SPApplication\obj\Debug\SPApplication.Transaction.Tolerance.resources
+D:\BitBucketProjects\SPApplication\SPApplication\obj\Debug\SPApplication.Dashboard.resources
+D:\BitBucketProjects\SPApplication\SPApplication\obj\Debug\SPApplication.View.Dashboard1.resources
+D:\BitBucketProjects\SPApplication\SPApplication\obj\Debug\SPApplication.MasterMenuWindow.resources
+D:\BitBucketProjects\SPApplication\SPApplication\obj\Debug\SPApplication.SettingsList.resources
+D:\BitBucketProjects\SPApplication\SPApplication\obj\Debug\SPApplication.Properties.Resources.resources
+D:\BitBucketProjects\SPApplication\SPApplication\obj\Debug\SPApplication.Settings.EmailCredentials.resources
+D:\BitBucketProjects\SPApplication\SPApplication\obj\Debug\SPApplication.ReportList.resources
+D:\BitBucketProjects\SPApplication\SPApplication\obj\Debug\SPApplication.TransactionMenuWindow.resources
+D:\BitBucketProjects\SPApplication\SPApplication\obj\Debug\SPApplication.csproj.GenerateResource.Cache
+D:\BitBucketProjects\Shree Khodiyar Plastic Industries\SPApplication\SPApplication\bin\Debug\SPApplication.exe.config
+D:\BitBucketProjects\Shree Khodiyar Plastic Industries\SPApplication\SPApplication\bin\Debug\SPApplication.exe
+D:\BitBucketProjects\Shree Khodiyar Plastic Industries\SPApplication\SPApplication\bin\Debug\SPApplication.pdb
+D:\BitBucketProjects\Shree Khodiyar Plastic Industries\SPApplication\SPApplication\bin\Debug\BusinessLayerUtility.dll
+D:\BitBucketProjects\Shree Khodiyar Plastic Industries\SPApplication\SPApplication\bin\Debug\Zen.Barcode.Core.dll
+D:\BitBucketProjects\Shree Khodiyar Plastic Industries\SPApplication\SPApplication\bin\Debug\BusinessLayerUtility.pdb
+D:\BitBucketProjects\Shree Khodiyar Plastic Industries\SPApplication\SPApplication\obj\Debug\SPApplication.csprojResolveAssemblyReference.cache
+D:\BitBucketProjects\Shree Khodiyar Plastic Industries\SPApplication\SPApplication\obj\Debug\SPApplication.Authentication.ChangePassword.resources
+D:\BitBucketProjects\Shree Khodiyar Plastic Industries\SPApplication\SPApplication\obj\Debug\SPApplication.Authentication.ClientWiseEmailConfiguration.resources
+D:\BitBucketProjects\Shree Khodiyar Plastic Industries\SPApplication\SPApplication\obj\Debug\SPApplication.LoginWindow.resources
+D:\BitBucketProjects\Shree Khodiyar Plastic Industries\SPApplication\SPApplication\obj\Debug\SPApplication.Authentication.ImportTallyData.resources
+D:\BitBucketProjects\Shree Khodiyar Plastic Industries\SPApplication\SPApplication\obj\Debug\SPApplication.Authentication.Users.resources
+D:\BitBucketProjects\Shree Khodiyar Plastic Industries\SPApplication\SPApplication\obj\Debug\SPApplication.Backup.BackupEXE.resources
+D:\BitBucketProjects\Shree Khodiyar Plastic Industries\SPApplication\SPApplication\obj\Debug\SPApplication.Backup.ScheduleServerBackup.resources
+D:\BitBucketProjects\Shree Khodiyar Plastic Industries\SPApplication\SPApplication\obj\Debug\SPApplication.KanBan.KanBanEntry.resources
+D:\BitBucketProjects\Shree Khodiyar Plastic Industries\SPApplication\SPApplication\obj\Debug\SPApplication.Transaction.KB_CommercialOrder.resources
+D:\BitBucketProjects\Shree Khodiyar Plastic Industries\SPApplication\SPApplication\obj\Debug\SPApplication.Transaction.KB_MunufacturingOrder.resources
+D:\BitBucketProjects\Shree Khodiyar Plastic Industries\SPApplication\SPApplication\obj\Debug\SPApplication.KanBan.KB_ProductionOrder.resources
+D:\BitBucketProjects\Shree Khodiyar Plastic Industries\SPApplication\SPApplication\obj\Debug\SPApplication.KanBan.KB_PurchaseOrder.resources
+D:\BitBucketProjects\Shree Khodiyar Plastic Industries\SPApplication\SPApplication\obj\Debug\SPApplication.Master.MachineMaster.resources
+D:\BitBucketProjects\Shree Khodiyar Plastic Industries\SPApplication\SPApplication\obj\Debug\SPApplication.Report.ViewReportW.resources
+D:\BitBucketProjects\Shree Khodiyar Plastic Industries\SPApplication\SPApplication\obj\Debug\SPApplication.Transaction.DispatchSchedule.resources
+D:\BitBucketProjects\Shree Khodiyar Plastic Industries\SPApplication\SPApplication\obj\Debug\SPApplication.KanBan.RND.resources
+D:\BitBucketProjects\Shree Khodiyar Plastic Industries\SPApplication\SPApplication\obj\Debug\SPApplication.Master.CapMaster.resources
+D:\BitBucketProjects\Shree Khodiyar Plastic Industries\SPApplication\SPApplication\obj\Debug\SPApplication.Master.CatalogueProductMaster.resources
+D:\BitBucketProjects\Shree Khodiyar Plastic Industries\SPApplication\SPApplication\obj\Debug\SPApplication.Master.Customer.resources
+D:\BitBucketProjects\Shree Khodiyar Plastic Industries\SPApplication\SPApplication\obj\Debug\SPApplication.Master.EquipmentMaster.resources
+D:\BitBucketProjects\Shree Khodiyar Plastic Industries\SPApplication\SPApplication\obj\Debug\SPApplication.PartMaster.resources
+D:\BitBucketProjects\Shree Khodiyar Plastic Industries\SPApplication\SPApplication\obj\Debug\SPApplication.Master.PlannerMaster.resources
+D:\BitBucketProjects\Shree Khodiyar Plastic Industries\SPApplication\SPApplication\obj\Debug\SPApplication.Master.PreformPartyMaster.resources
+D:\BitBucketProjects\Shree Khodiyar Plastic Industries\SPApplication\SPApplication\obj\Debug\SPApplication.Master.PlaceMaster.resources
+D:\BitBucketProjects\Shree Khodiyar Plastic Industries\SPApplication\SPApplication\obj\Debug\SPApplication.Master.Supplier.resources
+D:\BitBucketProjects\Shree Khodiyar Plastic Industries\SPApplication\SPApplication\obj\Debug\SPApplication.Master.TaskMaster.resources
+D:\BitBucketProjects\Shree Khodiyar Plastic Industries\SPApplication\SPApplication\obj\Debug\SPApplication.Report.AssignTaskReport.resources
+D:\BitBucketProjects\Shree Khodiyar Plastic Industries\SPApplication\SPApplication\obj\Debug\SPApplication.Report.COAReport.resources
+D:\BitBucketProjects\Shree Khodiyar Plastic Industries\SPApplication\SPApplication\obj\Debug\SPApplication.Reports.DueDateReport.resources
+D:\BitBucketProjects\Shree Khodiyar Plastic Industries\SPApplication\SPApplication\obj\Debug\SPApplication.Report.LogReport.resources
+D:\BitBucketProjects\Shree Khodiyar Plastic Industries\SPApplication\SPApplication\obj\Debug\SPApplication.Report.MonthlyProductionReport.resources
+D:\BitBucketProjects\Shree Khodiyar Plastic Industries\SPApplication\SPApplication\obj\Debug\SPApplication.Report.ProgressCardReport.resources
+D:\BitBucketProjects\Shree Khodiyar Plastic Industries\SPApplication\SPApplication\obj\Debug\SPApplication.Report.QualityControlProductWiseReport.resources
+D:\BitBucketProjects\Shree Khodiyar Plastic Industries\SPApplication\SPApplication\obj\Debug\SPApplication.Report.BatchWiseQualityControlReport.resources
+D:\BitBucketProjects\Shree Khodiyar Plastic Industries\SPApplication\SPApplication\obj\Debug\SPApplication.Report.RDLCReport.ReportViewRDLC.resources
+D:\BitBucketProjects\Shree Khodiyar Plastic Industries\SPApplication\SPApplication\obj\Debug\SPApplication.Report.TemperatureReport.resources
+D:\BitBucketProjects\Shree Khodiyar Plastic Industries\SPApplication\SPApplication\obj\Debug\SPApplication.Transaction.AssignTask.resources
+D:\BitBucketProjects\Shree Khodiyar Plastic Industries\SPApplication\SPApplication\obj\Debug\SPApplication.Transaction.MouldEntry.resources
+D:\BitBucketProjects\Shree Khodiyar Plastic Industries\SPApplication\SPApplication\obj\Debug\SPApplication.Transaction.OEECalculation.resources
+D:\BitBucketProjects\Shree Khodiyar Plastic Industries\SPApplication\SPApplication\obj\Debug\SPApplication.Transaction.PartRenewalEntry.resources
+D:\BitBucketProjects\Shree Khodiyar Plastic Industries\SPApplication\SPApplication\obj\Debug\SPApplication.Transaction.EmployeeTemperature.resources
+D:\BitBucketProjects\Shree Khodiyar Plastic Industries\SPApplication\SPApplication\obj\Debug\SPApplication.Transaction.OrderView.resources
+D:\BitBucketProjects\Shree Khodiyar Plastic Industries\SPApplication\SPApplication\obj\Debug\SPApplication.Transaction.Planner.resources
+D:\BitBucketProjects\Shree Khodiyar Plastic Industries\SPApplication\SPApplication\obj\Debug\SPApplication.Master.ProductionLabel.resources
+D:\BitBucketProjects\Shree Khodiyar Plastic Industries\SPApplication\SPApplication\obj\Debug\SPApplication.Master.City.resources
+D:\BitBucketProjects\Shree Khodiyar Plastic Industries\SPApplication\SPApplication\obj\Debug\SPApplication.Master.Preform.resources
+D:\BitBucketProjects\Shree Khodiyar Plastic Industries\SPApplication\SPApplication\obj\Debug\SPApplication.Product.resources
+D:\BitBucketProjects\Shree Khodiyar Plastic Industries\SPApplication\SPApplication\obj\Debug\SPApplication.Master.UsedForMaster.resources
+D:\BitBucketProjects\Shree Khodiyar Plastic Industries\SPApplication\SPApplication\obj\Debug\SPApplication.Master.MouldMaster.resources
+D:\BitBucketProjects\Shree Khodiyar Plastic Industries\SPApplication\SPApplication\obj\Debug\SPApplication.Employee.resources
+D:\BitBucketProjects\Shree Khodiyar Plastic Industries\SPApplication\SPApplication\obj\Debug\SPApplication.UnitOfMessurement.resources
+D:\BitBucketProjects\Shree Khodiyar Plastic Industries\SPApplication\SPApplication\obj\Debug\SPApplication.Report.QualityControlMachineWiseReport.resources
+D:\BitBucketProjects\Shree Khodiyar Plastic Industries\SPApplication\SPApplication\obj\Debug\SPApplication.Master.CompanyInformation.resources
+D:\BitBucketProjects\Shree Khodiyar Plastic Industries\SPApplication\SPApplication\obj\Debug\SPApplication.Master.AddUser.resources
+D:\BitBucketProjects\Shree Khodiyar Plastic Industries\SPApplication\SPApplication\obj\Debug\SPApplication.Transaction.ProductPrintQRCode.resources
+D:\BitBucketProjects\Shree Khodiyar Plastic Industries\SPApplication\SPApplication\obj\Debug\SPApplication.Transaction.PurchaseOrder.resources
+D:\BitBucketProjects\Shree Khodiyar Plastic Industries\SPApplication\SPApplication\obj\Debug\SPApplication.Transaction.QualityControl.resources
+D:\BitBucketProjects\Shree Khodiyar Plastic Industries\SPApplication\SPApplication\obj\Debug\SPApplication.Transaction.QualityAnalysis.resources
+D:\BitBucketProjects\Shree Khodiyar Plastic Industries\SPApplication\SPApplication\obj\Debug\SPApplication.Transaction.CapLabel.resources
+D:\BitBucketProjects\Shree Khodiyar Plastic Industries\SPApplication\SPApplication\obj\Debug\SPApplication.Transaction.SalesOrder.resources
+D:\BitBucketProjects\Shree Khodiyar Plastic Industries\SPApplication\SPApplication\obj\Debug\SPApplication.Transaction.AssignTask_Old.resources
+D:\BitBucketProjects\Shree Khodiyar Plastic Industries\SPApplication\SPApplication\obj\Debug\SPApplication.Transaction.ShiftEntry.resources
+D:\BitBucketProjects\Shree Khodiyar Plastic Industries\SPApplication\SPApplication\obj\Debug\SPApplication.Transaction.ProductSwitchReason.resources
+D:\BitBucketProjects\Shree Khodiyar Plastic Industries\SPApplication\SPApplication\obj\Debug\SPApplication.Transaction.ShiftSchedule.resources
+D:\BitBucketProjects\Shree Khodiyar Plastic Industries\SPApplication\SPApplication\obj\Debug\SPApplication.Transaction.Tolerance.resources
+D:\BitBucketProjects\Shree Khodiyar Plastic Industries\SPApplication\SPApplication\obj\Debug\SPApplication.Dashboard.resources
+D:\BitBucketProjects\Shree Khodiyar Plastic Industries\SPApplication\SPApplication\obj\Debug\SPApplication.View.Dashboard1.resources
+D:\BitBucketProjects\Shree Khodiyar Plastic Industries\SPApplication\SPApplication\obj\Debug\SPApplication.MasterMenuWindow.resources
+D:\BitBucketProjects\Shree Khodiyar Plastic Industries\SPApplication\SPApplication\obj\Debug\SPApplication.SettingsList.resources
+D:\BitBucketProjects\Shree Khodiyar Plastic Industries\SPApplication\SPApplication\obj\Debug\SPApplication.Properties.Resources.resources
+D:\BitBucketProjects\Shree Khodiyar Plastic Industries\SPApplication\SPApplication\obj\Debug\SPApplication.Settings.EmailCredentials.resources
+D:\BitBucketProjects\Shree Khodiyar Plastic Industries\SPApplication\SPApplication\obj\Debug\SPApplication.ReportList.resources
+D:\BitBucketProjects\Shree Khodiyar Plastic Industries\SPApplication\SPApplication\obj\Debug\SPApplication.TransactionMenuWindow.resources
+D:\BitBucketProjects\Shree Khodiyar Plastic Industries\SPApplication\SPApplication\obj\Debug\SPApplication.csproj.GenerateResource.Cache
+D:\BitBucketProjects\Shree Khodiyar Plastic Industries\SPApplication\SPApplication\obj\Debug\RdlCompile.cache
+D:\BitBucketProjects\Shree Khodiyar Plastic Industries\SPApplication\SPApplication\obj\Debug\RdlCompile.compiled
+D:\BitBucketProjects\Shree Khodiyar Plastic Industries\SPApplication\SPApplication\obj\Debug\SPApplication.exe
+D:\BitBucketProjects\Shree Khodiyar Plastic Industries\SPApplication\SPApplication\obj\Debug\SPApplication.pdb
+D:\BitBucketProjects\Shree Khodiyar Plastic Industries\SPApplication\SPApplication\obj\Debug\SPApplication.Master.CategoryMaster.resources
+D:\BitBucketProjects\Shree Khodiyar Plastic Industries\SPApplication\SPApplication\obj\Debug\SPApplication.Item.resources
+D:\BitBucketProjects\Shree Khodiyar Plastic Industries\SPApplication\SPApplication\obj\Debug\SPApplication.Master.Manufracturer.resources
+D:\BitBucketProjects\Shree Khodiyar Plastic Industries\SPApplication\SPApplication\obj\Debug\SPApplication.View.MaintenanceDashboard.resources
+D:\BitBucketProjects\Shree Khodiyar Plastic Industries\SPApplication\SPApplication\obj\Debug\SPApplication.Transaction.ItemRequisition.resources
+D:\BitBucketProjects\Shree Khodiyar Plastic Industries\SPApplication\SPApplication\obj\Debug\SPApplication.Report.ProductionQuantityReport.resources
+D:\BitBucketProjects\Shree Khodiyar Plastic Industries\SPApplication\SPApplication\obj\Debug\SPApplication.Transaction.ShiftScheduleNew.resources
+D:\BitBucketProjects\Shree Khodiyar Plastic Industries\SPApplication\SPApplication\obj\Debug\SPApplication.Planning.SalesOrderPlanning.resources
+D:\BitBucketProjects\Shree Khodiyar Plastic Industries\SPApplication\SPApplication\obj\Debug\SPApplication.Transaction.QRCodeMake.resources
+D:\BitBucketProjects\Shree Khodiyar Plastic Industries\SPApplication\SPApplication\obj\Debug\SPApplication.Report.GradeNoticeBordReport.resources
+D:\BitBucketProjects\SKPI\SPApplication\SPApplication\bin\Debug\SPApplication.exe.config
+D:\BitBucketProjects\SKPI\SPApplication\SPApplication\obj\Debug\SPApplication.exe
+D:\BitBucketProjects\SKPI\SPApplication\SPApplication\obj\Debug\SPApplication.pdb
+D:\BitBucketProjects\SKPI\SPApplication\SPApplication\bin\Debug\SPApplication.exe
+D:\BitBucketProjects\SKPI\SPApplication\SPApplication\bin\Debug\SPApplication.pdb
+D:\BitBucketProjects\SKPI\SPApplication\SPApplication\bin\Debug\BusinessLayerUtility.dll
+D:\BitBucketProjects\SKPI\SPApplication\SPApplication\bin\Debug\Zen.Barcode.Core.dll
+D:\BitBucketProjects\SKPI\SPApplication\SPApplication\bin\Debug\BusinessLayerUtility.pdb
+D:\BitBucketProjects\SKPI\SPApplication\SPApplication\obj\Debug\SPApplication.csprojResolveAssemblyReference.cache
+D:\BitBucketProjects\SKPI\SPApplication\SPApplication\obj\Debug\SPApplication.Authentication.ChangePassword.resources
+D:\BitBucketProjects\SKPI\SPApplication\SPApplication\obj\Debug\SPApplication.Authentication.ClientWiseEmailConfiguration.resources
+D:\BitBucketProjects\SKPI\SPApplication\SPApplication\obj\Debug\SPApplication.LoginWindow.resources
+D:\BitBucketProjects\SKPI\SPApplication\SPApplication\obj\Debug\SPApplication.Authentication.ImportTallyData.resources
+D:\BitBucketProjects\SKPI\SPApplication\SPApplication\obj\Debug\SPApplication.Authentication.Users.resources
+D:\BitBucketProjects\SKPI\SPApplication\SPApplication\obj\Debug\SPApplication.Backup.BackupEXE.resources
+D:\BitBucketProjects\SKPI\SPApplication\SPApplication\obj\Debug\SPApplication.Backup.ScheduleServerBackup.resources
+D:\BitBucketProjects\SKPI\SPApplication\SPApplication\obj\Debug\SPApplication.KanBan.KanBanEntry.resources
+D:\BitBucketProjects\SKPI\SPApplication\SPApplication\obj\Debug\SPApplication.Transaction.KB_CommercialOrder.resources
+D:\BitBucketProjects\SKPI\SPApplication\SPApplication\obj\Debug\SPApplication.Transaction.KB_MunufacturingOrder.resources
+D:\BitBucketProjects\SKPI\SPApplication\SPApplication\obj\Debug\SPApplication.KanBan.KB_ProductionOrder.resources
+D:\BitBucketProjects\SKPI\SPApplication\SPApplication\obj\Debug\SPApplication.KanBan.KB_PurchaseOrder.resources
+D:\BitBucketProjects\SKPI\SPApplication\SPApplication\obj\Debug\SPApplication.Master.CategoryMaster.resources
+D:\BitBucketProjects\SKPI\SPApplication\SPApplication\obj\Debug\SPApplication.Item.resources
+D:\BitBucketProjects\SKPI\SPApplication\SPApplication\obj\Debug\SPApplication.Master.Manufracturer.resources
+D:\BitBucketProjects\SKPI\SPApplication\SPApplication\obj\Debug\SPApplication.Transaction.ItemRequisition.resources
+D:\BitBucketProjects\SKPI\SPApplication\SPApplication\obj\Debug\SPApplication.Master.MachineMaster.resources
+D:\BitBucketProjects\SKPI\SPApplication\SPApplication\obj\Debug\SPApplication.Planning.SalesOrderPlanning.resources
+D:\BitBucketProjects\SKPI\SPApplication\SPApplication\obj\Debug\SPApplication.Report.ProductionQuantityReport.resources
+D:\BitBucketProjects\SKPI\SPApplication\SPApplication\obj\Debug\SPApplication.Report.GradeNoticeBordReport.resources
+D:\BitBucketProjects\SKPI\SPApplication\SPApplication\obj\Debug\SPApplication.Report.ViewReportW.resources
+D:\BitBucketProjects\SKPI\SPApplication\SPApplication\obj\Debug\SPApplication.Transaction.DispatchSchedule.resources
+D:\BitBucketProjects\SKPI\SPApplication\SPApplication\obj\Debug\SPApplication.KanBan.RND.resources
+D:\BitBucketProjects\SKPI\SPApplication\SPApplication\obj\Debug\SPApplication.Master.CapMaster.resources
+D:\BitBucketProjects\SKPI\SPApplication\SPApplication\obj\Debug\SPApplication.Master.CatalogueProductMaster.resources
+D:\BitBucketProjects\SKPI\SPApplication\SPApplication\obj\Debug\SPApplication.Master.Customer.resources
+D:\BitBucketProjects\SKPI\SPApplication\SPApplication\obj\Debug\SPApplication.Master.EquipmentMaster.resources
+D:\BitBucketProjects\SKPI\SPApplication\SPApplication\obj\Debug\SPApplication.PartMaster.resources
+D:\BitBucketProjects\SKPI\SPApplication\SPApplication\obj\Debug\SPApplication.Master.PlannerMaster.resources
+D:\BitBucketProjects\SKPI\SPApplication\SPApplication\obj\Debug\SPApplication.Master.PreformPartyMaster.resources
+D:\BitBucketProjects\SKPI\SPApplication\SPApplication\obj\Debug\SPApplication.Master.PlaceMaster.resources
+D:\BitBucketProjects\SKPI\SPApplication\SPApplication\obj\Debug\SPApplication.Master.Supplier.resources
+D:\BitBucketProjects\SKPI\SPApplication\SPApplication\obj\Debug\SPApplication.Master.TaskMaster.resources
+D:\BitBucketProjects\SKPI\SPApplication\SPApplication\obj\Debug\SPApplication.Report.AssignTaskReport.resources
+D:\BitBucketProjects\SKPI\SPApplication\SPApplication\obj\Debug\SPApplication.Report.COAReport.resources
+D:\BitBucketProjects\SKPI\SPApplication\SPApplication\obj\Debug\SPApplication.Reports.DueDateReport.resources
+D:\BitBucketProjects\SKPI\SPApplication\SPApplication\obj\Debug\SPApplication.Report.LogReport.resources
+D:\BitBucketProjects\SKPI\SPApplication\SPApplication\obj\Debug\SPApplication.Report.MonthlyProductionReport.resources
+D:\BitBucketProjects\SKPI\SPApplication\SPApplication\obj\Debug\SPApplication.Report.ProgressCardReport.resources
+D:\BitBucketProjects\SKPI\SPApplication\SPApplication\obj\Debug\SPApplication.Report.QualityControlProductWiseReport.resources
+D:\BitBucketProjects\SKPI\SPApplication\SPApplication\obj\Debug\SPApplication.Report.BatchWiseQualityControlReport.resources
+D:\BitBucketProjects\SKPI\SPApplication\SPApplication\obj\Debug\SPApplication.Report.RDLCReport.ReportViewRDLC.resources
+D:\BitBucketProjects\SKPI\SPApplication\SPApplication\obj\Debug\SPApplication.Report.TemperatureReport.resources
+D:\BitBucketProjects\SKPI\SPApplication\SPApplication\obj\Debug\SPApplication.Transaction.AssignTask.resources
+D:\BitBucketProjects\SKPI\SPApplication\SPApplication\obj\Debug\SPApplication.Transaction.MouldEntry.resources
+D:\BitBucketProjects\SKPI\SPApplication\SPApplication\obj\Debug\SPApplication.Transaction.OEECalculation.resources
+D:\BitBucketProjects\SKPI\SPApplication\SPApplication\obj\Debug\SPApplication.Transaction.PartRenewalEntry.resources
+D:\BitBucketProjects\SKPI\SPApplication\SPApplication\obj\Debug\SPApplication.Transaction.EmployeeTemperature.resources
+D:\BitBucketProjects\SKPI\SPApplication\SPApplication\obj\Debug\SPApplication.Transaction.OrderView.resources
+D:\BitBucketProjects\SKPI\SPApplication\SPApplication\obj\Debug\SPApplication.Transaction.Planner.resources
+D:\BitBucketProjects\SKPI\SPApplication\SPApplication\obj\Debug\SPApplication.Master.ProductionLabel.resources
+D:\BitBucketProjects\SKPI\SPApplication\SPApplication\obj\Debug\SPApplication.Master.City.resources
+D:\BitBucketProjects\SKPI\SPApplication\SPApplication\obj\Debug\SPApplication.Master.Preform.resources
+D:\BitBucketProjects\SKPI\SPApplication\SPApplication\obj\Debug\SPApplication.Product.resources
+D:\BitBucketProjects\SKPI\SPApplication\SPApplication\obj\Debug\SPApplication.Master.UsedForMaster.resources
+D:\BitBucketProjects\SKPI\SPApplication\SPApplication\obj\Debug\SPApplication.Master.MouldMaster.resources
+D:\BitBucketProjects\SKPI\SPApplication\SPApplication\obj\Debug\SPApplication.Employee.resources
+D:\BitBucketProjects\SKPI\SPApplication\SPApplication\obj\Debug\SPApplication.UnitOfMessurement.resources
+D:\BitBucketProjects\SKPI\SPApplication\SPApplication\obj\Debug\SPApplication.Report.QualityControlMachineWiseReport.resources
+D:\BitBucketProjects\SKPI\SPApplication\SPApplication\obj\Debug\SPApplication.Master.CompanyInformation.resources
+D:\BitBucketProjects\SKPI\SPApplication\SPApplication\obj\Debug\SPApplication.Master.AddUser.resources
+D:\BitBucketProjects\SKPI\SPApplication\SPApplication\obj\Debug\SPApplication.Transaction.ProductPrintQRCode.resources
+D:\BitBucketProjects\SKPI\SPApplication\SPApplication\obj\Debug\SPApplication.Transaction.PurchaseOrder.resources
+D:\BitBucketProjects\SKPI\SPApplication\SPApplication\obj\Debug\SPApplication.Transaction.QRCodeMake.resources
+D:\BitBucketProjects\SKPI\SPApplication\SPApplication\obj\Debug\SPApplication.Transaction.QualityControl.resources
+D:\BitBucketProjects\SKPI\SPApplication\SPApplication\obj\Debug\SPApplication.Transaction.QualityAnalysis.resources
+D:\BitBucketProjects\SKPI\SPApplication\SPApplication\obj\Debug\SPApplication.Transaction.CapLabel.resources
+D:\BitBucketProjects\SKPI\SPApplication\SPApplication\obj\Debug\SPApplication.Transaction.SalesOrder.resources
+D:\BitBucketProjects\SKPI\SPApplication\SPApplication\obj\Debug\SPApplication.Transaction.AssignTask_Old.resources
+D:\BitBucketProjects\SKPI\SPApplication\SPApplication\obj\Debug\SPApplication.Transaction.ShiftEntry.resources
+D:\BitBucketProjects\SKPI\SPApplication\SPApplication\obj\Debug\SPApplication.Transaction.ProductSwitchReason.resources
+D:\BitBucketProjects\SKPI\SPApplication\SPApplication\obj\Debug\SPApplication.Transaction.ShiftSchedule.resources
+D:\BitBucketProjects\SKPI\SPApplication\SPApplication\obj\Debug\SPApplication.Transaction.ShiftScheduleNew.resources
+D:\BitBucketProjects\SKPI\SPApplication\SPApplication\obj\Debug\SPApplication.Transaction.Tolerance.resources
+D:\BitBucketProjects\SKPI\SPApplication\SPApplication\obj\Debug\SPApplication.Dashboard.resources
+D:\BitBucketProjects\SKPI\SPApplication\SPApplication\obj\Debug\SPApplication.View.Dashboard1.resources
+D:\BitBucketProjects\SKPI\SPApplication\SPApplication\obj\Debug\SPApplication.View.MaintenanceDashboard.resources
+D:\BitBucketProjects\SKPI\SPApplication\SPApplication\obj\Debug\SPApplication.MasterMenuWindow.resources
+D:\BitBucketProjects\SKPI\SPApplication\SPApplication\obj\Debug\SPApplication.SettingsList.resources
+D:\BitBucketProjects\SKPI\SPApplication\SPApplication\obj\Debug\SPApplication.Properties.Resources.resources
+D:\BitBucketProjects\SKPI\SPApplication\SPApplication\obj\Debug\SPApplication.Settings.EmailCredentials.resources
+D:\BitBucketProjects\SKPI\SPApplication\SPApplication\obj\Debug\SPApplication.ReportList.resources
+D:\BitBucketProjects\SKPI\SPApplication\SPApplication\obj\Debug\SPApplication.TransactionMenuWindow.resources
+D:\BitBucketProjects\SKPI\SPApplication\SPApplication\obj\Debug\SPApplication.csproj.GenerateResource.Cache
+D:\BitBucketProjects\SKPI\SPApplication\SPApplication\obj\Debug\RdlCompile.cache
+D:\BitBucketProjects\SKPI\SPApplication\SPApplication\obj\Debug\RdlCompile.compiled

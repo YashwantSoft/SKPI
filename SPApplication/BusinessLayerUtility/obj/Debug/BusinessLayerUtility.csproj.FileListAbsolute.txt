@@ -1,0 +1,23 @@
+D:\MDApps\SPApplication\BusinessLayerUtility\bin\Debug\BusinessLayerUtility.dll
+D:\MDApps\SPApplication\BusinessLayerUtility\bin\Debug\BusinessLayerUtility.pdb
+D:\MDApps\SPApplication\BusinessLayerUtility\obj\Debug\ResolveAssemblyReference.cache
+D:\MDApps\SPApplication\BusinessLayerUtility\obj\Debug\BusinessLayerUtility.dll
+D:\MDApps\SPApplication\BusinessLayerUtility\obj\Debug\BusinessLayerUtility.pdb
+D:\Yashwant\Projects\MDApps\SPApplication\BusinessLayerUtility\bin\Debug\BusinessLayerUtility.dll
+D:\Yashwant\Projects\MDApps\SPApplication\BusinessLayerUtility\bin\Debug\BusinessLayerUtility.pdb
+D:\Yashwant\Projects\MDApps\SPApplication\BusinessLayerUtility\obj\Debug\ResolveAssemblyReference.cache
+D:\Yashwant\Projects\MDApps\SPApplication\BusinessLayerUtility\obj\Debug\BusinessLayerUtility.dll
+D:\Yashwant\Projects\MDApps\SPApplication\BusinessLayerUtility\obj\Debug\BusinessLayerUtility.pdb
+D:\Yashwant\Projects\Surya Hospital\SPApplication\BusinessLayerUtility\bin\Debug\BusinessLayerUtility.dll
+D:\Yashwant\Projects\Surya Hospital\SPApplication\BusinessLayerUtility\bin\Debug\BusinessLayerUtility.pdb
+D:\Yashwant\Projects\Surya Hospital\SPApplication\BusinessLayerUtility\obj\Debug\ResolveAssemblyReference.cache
+D:\Yashwant\Projects\Surya Hospital\SPApplication\BusinessLayerUtility\obj\Debug\BusinessLayerUtility.dll
+D:\Yashwant\Projects\Surya Hospital\SPApplication\BusinessLayerUtility\obj\Debug\BusinessLayerUtility.pdb
+E:\Projects\Madhura Agro Tourism\Projects\Convert\SPApplication\BusinessLayerUtility\bin\Debug\BusinessLayerUtility.dll
+E:\Projects\Madhura Agro Tourism\Projects\Convert\SPApplication\BusinessLayerUtility\bin\Debug\BusinessLayerUtility.pdb
+E:\Projects\Madhura Agro Tourism\Projects\Convert\SPApplication\BusinessLayerUtility\obj\Debug\BusinessLayerUtility.csprojAssemblyReference.cache
+E:\Projects\Madhura Agro Tourism\Projects\Convert\SPApplication\BusinessLayerUtility\obj\Debug\BusinessLayerUtility.BusinessResources.resources
+E:\Projects\Madhura Agro Tourism\Projects\Convert\SPApplication\BusinessLayerUtility\obj\Debug\BusinessLayerUtility.csproj.GenerateResource.cache
+E:\Projects\Madhura Agro Tourism\Projects\Convert\SPApplication\BusinessLayerUtility\obj\Debug\BusinessLayerUtility.csproj.CoreCompileInputs.cache
+E:\Projects\Madhura Agro Tourism\Projects\Convert\SPApplication\BusinessLayerUtility\obj\Debug\BusinessLayerUtility.dll
+E:\Projects\Madhura Agro Tourism\Projects\Convert\SPApplication\BusinessLayerUtility\obj\Debug\BusinessLayerUtility.pdb

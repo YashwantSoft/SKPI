@@ -1,0 +1,967 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="BTN_CLEAR" xml:space="preserve">
+    <value>&amp;Clear</value>
+  </data>
+  <data name="BTN_PLUS" xml:space="preserve">
+    <value>+</value>
+  </data>
+  <data name="BTN_SAVE" xml:space="preserve">
+    <value>&amp;Save</value>
+  </data>
+  <data name="COL_LBL_HEADER" xml:space="preserve">
+    <value>#0000ff</value>
+  </data>
+  <data name="FONT_NAME" xml:space="preserve">
+    <value>Calibri</value>
+  </data>
+  <data name="FRM_ITEM" xml:space="preserve">
+    <value>Item</value>
+  </data>
+  <data name="GR_ITEM_DETAILS" xml:space="preserve">
+    <value>Item Details</value>
+  </data>
+  <data name="GR_PRICING" xml:space="preserve">
+    <value>Price and Taxes</value>
+  </data>
+  <data name="GR_TAXES" xml:space="preserve">
+    <value>Taxes</value>
+  </data>
+  <data name="LBL_BATCH_NUMBER" xml:space="preserve">
+    <value>Batch Number</value>
+  </data>
+  <data name="LBL_BUTTON_SUPPLIER" xml:space="preserve">
+    <value>Supplier</value>
+  </data>
+  <data name="LBL_CGST_PER" xml:space="preserve">
+    <value>CGST In %</value>
+  </data>
+  <data name="LBL_COMPANY_NAME" xml:space="preserve">
+    <value>Company Name</value>
+  </data>
+  <data name="LBL_CONTAIN" xml:space="preserve">
+    <value>Contain</value>
+  </data>
+  <data name="LBL_COST" xml:space="preserve">
+    <value>Cost</value>
+  </data>
+  <data name="LBL_DASHBOARD_SALE" xml:space="preserve">
+    <value>Sale</value>
+  </data>
+  <data name="LBL_CATEGORY" xml:space="preserve">
+    <value>Category</value>
+  </data>
+  <data name="LBL_HEADER_ADDUSER" xml:space="preserve">
+    <value>Users</value>
+  </data>
+  <data name="LBL_HEADER_BIRTHDAYREPORT" xml:space="preserve">
+    <value>Birthday Report</value>
+  </data>
+  <data name="LBL_HEADER_CHANGEPASSWORD" xml:space="preserve">
+    <value>Change Password</value>
+  </data>
+  <data name="LBL_HEADER_FIRMINFORMATION" xml:space="preserve">
+    <value>Firm Information</value>
+  </data>
+  <data name="LBL_HEADER_CRNOTE" xml:space="preserve">
+    <value>Credit Return Note</value>
+  </data>
+  <data name="LBL_HEADER_CUSTOMER" xml:space="preserve">
+    <value>Customer</value>
+  </data>
+  <data name="LBL_HEADER_EMAILCREDENTIALS" xml:space="preserve">
+    <value>Email Credentials</value>
+  </data>
+  <data name="LBL_HEADER_EXPENSES" xml:space="preserve">
+    <value>Expenses Head</value>
+  </data>
+  <data name="LBL_HEADER_EXPENSESREPORT" xml:space="preserve">
+    <value>Expenses Report</value>
+  </data>
+  <data name="LBL_HEADER_GSTREPORT" xml:space="preserve">
+    <value>GST Report</value>
+  </data>
+  <data name="LBL_HEADER_ITEMQUANTITYREPORT" xml:space="preserve">
+    <value>Item Quantity Report</value>
+  </data>
+  <data name="LBL_HEADER_LOGINWINDOW" xml:space="preserve">
+    <value>Login Window</value>
+  </data>
+  <data name="LBL_HEADER_PROFITANDREPORT" xml:space="preserve">
+    <value>Profit and Loss</value>
+  </data>
+  <data name="LBL_HEADER_PURCHASE" xml:space="preserve">
+    <value>Puchase</value>
+  </data>
+  <data name="LBL_HEADER_REPORTLIST" xml:space="preserve">
+    <value>Report List</value>
+  </data>
+  <data name="LBL_HEADER_SETTINGSLIST" xml:space="preserve">
+    <value>Settings List</value>
+  </data>
+  <data name="LBL_HEADER_SUPPLIER" xml:space="preserve">
+    <value>Supplier</value>
+  </data>
+  <data name="LBL_HEADER_UOM" xml:space="preserve">
+    <value>Unit of Messurement</value>
+  </data>
+  <data name="LBL_HSN_CODE" xml:space="preserve">
+    <value>HSN Code (GST)</value>
+  </data>
+  <data name="LBL_IGST_PER" xml:space="preserve">
+    <value>IGST In %</value>
+  </data>
+  <data name="LBL_ITEM_NAME" xml:space="preserve">
+    <value>Item Name</value>
+  </data>
+  <data name="LBL_MRP" xml:space="preserve">
+    <value>MRP</value>
+  </data>
+  <data name="LBL_PRICE" xml:space="preserve">
+    <value>Price</value>
+  </data>
+  <data name="LBL_PROFIT_MARGIN_AMOUNT" xml:space="preserve">
+    <value>Profit Margin Amount</value>
+  </data>
+  <data name="LBL_PROFIT_MARGIN_PER" xml:space="preserve">
+    <value>Profit Margin In %</value>
+  </data>
+  <data name="LBL_SEARCH_ITEM" xml:space="preserve">
+    <value>Search Item</value>
+  </data>
+  <data name="LBL_SGST_PER" xml:space="preserve">
+    <value>SGST In %</value>
+  </data>
+  <data name="LBL_UOM" xml:space="preserve">
+    <value>Unit of Messurement</value>
+  </data>
+  <data name="LIST_REPORT_ITEMQUANTITYREPORT" xml:space="preserve">
+    <value>Item Quantity Report</value>
+  </data>
+  <data name="LIST_REPORT_SALESREPORT" xml:space="preserve">
+    <value>Sales Report</value>
+  </data>
+  <data name="BTN_DELETE" xml:space="preserve">
+    <value>Delete</value>
+  </data>
+  <data name="BTN_EXIT" xml:space="preserve">
+    <value>E&amp;xit</value>
+  </data>
+  <data name="GB_CHEQUE_DETAILS" xml:space="preserve">
+    <value>Cheque Details</value>
+  </data>
+  <data name="LBL_ADDRESS" xml:space="preserve">
+    <value>Address</value>
+  </data>
+  <data name="LBL_AMOUNT" xml:space="preserve">
+    <value>Amount</value>
+  </data>
+  <data name="LBL_BALANCE_AMOUNT" xml:space="preserve">
+    <value>Balance Amount</value>
+  </data>
+  <data name="LBL_BANK_NAME" xml:space="preserve">
+    <value>Bank Name</value>
+  </data>
+  <data name="LBL_BRANCH_NAME" xml:space="preserve">
+    <value>Branch Name</value>
+  </data>
+  <data name="LBL_CHEQUE_NO" xml:space="preserve">
+    <value>Cheque No.</value>
+  </data>
+  <data name="LBL_CUSTOMER_NAME" xml:space="preserve">
+    <value>Customer Name</value>
+  </data>
+  <data name="LBL_DATE" xml:space="preserve">
+    <value>Date</value>
+  </data>
+  <data name="LBL_HEADER_PAYMENT" xml:space="preserve">
+    <value>Payment</value>
+  </data>
+  <data name="LBL_HEADER_RECEIPT" xml:space="preserve">
+    <value>Receipt</value>
+  </data>
+  <data name="LBL_PAYMENT_MODE" xml:space="preserve">
+    <value>Payment Mode</value>
+  </data>
+  <data name="LBL_SUPPLIER_NAME" xml:space="preserve">
+    <value>Supplier Name</value>
+  </data>
+  <data name="LBL_TOTAL_PENDING" xml:space="preserve">
+    <value>Total Pending</value>
+  </data>
+  <data name="LBL_TOTAL_AMOUNT" xml:space="preserve">
+    <value>Total Amount</value>
+  </data>
+  <data name="LBL_HEADER_PURCHASEREPORT" xml:space="preserve">
+    <value>Purchase Report</value>
+  </data>
+  <data name="LBL_HEADER_SUPPLIERREPORT" xml:space="preserve">
+    <value>Supplier Report</value>
+  </data>
+  <data name="LBL_HEADER_CUSTOMERREPORT" xml:space="preserve">
+    <value>Customer Report</value>
+  </data>
+  <data name="LBL_HEADER_SUPPLIERDETAILS" xml:space="preserve">
+    <value>Supplier Payment Deposit Report</value>
+  </data>
+  <data name="LBL_TEST" xml:space="preserve">
+    <value>Item Name</value>
+  </data>
+  <data name="BTN_REPORT" xml:space="preserve">
+    <value>&amp;Report</value>
+  </data>
+  <data name="FORE_COLOUR" xml:space="preserve">
+    <value>#FFFFFF</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="CreditNote" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\CreditNote.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Deposit" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Deposit.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Exit" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Exit.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Expenses" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Expenses.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="FirmInfo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\FirmInfo.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Item" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Item.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Manufracturer" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Manufracturer.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Masters" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Masters.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Payment" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Payment.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ProductLogo1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\ProductLogo.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Purchase" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Purchase.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Receipts" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Receipts.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Reports" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Reports.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Sale" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Sale.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Settings" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Settings.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Supplier" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Supplier.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Transaction" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Transaction.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="LBL_HEADER_BANKACCOUNT" xml:space="preserve">
+    <value>Bank Account</value>
+  </data>
+  <data name="LBL_HEADER_CUSTOMERPAYMENTDEPOSITREPORT" xml:space="preserve">
+    <value>Customer Payment Deposit Report</value>
+  </data>
+  <data name="LBL_HEADER_DEPOSITHEAD" xml:space="preserve">
+    <value>Deposit Head</value>
+  </data>
+  <data name="LBL_HEADER_EXPENSESHEAD" xml:space="preserve">
+    <value>Expenses Head</value>
+  </data>
+  <data name="LBL_HEADER_MANUFRACTURER" xml:space="preserve">
+    <value>Manufracturer</value>
+  </data>
+  <data name="Customer" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Customer.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="UOM" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\UOM.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BTN_VIEW" xml:space="preserve">
+    <value>&amp;View</value>
+  </data>
+  <data name="BTN_ADD" xml:space="preserve">
+    <value>&amp;Add</value>
+  </data>
+  <data name="LBL_VERSION" xml:space="preserve">
+    <value>Version 8.0.12</value>
+  </data>
+  <data name="LIST_REPORT_CLIENTPAYMENTDUEDATEREPORT" xml:space="preserve">
+    <value>Client's Payment Due Date Report</value>
+  </data>
+  <data name="LIST_REPORT_ITEMQUANTITYREPORT1" xml:space="preserve">
+    <value>Item Quantity Report</value>
+  </data>
+  <data name="LBL_CONTACTDETAILS" xml:space="preserve">
+    <value>Mobile-9822837797</value>
+  </data>
+  <data name="LBL_COPYRIGHTS" xml:space="preserve">
+    <value>Copyright @ 2020. 2dk Apps, Pune</value>
+  </data>
+  <data name="LBL_HEADER_DAILYBOOKENTRY" xml:space="preserve">
+    <value>Daily Book Entry</value>
+  </data>
+  <data name="LBL_HEADER_OPENINGSTOCKENTRY" xml:space="preserve">
+    <value>Opening Stock Entry</value>
+  </data>
+  <data name="LBL_HELP" xml:space="preserve">
+    <value>&amp;Help</value>
+  </data>
+  <data name="LBL_HEADER_INWARDMATERIAL" xml:space="preserve">
+    <value>Inward Material</value>
+  </data>
+  <data name="LBL_HEADER_OUTWARDMATERIAL" xml:space="preserve">
+    <value>Outward Material</value>
+  </data>
+  <data name="LBL_HEADER_ITEM" xml:space="preserve">
+    <value>Product</value>
+  </data>
+  <data name="LBL_HEADER_CATEGARY" xml:space="preserve">
+    <value>Categary</value>
+  </data>
+  <data name="Outward" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Outward.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CheckIn" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\CheckIn.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="LBL_HEADER_CITY" xml:space="preserve">
+    <value>City</value>
+  </data>
+  <data name="LBL_HEADER_CHECKIN" xml:space="preserve">
+    <value>Check In and Check Out</value>
+  </data>
+  <data name="City" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\City.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="LBL_HEADER_ROOM" xml:space="preserve">
+    <value>Room</value>
+  </data>
+  <data name="Room" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Room.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="LBL_HEADER_RESTAURANTBILL" xml:space="preserve">
+    <value>Restaurant Bill</value>
+  </data>
+  <data name="BACKGROUND_COLOUR" xml:space="preserve">
+    <value>#1C2A4F</value>
+  </data>
+  <data name="LBL_HEADER_EVENT_MANAGEMENT" xml:space="preserve">
+    <value>Event Booking</value>
+  </data>
+  <data name="LBL_HEADER_HOTELTABLE" xml:space="preserve">
+    <value>Hotel Table Master</value>
+  </data>
+  <data name="LBL_HEADER_USER" xml:space="preserve">
+    <value>Employee Master</value>
+  </data>
+  <data name="Employee" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Employee.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="LBL_HEADER_EMPLOYEE" xml:space="preserve">
+    <value>Employee</value>
+  </data>
+  <data name="LBL_HEADER_EMPLOYEE_ATTEMDAMCE" xml:space="preserve">
+    <value>Employee Attendance</value>
+  </data>
+  <data name="LBL_HEADER_STUDENTATTENDANCEREPORT" xml:space="preserve">
+    <value>Student Attendance Report</value>
+  </data>
+  <data name="LBL_REPORT_EMPLOYEE_MONTHWISE" xml:space="preserve">
+    <value>Employee Attendance Monthwise Report</value>
+  </data>
+  <data name="Attendance" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Attendance.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="EventManagement" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\EventManagement.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="LBL_HEADER_EVENTBOOKING" xml:space="preserve">
+    <value>Events Booking</value>
+  </data>
+  <data name="AmountCollection" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\AmountCollection.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Availability" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Availability.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="EventMaster" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\EventMaster.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="LBL_HEADER_AMOUNTCOLLECTION" xml:space="preserve">
+    <value>Amount Collection</value>
+  </data>
+  <data name="LBL_HEADER_EVENTMASTER" xml:space="preserve">
+    <value>Event Master</value>
+  </data>
+  <data name="LIST_REPORT_CHECKAVAILABILITY" xml:space="preserve">
+    <value>Check Availability</value>
+  </data>
+  <data name="LBL_HEADER_PACKAGEMASTER" xml:space="preserve">
+    <value>Package Master</value>
+  </data>
+  <data name="PackageMaster" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\PackageMaster.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BTN_SEARCH" xml:space="preserve">
+    <value>Search</value>
+  </data>
+  <data name="BankDeposit" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\BankDeposit.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BankWithdraw" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\BankWithdraw.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="LBL_HEADER_BANKDEPOSIT" xml:space="preserve">
+    <value>Bank Deposit</value>
+  </data>
+  <data name="LBL_HEADER_BANKWITHDRAW" xml:space="preserve">
+    <value>Bank Withdraw</value>
+  </data>
+  <data name="LBL_HEADER_BANKDEPOSITANDWITHDRAW" xml:space="preserve">
+    <value>Bank Deposit and Withdraw Report</value>
+  </data>
+  <data name="LBL_HEADER_EVENTBOOKINGREPORT" xml:space="preserve">
+    <value>Event Booking Report</value>
+  </data>
+  <data name="LBL_HEADER_COLLECTIONTYPEMASTER" xml:space="preserve">
+    <value>Collection Type Master</value>
+  </data>
+  <data name="LBL_HEADER_AMOUNTCOLLECTIONREPORT" xml:space="preserve">
+    <value>Amount Collection Report</value>
+  </data>
+  <data name="LBL_REPORT_MATERIALOUTWARDREPORT" xml:space="preserve">
+    <value>Material Outward Report</value>
+  </data>
+  <data name="LBL_HEADER_BOOKINGCHECKINCHECKOUTREPORT" xml:space="preserve">
+    <value>Booking Checkin and Checkout Report</value>
+  </data>
+  <data name="LBL_HEADER_MOULDMASTER" xml:space="preserve">
+    <value>Mould Master</value>
+  </data>
+  <data name="ClientLogo1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\logo2.jpg;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ProductLogo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\QALogo.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="LBL_HEADER_QUALITYANALYSIS" xml:space="preserve">
+    <value>Quality Analysis</value>
+  </data>
+  <data name="MouldMaster" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\MouldMaster.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="QualityControl" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\QC.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="LBL_HEADER_QUALITY_CONTROL_REGISTER_ENTRY" xml:space="preserve">
+    <value>Quality Control Register Entry</value>
+  </data>
+  <data name="BACKGROUND_BLANKWHITE" xml:space="preserve">
+    <value>#FFFFFF</value>
+  </data>
+  <data name="BACKGROUND_NOTSUCCESS" xml:space="preserve">
+    <value>#FFCDD2</value>
+  </data>
+  <data name="BACKGROUND_SUCCESS" xml:space="preserve">
+    <value>#AAF255</value>
+  </data>
+  <data name="Product" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Product.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Preform" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Preform.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ClientLogo_old" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\IMG-20210109-WA0006.jpg;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BTN_PRINT" xml:space="preserve">
+    <value>&amp;Print</value>
+  </data>
+  <data name="DispatchEntry" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\DispatchEntry.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="LBL_HEADER_PRODUCTIONLABEL" xml:space="preserve">
+    <value>Production Label</value>
+  </data>
+  <data name="DATEFORMATDDMMYYYY" xml:space="preserve">
+    <value>dd/MM/yyyy</value>
+  </data>
+  <data name="DATEFORMATMMDDYYYY" xml:space="preserve">
+    <value>MM/dd/yyyy</value>
+  </data>
+  <data name="ProductionLabel" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\ProductionLabel.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CapLabel" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Cap.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="LBL_HEADER_CAPLABEL" xml:space="preserve">
+    <value>Cap Label</value>
+  </data>
+  <data name="ICOLogo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\SKPILogo.ico;System.Drawing.Icon, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="LBL_HEADER_PREFORM" xml:space="preserve">
+    <value>Preform Master</value>
+  </data>
+  <data name="DATABASEPASSWORD" xml:space="preserve">
+    <value>Vijay@007</value>
+  </data>
+  <data name="DATABASEPATH_SKPI" xml:space="preserve">
+    <value>\\192.168.1.3\d\Softwares\Sticker Printing\Data\Database\SKPIDB.mdb</value>
+  </data>
+  <data name="FORMATPATH_SKPI" xml:space="preserve">
+    <value>\\192.168.1.3\d\Softwares\Sticker Printing\Data\Format\</value>
+  </data>
+  <data name="DATABASEPATH" xml:space="preserve">
+    <value>D:\BitBucketProjects\SKPI\SPApplication\SPApplication\bin\Debug\Data\Database\SKPIDB.mdb</value>
+  </data>
+  <data name="BTN_BROWSEEXCELFILE" xml:space="preserve">
+    <value>Browse Excel File</value>
+  </data>
+  <data name="LBL_HEADER_GETTALLYDATA" xml:space="preserve">
+    <value>Import Data From Tally Software</value>
+  </data>
+  <data name="FORMATPATH" xml:space="preserve">
+    <value>Data\Format\</value>
+  </data>
+  <data name="Client_Requiremts" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Client Requiremts.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="LBL_HEADER_CLIENTREQUIREMENTS" xml:space="preserve">
+    <value>Products Requirements for Sales Order</value>
+  </data>
+  <data name="BTN_SAVEINTALLY" xml:space="preserve">
+    <value>Save In Tally</value>
+  </data>
+  <data name="BTN_REFRESH" xml:space="preserve">
+    <value>Refresh</value>
+  </data>
+  <data name="LBL_HEADER_PURCHASEORDER" xml:space="preserve">
+    <value>Products Requirements for Purchase Order</value>
+  </data>
+  <data name="PurchaseOrder" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\PurchaseOrder.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="LBL_HEADER_EMPLOYEETEMPERATURE" xml:space="preserve">
+    <value>Employee Temperature</value>
+  </data>
+  <data name="Temperature" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\iconfinder_ic_fever_5803979.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="LBL_REPORT_EMPLOYEETEMPERATUREREPORT" xml:space="preserve">
+    <value>Employee Temperature Report</value>
+  </data>
+  <data name="LBL_HEADER_ASSIGNTASK" xml:space="preserve">
+    <value>Assign Task</value>
+  </data>
+  <data name="Task" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Task.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="USER_ACCOUNTS" xml:space="preserve">
+    <value>Accounts</value>
+  </data>
+  <data name="USER_ACCOUNTS1" xml:space="preserve">
+    <value>Accounts1</value>
+  </data>
+  <data name="USER_ADMIN" xml:space="preserve">
+    <value>Admin</value>
+  </data>
+  <data name="USER_AJAY" xml:space="preserve">
+    <value>Ajay</value>
+  </data>
+  <data name="USER_HR" xml:space="preserve">
+    <value>Hr</value>
+  </data>
+  <data name="USER_HR1" xml:space="preserve">
+    <value>Hr1</value>
+  </data>
+  <data name="USER_IT" xml:space="preserve">
+    <value>IT</value>
+  </data>
+  <data name="USER_LOGISTICS" xml:space="preserve">
+    <value>Loading</value>
+  </data>
+  <data name="USER_MAINTENANCE" xml:space="preserve">
+    <value>Maintenance</value>
+  </data>
+  <data name="USER_PRODUCTION" xml:space="preserve">
+    <value>Production</value>
+  </data>
+  <data name="USER_STORE" xml:space="preserve">
+    <value>Store</value>
+  </data>
+  <data name="USER_VIJAY" xml:space="preserve">
+    <value>Vijay</value>
+  </data>
+  <data name="LBL_HEADER_TASKMASTER" xml:space="preserve">
+    <value>Employee's Task Master</value>
+  </data>
+  <data name="LBL_REPORT_LOGREPORT" xml:space="preserve">
+    <value>Log Report</value>
+  </data>
+  <data name="LBL_REPORT_USERSTASKREPORT" xml:space="preserve">
+    <value>User's Task Assign Report</value>
+  </data>
+  <data name="TaskMaster" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\TaskMaster.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="LBL_HEADER_SHIFTENTRY" xml:space="preserve">
+    <value>Shift Entry</value>
+  </data>
+  <data name="LBL_HEADER_PREFORMPARTY" xml:space="preserve">
+    <value>Preform Party Master</value>
+  </data>
+  <data name="LBL_REPORT_QUALITYCONTROLMACHINEWISEREPORT" xml:space="preserve">
+    <value>Quality Control Machine Wise Report</value>
+  </data>
+  <data name="LBL_HEADER_QUALITYCONTROLPRODUCTWISEREPORT" xml:space="preserve">
+    <value>Quality Control Product Wise Report</value>
+  </data>
+  <data name="LBL_HEADER_PLACEMASTER" xml:space="preserve">
+    <value>Place or Rack/Box Master</value>
+  </data>
+  <data name="LBL_HEADER_USEDFOR" xml:space="preserve">
+    <value>Used For Master</value>
+  </data>
+  <data name="LBL_HEADER_ADDBACKUPFOLDER" xml:space="preserve">
+    <value>Schedule Server Backup</value>
+  </data>
+  <data name="BTN_BROWSE" xml:space="preserve">
+    <value>Browse</value>
+  </data>
+  <data name="LBL_HEADER_PRODUCTTOLLARANCEVALUE" xml:space="preserve">
+    <value>Product's Standard and Tolerance Messurements</value>
+  </data>
+  <data name="LBL_HEADER_PRODUCUSWITCHREASON" xml:space="preserve">
+    <value>Product Switch Reason</value>
+  </data>
+  <data name="LBL_HEADER_CERTIFICATEOFANALYSIS" xml:space="preserve">
+    <value>Certificate of Analysis</value>
+  </data>
+  <data name="LBL_HEADER_PLANNER" xml:space="preserve">
+    <value>PLANNER</value>
+  </data>
+  <data name="Planner" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Planner.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="B1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\1.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\2.jpg;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\3.jpg;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_4" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\4.jpg;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="LBL_HEADER_PARTEQUIPMENT" xml:space="preserve">
+    <value>Equipment / Part Master</value>
+  </data>
+  <data name="PartMaster" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\PartMaster.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="PlaceMaster" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\PlaceMaster.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="PreformSupplier" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\PreformSupplier.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="UsedFor" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\UsedFor.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="LBL_HEADER_PARTEQUIPMENTENTRY" xml:space="preserve">
+    <value>Part / Equipment / Software / Hardware Renewal Entry</value>
+  </data>
+  <data name="Renewal" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Renewal.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DATE_FORMAT_WITHTIME" xml:space="preserve">
+    <value>dd/MM/yyyy hh:mm tt</value>
+  </data>
+  <data name="LBL_HEADER_DUEDATEREPORT" xml:space="preserve">
+    <value>Part / Equipment Due Date Report</value>
+  </data>
+  <data name="WhatsAppImage" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\WWW.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="LBL_HEADER_CAPMASTER" xml:space="preserve">
+    <value>Cap Master</value>
+  </data>
+  <data name="CapMaster" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\CapMaster.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="LBL_HEADER_OEE" xml:space="preserve">
+    <value>Overall Equipment Effectiveness (OEE)</value>
+  </data>
+  <data name="OEE" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\OEE.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="String1" xml:space="preserve">
+    <value>Overall Equipment Effectiveness Calculation</value>
+  </data>
+  <data name="LBL_HEADER_MONTHLYPRODUCTIONREPORT" xml:space="preserve">
+    <value>Monthly Production Report</value>
+  </data>
+  <data name="LBL_PROGRESSCARD_REPORT" xml:space="preserve">
+    <value>Progress Card Report</value>
+  </data>
+  <data name="USER_QC" xml:space="preserve">
+    <value>QC</value>
+  </data>
+  <data name="LBL_HEADER_SALESORDERKANBAN" xml:space="preserve">
+    <value>Kanban Sales Order 1</value>
+  </data>
+  <data name="LBL_HEADER_COMMERCIALORDERKANBAN" xml:space="preserve">
+    <value>Commercial Order</value>
+  </data>
+  <data name="LBL_HEADER_MANUFACTURINGORDERKANBAN" xml:space="preserve">
+    <value>Manufracturing </value>
+  </data>
+  <data name="LBL_HEADER_PRODUCTIONORDERKANBAN" xml:space="preserve">
+    <value>Production</value>
+  </data>
+  <data name="LBL_HEADER_PURCHASESORDERKANBAN" xml:space="preserve">
+    <value>Purchase Order</value>
+  </data>
+  <data name="KanbanBoard" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\KanbanBoard.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Commercial" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Commercial.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="KanBanSalesOrder" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\KanBanSalesOrder.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Manufacturing" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Manufacturing.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ManufacturingOrder" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\ManufacturingOrder.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ProductionOrder" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\ProductionOrder.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="purchase_order" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\purchase order.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="LBL_FIRMNAME" xml:space="preserve">
+    <value>Shree Khodiyar Plastic Industries</value>
+  </data>
+  <data name="LBL_REPORT_BATCHWISEQUALITYCONTROLREPORT" xml:space="preserve">
+    <value>Batch Wise Quality Control Report</value>
+  </data>
+  <data name="LBL_HEADER_DISPATCHSCHEDULE" xml:space="preserve">
+    <value>Dispatch Schedule</value>
+  </data>
+  <data name="DispatchSchedule" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Delivery.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MachineMaster" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\MachineMaster.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="LBL_HEADER_MACHINEMASTER" xml:space="preserve">
+    <value>Machine Master</value>
+  </data>
+  <data name="ShiftSchedule" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\ShiftSchedule.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="LBL_HEADER_SHIFTSCHEDULE" xml:space="preserve">
+    <value>Shift Schedule</value>
+  </data>
+  <data name="R_OEEReportMachineWise" xml:space="preserve">
+    <value>OEE Report Machine Wise</value>
+  </data>
+  <data name="TIME_FORMAT_HHMM_12" xml:space="preserve">
+    <value>HH:mm:ss</value>
+  </data>
+  <data name="TIME_FORMAT_HHMM_24" xml:space="preserve">
+    <value>HH:mm</value>
+  </data>
+  <data name="ClientLogo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\ClientLogo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="OtherProducts" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\OtherProducts1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Report_BatchWiseQualityControlReport" xml:space="preserve">
+    <value>Batch Wise Quality Control Report</value>
+  </data>
+  <data name="Report_ProductWiseQualityControlReport" xml:space="preserve">
+    <value>Product Wise Quality Control Report</value>
+  </data>
+  <data name="LBL_HEADER_ITEMMASTER" xml:space="preserve">
+    <value>Item Master</value>
+  </data>
+  <data name="CategoryMaster" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\CategoryMaster.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="InventoryHub" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\InventoryHub.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="LBL_Manufracturer" xml:space="preserve">
+    <value>Manufracturer Master</value>
+  </data>
+  <data name="PurchaseReturn" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\PurchaseReturn.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SalesReturn" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\SalesReturn.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ItemRequisition" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\ItemRequisition.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Maintenance" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Maintenance.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BTN_INVOICE" xml:space="preserve">
+    <value>Invoice</value>
+  </data>
+  <data name="LBL_ItemRequisition" xml:space="preserve">
+    <value>Item Requisition</value>
+  </data>
+  <data name="DATABASEPATH_IP" xml:space="preserve">
+    <value>\\192.168.1.3\d\Softwares\NewStickerPrinting\Software\Data\Database\SKPIDB.mdb</value>
+  </data>
+  <data name="LBL_HEADER_PRODUCTION_QUANTITY_REPORT" xml:space="preserve">
+    <value>Production Quantity Report</value>
+  </data>
+  <data name="DATABASEPATH_S" xml:space="preserve">
+    <value>\\skpi\D\Softwares\Sticker Printing\Data\Database\SKPIDB.mdb</value>
+  </data>
+  <data name="DATE_FORMAT_WITHTIME_DDMMYYYHHMM" xml:space="preserve">
+    <value>dd/MM/yyyy HH:mm</value>
+  </data>
+  <data name="LBL_HEADER_GradeNoticeBordReport" xml:space="preserve">
+    <value>Grade Notice Bord Report</value>
+  </data>
+</root>

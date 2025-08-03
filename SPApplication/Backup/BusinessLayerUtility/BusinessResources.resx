@@ -1,0 +1,415 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="BTN_CLEAR" xml:space="preserve">
+    <value>&amp;Clear</value>
+  </data>
+  <data name="BTN_PLUS" xml:space="preserve">
+    <value>+</value>
+  </data>
+  <data name="BTN_SAVE" xml:space="preserve">
+    <value>&amp;Save</value>
+  </data>
+  <data name="COL_LBL_HEADER" xml:space="preserve">
+    <value>#0000ff</value>
+  </data>
+  <data name="FONT_NAME" xml:space="preserve">
+    <value>Calibri</value>
+  </data>
+  <data name="FRM_ITEM" xml:space="preserve">
+    <value>Item</value>
+  </data>
+  <data name="GR_ITEM_DETAILS" xml:space="preserve">
+    <value>Item Details</value>
+  </data>
+  <data name="GR_PRICING" xml:space="preserve">
+    <value>Price and Taxes</value>
+  </data>
+  <data name="GR_TAXES" xml:space="preserve">
+    <value>Taxes</value>
+  </data>
+  <data name="LBL_BATCH_NUMBER" xml:space="preserve">
+    <value>Batch Number</value>
+  </data>
+  <data name="LBL_BUTTON_SUPPLIER" xml:space="preserve">
+    <value>Supplier</value>
+  </data>
+  <data name="LBL_CGST_PER" xml:space="preserve">
+    <value>CGST In %</value>
+  </data>
+  <data name="LBL_COMPANY_NAME" xml:space="preserve">
+    <value>Company Name</value>
+  </data>
+  <data name="LBL_CONTAIN" xml:space="preserve">
+    <value>Contain</value>
+  </data>
+  <data name="LBL_COST" xml:space="preserve">
+    <value>Cost</value>
+  </data>
+  <data name="LBL_DASHBOARD_SALE" xml:space="preserve">
+    <value>Sale</value>
+  </data>
+  <data name="LBL_CATEGORY" xml:space="preserve">
+    <value>Category</value>
+  </data>
+  <data name="LBL_HEADER_ADDUSER" xml:space="preserve">
+    <value>Users</value>
+  </data>
+  <data name="LBL_HEADER_BIRTHDAYREPORT" xml:space="preserve">
+    <value>Birthday Report</value>
+  </data>
+  <data name="LBL_HEADER_CHANGEPASSWORD" xml:space="preserve">
+    <value>Change Password</value>
+  </data>
+  <data name="LBL_HEADER_FIRMINFORMATION" xml:space="preserve">
+    <value>Firm Information</value>
+  </data>
+  <data name="LBL_HEADER_CRNOTE" xml:space="preserve">
+    <value>Credit Return Note</value>
+  </data>
+  <data name="LBL_HEADER_CUSTOMER" xml:space="preserve">
+    <value>Customer</value>
+  </data>
+  <data name="LBL_HEADER_EMAILCREDENTIALS" xml:space="preserve">
+    <value>Email Credentials</value>
+  </data>
+  <data name="LBL_HEADER_EXPENSES" xml:space="preserve">
+    <value>Expenses Head</value>
+  </data>
+  <data name="LBL_HEADER_EXPENSESREPORT" xml:space="preserve">
+    <value>Expenses Report</value>
+  </data>
+  <data name="LBL_HEADER_GSTREPORT" xml:space="preserve">
+    <value>GST Report</value>
+  </data>
+  <data name="LBL_HEADER_ITEMQUANTITYREPORT" xml:space="preserve">
+    <value>Item Quantity Report</value>
+  </data>
+  <data name="LBL_HEADER_LOGINWINDOW" xml:space="preserve">
+    <value>Login Window</value>
+  </data>
+  <data name="LBL_HEADER_PROFITANDREPORT" xml:space="preserve">
+    <value>Profit and Loss</value>
+  </data>
+  <data name="LBL_HEADER_PURCHASE" xml:space="preserve">
+    <value>Puchase</value>
+  </data>
+  <data name="LBL_HEADER_REPORTLIST" xml:space="preserve">
+    <value>Report List</value>
+  </data>
+  <data name="LBL_HEADER_SETTINGSLIST" xml:space="preserve">
+    <value>Settings List</value>
+  </data>
+  <data name="LBL_HEADER_SUPPLIER" xml:space="preserve">
+    <value>Supplier</value>
+  </data>
+  <data name="LBL_HEADER_UOM" xml:space="preserve">
+    <value>Unit of Messurement</value>
+  </data>
+  <data name="LBL_HSN_CODE" xml:space="preserve">
+    <value>HSN Code (GST)</value>
+  </data>
+  <data name="LBL_IGST_PER" xml:space="preserve">
+    <value>IGST In %</value>
+  </data>
+  <data name="LBL_ITEM_NAME" xml:space="preserve">
+    <value>Item Name</value>
+  </data>
+  <data name="LBL_MRP" xml:space="preserve">
+    <value>MRP</value>
+  </data>
+  <data name="LBL_PRICE" xml:space="preserve">
+    <value>Price</value>
+  </data>
+  <data name="LBL_PROFIT_MARGIN_AMOUNT" xml:space="preserve">
+    <value>Profit Margin Amount</value>
+  </data>
+  <data name="LBL_PROFIT_MARGIN_PER" xml:space="preserve">
+    <value>Profit Margin In %</value>
+  </data>
+  <data name="LBL_SEARCH_ITEM" xml:space="preserve">
+    <value>Search Item</value>
+  </data>
+  <data name="LBL_SGST_PER" xml:space="preserve">
+    <value>SGST In %</value>
+  </data>
+  <data name="LBL_UOM" xml:space="preserve">
+    <value>Unit of Messurement</value>
+  </data>
+  <data name="LIST_REPORT_ITEMQUANTITYREPORT" xml:space="preserve">
+    <value>Item Quantity Report</value>
+  </data>
+  <data name="LIST_REPORT_SALESREPORT" xml:space="preserve">
+    <value>Sales Report</value>
+  </data>
+  <data name="BTN_DELETE" xml:space="preserve">
+    <value>Delete</value>
+  </data>
+  <data name="BTN_EXIT" xml:space="preserve">
+    <value>E&amp;xit</value>
+  </data>
+  <data name="GB_CHEQUE_DETAILS" xml:space="preserve">
+    <value>Cheque Details</value>
+  </data>
+  <data name="LBL_ADDRESS" xml:space="preserve">
+    <value>Address</value>
+  </data>
+  <data name="LBL_AMOUNT" xml:space="preserve">
+    <value>Amount</value>
+  </data>
+  <data name="LBL_BALANCE_AMOUNT" xml:space="preserve">
+    <value>Balance Amount</value>
+  </data>
+  <data name="LBL_BANK_NAME" xml:space="preserve">
+    <value>Bank Name</value>
+  </data>
+  <data name="LBL_BRANCH_NAME" xml:space="preserve">
+    <value>Branch Name</value>
+  </data>
+  <data name="LBL_CHEQUE_NO" xml:space="preserve">
+    <value>Cheque No.</value>
+  </data>
+  <data name="LBL_CUSTOMER_NAME" xml:space="preserve">
+    <value>Customer Name</value>
+  </data>
+  <data name="LBL_DATE" xml:space="preserve">
+    <value>Date</value>
+  </data>
+  <data name="LBL_HEADER_PAYMENT" xml:space="preserve">
+    <value>Payment</value>
+  </data>
+  <data name="LBL_HEADER_RECEIPT" xml:space="preserve">
+    <value>Receipt</value>
+  </data>
+  <data name="LBL_PAYMENT_MODE" xml:space="preserve">
+    <value>Payment Mode</value>
+  </data>
+  <data name="LBL_SUPPLIER_NAME" xml:space="preserve">
+    <value>Supplier Name</value>
+  </data>
+  <data name="LBL_TOTAL_PENDING" xml:space="preserve">
+    <value>Total Pending</value>
+  </data>
+  <data name="LBL_TOTAL_AMOUNT" xml:space="preserve">
+    <value>Total Amount</value>
+  </data>
+  <data name="LBL_HEADER_PURCHASEREPORT" xml:space="preserve">
+    <value>Purchase Report</value>
+  </data>
+  <data name="LBL_HEADER_SUPPLIERREPORT" xml:space="preserve">
+    <value>Supplier Report</value>
+  </data>
+  <data name="LBL_HEADER_CUSTOMERREPORT" xml:space="preserve">
+    <value>Customer Report</value>
+  </data>
+  <data name="LBL_HEADER_SUPPLIERDETAILS" xml:space="preserve">
+    <value>Supplier Payment Deposit Report</value>
+  </data>
+  <data name="LBL_TEST" xml:space="preserve">
+    <value>Item Name</value>
+  </data>
+  <data name="BACKGROUND_COLOUR" xml:space="preserve">
+    <value>#1C2A4F</value>
+  </data>
+  <data name="BTN_REPORT" xml:space="preserve">
+    <value>&amp;Report</value>
+  </data>
+  <data name="FORE_COLOUR" xml:space="preserve">
+    <value>#FFFFFF</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="CreditNote" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\CreditNote.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Deposit" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Deposit.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Exit" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Exit.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Expenses" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Expenses.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="FirmInfo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\FirmInfo.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Item" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Item.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Manufracturer" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Manufracturer.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Masters" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Masters.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Payment" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Payment.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ProductLogo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\ProductLogo.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Purchase" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Purchase.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Receipts" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Receipts.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Reports" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Reports.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Sale" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Sale.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Settings" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Settings.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Supplier" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Supplier.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Transaction" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Transaction.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="LBL_HEADER_BANKACCOUNT" xml:space="preserve">
+    <value>Bank Account</value>
+  </data>
+  <data name="LBL_HEADER_CUSTOMERPAYMENTDEPOSITREPORT" xml:space="preserve">
+    <value>Customer Payment Deposit Report</value>
+  </data>
+  <data name="LBL_HEADER_DEPOSITHEAD" xml:space="preserve">
+    <value>Deposit Head</value>
+  </data>
+  <data name="LBL_HEADER_EXPENSESHEAD" xml:space="preserve">
+    <value>Expenses Head</value>
+  </data>
+  <data name="LBL_HEADER_MANUFRACTURER" xml:space="preserve">
+    <value>Manufracturer</value>
+  </data>
+  <data name="Customer" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Customer.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ClientLogo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\ClientLogo.jpeg;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="UOM" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\UOM.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BTN_VIEW" xml:space="preserve">
+    <value>&amp;View</value>
+  </data>
+</root>

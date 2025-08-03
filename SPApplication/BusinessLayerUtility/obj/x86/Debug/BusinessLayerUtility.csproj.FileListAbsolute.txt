@@ -1,0 +1,158 @@
+D:\Yashwant\Projects\Surya Hospital\SPApplication\BusinessLayerUtility\bin\x86\Debug\BusinessLayerUtility.dll
+D:\Yashwant\Projects\Surya Hospital\SPApplication\BusinessLayerUtility\bin\x86\Debug\BusinessLayerUtility.pdb
+D:\Yashwant\Projects\Surya Hospital\SPApplication\BusinessLayerUtility\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\Yashwant\Projects\Surya Hospital\SPApplication\BusinessLayerUtility\obj\x86\Debug\BusinessLayerUtility.dll
+D:\Yashwant\Projects\Surya Hospital\SPApplication\BusinessLayerUtility\obj\x86\Debug\BusinessLayerUtility.pdb
+D:\P\Surya Hospital\Project\SPApplication\BusinessLayerUtility\bin\x86\Debug\BusinessLayerUtility.dll
+D:\P\Surya Hospital\Project\SPApplication\BusinessLayerUtility\bin\x86\Debug\BusinessLayerUtility.pdb
+D:\P\Surya Hospital\Project\SPApplication\BusinessLayerUtility\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\P\Surya Hospital\Project\SPApplication\BusinessLayerUtility\obj\x86\Debug\BusinessLayerUtility.dll
+D:\P\Surya Hospital\Project\SPApplication\BusinessLayerUtility\obj\x86\Debug\BusinessLayerUtility.pdb
+D:\P\Ekdant\Project\SPApplication\BusinessLayerUtility\bin\x86\Debug\BusinessLayerUtility.dll
+D:\P\Ekdant\Project\SPApplication\BusinessLayerUtility\bin\x86\Debug\BusinessLayerUtility.pdb
+D:\P\Ekdant\Project\SPApplication\BusinessLayerUtility\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\P\Ekdant\Project\SPApplication\BusinessLayerUtility\obj\x86\Debug\BusinessLayerUtility.dll
+D:\P\Ekdant\Project\SPApplication\BusinessLayerUtility\obj\x86\Debug\BusinessLayerUtility.pdb
+E:\Yashwant Data\Projects\Ekdant\Project\SPApplication\BusinessLayerUtility\bin\x86\Debug\BusinessLayerUtility.dll
+E:\Yashwant Data\Projects\Ekdant\Project\SPApplication\BusinessLayerUtility\bin\x86\Debug\BusinessLayerUtility.pdb
+E:\Yashwant Data\Projects\Ekdant\Project\SPApplication\BusinessLayerUtility\obj\x86\Debug\ResolveAssemblyReference.cache
+E:\Yashwant Data\Projects\Ekdant\Project\SPApplication\BusinessLayerUtility\obj\x86\Debug\BusinessLayerUtility.dll
+E:\Yashwant Data\Projects\Ekdant\Project\SPApplication\BusinessLayerUtility\obj\x86\Debug\BusinessLayerUtility.pdb
+E:\Yashwant Data\Projects\DrTambe\Project\SPApplication\BusinessLayerUtility\bin\x86\Debug\BusinessLayerUtility.dll
+E:\Yashwant Data\Projects\DrTambe\Project\SPApplication\BusinessLayerUtility\bin\x86\Debug\BusinessLayerUtility.pdb
+E:\Yashwant Data\Projects\DrTambe\Project\SPApplication\BusinessLayerUtility\obj\x86\Debug\ResolveAssemblyReference.cache
+E:\Yashwant Data\Projects\DrTambe\Project\SPApplication\BusinessLayerUtility\obj\x86\Debug\BusinessLayerUtility.dll
+E:\Yashwant Data\Projects\DrTambe\Project\SPApplication\BusinessLayerUtility\obj\x86\Debug\BusinessLayerUtility.pdb
+D:\P\DrTambe\Project\SPApplication\BusinessLayerUtility\bin\x86\Debug\BusinessLayerUtility.dll
+D:\P\DrTambe\Project\SPApplication\BusinessLayerUtility\bin\x86\Debug\BusinessLayerUtility.pdb
+D:\P\DrTambe\Project\SPApplication\BusinessLayerUtility\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\P\DrTambe\Project\SPApplication\BusinessLayerUtility\obj\x86\Debug\BusinessLayerUtility.dll
+D:\P\DrTambe\Project\SPApplication\BusinessLayerUtility\obj\x86\Debug\BusinessLayerUtility.pdb
+D:\Data\P\DrTambe\Project\SPApplication\BusinessLayerUtility\bin\x86\Debug\BusinessLayerUtility.dll
+D:\Data\P\DrTambe\Project\SPApplication\BusinessLayerUtility\bin\x86\Debug\BusinessLayerUtility.pdb
+D:\Data\P\DrTambe\Project\SPApplication\BusinessLayerUtility\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\Data\P\DrTambe\Project\SPApplication\BusinessLayerUtility\obj\x86\Debug\BusinessLayerUtility.dll
+D:\Data\P\DrTambe\Project\SPApplication\BusinessLayerUtility\obj\x86\Debug\BusinessLayerUtility.pdb
+D:\Projects\DrTambe\Project\SPApplication\BusinessLayerUtility\bin\x86\Debug\BusinessLayerUtility.dll
+D:\Projects\DrTambe\Project\SPApplication\BusinessLayerUtility\bin\x86\Debug\BusinessLayerUtility.pdb
+D:\Projects\DrTambe\Project\SPApplication\BusinessLayerUtility\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\Projects\DrTambe\Project\SPApplication\BusinessLayerUtility\obj\x86\Debug\BusinessLayerUtility.dll
+D:\Projects\DrTambe\Project\SPApplication\BusinessLayerUtility\obj\x86\Debug\BusinessLayerUtility.pdb
+D:\Projects\Krushi Seva Kendra\SPApplication\BusinessLayerUtility\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\Projects\Krushi Seva Kendra\SPApplication\BusinessLayerUtility\obj\x86\Debug\BusinessLayerUtility.csproj.GenerateResource.Cache
+D:\Projects\Krushi Seva Kendra\SPApplication\BusinessLayerUtility\obj\x86\Debug\BusinessLayerUtility.dll
+D:\Projects\Krushi Seva Kendra\SPApplication\BusinessLayerUtility\obj\x86\Debug\BusinessLayerUtility.pdb
+D:\Projects\Krushi Seva Kendra\SPApplication\BusinessLayerUtility\obj\x86\Debug\BusinessLayerUtility.BusinessResources.resources
+D:\Projects\Krushi Seva Kendra\SPApplication\BusinessLayerUtility\bin\x86\Debug\BusinessLayerUtility.dll
+D:\Projects\Krushi Seva Kendra\SPApplication\BusinessLayerUtility\bin\x86\Debug\BusinessLayerUtility.pdb
+F:\Backup\New\SPApplication\BusinessLayerUtility\bin\x86\Debug\BusinessLayerUtility.dll
+F:\Backup\New\SPApplication\BusinessLayerUtility\bin\x86\Debug\BusinessLayerUtility.pdb
+F:\Backup\New\SPApplication\BusinessLayerUtility\obj\x86\Debug\ResolveAssemblyReference.cache
+F:\Backup\New\SPApplication\BusinessLayerUtility\obj\x86\Debug\BusinessLayerUtility.BusinessResources.resources
+F:\Backup\New\SPApplication\BusinessLayerUtility\obj\x86\Debug\BusinessLayerUtility.csproj.GenerateResource.Cache
+F:\Backup\New\SPApplication\BusinessLayerUtility\obj\x86\Debug\BusinessLayerUtility.dll
+F:\Backup\New\SPApplication\BusinessLayerUtility\obj\x86\Debug\BusinessLayerUtility.pdb
+D:\Projects\Jagdamba Krushi Seva Kendra\SPApplication\BusinessLayerUtility\bin\x86\Debug\BusinessLayerUtility.dll
+D:\Projects\Jagdamba Krushi Seva Kendra\SPApplication\BusinessLayerUtility\bin\x86\Debug\BusinessLayerUtility.pdb
+D:\Projects\Jagdamba Krushi Seva Kendra\SPApplication\BusinessLayerUtility\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\Projects\Jagdamba Krushi Seva Kendra\SPApplication\BusinessLayerUtility\obj\x86\Debug\BusinessLayerUtility.BusinessResources.resources
+D:\Projects\Jagdamba Krushi Seva Kendra\SPApplication\BusinessLayerUtility\obj\x86\Debug\BusinessLayerUtility.csproj.GenerateResource.Cache
+D:\Projects\Jagdamba Krushi Seva Kendra\SPApplication\BusinessLayerUtility\obj\x86\Debug\BusinessLayerUtility.dll
+D:\Projects\Jagdamba Krushi Seva Kendra\SPApplication\BusinessLayerUtility\obj\x86\Debug\BusinessLayerUtility.pdb
+E:\For Tejashri\02-09-2017\Ketan Tailoring\SPApplication\BusinessLayerUtility\obj\x86\Debug\ResolveAssemblyReference.cache
+E:\For Tejashri\02-09-2017\Ketan Tailoring\SPApplication\BusinessLayerUtility\obj\x86\Debug\BusinessLayerUtility.csproj.GenerateResource.Cache
+E:\For Tejashri\02-09-2017\Ketan Tailoring\SPApplication\BusinessLayerUtility\obj\x86\Debug\BusinessLayerUtility.dll
+E:\For Tejashri\02-09-2017\Ketan Tailoring\SPApplication\BusinessLayerUtility\obj\x86\Debug\BusinessLayerUtility.pdb
+E:\For Tejashri\02-09-2017\Ketan Tailoring\SPApplication\BusinessLayerUtility\bin\x86\Debug\BusinessLayerUtility.dll
+E:\For Tejashri\02-09-2017\Ketan Tailoring\SPApplication\BusinessLayerUtility\bin\x86\Debug\BusinessLayerUtility.pdb
+E:\For Tejashri\02-09-2017\Ketan Tailoring\SPApplication\BusinessLayerUtility\obj\x86\Debug\BusinessLayerUtility.BusinessResources.resources
+D:\Projects\Ketan Tailoring\SPApplication\BusinessLayerUtility\bin\x86\Debug\BusinessLayerUtility.dll
+D:\Projects\Ketan Tailoring\SPApplication\BusinessLayerUtility\bin\x86\Debug\BusinessLayerUtility.pdb
+D:\Projects\Ketan Tailoring\SPApplication\BusinessLayerUtility\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\Projects\Ketan Tailoring\SPApplication\BusinessLayerUtility\obj\x86\Debug\BusinessLayerUtility.BusinessResources.resources
+D:\Projects\Ketan Tailoring\SPApplication\BusinessLayerUtility\obj\x86\Debug\BusinessLayerUtility.csproj.GenerateResource.Cache
+D:\Projects\Ketan Tailoring\SPApplication\BusinessLayerUtility\obj\x86\Debug\BusinessLayerUtility.dll
+D:\Projects\Ketan Tailoring\SPApplication\BusinessLayerUtility\obj\x86\Debug\BusinessLayerUtility.pdb
+D:\Projects\Maharaja\Latest\SPApplication\BusinessLayerUtility\bin\x86\Debug\BusinessLayerUtility.dll
+D:\Projects\Maharaja\Latest\SPApplication\BusinessLayerUtility\bin\x86\Debug\BusinessLayerUtility.pdb
+D:\Projects\Maharaja\Latest\SPApplication\BusinessLayerUtility\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\Projects\Maharaja\Latest\SPApplication\BusinessLayerUtility\obj\x86\Debug\BusinessLayerUtility.BusinessResources.resources
+D:\Projects\Maharaja\Latest\SPApplication\BusinessLayerUtility\obj\x86\Debug\BusinessLayerUtility.csproj.GenerateResource.Cache
+D:\Projects\Maharaja\Latest\SPApplication\BusinessLayerUtility\obj\x86\Debug\BusinessLayerUtility.dll
+D:\Projects\Maharaja\Latest\SPApplication\BusinessLayerUtility\obj\x86\Debug\BusinessLayerUtility.pdb
+D:\Projects\Sukhada Tyre\Project\SPApplication\BusinessLayerUtility\bin\x86\Debug\BusinessLayerUtility.dll
+D:\Projects\Sukhada Tyre\Project\SPApplication\BusinessLayerUtility\bin\x86\Debug\BusinessLayerUtility.pdb
+D:\Projects\Sukhada Tyre\Project\SPApplication\BusinessLayerUtility\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\Projects\Sukhada Tyre\Project\SPApplication\BusinessLayerUtility\obj\x86\Debug\BusinessLayerUtility.BusinessResources.resources
+D:\Projects\Sukhada Tyre\Project\SPApplication\BusinessLayerUtility\obj\x86\Debug\BusinessLayerUtility.csproj.GenerateResource.Cache
+D:\Projects\Sukhada Tyre\Project\SPApplication\BusinessLayerUtility\obj\x86\Debug\BusinessLayerUtility.dll
+D:\Projects\Sukhada Tyre\Project\SPApplication\BusinessLayerUtility\obj\x86\Debug\BusinessLayerUtility.pdb
+D:\Projects\YBJewellers\Project\SPApplication\BusinessLayerUtility\bin\x86\Debug\BusinessLayerUtility.dll
+D:\Projects\YBJewellers\Project\SPApplication\BusinessLayerUtility\bin\x86\Debug\BusinessLayerUtility.pdb
+D:\Projects\YBJewellers\Project\SPApplication\BusinessLayerUtility\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\Projects\YBJewellers\Project\SPApplication\BusinessLayerUtility\obj\x86\Debug\BusinessLayerUtility.BusinessResources.resources
+D:\Projects\YBJewellers\Project\SPApplication\BusinessLayerUtility\obj\x86\Debug\BusinessLayerUtility.csproj.GenerateResource.Cache
+D:\Projects\YBJewellers\Project\SPApplication\BusinessLayerUtility\obj\x86\Debug\BusinessLayerUtility.dll
+D:\Projects\YBJewellers\Project\SPApplication\BusinessLayerUtility\obj\x86\Debug\BusinessLayerUtility.pdb
+D:\Projects\Shree Rajput Enterprises\Project\Latest Application\SPApplication\BusinessLayerUtility\bin\x86\Debug\BusinessLayerUtility.dll
+D:\Projects\Shree Rajput Enterprises\Project\Latest Application\SPApplication\BusinessLayerUtility\bin\x86\Debug\BusinessLayerUtility.pdb
+D:\Projects\Shree Rajput Enterprises\Project\Latest Application\SPApplication\BusinessLayerUtility\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\Projects\Shree Rajput Enterprises\Project\Latest Application\SPApplication\BusinessLayerUtility\obj\x86\Debug\BusinessLayerUtility.BusinessResources.resources
+D:\Projects\Shree Rajput Enterprises\Project\Latest Application\SPApplication\BusinessLayerUtility\obj\x86\Debug\BusinessLayerUtility.csproj.GenerateResource.Cache
+D:\Projects\Shree Rajput Enterprises\Project\Latest Application\SPApplication\BusinessLayerUtility\obj\x86\Debug\BusinessLayerUtility.dll
+D:\Projects\Shree Rajput Enterprises\Project\Latest Application\SPApplication\BusinessLayerUtility\obj\x86\Debug\BusinessLayerUtility.pdb
+D:\Projects\Shree Rajput Enterprises\Project\Latest Application\2012\SPApplication\BusinessLayerUtility\bin\x86\Debug\BusinessLayerUtility.dll
+D:\Projects\Shree Rajput Enterprises\Project\Latest Application\2012\SPApplication\BusinessLayerUtility\bin\x86\Debug\BusinessLayerUtility.pdb
+D:\Projects\Shree Rajput Enterprises\Project\Latest Application\2012\SPApplication\BusinessLayerUtility\obj\x86\Debug\BusinessLayerUtility.csprojResolveAssemblyReference.cache
+D:\Projects\Shree Rajput Enterprises\Project\Latest Application\2012\SPApplication\BusinessLayerUtility\obj\x86\Debug\BusinessLayerUtility.BusinessResources.resources
+D:\Projects\Shree Rajput Enterprises\Project\Latest Application\2012\SPApplication\BusinessLayerUtility\obj\x86\Debug\BusinessLayerUtility.csproj.GenerateResource.Cache
+D:\Projects\Shree Rajput Enterprises\Project\Latest Application\2012\SPApplication\BusinessLayerUtility\obj\x86\Debug\BusinessLayerUtility.dll
+D:\Projects\Shree Rajput Enterprises\Project\Latest Application\2012\SPApplication\BusinessLayerUtility\obj\x86\Debug\BusinessLayerUtility.pdb
+E:\Projects\Madhura Agro Tourism\Projects\SPApplication\BusinessLayerUtility\bin\x86\Debug\BusinessLayerUtility.dll
+E:\Projects\Madhura Agro Tourism\Projects\SPApplication\BusinessLayerUtility\bin\x86\Debug\BusinessLayerUtility.pdb
+E:\Projects\Madhura Agro Tourism\Projects\SPApplication\BusinessLayerUtility\obj\x86\Debug\BusinessLayerUtility.BusinessResources.resources
+E:\Projects\Madhura Agro Tourism\Projects\SPApplication\BusinessLayerUtility\obj\x86\Debug\BusinessLayerUtility.csproj.GenerateResource.Cache
+E:\Projects\Madhura Agro Tourism\Projects\SPApplication\BusinessLayerUtility\obj\x86\Debug\BusinessLayerUtility.dll
+E:\Projects\Madhura Agro Tourism\Projects\SPApplication\BusinessLayerUtility\obj\x86\Debug\BusinessLayerUtility.pdb
+E:\Projects\Madhura Agro Tourism\Projects\Convert\SPApplication\BusinessLayerUtility\bin\x86\Debug\BusinessLayerUtility.dll
+E:\Projects\Madhura Agro Tourism\Projects\Convert\SPApplication\BusinessLayerUtility\bin\x86\Debug\BusinessLayerUtility.pdb
+E:\Projects\Madhura Agro Tourism\Projects\Convert\SPApplication\BusinessLayerUtility\obj\x86\Debug\BusinessLayerUtility.BusinessResources.resources
+E:\Projects\Madhura Agro Tourism\Projects\Convert\SPApplication\BusinessLayerUtility\obj\x86\Debug\BusinessLayerUtility.csproj.GenerateResource.cache
+E:\Projects\Madhura Agro Tourism\Projects\Convert\SPApplication\BusinessLayerUtility\obj\x86\Debug\BusinessLayerUtility.csproj.CoreCompileInputs.cache
+E:\Projects\Madhura Agro Tourism\Projects\Convert\SPApplication\BusinessLayerUtility\obj\x86\Debug\BusinessLayerUtility.dll
+E:\Projects\Madhura Agro Tourism\Projects\Convert\SPApplication\BusinessLayerUtility\obj\x86\Debug\BusinessLayerUtility.pdb
+E:\Projects\Madhura Agro Tourism\Projects\Convert\SPApplication\BusinessLayerUtility\obj\x86\Debug\BusinessLayerUtility.csprojAssemblyReference.cache
+E:\Projects\Madhura Agro Tourism\Projects\SPApplication\BusinessLayerUtility\obj\x86\Debug\BusinessLayerUtility.csproj.CoreCompileInputs.cache
+E:\Projects\SKPI Projects\SPApplication\BusinessLayerUtility\bin\x86\Debug\BusinessLayerUtility.dll
+E:\Projects\SKPI Projects\SPApplication\BusinessLayerUtility\bin\x86\Debug\BusinessLayerUtility.pdb
+E:\Projects\SKPI Projects\SPApplication\BusinessLayerUtility\obj\x86\Debug\BusinessLayerUtility.BusinessResources.resources
+E:\Projects\SKPI Projects\SPApplication\BusinessLayerUtility\obj\x86\Debug\BusinessLayerUtility.csproj.GenerateResource.cache
+E:\Projects\SKPI Projects\SPApplication\BusinessLayerUtility\obj\x86\Debug\BusinessLayerUtility.csproj.CoreCompileInputs.cache
+E:\Projects\SKPI Projects\SPApplication\BusinessLayerUtility\obj\x86\Debug\BusinessLayerUtility.dll
+E:\Projects\SKPI Projects\SPApplication\BusinessLayerUtility\obj\x86\Debug\BusinessLayerUtility.pdb
+D:\Projects 2012\SKPI Projects\SPApplication\BusinessLayerUtility\bin\x86\Debug\BusinessLayerUtility.dll
+D:\Projects 2012\SKPI Projects\SPApplication\BusinessLayerUtility\bin\x86\Debug\BusinessLayerUtility.pdb
+D:\Projects 2012\SKPI Projects\SPApplication\BusinessLayerUtility\obj\x86\Debug\BusinessLayerUtility.BusinessResources.resources
+D:\Projects 2012\SKPI Projects\SPApplication\BusinessLayerUtility\obj\x86\Debug\BusinessLayerUtility.csproj.GenerateResource.Cache
+D:\Projects 2012\SKPI Projects\SPApplication\BusinessLayerUtility\obj\x86\Debug\BusinessLayerUtility.dll
+D:\Projects 2012\SKPI Projects\SPApplication\BusinessLayerUtility\obj\x86\Debug\BusinessLayerUtility.pdb
+D:\BitBucketProjects\SPApplication\BusinessLayerUtility\bin\x86\Debug\BusinessLayerUtility.dll
+D:\BitBucketProjects\SPApplication\BusinessLayerUtility\bin\x86\Debug\BusinessLayerUtility.pdb
+D:\BitBucketProjects\SPApplication\BusinessLayerUtility\obj\x86\Debug\BusinessLayerUtility.csprojResolveAssemblyReference.cache
+D:\BitBucketProjects\SPApplication\BusinessLayerUtility\obj\x86\Debug\BusinessLayerUtility.BusinessResources.resources
+D:\BitBucketProjects\SPApplication\BusinessLayerUtility\obj\x86\Debug\BusinessLayerUtility.csproj.GenerateResource.Cache
+D:\BitBucketProjects\SPApplication\BusinessLayerUtility\obj\x86\Debug\BusinessLayerUtility.dll
+D:\BitBucketProjects\SPApplication\BusinessLayerUtility\obj\x86\Debug\BusinessLayerUtility.pdb
+D:\BitBucketProjects\Shree Khodiyar Plastic Industries\SPApplication\BusinessLayerUtility\bin\x86\Debug\BusinessLayerUtility.dll
+D:\BitBucketProjects\Shree Khodiyar Plastic Industries\SPApplication\BusinessLayerUtility\bin\x86\Debug\BusinessLayerUtility.pdb
+D:\BitBucketProjects\Shree Khodiyar Plastic Industries\SPApplication\BusinessLayerUtility\obj\x86\Debug\BusinessLayerUtility.BusinessResources.resources
+D:\BitBucketProjects\Shree Khodiyar Plastic Industries\SPApplication\BusinessLayerUtility\obj\x86\Debug\BusinessLayerUtility.csproj.GenerateResource.Cache
+D:\BitBucketProjects\Shree Khodiyar Plastic Industries\SPApplication\BusinessLayerUtility\obj\x86\Debug\BusinessLayerUtility.dll
+D:\BitBucketProjects\Shree Khodiyar Plastic Industries\SPApplication\BusinessLayerUtility\obj\x86\Debug\BusinessLayerUtility.pdb
+D:\BitBucketProjects\SKPI\SPApplication\BusinessLayerUtility\bin\x86\Debug\BusinessLayerUtility.dll
+D:\BitBucketProjects\SKPI\SPApplication\BusinessLayerUtility\bin\x86\Debug\BusinessLayerUtility.pdb
+D:\BitBucketProjects\SKPI\SPApplication\BusinessLayerUtility\obj\x86\Debug\BusinessLayerUtility.csprojResolveAssemblyReference.cache
+D:\BitBucketProjects\SKPI\SPApplication\BusinessLayerUtility\obj\x86\Debug\BusinessLayerUtility.BusinessResources.resources
+D:\BitBucketProjects\SKPI\SPApplication\BusinessLayerUtility\obj\x86\Debug\BusinessLayerUtility.csproj.GenerateResource.Cache
+D:\BitBucketProjects\SKPI\SPApplication\BusinessLayerUtility\obj\x86\Debug\BusinessLayerUtility.dll
+D:\BitBucketProjects\SKPI\SPApplication\BusinessLayerUtility\obj\x86\Debug\BusinessLayerUtility.pdb
