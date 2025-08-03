@@ -641,7 +641,7 @@
     <value>\\192.168.1.3\d\Softwares\Sticker Printing\Data\Format\</value>
   </data>
   <data name="DATABASEPATH" xml:space="preserve">
-    <value>D:\BitBucketProjects\SKPI\SPApplication\SPApplication\bin\Debug\Data\Database\SKPIDB.mdb</value>
+    <value>D:\GitProjects\SKPI\SPApplication\SPApplication\bin\Debug\Data\Database\SKPIDB.mdb</value>
   </data>
   <data name="BTN_BROWSEEXCELFILE" xml:space="preserve">
     <value>Browse Excel File</value>

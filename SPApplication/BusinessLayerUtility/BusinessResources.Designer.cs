@@ -460,7 +460,7 @@ namespace BusinessLayerUtility {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to D:\BitBucketProjects\SKPI\SPApplication\SPApplication\bin\Debug\Data\Database\SKPIDB.mdb.
+        ///   Looks up a localized string similar to D:\GitProjects\SKPI\SPApplication\SPApplication\bin\Debug\Data\Database\SKPIDB.mdb.
         /// </summary>
         public static string DATABASEPATH {
             get {
