@@ -200,7 +200,7 @@
             this.dataGridView1.ReadOnly = true;
             this.dataGridView1.RowHeadersVisible = false;
             this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridView1.Size = new System.Drawing.Size(1174, 233);
+            this.dataGridView1.Size = new System.Drawing.Size(1174, 223);
             this.dataGridView1.TabIndex = 41;
             this.dataGridView1.TabStop = false;
             this.dataGridView1.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellDoubleClick);
@@ -563,7 +563,7 @@
             // 
             // txtProductHeight
             // 
-            this.txtProductHeight.Location = new System.Drawing.Point(615, 371);
+            this.txtProductHeight.Location = new System.Drawing.Point(593, 244);
             this.txtProductHeight.Name = "txtProductHeight";
             this.txtProductHeight.Size = new System.Drawing.Size(80, 23);
             this.txtProductHeight.TabIndex = 33;
@@ -574,7 +574,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(515, 374);
+            this.label5.Location = new System.Drawing.Point(539, 374);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(98, 15);
             this.label5.TabIndex = 192;
@@ -998,7 +998,11 @@
             // groupBox2
             // 
             this.groupBox2.Controls.Add(this.gbIdealRunRate);
+            this.groupBox2.Controls.Add(this.txtProductHeightMaxValue);
+            this.groupBox2.Controls.Add(this.txtProductHeight);
             this.groupBox2.Controls.Add(this.label58);
+            this.groupBox2.Controls.Add(this.txtHeightTolerance);
+            this.groupBox2.Controls.Add(this.txtProductHeightMinValue);
             this.groupBox2.Controls.Add(this.label60);
             this.groupBox2.Controls.Add(this.label61);
             this.groupBox2.Controls.Add(this.label54);
@@ -1970,7 +1974,7 @@
             // 
             // txtHeightTolerance
             // 
-            this.txtHeightTolerance.Location = new System.Drawing.Point(750, 371);
+            this.txtHeightTolerance.Location = new System.Drawing.Point(728, 244);
             this.txtHeightTolerance.Name = "txtHeightTolerance";
             this.txtHeightTolerance.Size = new System.Drawing.Size(48, 23);
             this.txtHeightTolerance.TabIndex = 34;
@@ -1981,7 +1985,7 @@
             // txtProductHeightMaxValue
             // 
             this.txtProductHeightMaxValue.BackColor = System.Drawing.Color.White;
-            this.txtProductHeightMaxValue.Location = new System.Drawing.Point(942, 371);
+            this.txtProductHeightMaxValue.Location = new System.Drawing.Point(920, 244);
             this.txtProductHeightMaxValue.Name = "txtProductHeightMaxValue";
             this.txtProductHeightMaxValue.ReadOnly = true;
             this.txtProductHeightMaxValue.Size = new System.Drawing.Size(80, 23);
@@ -1994,7 +1998,7 @@
             // txtProductHeightMinValue
             // 
             this.txtProductHeightMinValue.BackColor = System.Drawing.Color.White;
-            this.txtProductHeightMinValue.Location = new System.Drawing.Point(822, 371);
+            this.txtProductHeightMinValue.Location = new System.Drawing.Point(800, 244);
             this.txtProductHeightMinValue.Name = "txtProductHeightMinValue";
             this.txtProductHeightMinValue.ReadOnly = true;
             this.txtProductHeightMinValue.Size = new System.Drawing.Size(80, 23);
@@ -2048,14 +2052,10 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1198, 702);
+            this.ClientSize = new System.Drawing.Size(1198, 698);
             this.ControlBox = false;
             this.Controls.Add(this.cbIsSample);
-            this.Controls.Add(this.txtProductHeightMaxValue);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.txtProductHeight);
-            this.Controls.Add(this.txtProductHeightMinValue);
-            this.Controls.Add(this.txtHeightTolerance);
             this.Controls.Add(this.btnAddPreform);
             this.Controls.Add(this.cmbPreformName);
             this.Controls.Add(this.label10);

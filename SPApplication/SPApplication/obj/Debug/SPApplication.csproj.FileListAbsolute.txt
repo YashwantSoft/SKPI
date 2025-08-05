@@ -1503,3 +1503,5 @@ D:\GitProjects\SKPI\SPApplication\SPApplication\obj\Debug\SPApplication.Transact
 D:\GitProjects\SKPI\SPApplication\SPApplication\obj\Debug\SPApplication.csproj.GenerateResource.Cache
 D:\GitProjects\SKPI\SPApplication\SPApplication\obj\Debug\RdlCompile.cache
 D:\GitProjects\SKPI\SPApplication\SPApplication\obj\Debug\RdlCompile.compiled
+D:\GitProjects\SKPI\SPApplication\SPApplication\obj\Debug\SPApplication.Transaction.CapQualityControl.resources
+D:\GitProjects\SKPI\SPApplication\SPApplication\obj\Debug\SPApplication.Master.WadMaster.resources

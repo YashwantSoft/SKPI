@@ -1789,6 +1789,15 @@ namespace BusinessLayerUtility {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to WAD Master.
+        /// </summary>
+        public static string LBL_HEADER_WADMASTER {
+            get {
+                return ResourceManager.GetString("LBL_HEADER_WADMASTER", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to &amp;Help.
         /// </summary>
         public static string LBL_HELP {

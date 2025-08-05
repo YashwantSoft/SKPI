@@ -964,4 +964,7 @@
   <data name="LBL_HEADER_GradeNoticeBordReport" xml:space="preserve">
     <value>Grade Notice Bord Report</value>
   </data>
+  <data name="LBL_HEADER_WADMASTER" xml:space="preserve">
+    <value>WAD Master</value>
+  </data>
 </root>

@@ -44,6 +44,7 @@
             this.btnCapMaster = new System.Windows.Forms.Button();
             this.btnMachineMaster = new System.Windows.Forms.Button();
             this.btnShiftSchedule = new System.Windows.Forms.Button();
+            this.btnWadMaster = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnManufracturer
@@ -75,7 +76,7 @@
             this.btnExit.BackColor = System.Drawing.Color.Transparent;
             this.btnExit.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btnExit.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnExit.Location = new System.Drawing.Point(984, 140);
+            this.btnExit.Location = new System.Drawing.Point(984, 269);
             this.btnExit.Name = "btnExit";
             this.btnExit.Size = new System.Drawing.Size(100, 100);
             this.btnExit.TabIndex = 10;
@@ -238,13 +239,27 @@
             this.btnShiftSchedule.UseVisualStyleBackColor = false;
             this.btnShiftSchedule.Click += new System.EventHandler(this.btnShiftSchedule_Click);
             // 
+            // btnWadMaster
+            // 
+            this.btnWadMaster.BackColor = System.Drawing.Color.Transparent;
+            this.btnWadMaster.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnWadMaster.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnWadMaster.Location = new System.Drawing.Point(984, 140);
+            this.btnWadMaster.Name = "btnWadMaster";
+            this.btnWadMaster.Size = new System.Drawing.Size(100, 100);
+            this.btnWadMaster.TabIndex = 11288;
+            this.btnWadMaster.Text = "Wad Master";
+            this.btnWadMaster.UseVisualStyleBackColor = false;
+            this.btnWadMaster.Click += new System.EventHandler(this.btnWadMaster_Click);
+            // 
             // MasterMenuWindow
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1096, 261);
+            this.ClientSize = new System.Drawing.Size(1096, 397);
             this.ControlBox = false;
+            this.Controls.Add(this.btnWadMaster);
             this.Controls.Add(this.btnShiftSchedule);
             this.Controls.Add(this.btnMachineMaster);
             this.Controls.Add(this.btnCapMaster);
@@ -291,5 +306,6 @@
         private System.Windows.Forms.Button btnCapMaster;
         private System.Windows.Forms.Button btnMachineMaster;
         private System.Windows.Forms.Button btnShiftSchedule;
+        private System.Windows.Forms.Button btnWadMaster;
     }
 }

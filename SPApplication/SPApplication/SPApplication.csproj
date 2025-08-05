@@ -189,6 +189,12 @@
     <Compile Include="Master\MachineMaster.Designer.cs">
       <DependentUpon>MachineMaster.cs</DependentUpon>
     </Compile>
+    <Compile Include="Master\WadMaster.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Master\WadMaster.Designer.cs">
+      <DependentUpon>WadMaster.cs</DependentUpon>
+    </Compile>
     <Compile Include="ProductClassNew.cs" />
     <Compile Include="Report\ProductionQuantityReport.cs">
       <SubType>Form</SubType>
@@ -207,6 +213,12 @@
     </Compile>
     <Compile Include="Report\ViewReportW.Designer.cs">
       <DependentUpon>ViewReportW.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Transaction\CapQualityControl.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Transaction\CapQualityControl.Designer.cs">
+      <DependentUpon>CapQualityControl.cs</DependentUpon>
     </Compile>
     <Compile Include="Transaction\DispatchSchedule.cs">
       <SubType>Form</SubType>
@@ -632,6 +644,9 @@
     <EmbeddedResource Include="Master\MachineMaster.resx">
       <DependentUpon>MachineMaster.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Master\WadMaster.resx">
+      <DependentUpon>WadMaster.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Planning\SalesOrderPlanning.resx">
       <DependentUpon>SalesOrderPlanning.cs</DependentUpon>
     </EmbeddedResource>
@@ -647,6 +662,9 @@
     <EmbeddedResource Include="Report\RDLCReport\StickerTest.rdlc" />
     <EmbeddedResource Include="Report\ViewReportW.resx">
       <DependentUpon>ViewReportW.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Transaction\CapQualityControl.resx">
+      <DependentUpon>CapQualityControl.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Transaction\DispatchSchedule.resx">
       <DependentUpon>DispatchSchedule.cs</DependentUpon>

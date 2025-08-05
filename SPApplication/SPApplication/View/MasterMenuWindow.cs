@@ -218,5 +218,11 @@ namespace SPApplication
             ShiftSchedule objForm = new ShiftSchedule();
             objForm.ShowDialog(this);
         }
+
+        private void btnWadMaster_Click(object sender, EventArgs e)
+        {
+            WadMaster objForm = new WadMaster();
+            objForm.ShowDialog(this);
+        }
     }
 }
