@@ -967,4 +967,10 @@
   <data name="LBL_HEADER_WADMASTER" xml:space="preserve">
     <value>WAD Master</value>
   </data>
+  <data name="LBL_HEADER_CAPQUALITYCONTROL" xml:space="preserve">
+    <value>CAP QUALITY CONTROL</value>
+  </data>
+  <data name="LBL_HEADER_WADQUALITYCONTROL" xml:space="preserve">
+    <value>WAD QUALITY CONTROL</value>
+  </data>
 </root>

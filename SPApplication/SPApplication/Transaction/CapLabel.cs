@@ -96,7 +96,6 @@ namespace SPApplication.Transaction
             txtShift.Text = Shift.ToString();
         }
 
-
         private void GetID()
         {
             int IDNo = 0;
@@ -437,6 +436,7 @@ namespace SPApplication.Transaction
             GetID();
             ShiftCode();
         }
+
 
         protected void SaveDB()
         {

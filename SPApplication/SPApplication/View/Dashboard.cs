@@ -398,5 +398,23 @@ namespace SPApplication
             SalesOrderPlanning objForm = new SalesOrderPlanning();
             objForm.ShowDialog(this);
         }
+
+        private void btnWadQualityControl_Click(object sender, EventArgs e)
+        {
+            WadQualityControl objForm = new WadQualityControl();
+            objForm.ShowDialog(this);
+        }
+
+        private void btnCapQualityControl_Click(object sender, EventArgs e)
+        {
+            CapQualityControl objForm = new CapQualityControl();
+            objForm.ShowDialog(this);
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            SampleStickers objForm = new SampleStickers();
+            objForm.ShowDialog(this);
+        }
     }
 }

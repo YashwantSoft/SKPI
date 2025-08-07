@@ -91,7 +91,10 @@
             this.txtAuto2 = new System.Windows.Forms.TextBox();
             this.txtAuto1 = new System.Windows.Forms.TextBox();
             this.label67 = new System.Windows.Forms.Label();
+            this.txtProductHeightMaxValue = new System.Windows.Forms.TextBox();
             this.label58 = new System.Windows.Forms.Label();
+            this.txtHeightTolerance = new System.Windows.Forms.TextBox();
+            this.txtProductHeightMinValue = new System.Windows.Forms.TextBox();
             this.label60 = new System.Windows.Forms.Label();
             this.label61 = new System.Windows.Forms.Label();
             this.label54 = new System.Windows.Forms.Label();
@@ -167,9 +170,6 @@
             this.label36 = new System.Windows.Forms.Label();
             this.label33 = new System.Windows.Forms.Label();
             this.txtProductNeckID = new System.Windows.Forms.TextBox();
-            this.txtHeightTolerance = new System.Windows.Forms.TextBox();
-            this.txtProductHeightMaxValue = new System.Windows.Forms.TextBox();
-            this.txtProductHeightMinValue = new System.Windows.Forms.TextBox();
             this.cmbPreformName = new System.Windows.Forms.ComboBox();
             this.btnAddPreform = new System.Windows.Forms.Button();
             this.cbIsSample = new System.Windows.Forms.CheckBox();
@@ -387,6 +387,7 @@
             this.txtProductWeightMinValue.TabIndex = 29;
             this.txtProductWeightMinValue.TabStop = false;
             this.txtProductWeightMinValue.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtProductWeightMinValue.TextChanged += new System.EventHandler(this.txtProductWeightMinValue_TextChanged);
             this.txtProductWeightMinValue.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtProductWeightMinValue_KeyDown);
             this.txtProductWeightMinValue.Leave += new System.EventHandler(this.txtProductWeightMinValue_Leave);
             // 
@@ -1209,6 +1210,19 @@
             this.label67.TabIndex = 368;
             this.label67.Text = "Auto-1";
             // 
+            // txtProductHeightMaxValue
+            // 
+            this.txtProductHeightMaxValue.BackColor = System.Drawing.Color.White;
+            this.txtProductHeightMaxValue.Location = new System.Drawing.Point(920, 244);
+            this.txtProductHeightMaxValue.Name = "txtProductHeightMaxValue";
+            this.txtProductHeightMaxValue.ReadOnly = true;
+            this.txtProductHeightMaxValue.Size = new System.Drawing.Size(80, 23);
+            this.txtProductHeightMaxValue.TabIndex = 27;
+            this.txtProductHeightMaxValue.TabStop = false;
+            this.txtProductHeightMaxValue.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtProductHeightMaxValue.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtProductHeightMaxValue_KeyDown);
+            this.txtProductHeightMaxValue.Leave += new System.EventHandler(this.txtProductHeightMaxValue_Leave);
+            // 
             // label58
             // 
             this.label58.AutoSize = true;
@@ -1218,6 +1232,30 @@
             this.label58.Size = new System.Drawing.Size(35, 15);
             this.label58.TabIndex = 353;
             this.label58.Text = "(mm)";
+            // 
+            // txtHeightTolerance
+            // 
+            this.txtHeightTolerance.Location = new System.Drawing.Point(728, 244);
+            this.txtHeightTolerance.Name = "txtHeightTolerance";
+            this.txtHeightTolerance.Size = new System.Drawing.Size(48, 23);
+            this.txtHeightTolerance.TabIndex = 34;
+            this.txtHeightTolerance.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtHeightTolerance.TextChanged += new System.EventHandler(this.txtHeightTolerance_TextChanged);
+            this.txtHeightTolerance.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtHeightTolerance_KeyDown);
+            // 
+            // txtProductHeightMinValue
+            // 
+            this.txtProductHeightMinValue.BackColor = System.Drawing.Color.White;
+            this.txtProductHeightMinValue.Location = new System.Drawing.Point(800, 244);
+            this.txtProductHeightMinValue.Name = "txtProductHeightMinValue";
+            this.txtProductHeightMinValue.ReadOnly = true;
+            this.txtProductHeightMinValue.Size = new System.Drawing.Size(80, 23);
+            this.txtProductHeightMinValue.TabIndex = 27;
+            this.txtProductHeightMinValue.TabStop = false;
+            this.txtProductHeightMinValue.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtProductHeightMinValue.TextChanged += new System.EventHandler(this.txtProductHeightMinValue_TextChanged);
+            this.txtProductHeightMinValue.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtProductHeightMinValue_KeyDown);
+            this.txtProductHeightMinValue.Leave += new System.EventHandler(this.txtProductHeightMinValue_Leave);
             // 
             // label60
             // 
@@ -1971,43 +2009,6 @@
             this.txtProductNeckID.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.txtProductNeckID.TextChanged += new System.EventHandler(this.txtProductNeckID_TextChanged);
             this.txtProductNeckID.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtProductNeckID_KeyDown);
-            // 
-            // txtHeightTolerance
-            // 
-            this.txtHeightTolerance.Location = new System.Drawing.Point(728, 244);
-            this.txtHeightTolerance.Name = "txtHeightTolerance";
-            this.txtHeightTolerance.Size = new System.Drawing.Size(48, 23);
-            this.txtHeightTolerance.TabIndex = 34;
-            this.txtHeightTolerance.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.txtHeightTolerance.TextChanged += new System.EventHandler(this.txtHeightTolerance_TextChanged);
-            this.txtHeightTolerance.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtHeightTolerance_KeyDown);
-            // 
-            // txtProductHeightMaxValue
-            // 
-            this.txtProductHeightMaxValue.BackColor = System.Drawing.Color.White;
-            this.txtProductHeightMaxValue.Location = new System.Drawing.Point(920, 244);
-            this.txtProductHeightMaxValue.Name = "txtProductHeightMaxValue";
-            this.txtProductHeightMaxValue.ReadOnly = true;
-            this.txtProductHeightMaxValue.Size = new System.Drawing.Size(80, 23);
-            this.txtProductHeightMaxValue.TabIndex = 27;
-            this.txtProductHeightMaxValue.TabStop = false;
-            this.txtProductHeightMaxValue.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.txtProductHeightMaxValue.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtProductHeightMaxValue_KeyDown);
-            this.txtProductHeightMaxValue.Leave += new System.EventHandler(this.txtProductHeightMaxValue_Leave);
-            // 
-            // txtProductHeightMinValue
-            // 
-            this.txtProductHeightMinValue.BackColor = System.Drawing.Color.White;
-            this.txtProductHeightMinValue.Location = new System.Drawing.Point(800, 244);
-            this.txtProductHeightMinValue.Name = "txtProductHeightMinValue";
-            this.txtProductHeightMinValue.ReadOnly = true;
-            this.txtProductHeightMinValue.Size = new System.Drawing.Size(80, 23);
-            this.txtProductHeightMinValue.TabIndex = 27;
-            this.txtProductHeightMinValue.TabStop = false;
-            this.txtProductHeightMinValue.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.txtProductHeightMinValue.TextChanged += new System.EventHandler(this.txtProductHeightMinValue_TextChanged);
-            this.txtProductHeightMinValue.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtProductHeightMinValue_KeyDown);
-            this.txtProductHeightMinValue.Leave += new System.EventHandler(this.txtProductHeightMinValue_Leave);
             // 
             // cmbPreformName
             // 

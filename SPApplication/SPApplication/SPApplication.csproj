@@ -528,6 +528,12 @@
     <Compile Include="Transaction\AssignTask_Old.Designer.cs">
       <DependentUpon>AssignTask_Old.cs</DependentUpon>
     </Compile>
+    <Compile Include="Transaction\SampleStickers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Transaction\SampleStickers.Designer.cs">
+      <DependentUpon>SampleStickers.cs</DependentUpon>
+    </Compile>
     <Compile Include="Transaction\ShiftEntry.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -557,6 +563,18 @@
     </Compile>
     <Compile Include="Transaction\Tolerance.Designer.cs">
       <DependentUpon>Tolerance.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Transaction\WADQC.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Transaction\WADQC.Designer.cs">
+      <DependentUpon>WADQC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Transaction\WadQualityControl.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Transaction\WadQualityControl.Designer.cs">
+      <DependentUpon>WadQualityControl.cs</DependentUpon>
     </Compile>
     <Compile Include="View\Dashboard.cs">
       <SubType>Form</SubType>
@@ -816,6 +834,9 @@
     <EmbeddedResource Include="Transaction\AssignTask_Old.resx">
       <DependentUpon>AssignTask_Old.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Transaction\SampleStickers.resx">
+      <DependentUpon>SampleStickers.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Transaction\ShiftEntry.resx">
       <DependentUpon>ShiftEntry.cs</DependentUpon>
     </EmbeddedResource>
@@ -830,6 +851,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Transaction\Tolerance.resx">
       <DependentUpon>Tolerance.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Transaction\WADQC.resx">
+      <DependentUpon>WADQC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Transaction\WadQualityControl.resx">
+      <DependentUpon>WadQualityControl.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View\Dashboard.resx">
       <DependentUpon>Dashboard.cs</DependentUpon>

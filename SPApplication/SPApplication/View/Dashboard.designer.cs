@@ -63,6 +63,9 @@
             this.button2 = new System.Windows.Forms.Button();
             this.pbProductLogo = new System.Windows.Forms.PictureBox();
             this.pbClientLogo = new System.Windows.Forms.PictureBox();
+            this.btnWadQualityControl = new System.Windows.Forms.Button();
+            this.btnCapQualityControl = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pbProductLogo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbClientLogo)).BeginInit();
             this.SuspendLayout();
@@ -471,12 +474,54 @@
             this.pbClientLogo.TabIndex = 11266;
             this.pbClientLogo.TabStop = false;
             // 
+            // btnWadQualityControl
+            // 
+            this.btnWadQualityControl.BackColor = System.Drawing.Color.Transparent;
+            this.btnWadQualityControl.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnWadQualityControl.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnWadQualityControl.Location = new System.Drawing.Point(333, 143);
+            this.btnWadQualityControl.Name = "btnWadQualityControl";
+            this.btnWadQualityControl.Size = new System.Drawing.Size(100, 100);
+            this.btnWadQualityControl.TabIndex = 11359;
+            this.btnWadQualityControl.Text = "Wad Quality Control";
+            this.btnWadQualityControl.UseVisualStyleBackColor = false;
+            this.btnWadQualityControl.Click += new System.EventHandler(this.btnWadQualityControl_Click);
+            // 
+            // btnCapQualityControl
+            // 
+            this.btnCapQualityControl.BackColor = System.Drawing.Color.Transparent;
+            this.btnCapQualityControl.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnCapQualityControl.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnCapQualityControl.Location = new System.Drawing.Point(771, 143);
+            this.btnCapQualityControl.Name = "btnCapQualityControl";
+            this.btnCapQualityControl.Size = new System.Drawing.Size(100, 100);
+            this.btnCapQualityControl.TabIndex = 11360;
+            this.btnCapQualityControl.Text = "Cap Quality Control";
+            this.btnCapQualityControl.UseVisualStyleBackColor = false;
+            this.btnCapQualityControl.Click += new System.EventHandler(this.btnCapQualityControl_Click);
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.Transparent;
+            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.button1.Location = new System.Drawing.Point(187, 12);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(100, 100);
+            this.button1.TabIndex = 11361;
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Visible = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // Dashboard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1204, 671);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btnCapQualityControl);
+            this.Controls.Add(this.btnWadQualityControl);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.btnShiftEntry);
             this.Controls.Add(this.btnMaintenance);
@@ -563,5 +608,8 @@
         private System.Windows.Forms.Button btnMaintenance;
         private System.Windows.Forms.Button btnShiftEntry;
         private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button btnWadQualityControl;
+        private System.Windows.Forms.Button btnCapQualityControl;
+        private System.Windows.Forms.Button button1;
     }
 }

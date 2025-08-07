@@ -76,7 +76,7 @@
             this.btnExit.BackColor = System.Drawing.Color.Transparent;
             this.btnExit.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btnExit.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnExit.Location = new System.Drawing.Point(984, 269);
+            this.btnExit.Location = new System.Drawing.Point(498, 276);
             this.btnExit.Name = "btnExit";
             this.btnExit.Size = new System.Drawing.Size(100, 100);
             this.btnExit.TabIndex = 10;
@@ -257,7 +257,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1096, 397);
+            this.ClientSize = new System.Drawing.Size(1096, 388);
             this.ControlBox = false;
             this.Controls.Add(this.btnWadMaster);
             this.Controls.Add(this.btnShiftSchedule);

@@ -22,6 +22,8 @@ namespace SPApplication.Master
         int RowCount_Grid = 0, CurrentRowIndex = 0, TableID = 0;
         bool SearchTag = false;
 
+        double RequiredValue = 0, DifferanceRatio = 0, MinValue = 0, MaxValue = 0;
+
         public WadMaster()
         {
             InitializeComponent();
@@ -61,6 +63,10 @@ namespace SPApplication.Master
         private void WadMaster_Load(object sender, EventArgs e)
         {
             ClearAll();
+            //dataGridView1.CellBorderStyle = DataGridViewCellBorderStyle.Single;
+            //dataGridView1.GridColor = Color.Black;
+            //dataGridView1.ColumnHeadersBorderStyle = DataGridViewHeaderBorderStyle.Single;
+            //dataGridView1.RowHeadersBorderStyle = DataGridViewHeaderBorderStyle.Single;
             FillGrid();
             txtWadName.Focus();
         }
@@ -73,12 +79,27 @@ namespace SPApplication.Master
             objEP.Clear();
             TableID = 0;
             txtWadName.Text = "";
-            txtWadName.Text = "";
-            txtWadName.Text = "";
-            txtWadName.Text = "";
-            txtWadName.Text = "";
-            txtWadName.Text = "";
-            txtNote.Text = "";
+            txtOuterDiaStandard.Text =""; 
+            txtOuterDiaTolerance.Text =""; 
+            txtOuterDiaMinValue.Text ="";  
+            txtOuterDiaMaxValue.Text ="";  
+
+            txtThicknessStandard.Text ="";  
+            txtThicknessTolerance.Text ="";  
+            txtThicknessMinValue.Text ="";  
+            txtThicknessMaxValue.Text =""; 
+
+            txtWeightStandard.Text =""; 
+            txtWeightTolerance.Text ="";
+            txtWeightMinValue.Text =""; 
+            txtWeightMaxValue.Text =""; 
+
+            txtAverageWeightStandard.Text =""; 
+            txtAverageWeightTolerance.Text ="";
+            txtAverageWeightMinValue.Text =""; 
+            txtAverageWeightMaxValue.Text ="";
+            cmbStatus.SelectedIndex = -1;
+            txtRemarks.Text = "";
             txtWadName.Focus();
         }
 
@@ -99,9 +120,9 @@ namespace SPApplication.Master
                         if (FlagDelete)
                             objBL.Query = "update WadMaster set CancelTag=1 where ID=" + TableID + "";
                         else
-                            objBL.Query = "update WadMaster set WadName='" + AposValue.Replace("'", "''") + "',Wad='" + txtNote.Text + "',UserId=" + BusinessLayer.UserId_Static + " where ID=" + TableID + "";
+                            objBL.Query = "update WadMaster set WadName='" + AposValue.Replace("'", "''") + "',OuterDiaStandard='" + txtOuterDiaStandard.Text + "',OuterDiaTolerance='" + txtOuterDiaTolerance.Text + "',OuterDiaMinValue='" + txtOuterDiaMinValue.Text + "',OuterDiaMaxValue='" + txtOuterDiaMaxValue.Text + "',ThicknessStandard='" + txtThicknessStandard.Text + "',ThicknessTolerance='" + txtThicknessTolerance.Text + "',ThicknessMinValue='" + txtThicknessMinValue.Text + "',ThicknessMaxValue='" + txtThicknessMaxValue.Text + "',WeightStandard='" + txtWeightStandard.Text + "',WeightTolerance='" + txtWeightTolerance.Text + "',WeightMinValue='" + txtWeightMinValue.Text + "',WeightMaxValue='" + txtWeightMaxValue.Text + "',AverageWeightStandard='" + txtAverageWeightStandard.Text + "',AverageWeightTolerance='" + txtAverageWeightTolerance.Text + "',AverageWeightMinValue='" + txtAverageWeightMinValue.Text + "',AverageWeightMaxValue='" + txtAverageWeightMaxValue.Text + "',Status='" + cmbStatus.Text + "',Remarks='" + txtRemarks.Text + "',UserId=" + BusinessLayer.UserId_Static + " where ID=" + TableID + "";
                     else
-                        objBL.Query = "insert into WadMaster(WadName,Note,UserId) values('" + AposValue.Replace("'", "''") + "','" + txtNote.Text + "'," + BusinessLayer.UserId_Static + ")";
+                        objBL.Query = "insert into WadMaster(WadName,OuterDiaStandard,OuterDiaTolerance,OuterDiaMinValue,OuterDiaMaxValue,ThicknessStandard,ThicknessTolerance,ThicknessMinValue,ThicknessMaxValue,WeightStandard,WeightTolerance,WeightMinValue,WeightMaxValue,AverageWeightStandard,AverageWeightTolerance,AverageWeightMinValue,AverageWeightMaxValue,Status,Remarks,UserId) values('" + AposValue.Replace("'", "''") + "','" + txtOuterDiaStandard.Text + "','" + txtOuterDiaTolerance.Text + "','" + txtOuterDiaMinValue.Text + "','" + txtOuterDiaMaxValue.Text + "','" + txtThicknessStandard.Text + "','" + txtThicknessTolerance.Text + "','" + txtThicknessMinValue.Text + "','" + txtThicknessMaxValue.Text + "','" + txtWeightStandard.Text + "','" + txtWeightTolerance.Text + "','" + txtWeightMinValue.Text + "','" + txtWeightMaxValue.Text + "','" + txtAverageWeightStandard.Text + "','" + txtAverageWeightTolerance.Text + "','" + txtAverageWeightMinValue.Text + "','" + txtAverageWeightMaxValue.Text + "','" + cmbStatus.Text + "','" + txtRemarks.Text + "'," + BusinessLayer.UserId_Static + ")";
 
                     Result = objBL.Function_ExecuteNonQuery();
                     if (Result > 0)
@@ -137,28 +158,88 @@ namespace SPApplication.Master
                 objEP.SetError(txtWadName, "Enter Wad Name");
                 return true;
             }
+            else if (cmbStatus.SelectedIndex == -1)
+            {
+                cmbStatus.Focus();
+                objEP.SetError(cmbStatus, "Select Status");
+                return true;
+            }
             else
                 return false;
         }
+        
+        string MainQuery = string.Empty, WhereClause = string.Empty, OrderByClause = string.Empty;
 
         protected void FillGrid()
         {
+            MainQuery = string.Empty; WhereClause = string.Empty; OrderByClause = string.Empty;
+
             dataGridView1.DataSource = null;
             DataSet ds = new DataSet();
+             
+            MainQuery = "select "+
+                        "ID,"+
+                        "WadName as [Wad Name],"+
+                        "OuterDiaStandard as [Outer Dia Standard]," +
+                        "OuterDiaTolerance as [Outer Dia Tolerance]," +
+                        "OuterDiaMinValue as [Outer Dia Min Value]," +
+                        "OuterDiaMaxValue," +
+                        "ThicknessStandard as [Thickness Standard]," +
+                        "ThicknessTolerance as [Thickness Tolerance]," +
+                        "ThicknessMinValue as [Thickness Min Value]," +
+                        "ThicknessMaxValue as [Thickness Max Value]," +
+                        "WeightStandard as [Weight Standard]," +
+                        "WeightTolerance as [Weight Tolerance]," +
+                        "WeightMinValue as [Weight Min Value]," +
+                        "WeightMaxValue as [WeightMax Value]," +
+                        "AverageWeightStandard as [Average Weight Standard]," +
+                        "AverageWeightTolerance as [Average Weight Tolerance]," +
+                        "AverageWeightMinValue as [AverageWeight Min Value]," +
+                        "AverageWeightMaxValue as [Average Weight Max Value]," +
+                        "Status," +
+                        "Remarks" +
+                        " from WadMaster where CancelTag=0";
 
-            if (!SearchTag)
-                objBL.Query = "select ID,WadName,Note from WadMaster where CancelTag=0";
-            else
-                objBL.Query = "select ID,WadName,Note from WadMaster where CancelTag=0 and WadName like '%" + txtSearch.Text + "%'";
+            if (SearchTag)
+                if (!string.IsNullOrEmpty(Convert.ToString(txtSearch.Text)))
+                    WhereClause = " and WadName like '%" + txtSearch.Text + "%'";
+
+            OrderByClause = " order by WadName asc";
+
+            objBL.Query = MainQuery + WhereClause + OrderByClause;
 
             ds = objBL.ReturnDataSet();
 
             if (ds.Tables[0].Rows.Count > 0)
             {
+                //0 "ID," +
+                //1 "WadName as [Wad Name]," +
+                //2 "OuterDiaStandard as [Outer Dia Standard]," +
+                //3 "OuterDiaTolerance as [Outer Dia Tolerance]," +
+                //4 "OuterDiaMinValue as [Outer Dia Min Value]," +
+                //5 "OuterDiaMaxValue," +
+                //6 "ThicknessStandard as [Thickness Standard]," +
+                //7 "ThicknessTolerance as [Thickness Tolerance]," +
+                //8 "ThicknessMinValue as [Thickness Min Value]," +
+                //9 "ThicknessMaxValue as [Thickness Max Value]," +
+                //10 "WeightStandard as [Weight Standard]," +
+                //11 "WeightTolerance as [Weight Tolerance]," +
+                //12 "WeightMinValue as [Weight Min Value]," +
+                //13 "WeightMaxValue as [WeightMax Value]," +
+                //14 "AverageWeightStandard as [Average Weight Standard]," +
+                //15 "AverageWeightTolerance as [Average Weight Tolerance]," +
+                //16 "AverageWeightMinValue as [AverageWeight Min Value]," +
+                //17 "AverageWeightMaxValue as [Average Weight Max Value]" +
+                //18 "Status," +
+                //19 "Note," +
+
                 dataGridView1.DataSource = ds.Tables[0];
                 dataGridView1.Columns[0].Visible = false;
                 dataGridView1.Columns[1].Width = 400;
-                dataGridView1.Columns[2].Width = 150;
+                //for (int i =2; i < dataGridView1.Columns.Count; i++)
+                //{
+                //    dataGridView1.Columns[i].Width = 100;
+                //}
                 lblTotalCount.Text = "Total Count: " + ds.Tables[0].Rows.Count;
             }
         }
@@ -186,9 +267,53 @@ namespace SPApplication.Master
                 {
                     ClearAll();
                     btnDelete.Enabled = true;
-                    TableID = Convert.ToInt32(dataGridView1.Rows[e.RowIndex].Cells[0].Value);
-                    txtWadName.Text = dataGridView1.Rows[e.RowIndex].Cells[1].Value.ToString();
-                    txtNote.Text = dataGridView1.Rows[e.RowIndex].Cells[2].Value.ToString();
+
+                    //0 "ID," +
+                    //1 "WadName as [Wad Name]," +
+                    //2 "OuterDiaStandard as [Outer Dia Standard]," +
+                    //3 "OuterDiaTolerance as [Outer Dia Tolerance]," +
+                    //4 "OuterDiaMinValue as [Outer Dia Min Value]," +
+                    //5 "OuterDiaMaxValue," +
+                    //6 "ThicknessStandard as [Thickness Standard]," +
+                    //7 "ThicknessTolerance as [Thickness Tolerance]," +
+                    //8 "ThicknessMinValue as [Thickness Min Value]," +
+                    //9 "ThicknessMaxValue as [Thickness Max Value]," +
+                    //10 "WeightStandard as [Weight Standard]," +
+                    //11 "WeightTolerance as [Weight Tolerance]," +
+                    //12 "WeightMinValue as [Weight Min Value]," +
+                    //13 "WeightMaxValue as [WeightMax Value]," +
+                    //14 "AverageWeightStandard as [Average Weight Standard]," +
+                    //15 "AverageWeightTolerance as [Average Weight Tolerance]," +
+                    //16 "AverageWeightMinValue as [AverageWeight Min Value]," +
+                    //17 "AverageWeightMaxValue as [Average Weight Max Value]" +
+                    //18 "Status," +
+                    //19 "Note," +
+
+                    TableID = objRL.Check_Null_Integer(objRL.Check_Null_String(Convert.ToString(dataGridView1.Rows[e.RowIndex].Cells[0].Value)));
+                    txtWadName.Text = objRL.Check_Null_String(Convert.ToString(dataGridView1.Rows[e.RowIndex].Cells[1].Value));
+
+                    txtOuterDiaStandard.Text = objRL.Check_Null_String(Convert.ToString(dataGridView1.Rows[e.RowIndex].Cells[2].Value));
+                    txtOuterDiaTolerance.Text = objRL.Check_Null_String(Convert.ToString(dataGridView1.Rows[e.RowIndex].Cells[3].Value));
+                    txtOuterDiaMinValue.Text = objRL.Check_Null_String(Convert.ToString(dataGridView1.Rows[e.RowIndex].Cells[4].Value));
+                    txtOuterDiaMaxValue.Text = objRL.Check_Null_String(Convert.ToString(dataGridView1.Rows[e.RowIndex].Cells[5].Value));
+
+                    txtThicknessStandard.Text = objRL.Check_Null_String(Convert.ToString(dataGridView1.Rows[e.RowIndex].Cells[6].Value));
+                    txtThicknessTolerance.Text = objRL.Check_Null_String(Convert.ToString(dataGridView1.Rows[e.RowIndex].Cells[7].Value));
+                    txtThicknessMinValue.Text = objRL.Check_Null_String(Convert.ToString(dataGridView1.Rows[e.RowIndex].Cells[8].Value));
+                    txtThicknessMaxValue.Text = objRL.Check_Null_String(Convert.ToString(dataGridView1.Rows[e.RowIndex].Cells[9].Value));
+                    
+                    txtWeightStandard.Text = objRL.Check_Null_String(Convert.ToString(dataGridView1.Rows[e.RowIndex].Cells[10].Value));
+                    txtWeightTolerance.Text = objRL.Check_Null_String(Convert.ToString(dataGridView1.Rows[e.RowIndex].Cells[11].Value));
+                    txtWeightMinValue.Text = objRL.Check_Null_String(Convert.ToString(dataGridView1.Rows[e.RowIndex].Cells[12].Value));
+                    txtWeightMaxValue.Text = objRL.Check_Null_String(Convert.ToString(dataGridView1.Rows[e.RowIndex].Cells[13].Value));
+                    
+                    txtAverageWeightStandard.Text = objRL.Check_Null_String(Convert.ToString(dataGridView1.Rows[e.RowIndex].Cells[14].Value));
+                    txtAverageWeightTolerance.Text = objRL.Check_Null_String(Convert.ToString(dataGridView1.Rows[e.RowIndex].Cells[15].Value));
+                    txtAverageWeightMinValue.Text = objRL.Check_Null_String(Convert.ToString(dataGridView1.Rows[e.RowIndex].Cells[16].Value));
+                    txtAverageWeightMaxValue.Text = objRL.Check_Null_String(Convert.ToString(dataGridView1.Rows[e.RowIndex].Cells[17].Value));
+
+                    cmbStatus.Text = objRL.Check_Null_String(Convert.ToString(dataGridView1.Rows[e.RowIndex].Cells[18].Value));
+                    txtRemarks.Text = objRL.Check_Null_String(Convert.ToString(dataGridView1.Rows[e.RowIndex].Cells[19].Value));
                 }
             }
             catch (Exception ex1)
@@ -200,6 +325,206 @@ namespace SPApplication.Master
             {
                 GC.Collect();
             }
+        }
+
+      
+
+        public void CalculateValue(int CheckValue)
+        {
+            switch (CheckValue)
+            {
+                case 1:
+                    SetValueMinMax(txtOuterDiaStandard, txtOuterDiaTolerance, txtOuterDiaMinValue, txtOuterDiaMaxValue);
+                    break;
+                case 2:
+                    SetValueMinMax(txtThicknessStandard, txtThicknessTolerance, txtThicknessMinValue, txtThicknessMaxValue);
+                    break;
+                case 3:
+                    SetValueMinMax(txtWeightStandard, txtWeightTolerance, txtWeightMinValue, txtWeightMaxValue);
+                    break;
+                case 4:
+                    SetValueMinMax(txtAverageWeightStandard, txtAverageWeightTolerance, txtAverageWeightMinValue, txtAverageWeightMaxValue);
+                    break;
+            }
+        }
+
+        private void SetValueMinMax(TextBox RequiredValue_F, TextBox DifferanceRatio_F, TextBox MinValue_F, TextBox MaxValue_F)
+        {
+            RequiredValue = 0; DifferanceRatio = 0; MinValue = 0; MaxValue = 0;
+
+            double.TryParse(RequiredValue_F.Text, out RequiredValue);
+            double.TryParse(DifferanceRatio_F.Text, out DifferanceRatio);
+
+            if (RequiredValue != 0)
+            {
+                MinValue = RequiredValue - DifferanceRatio;
+                //MinValue = RequiredValue - DifferanceRatio;
+                MaxValue = RequiredValue + DifferanceRatio;
+
+                MinValue_F.Text = MinValue.ToString();
+                MaxValue_F.Text = MaxValue.ToString();
+            }
+            else
+            {
+                MinValue_F.Text = "";
+                MaxValue_F.Text = "";
+            }
+        }
+
+        private void txtOuterDiaStandard_TextChanged(object sender, EventArgs e)
+        {
+            CalculateValue(1);
+        }
+
+        private void txtOuterDiaTolerance_TextChanged(object sender, EventArgs e)
+        {
+            CalculateValue(1);
+        }
+
+        private void txtThicknessStandard_TextChanged(object sender, EventArgs e)
+        {
+            CalculateValue(2);
+        }
+
+        private void txtThicknessTolerance_TextChanged(object sender, EventArgs e)
+        {
+            CalculateValue(2);
+        }
+
+        private void txtWeightStandard_TextChanged(object sender, EventArgs e)
+        {
+            CalculateValue(3);
+        }
+
+        private void txtWeightTolerance_TextChanged(object sender, EventArgs e)
+        {
+            CalculateValue(3);
+        }
+
+        private void txtAverageWeightStandard_TextChanged(object sender, EventArgs e)
+        {
+            CalculateValue(4);
+        }
+
+        private void txtAverageWeightTolerance_TextChanged(object sender, EventArgs e)
+        {
+            CalculateValue(4);
+        }
+
+        private void txtOuterDiaStandard_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            objRL.FloatValue(sender, e, txtOuterDiaStandard);
+        }
+
+        private void txtOuterDiaTolerance_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            objRL.FloatValue(sender, e, txtOuterDiaTolerance);
+        }
+
+        private void txtThicknessStandard_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            objRL.FloatValue(sender, e, txtThicknessStandard);
+        }
+
+        private void txtThicknessTolerance_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            objRL.FloatValue(sender, e, txtThicknessTolerance);
+        }
+
+        private void txtWeightStandard_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            objRL.FloatValue(sender, e, txtWeightStandard);
+        }
+
+        private void txtWeightTolerance_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            objRL.FloatValue(sender, e, txtWeightTolerance);
+        }
+
+        private void txtAverageWeightStandard_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            objRL.FloatValue(sender, e, txtAverageWeightStandard);
+        }
+
+        private void txtAverageWeightTolerance_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            objRL.FloatValue(sender, e, txtAverageWeightTolerance);
+        }
+
+        private void txtSearch_TextChanged(object sender, EventArgs e)
+        {
+            if (txtSearch.Text != "")
+                SearchTag = true;
+            else
+                SearchTag = false;
+
+            FillGrid();
+        }
+
+        private void txtWadName_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+                txtOuterDiaStandard.Focus();
+        }
+
+        private void txtOuterDiaStandard_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+                txtOuterDiaTolerance.Focus();
+        }
+
+        private void txtOuterDiaTolerance_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+                txtThicknessStandard.Focus();
+        }
+
+        private void txtThicknessStandard_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+                txtThicknessTolerance.Focus();
+        }
+
+        private void txtThicknessTolerance_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+                txtWeightStandard.Focus();
+        }
+
+        private void txtWeightStandard_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+                txtWeightTolerance.Focus();
+        }
+
+        private void txtWeightTolerance_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+                txtAverageWeightStandard.Focus();
+        }
+
+        private void txtAverageWeightStandard_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+                txtAverageWeightTolerance.Focus();
+        }
+
+        private void txtAverageWeightTolerance_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+                cmbStatus.Focus();
+        }
+
+        private void cmbStatus_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+                txtRemarks.Focus();
+        }
+
+        private void txtRemarks_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+                btnSave.Focus();
         }
     }
 }

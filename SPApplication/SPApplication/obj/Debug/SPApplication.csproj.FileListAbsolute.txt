@@ -1505,3 +1505,6 @@ D:\GitProjects\SKPI\SPApplication\SPApplication\obj\Debug\RdlCompile.cache
 D:\GitProjects\SKPI\SPApplication\SPApplication\obj\Debug\RdlCompile.compiled
 D:\GitProjects\SKPI\SPApplication\SPApplication\obj\Debug\SPApplication.Transaction.CapQualityControl.resources
 D:\GitProjects\SKPI\SPApplication\SPApplication\obj\Debug\SPApplication.Master.WadMaster.resources
+D:\GitProjects\SKPI\SPApplication\SPApplication\obj\Debug\SPApplication.Transaction.WadQualityControl.resources
+D:\GitProjects\SKPI\SPApplication\SPApplication\obj\Debug\SPApplication.Transaction.WADQC.resources
+D:\GitProjects\SKPI\SPApplication\SPApplication\obj\Debug\SPApplication.Transaction.SampleStickers.resources

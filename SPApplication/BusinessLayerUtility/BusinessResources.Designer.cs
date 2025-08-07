@@ -1051,6 +1051,15 @@ namespace BusinessLayerUtility {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to CAP QUALITY CONTROL.
+        /// </summary>
+        public static string LBL_HEADER_CAPQUALITYCONTROL {
+            get {
+                return ResourceManager.GetString("LBL_HEADER_CAPQUALITYCONTROL", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Categary.
         /// </summary>
         public static string LBL_HEADER_CATEGARY {
@@ -1794,6 +1803,15 @@ namespace BusinessLayerUtility {
         public static string LBL_HEADER_WADMASTER {
             get {
                 return ResourceManager.GetString("LBL_HEADER_WADMASTER", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to WAD QUALITY CONTROL.
+        /// </summary>
+        public static string LBL_HEADER_WADQUALITYCONTROL {
+            get {
+                return ResourceManager.GetString("LBL_HEADER_WADQUALITYCONTROL", resourceCulture);
             }
         }
         

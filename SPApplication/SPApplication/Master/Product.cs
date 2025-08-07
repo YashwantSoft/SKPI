@@ -1144,5 +1144,10 @@ namespace SPApplication
             else
                 IsSample = 0;
         }
+
+        private void txtProductWeightMinValue_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
