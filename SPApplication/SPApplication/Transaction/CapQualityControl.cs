@@ -164,11 +164,11 @@ namespace SPApplication.Transaction
         int CapQualityControlId = 0;
         static int dgvRowIndex;
 
-        string Type_I = string.Empty, CustmerLogo = string.Empty, PrintQuality = string.Empty, Material = string.Empty, OuterDia = string.Empty, InnerDia = string.Empty, Height = string.Empty, Weight = string.Empty, Color_I = string.Empty, VisualAppearance = string.Empty, FlashFinishing = string.Empty, Bend = string.Empty, FitmentWithBottle = string.Empty, Jar = string.Empty, InkTest = string.Empty, DropTest = string.Empty;
+        string Type_I = string.Empty, CustmerLogo = string.Empty, PrintQuality = string.Empty, Material = string.Empty, OuterDia = string.Empty, InnerDiaWithThread = string.Empty, InnerDiaWOThread = string.Empty, CapHeight = string.Empty, InnerDepth = string.Empty, CapWeight =string.Empty, Color_I = string.Empty, VisualAppearance = string.Empty, FlashFinishing = string.Empty, Bend = string.Empty, FitmentWithBottle = string.Empty, Jar = string.Empty, InkTest = string.Empty, DropTest = string.Empty;
 
         private void ClearGrid_Values()
         {
-            CapQualityControlId = 0; Type_I = string.Empty; CustmerLogo = string.Empty; PrintQuality = string.Empty; Material = string.Empty; OuterDia = string.Empty; InnerDia = string.Empty; Height = string.Empty; Weight = string.Empty; Color_I = string.Empty; VisualAppearance = string.Empty; FlashFinishing = string.Empty; Bend = string.Empty; FitmentWithBottle = string.Empty; Jar = string.Empty; InkTest = string.Empty; DropTest = string.Empty;
+            CapQualityControlId = 0; Type_I = string.Empty; CustmerLogo = string.Empty; PrintQuality = string.Empty; Material = string.Empty; OuterDia = string.Empty; InnerDiaWithThread = string.Empty; InnerDiaWOThread = string.Empty; CapHeight = string.Empty; InnerDepth = string.Empty; CapWeight = string.Empty; Color_I = string.Empty; VisualAppearance = string.Empty; FlashFinishing = string.Empty; Bend = string.Empty; FitmentWithBottle = string.Empty; Jar = string.Empty; InkTest = string.Empty; DropTest = string.Empty;
         }
 
         private void SaveDB()
@@ -213,9 +213,11 @@ namespace SPApplication.Transaction
                             CustmerLogo = objRL.Check_Null_String(Convert.ToString(dgvValues.Rows[i].Cells["clmCustmerLogo"].Value));
                             PrintQuality = objRL.Check_Null_String(Convert.ToString(dgvValues.Rows[i].Cells["clmPrintQuality"].Value));
                             OuterDia = objRL.Check_Null_String(Convert.ToString(dgvValues.Rows[i].Cells["clmOuterDia"].Value));
-                            InnerDia = objRL.Check_Null_String(Convert.ToString(dgvValues.Rows[i].Cells["clmInnerDia"].Value));
-                            Height = objRL.Check_Null_String(Convert.ToString(dgvValues.Rows[i].Cells["clmHeight"].Value));
-                            Weight = objRL.Check_Null_String(Convert.ToString(dgvValues.Rows[i].Cells["clmWeight"].Value));
+                            InnerDiaWithThread = objRL.Check_Null_String(Convert.ToString(dgvValues.Rows[i].Cells["clmInnerDiaWithThread"].Value));
+                            InnerDiaWOThread = objRL.Check_Null_String(Convert.ToString(dgvValues.Rows[i].Cells["clmInnerDiaWOThread"].Value));
+                            CapHeight = objRL.Check_Null_String(Convert.ToString(dgvValues.Rows[i].Cells["clmCapHeight"].Value));
+                            InnerDepth = objRL.Check_Null_String(Convert.ToString(dgvValues.Rows[i].Cells["clmInnerDepth"].Value));
+                            CapWeight = objRL.Check_Null_String(Convert.ToString(dgvValues.Rows[i].Cells["clmCapWeight"].Value));
                             Color_I = objRL.Check_Null_String(Convert.ToString(dgvValues.Rows[i].Cells["clmColor"].Value));
                             VisualAppearance = objRL.Check_Null_String(Convert.ToString(dgvValues.Rows[i].Cells["clmVisualAppearance"].Value));
                             FlashFinishing = objRL.Check_Null_String(Convert.ToString(dgvValues.Rows[i].Cells["clmFlashFinishing"].Value));
@@ -224,7 +226,7 @@ namespace SPApplication.Transaction
                             InkTest = objRL.Check_Null_String(Convert.ToString(dgvValues.Rows[i].Cells["clmInkTest"].Value));
                             DropTest = objRL.Check_Null_String(Convert.ToString(dgvValues.Rows[i].Cells["clmDropTest"].Value));
 
-                            objBL.Query = "insert into CapQualityControlValues(EntryDate,EntryTime,CapId,CapQualityControlId,[Type],CustmerLogo,PrintQuality,OuterDia,InnerDia,Height,Weight,Color,VisualAppearance,FlashFinishing,Bend,FitmentWithBottle,InkTest,DropTest,UserId) values('" + dtpDate.Value.ToShortDateString() + "','" + dtpTime.Value.ToShortTimeString() + "'," + CapId + "," + TableID + ",'" + Type_I + "','" + CustmerLogo + "','" + PrintQuality + "','" + OuterDia + "','" + InnerDia + "','" + Height + "','" + Weight + "','" + Color_I + "','" + VisualAppearance + "','" + FlashFinishing + "','" + Bend + "','" + FitmentWithBottle + "','" + InkTest + "','" + DropTest + "'," + BusinessLayer.UserId_Static + ")";
+                            objBL.Query = "insert into CapQualityControlValues(EntryDate,EntryTime,CapId,CapQualityControlId,[Type],CustmerLogo,PrintQuality,OuterDia,InnerDia,Height,Weight,Color,VisualAppearance,FlashFinishing,Bend,FitmentWithBottle,InkTest,DropTest,UserId) values('" + dtpDate.Value.ToShortDateString() + "','" + dtpTime.Value.ToShortTimeString() + "'," + CapId + "," + TableID + ",'" + Type_I + "','" + CustmerLogo + "','" + PrintQuality + "','" + OuterDia + "','" + InnerDiaWithThread + "','" + InnerDiaWOThread + "','" + CapHeight + "','" + InnerDepth + "','" + CapWeight + "','" + Color_I + "','" + VisualAppearance + "','" + FlashFinishing + "','" + Bend + "','" + FitmentWithBottle + "','" + InkTest + "','" + DropTest + "'," + BusinessLayer.UserId_Static + ")";
                             Result = objBL.Function_ExecuteNonQuery();
 
                             if (Result > 0)
@@ -585,36 +587,39 @@ namespace SPApplication.Transaction
                 //18 Drop Test
                 //19 Top Load Test
 
-                case 2: //ProductWeight   Datagridviewcolumn- //02 Weight
-                    SetRemark(ColumnValue.ToString(), objRL.ProductWeightMinValue, objRL.ProductWeightMaxValue);
+                //ColInd == 6 || ColInd == 7 || ColInd == 8 || ColInd == 9)
+
+                case 6: //ProductWeight   Datagridviewcolumn- //02 Weight
+                    SetRemark(ColumnValue.ToString(), objRL.OuterDiaMinValue, objRL.OuterDiaMaxValue);
                     break;
-                case 4: //ProductNeckSize Datagridviewcolumn- //04 Size
-                    SetRemark(ColumnValue.ToString(), objRL.ProductNeckSizeMinValue, objRL.ProductNeckSizeMaxValue);
+                case 7: //ProductNeckSize Datagridviewcolumn- //04 Size
+                    SetRemark(ColumnValue.ToString(), objRL.InnerDiaWithThreadMinValue, objRL.InnerDiaWithThreadMaxValue);
                     break;
-                case 5: //ProductNeckID    Datagridviewcolumn- //05 Inner Dia
-                    SetRemark(ColumnValue.ToString(), objRL.ProductNeckIDMinValue, objRL.ProductNeckIDMaxValue);
+                case 8: //ProductNeckID    Datagridviewcolumn- //05 Inner Dia
+                    SetRemark(ColumnValue.ToString(), objRL.InnerDiaWOThreadMinValue, objRL.InnerDiaWOThreadMaxValue);
                     break;
-                case 6: //ProductNeckOD Datagridviewcolumn- //06 Outer Dia
-                    SetRemark(ColumnValue.ToString(), objRL.ProductNeckODMinValue, objRL.ProductNeckODMaxValue);
+                case 9: //ProductNeckOD Datagridviewcolumn- //06 Outer Dia
+                    SetRemark(ColumnValue.ToString(), objRL.CapHeightMinValue, objRL.CapHeightMaxValue);
                     break;
-                case 7: //ProductNeckCollarGap Datagridviewcolumn-   //7 Retainer Gap
-                    SetRemark(ColumnValue.ToString(), objRL.ProductNeckCollarGapMinValue, objRL.ProductNeckCollarGapMaxValue);
+                case 10: //ProductNeckCollarGap Datagridviewcolumn-   //7 Retainer Gap
+                    SetRemark(ColumnValue.ToString(), objRL.InnerDepthMinValue, objRL.InnerDepthMaxValue);
                     break;
-                case 8: //ProductNeckHeight Datagridviewcolumn-   //8 Height
-                    SetRemark(ColumnValue.ToString(), objRL.ProductNeckHeightMinValue, objRL.ProductNeckHeightMaxValue);
+                case 11: //ProductNeckHeight Datagridviewcolumn-   //8 Height
+                    SetRemark(ColumnValue.ToString(), objRL.CapWeightMinValue, objRL.CapWeightMaxValue);
                     break;
-                case 9: //ProductVolume Datagridviewcolumn-   //9 Overflow Volume
-                    SetRemark(ColumnValue.ToString(), objRL.ProductVolumeMinValue, objRL.ProductVolumeMaxValue);
-                    break;
-                case 10: //ProductMajorAxis Datagridviewcolumn-   //10 Major Axis
-                    SetRemark(ColumnValue.ToString(), objRL.ProductMajorAxisMinValue, objRL.ProductMajorAxisMaxValue);
-                    break;
-                case 11: //ProductMinorAxis Datagridviewcolumn-   //11 Minor Axis
-                    SetRemark(ColumnValue.ToString(), objRL.ProductMinorAxisMinValue, objRL.ProductMinorAxisMaxValue);
-                    break;
-                case 12: //ProductHeight   Datagridviewcolumn-   //12 Bottle Height
-                    SetRemark(ColumnValue.ToString(), objRL.ProductHeightMinValue, objRL.ProductHeightMaxValue);
-                    break;
+
+                //case 9: //ProductVolume Datagridviewcolumn-   //9 Overflow Volume
+                //    SetRemark(ColumnValue.ToString(), objRL.ProductVolumeMinValue, objRL.ProductVolumeMaxValue);
+                //    break;
+                //case 10: //ProductMajorAxis Datagridviewcolumn-   //10 Major Axis
+                //    SetRemark(ColumnValue.ToString(), objRL.ProductMajorAxisMinValue, objRL.ProductMajorAxisMaxValue);
+                //    break;
+                //case 11: //ProductMinorAxis Datagridviewcolumn-   //11 Minor Axis
+                //    SetRemark(ColumnValue.ToString(), objRL.ProductMinorAxisMinValue, objRL.ProductMinorAxisMaxValue);
+                //    break;
+                //case 12: //ProductHeight   Datagridviewcolumn-   //12 Bottle Height
+                //    SetRemark(ColumnValue.ToString(), objRL.ProductHeightMinValue, objRL.ProductHeightMaxValue);
+                //    break;
             }
         }
 

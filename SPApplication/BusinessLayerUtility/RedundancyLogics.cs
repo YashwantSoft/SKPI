@@ -3893,12 +3893,97 @@ namespace BusinessLayerUtility
             set { innerdiawothreadmaxvalue = value; }
         }
 
-        //private static string innerdiawothreadmaxvalue;
-        //public string InnerDiaWOThreadMaxValue
-        //{
-        //    get { return innerdiawothreadmaxvalue; }
-        //    set { innerdiawothreadmaxvalue = value; }
-        //}
+        private static string capheightstandard;
+        public string CapHeightStandard
+        {
+            get { return capheightstandard; }
+            set { capheightstandard = value; }
+        }
+
+        private static string capheighttolerance;
+        public string CapHeightTolerance
+        {
+            get { return capheighttolerance; }
+            set { capheighttolerance = value; }
+        }
+
+        private static string capheightminvalue;
+        public string CapHeightMinValue
+        {
+            get { return capheightminvalue; }
+            set { capheightminvalue = value; }
+        }
+
+        private static string capheightmaxvalue;
+        public string CapHeightMaxValue
+        {
+            get { return capheightmaxvalue; }
+            set { capheightmaxvalue = value; }
+        }
+
+        private static string innerdepthstandard;
+        public string InnerDepthStandard
+        {
+            get { return innerdepthstandard; }
+            set { innerdepthstandard = value; }
+        }
+
+        private static string innerdepthtolerance;
+        public string InnerDepthTolerance
+        {
+            get { return innerdepthtolerance; }
+            set { innerdepthtolerance = value; }
+        }
+
+        private static string innerdepthminvalue;
+        public string InnerDepthMinValue
+        {
+            get { return innerdepthminvalue; }
+            set { innerdepthminvalue = value; }
+        }
+
+        private static string innerdepthmaxvalue;
+        public string InnerDepthMaxValue
+        {
+            get { return innerdepthmaxvalue; }
+            set { innerdepthmaxvalue = value; }
+        }
+
+        private static string capweightstandard;
+        public string CapWeightStandard
+        {
+            get { return capweightstandard; }
+            set { capweightstandard = value; }
+        }
+
+        private static string capweighttolerance;
+        public string CapWeightTolerance
+        {
+            get { return capweighttolerance; }
+            set { capweighttolerance = value; }
+        }
+
+        private static string capweightminvalue;
+        public string CapWeightMinValue
+        {
+            get { return capweightminvalue; }
+            set { capweightminvalue = value; }
+        }
+
+        private static string capweightmaxvalue;
+        public string CapWeightMaxValue
+        {
+            get { return capweightmaxvalue; }
+            set { capweightmaxvalue = value; }
+        }
+
+        private static string remarks;
+        public string Remarks
+        {
+            get { return remarks; }
+            set { remarks = value; }
+        }
+
         private void PreformRecords_ClearAll()
         {
             PreformType = string.Empty;
@@ -4354,15 +4439,45 @@ namespace BusinessLayerUtility
                 ds = objBL.ReturnDataSet();
                 if (ds.Tables[0].Rows.Count > 0)
                 {
-                    if (CheckNull_String(Convert.ToString(ds.Tables[0].Rows[0]["ID"])))
-                        CapId = Convert.ToInt32(ds.Tables[0].Rows[0]["ID"].ToString());
-                    else
-                        CapId = 0;
+                    //if (CheckNull_String(Convert.ToString(ds.Tables[0].Rows[0]["ID"])))
+                    //    CapId = Convert.ToInt32(ds.Tables[0].Rows[0]["ID"].ToString());
+                    //else
+                    //    CapId = 0;
 
-                    if (CheckNull_String(Convert.ToString(ds.Tables[0].Rows[0]["CapName"])))
-                        CapName = ds.Tables[0].Rows[0]["CapName"].ToString();
-                    if (CheckNull_String(Convert.ToString(ds.Tables[0].Rows[0]["Wad"])))
-                        Wad = ds.Tables[0].Rows[0]["Wad"].ToString();
+                    //if (CheckNull_String(Convert.ToString(ds.Tables[0].Rows[0]["CapName"])))
+                    //    CapName = ds.Tables[0].Rows[0]["CapName"].ToString();
+                    //if (CheckNull_String(Convert.ToString(ds.Tables[0].Rows[0]["Wad"])))
+                    //    Wad = ds.Tables[0].Rows[0]["Wad"].ToString();
+
+                    CapId = Check_Null_Integer(Check_Null_String(Convert.ToString(ds.Tables[0].Rows[0]["ID"])));
+                    CapName = Check_Null_String(Convert.ToString(ds.Tables[0].Rows[0]["CapName"]));
+                    Wad = Check_Null_String(Convert.ToString(ds.Tables[0].Rows[0]["Wad"]));
+                    OuterDiaStandard = Check_Null_String(Convert.ToString(ds.Tables[0].Rows[0]["OuterDiaStandard"]));
+                    OuterDiaTolerance = Check_Null_String(Convert.ToString(ds.Tables[0].Rows[0]["OuterDiaTolerance"]));
+                    OuterDiaMinValue = Check_Null_String(Convert.ToString(ds.Tables[0].Rows[0]["OuterDiaMinValue"]));
+                    OuterDiaMaxValue = Check_Null_String(Convert.ToString(ds.Tables[0].Rows[0]["OuterDiaMaxValue"]));
+                    InnerDiaWithThreadStandard = Check_Null_String(Convert.ToString(ds.Tables[0].Rows[0]["InnerDiaWithThreadStandard"]));
+                    InnerDiaWithThreadTolerance = Check_Null_String(Convert.ToString(ds.Tables[0].Rows[0]["InnerDiaWithThreadTolerance"]));
+                    InnerDiaWithThreadMinValue = Check_Null_String(Convert.ToString(ds.Tables[0].Rows[0]["InnerDiaWithThreadMinValue"]));
+                    InnerDiaWithThreadMaxValue = Check_Null_String(Convert.ToString(ds.Tables[0].Rows[0]["InnerDiaWithThreadMaxValue"]));
+                    InnerDiaWOThreadStandard = Check_Null_String(Convert.ToString(ds.Tables[0].Rows[0]["InnerDiaWOThreadStandard"]));
+                    InnerDiaWOThreadTolerance = Check_Null_String(Convert.ToString(ds.Tables[0].Rows[0]["InnerDiaWOThreadTolerance"]));
+                    InnerDiaWOThreadMinValue = Check_Null_String(Convert.ToString(ds.Tables[0].Rows[0]["InnerDiaWOThreadMinValue"]));
+                    InnerDiaWOThreadMaxValue = Check_Null_String(Convert.ToString(ds.Tables[0].Rows[0]["InnerDiaWOThreadMaxValue"]));
+                    CapHeightStandard = Check_Null_String(Convert.ToString(ds.Tables[0].Rows[0]["CapHeightStandard"]));
+                    CapHeightTolerance = Check_Null_String(Convert.ToString(ds.Tables[0].Rows[0]["CapHeightTolerance"]));
+                    CapHeightMinValue = Check_Null_String(Convert.ToString(ds.Tables[0].Rows[0]["CapHeightMinValue"]));
+                    CapHeightMaxValue = Check_Null_String(Convert.ToString(ds.Tables[0].Rows[0]["CapHeightMaxValue"]));
+                    InnerDepthStandard = Check_Null_String(Convert.ToString(ds.Tables[0].Rows[0]["InnerDepthStandard"]));
+                    InnerDepthTolerance = Check_Null_String(Convert.ToString(ds.Tables[0].Rows[0]["InnerDepthTolerance"]));
+                    InnerDepthMinValue = Check_Null_String(Convert.ToString(ds.Tables[0].Rows[0]["InnerDepthMinValue"]));
+                    InnerDepthMaxValue = Check_Null_String(Convert.ToString(ds.Tables[0].Rows[0]["InnerDepthMaxValue"]));
+                    CapWeightStandard = Check_Null_String(Convert.ToString(ds.Tables[0].Rows[0]["CapWeightStandard"]));
+                    CapWeightTolerance = Check_Null_String(Convert.ToString(ds.Tables[0].Rows[0]["CapWeightTolerance"]));
+                    CapWeightMinValue = Check_Null_String(Convert.ToString(ds.Tables[0].Rows[0]["CapWeightMinValue"]));
+                    CapWeightMaxValue = Check_Null_String(Convert.ToString(ds.Tables[0].Rows[0]["CapWeightMaxValue"]));
+                    Status = Check_Null_String(Convert.ToString(ds.Tables[0].Rows[0]["Status"]));
+                    Remarks = Check_Null_String(Convert.ToString(ds.Tables[0].Rows[0]["Remarks"]));
                 }
             }
         }
