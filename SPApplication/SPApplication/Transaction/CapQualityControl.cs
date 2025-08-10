@@ -61,7 +61,9 @@ namespace SPApplication.Transaction
 
         private void CapQualityControl_Load(object sender, EventArgs e)
         {
-
+            ClearAll();
+            FillGrid();
+            txtSearchCap.Focus();
         }
 
         private void lbCap_KeyDown(object sender, KeyEventArgs e)
@@ -121,11 +123,21 @@ namespace SPApplication.Transaction
             TableID = 0;
             Result = 0;
             FlagDelete = false;
+            GridFlag = false;
             ClearAllCap();
             ClearAllCap();
             lblCapName.Text = "";
             txtID.Text = "";
+            lblCapName.Text = "";
+            txtInvoiceNumber.Text = "";
+            cmbSupllier.SelectedIndex = -1;
+            cmbQCCheckerName.SelectedIndex = -1;
             GetID();
+            CapId = 0;
+            dtpDate.Value = DateTime.Now.Date;
+            dtpTime.Value = DateTime.Now;
+            txtSearchCap.Text = "";
+
             dgvValues.Rows.Clear();
             txtSearchCap.Focus();
         }
@@ -182,9 +194,7 @@ namespace SPApplication.Transaction
                 if (Result > 0)
                 {
                     if (TableID == 0)
-                    {
                         TableID = objRL.ReturnMaxID_Fix("CapQualityControl", "ID");
-                    }
                     else
                     {
                         if (FlagDelete)
@@ -199,7 +209,6 @@ namespace SPApplication.Transaction
                         for (int i = 0; i < dgvValues.Rows.Count; i++)
                         {
                             ClearGrid_Values();
-
                             Type_I = objRL.Check_Null_String(Convert.ToString(dgvValues.Rows[i].Cells["clmType"].Value));
                             CustmerLogo = objRL.Check_Null_String(Convert.ToString(dgvValues.Rows[i].Cells["clmCustmerLogo"].Value));
                             PrintQuality = objRL.Check_Null_String(Convert.ToString(dgvValues.Rows[i].Cells["clmPrintQuality"].Value));
@@ -216,17 +225,13 @@ namespace SPApplication.Transaction
                             DropTest = objRL.Check_Null_String(Convert.ToString(dgvValues.Rows[i].Cells["clmDropTest"].Value));
 
                             objBL.Query = "insert into CapQualityControlValues(EntryDate,EntryTime,CapId,CapQualityControlId,[Type],CustmerLogo,PrintQuality,OuterDia,InnerDia,Height,Weight,Color,VisualAppearance,FlashFinishing,Bend,FitmentWithBottle,InkTest,DropTest,UserId) values('" + dtpDate.Value.ToShortDateString() + "','" + dtpTime.Value.ToShortTimeString() + "'," + CapId + "," + TableID + ",'" + Type_I + "','" + CustmerLogo + "','" + PrintQuality + "','" + OuterDia + "','" + InnerDia + "','" + Height + "','" + Weight + "','" + Color_I + "','" + VisualAppearance + "','" + FlashFinishing + "','" + Bend + "','" + FitmentWithBottle + "','" + InkTest + "','" + DropTest + "'," + BusinessLayer.UserId_Static + ")";
-
                             Result = objBL.Function_ExecuteNonQuery();
 
                             if (Result > 0)
-                            {
                                 Result++;
-                            }
                         }
                     }
-
-                    if(Result>0)
+                    if (Result > 0)
                     {
                         if (FlagDelete)
                             objRL.ShowMessage(9, 1);
@@ -243,7 +248,6 @@ namespace SPApplication.Transaction
                 objRL.ShowMessage(17, 4);
                 return;
             }
-
         }
 
         private void btnAddQCSpecs_Click(object sender, EventArgs e)
@@ -318,19 +322,19 @@ namespace SPApplication.Transaction
             DataSet ds = new DataSet();
 
             if (BusinessLayer.UserName_Static != BusinessResources.USER_ADMIN)
-                UserClause = " and UserId = " + BusinessLayer.UserId_Static;
+                UserClause = " and CQC.UserId = " + BusinessLayer.UserId_Static;
             else
                 UserClause = string.Empty;
 
             MainQuery = "select CQC.ID,EntryDate as [Date],CQC.EntryTime as [Time],CQC.CapId,C.CapName as [Cap Name],CQC.InvoiceNumber as [Invoice Number],CQC.SupplierId,S.SupplierName as [Supplier Name],CQC.QCCheckerId,E.FullName as [QC Checker Name] from (((CapQualityControl CQC inner join CapMaster C on C.ID=CQC.CapId) inner join Supplier S on S.ID=CQC.SupplierId) inner join Employee E on E.ID=CQC.QCCheckerId) where CQC.CancelTag=0 and C.CancelTag=0 and S.CancelTag=0 and E.CancelTag=0";
-            OrderByClause = " order by EntryDate desc";
+            OrderByClause = " order by CQC.EntryDate desc";
 
             if (DateFlag)
-                WhereClause = " and EntryDate between #" + dtpSearchDate.Value.ToString(RedundancyLogics.DateFormatMMDDYYYY) + "# and #" + dtpSearchDate.Value.ToString(RedundancyLogics.DateFormatMMDDYYYY) + "#";
+                WhereClause = " and CQC.EntryDate between #" + dtpSearchDate.Value.ToString(RedundancyLogics.DateFormatMMDDYYYY) + "# and #" + dtpSearchDate.Value.ToString(RedundancyLogics.DateFormatMMDDYYYY) + "#";
             else if (SearchTag)
-                WhereClause = " and CapName like '%" + txtSearch.Text + "%'";
+                WhereClause = " and C.CapName like '%" + txtSearch.Text + "%'";
             else if (IDFlag)
-                WhereClause = " and ID=" + txtSearchID.Text + "";
+                WhereClause = " and CQC.ID=" + txtSearchID.Text + "";
             else
                 WhereClause = string.Empty;
 
@@ -365,6 +369,293 @@ namespace SPApplication.Transaction
                  
                 lblTotalCount.Text = "Total Count: " + ds.Tables[0].Rows.Count;
             }
+        }
+
+        bool GridFlag = false;
+
+        private void dataGridView1_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+            try
+            {
+                RowCount_Grid = dataGridView1.Rows.Count;
+                CurrentRowIndex = dataGridView1.CurrentRow.Index;
+
+                if (RowCount_Grid >= 0 && CurrentRowIndex >= 0)
+                {
+                    ClearAll();
+                    btnDelete.Enabled = true;
+
+                    //0 ID,
+                    //1 EntryDate as [Date],
+                    //2 EntryTime as [Time],
+                    //3 CQC.CapId,
+                    //4 C.CapName as [Cap Name],
+                    //5 CQC.InvoiceNumber as [Invoice Number],
+                    //6 CQC.SupplierId,
+                    //7 S.SupplierName as [Supplier Name],
+                    //8 CQC.QCCheckerId,
+                    //9 E.FullName as [QC Checker Name]
+
+                    GridFlag = true;
+                    TableID = objRL.Check_Null_Integer(objRL.Check_Null_String(Convert.ToString(dataGridView1.Rows[e.RowIndex].Cells[0].Value)));
+                    txtID.Text = TableID.ToString();
+                    dtpDate.Value = Convert.ToDateTime(dataGridView1.Rows[e.RowIndex].Cells[1].Value);
+                    dtpTime.Value = Convert.ToDateTime(dataGridView1.Rows[e.RowIndex].Cells[2].Value);
+                    CapId = objRL.Check_Null_Integer(objRL.Check_Null_String(Convert.ToString(dataGridView1.Rows[e.RowIndex].Cells[3].Value)));
+                    Fill_Cap_Information();
+                    txtInvoiceNumber.Text =  objRL.Check_Null_String(Convert.ToString(dataGridView1.Rows[e.RowIndex].Cells[5].Value));
+                    cmbSupllier.Text = objRL.Check_Null_String(Convert.ToString(dataGridView1.Rows[e.RowIndex].Cells[7].Value));
+                    cmbQCCheckerName.Text = objRL.Check_Null_String(Convert.ToString(dataGridView1.Rows[e.RowIndex].Cells[9].Value));
+                }
+            }
+            catch (Exception ex1)
+            {
+                objRL.ErrorMessge(ex1.ToString());
+                return;
+            }
+            finally
+            {
+                GC.Collect();
+            }
+        }
+
+        private void cbToday_CheckedChanged(object sender, EventArgs e)
+        {
+            if (cbToday.Checked)
+            {
+                dtpSearchDate.Enabled = false;
+                DateFlag = true;
+                FillGrid();
+            }
+            else
+            {
+                dtpSearchDate.Enabled = true;
+                DateFlag = true;
+            }
+        }
+
+        private void txtSearch_TextChanged(object sender, EventArgs e)
+        {
+            DateFlag = false;
+            IDFlag = false;
+            if (txtSearch.Text != "")
+                SearchTag = true;
+            else
+                SearchTag = false;
+
+            FillGrid();
+        }
+
+        private void txtSearchID_TextChanged(object sender, EventArgs e)
+        {
+            DateFlag = false;
+            SearchTag = false;
+            if (txtSearchID.Text != "")
+                IDFlag = true;
+            else
+                IDFlag = false;
+
+            FillGrid();
+        }
+
+        private void dgvValues_CellEndEdit(object sender, DataGridViewCellEventArgs e)
+        {
+            try
+            {
+                //if (!string.IsNullOrEmpty(Convert.ToString(dgvValues.Rows[e.RowIndex].Cells["clmNeckID"].Value)))
+                if (CapId != 0)
+                {
+                    int ColInd = e.ColumnIndex;
+
+                    
+                    //0 Id  ||
+                    //1 Sr.No     ||
+                    //2 CustmerLogo  || 
+                    //3 PrintQuality
+
+                    //4 OuterDia
+                    //5 InnerDia
+                    //6 Height
+                    //7 Weight
+                    
+                    //8 Color
+                    //9 Overflow Volume
+                    //10 Major Axis
+                    //11 Minor Axis
+                    //12 Bottle Height
+
+                    //13 BaseInformation
+                    //14 Visuals
+                    //15 Go/No Go Guage
+                    //16 Cap Fitment
+                    //17 Wad Sealing
+                    //18 Leak Test
+                    //19 Drop Test
+                    //20 Top Load Test
+
+                    if (ColInd == 6 || ColInd == 7 || ColInd == 8 || ColInd == 9)// || ColInd == 7 || ColInd == 8 || ColInd == 9 || ColInd == 10 || ColInd == 11 || ColInd == 12)
+                    {
+                        if (!string.IsNullOrEmpty(Convert.ToString(dgvValues.Rows[e.RowIndex].Cells[e.ColumnIndex].Value)))
+                        {
+                            double ColumnValue = 0;
+                            ColumnValue = objRL.Check_Null_Double(objRL.Check_Null_String(Convert.ToString(dgvValues.Rows[e.RowIndex].Cells[e.ColumnIndex].Value)));
+                            CheckTollarance(e.ColumnIndex, ColumnValue);
+
+                            if (ResultValue)
+                                dgvValues.Rows[e.RowIndex].Cells[e.ColumnIndex].Style.BackColor = Color.Red;
+                            else
+                            {
+                                
+                                //if (ColInd == 2)
+                                //    dgvValues.Rows[e.RowIndex].Cells[e.ColumnIndex].Style.BackColor = Color.LavenderBlush;
+                                //else if (ColInd == 4 || ColInd == 5 || ColInd == 6 || ColInd == 7 || ColInd == 8)
+                                //    dgvValues.Rows[e.RowIndex].Cells[e.ColumnIndex].Style.BackColor = Color.Honeydew;
+                                //else if (ColInd == 9 || ColInd == 10 || ColInd == 11 || ColInd == 12 || ColInd == 13)
+
+                                if (ColInd == 6 || ColInd == 7 || ColInd == 8 || ColInd == 9)
+                                    dgvValues.Rows[e.RowIndex].Cells[e.ColumnIndex].Style.BackColor = Color.LemonChiffon;
+                                else
+                                    dgvValues.Rows[e.RowIndex].Cells[e.ColumnIndex].Style.BackColor = Color.White;
+                            }
+
+                            if (NullValueFlag)
+                                dgvValues.Rows[e.RowIndex].Cells[e.ColumnIndex].Value = null;
+
+                            if (ColInd == 2)
+                            {
+                                Set_OK_Value(e.RowIndex);
+                            }
+
+                            btnSave.Enabled = true;
+                        }
+                    }
+                }
+            }
+            catch (Exception ex1)
+            {
+
+            }
+            finally { GC.Collect(); }
+        }
+
+        bool FlagAddRow = false;
+        private void Set_OK_Value(int RowIndexDGV)
+        {
+            dgvValues.Rows[RowIndexDGV].Cells[13].Value = "Ok";
+            dgvValues.Rows[RowIndexDGV].Cells[14].Value = "Ok";
+            dgvValues.Rows[RowIndexDGV].Cells[15].Value = "Ok";
+            dgvValues.Rows[RowIndexDGV].Cells[16].Value = "Ok";
+            dgvValues.Rows[RowIndexDGV].Cells[17].Value = "Ok";
+            dgvValues.Rows[RowIndexDGV].Cells[18].Value = "Ok";
+            dgvValues.Rows[RowIndexDGV].Cells[19].Value = "Ok";
+            dgvValues.Rows[RowIndexDGV].Cells[20].Value = "Ok";
+
+            //if (SwitchFlag == 0)
+            //    dgvValues.Rows[RowIndexDGV].Cells[21].Value = "No";
+            //else
+            //    dgvValues.Rows[RowIndexDGV].Cells[21].Value = "Yes";
+        }
+
+        public void CheckTollarance(int ColumnIndex, double ColumnValue)
+        {
+            //double MinValue, double MaxValue
+            switch (ColumnIndex)
+            {
+                //0 Sr.No   ||
+                //1 Supplier    ||
+                //2 Weight  || 
+                //3 Colour
+
+                //4 Size
+                //5 Inner Dia
+                //6 Outer Dia
+                //7 Retainer Gap
+                //8 Height
+
+                //9 Overflow Volume
+                //10 Major Axis
+                //11 Minor Axis
+                //12 Bottle Height
+
+                //13 Visuals
+                //14 Go/No Go Guage
+                //15 Cap Fitment
+                //16 Wad Sealing
+                //17 Leak Test
+                //18 Drop Test
+                //19 Top Load Test
+
+                case 2: //ProductWeight   Datagridviewcolumn- //02 Weight
+                    SetRemark(ColumnValue.ToString(), objRL.ProductWeightMinValue, objRL.ProductWeightMaxValue);
+                    break;
+                case 4: //ProductNeckSize Datagridviewcolumn- //04 Size
+                    SetRemark(ColumnValue.ToString(), objRL.ProductNeckSizeMinValue, objRL.ProductNeckSizeMaxValue);
+                    break;
+                case 5: //ProductNeckID    Datagridviewcolumn- //05 Inner Dia
+                    SetRemark(ColumnValue.ToString(), objRL.ProductNeckIDMinValue, objRL.ProductNeckIDMaxValue);
+                    break;
+                case 6: //ProductNeckOD Datagridviewcolumn- //06 Outer Dia
+                    SetRemark(ColumnValue.ToString(), objRL.ProductNeckODMinValue, objRL.ProductNeckODMaxValue);
+                    break;
+                case 7: //ProductNeckCollarGap Datagridviewcolumn-   //7 Retainer Gap
+                    SetRemark(ColumnValue.ToString(), objRL.ProductNeckCollarGapMinValue, objRL.ProductNeckCollarGapMaxValue);
+                    break;
+                case 8: //ProductNeckHeight Datagridviewcolumn-   //8 Height
+                    SetRemark(ColumnValue.ToString(), objRL.ProductNeckHeightMinValue, objRL.ProductNeckHeightMaxValue);
+                    break;
+                case 9: //ProductVolume Datagridviewcolumn-   //9 Overflow Volume
+                    SetRemark(ColumnValue.ToString(), objRL.ProductVolumeMinValue, objRL.ProductVolumeMaxValue);
+                    break;
+                case 10: //ProductMajorAxis Datagridviewcolumn-   //10 Major Axis
+                    SetRemark(ColumnValue.ToString(), objRL.ProductMajorAxisMinValue, objRL.ProductMajorAxisMaxValue);
+                    break;
+                case 11: //ProductMinorAxis Datagridviewcolumn-   //11 Minor Axis
+                    SetRemark(ColumnValue.ToString(), objRL.ProductMinorAxisMinValue, objRL.ProductMinorAxisMaxValue);
+                    break;
+                case 12: //ProductHeight   Datagridviewcolumn-   //12 Bottle Height
+                    SetRemark(ColumnValue.ToString(), objRL.ProductHeightMinValue, objRL.ProductHeightMaxValue);
+                    break;
+            }
+        }
+
+        bool NullValueFlag = false, ResultValue = false;
+        double checkerValue = 0, MinValue = 0, MaxValue = 0;
+
+        private void SetRemark(string CheckerValue_F, string MinValue_F, string MaxValue_F)
+        {
+            NullValueFlag = false; ResultValue = false;
+            checkerValue = 0; MinValue = 0; MaxValue = 0;
+
+            double.TryParse(CheckerValue_F, out checkerValue);
+            double.TryParse(MinValue_F, out MinValue);
+            double.TryParse(MaxValue_F, out MaxValue);
+
+            if (MinValue > 0 && MaxValue > 0)
+            {
+                if (checkerValue != 0)
+                {
+                    //if (Enumerable.Range(MinValue, MaxValue).Contains(checkerValue))
+                    if (MinValue <= checkerValue && MaxValue >= checkerValue)
+                    {
+                        ResultValue = false;
+                        //Remark_F.BackColor = objDL.GetBackgroundColorSuccess();
+                        //Remark_F.Text = "0";
+                    }
+                    else
+                    {
+                        ResultValue = true;
+                        //Remark_F.BackColor = objDL.GetForeColorError();
+                        //Remark_F.Text = "1";
+                    }
+                }
+                else
+                {
+                    ResultValue = false;
+                    NullValueFlag = true;
+                }
+            }
+            else
+                NullValueFlag = true;
         }
     }
 }

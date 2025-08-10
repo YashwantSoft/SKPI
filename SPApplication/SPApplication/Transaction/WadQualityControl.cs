@@ -13,13 +13,13 @@ namespace SPApplication.Transaction
 {
     public partial class WadQualityControl : Form
     {
-        BusinessLayer objBL = new BusinessLayer();      //Own Developed Class
-        ErrorProvider objEP = new ErrorProvider();      //System Class
-        RedundancyLogics objRL = new RedundancyLogics();  //Own Developed Class
-        DesignLayer objDL = new DesignLayer(); //Own Developed Class
+        BusinessLayer objBL = new BusinessLayer();
+        ErrorProvider objEP = new ErrorProvider();
+        RedundancyLogics objRL = new RedundancyLogics();
+        DesignLayer objDL = new DesignLayer();
 
         bool FlagDelete = false;
-        int RowCount_Grid = 0, CurrentRowIndex = 0, TableID = 0;
+        int RowCount_Grid = 0, CurrentRowIndex = 0, TableID = 0, Result = 0;
         bool SearchTag = false;
 
         public WadQualityControl()
@@ -260,6 +260,107 @@ namespace SPApplication.Transaction
             }
             else
                 return false;
+        }
+
+        private void btnSave_Click(object sender, EventArgs e)
+        {
+            FlagDelete = false;
+            SaveDB();
+        }
+
+        int WadQualityControlId = 0;
+        static int dgvRowIndex;
+
+        string Type_I = string.Empty, CustmerLogo = string.Empty, PrintQuality = string.Empty, BoardThikness = string.Empty, BoardType = string.Empty, FoilThikness = string.Empty, FoilSpecs = string.Empty, SealantThikness = string.Empty, SealentSpecs = string.Empty, OuterDia = string.Empty, Thikness = string.Empty, Weight = string.Empty, AverageWeight = string.Empty, VisualAppearance = string.Empty, SideFinishing = string.Empty, Bend = string.Empty, FitmentWithCap = string.Empty, TopLoadTest = string.Empty, InkTest = string.Empty, IndSealTest = string.Empty;
+        private void ClearGrid_Values()
+        {
+            WadQualityControlId = 0; Type_I = string.Empty; CustmerLogo = string.Empty; PrintQuality = string.Empty; BoardThikness = string.Empty; BoardType = string.Empty; FoilThikness = string.Empty; FoilSpecs = string.Empty; SealantThikness = string.Empty; SealentSpecs = string.Empty; OuterDia = string.Empty; Thikness = string.Empty; Weight = string.Empty; AverageWeight = string.Empty; VisualAppearance = string.Empty; SideFinishing = string.Empty; Bend = string.Empty; FitmentWithCap = string.Empty; TopLoadTest = string.Empty; InkTest = string.Empty; IndSealTest = string.Empty;
+        }
+
+
+
+        private void SaveDB()
+        {
+            if (!ValidationMain())
+            {
+                //Save CapQualityControl
+                Result = 0;
+                WadQualityControlId = 0;
+
+                if (TableID == 0)
+                    objBL.Query = "insert into WadQualityControl(EntryDate,EntryTime,WadId,InvoiceNumber,SupplierId,QCCheckerId,UserId) values('" + dtpDate.Value.ToShortDateString() + "','" + dtpTime.Value.ToShortTimeString() + "'," + WadId + ",'" + txtInvoiceNumber.Text + "'," + cmbSupllier.SelectedValue + "," + cmbQCCheckerName.SelectedValue + "," + BusinessLayer.UserId_Static + ") ";
+                else
+                {
+                    if (!FlagDelete)
+                        objBL.Query = "Update WadQualityControl set WadId=" + WadId + ",InvoiceNumber='" + txtInvoiceNumber.Text + "',SupplierId=" + cmbSupllier.SelectedValue + ",QCCheckerId=" + cmbQCCheckerName.SelectedValue + ",ModifiedId=" + BusinessLayer.UserId_Static + " where ID=" + TableID + " ";
+                    else
+                        objBL.Query = "Delete from WadQualityControl where ID=" + TableID + " ";
+                }
+
+                Result = objBL.Function_ExecuteNonQuery();
+
+                if (Result > 0)
+                {
+                    if (TableID == 0)
+                        TableID = objRL.ReturnMaxID_Fix("WadQualityControl", "ID");
+                    else
+                    {
+                        if (FlagDelete)
+                        {
+                            objBL.Query = "Delete from WadQualityControlValues where ID=" + TableID + " ";
+                            Result = objBL.Function_ExecuteNonQuery();
+                        }
+                    }
+
+                    if (TableID > 0 && dgvValues.Rows.Count > 0 && !FlagDelete)
+                    {
+                        for (int i = 0; i < dgvValues.Rows.Count; i++)
+                        {
+                            ClearGrid_Values();
+                            Type_I = objRL.Check_Null_String(Convert.ToString(dgvValues.Rows[i].Cells["clmType"].Value));
+                            CustmerLogo = objRL.Check_Null_String(Convert.ToString(dgvValues.Rows[i].Cells["clmCustmerLogo"].Value));
+                            PrintQuality = objRL.Check_Null_String(Convert.ToString(dgvValues.Rows[i].Cells["clmPrintQuality"].Value));
+                            BoardThikness = objRL.Check_Null_String(Convert.ToString(dgvValues.Rows[i].Cells["clmBoardThikness"].Value));
+                            BoardType = objRL.Check_Null_String(Convert.ToString(dgvValues.Rows[i].Cells["clmBoardType"].Value));
+                            FoilThikness = objRL.Check_Null_String(Convert.ToString(dgvValues.Rows[i].Cells["clmFoilThikness"].Value));
+                            FoilSpecs = objRL.Check_Null_String(Convert.ToString(dgvValues.Rows[i].Cells["clmFoilSpecs"].Value));
+                            SealantThikness = objRL.Check_Null_String(Convert.ToString(dgvValues.Rows[i].Cells["clmSealantThikness"].Value));
+                            SealentSpecs = objRL.Check_Null_String(Convert.ToString(dgvValues.Rows[i].Cells["clmSealentSpecs"].Value));
+                            OuterDia = objRL.Check_Null_String(Convert.ToString(dgvValues.Rows[i].Cells["clmOuterDia"].Value));
+                            Thikness = objRL.Check_Null_String(Convert.ToString(dgvValues.Rows[i].Cells["clmThikness"].Value));
+                            Weight = objRL.Check_Null_String(Convert.ToString(dgvValues.Rows[i].Cells["clmWeight"].Value));
+                            AverageWeight = objRL.Check_Null_String(Convert.ToString(dgvValues.Rows[i].Cells["clmAverageWeight"].Value));
+                            VisualAppearance = objRL.Check_Null_String(Convert.ToString(dgvValues.Rows[i].Cells["clmVisualAppearance"].Value));
+                            SideFinishing = objRL.Check_Null_String(Convert.ToString(dgvValues.Rows[i].Cells["clmSideFinishing"].Value));
+                            Bend = objRL.Check_Null_String(Convert.ToString(dgvValues.Rows[i].Cells["clmBend"].Value));
+                            FitmentWithCap = objRL.Check_Null_String(Convert.ToString(dgvValues.Rows[i].Cells["clmFitmentWithCap"].Value));
+                            InkTest = objRL.Check_Null_String(Convert.ToString(dgvValues.Rows[i].Cells["clmInkTest"].Value));
+                            IndSealTest = objRL.Check_Null_String(Convert.ToString(dgvValues.Rows[i].Cells["clmIndSealTest"].Value));
+
+                            objBL.Query = "insert into WadQualityControlValues(EntryDate,EntryTime,WadId,WadQualityControlId,[Type],CustmerLogo,PrintQuality,BoardThikness,BoardType,FoilThikness,FoilSpecs,SealantThikness,SealentSpecs,OuterDia,Thikness,Weight,AverageWeight,VisualAppearance,SideFinishing,Bend,FitmentWithCap,TopLoadTest,InkTest,IndSealTest,UserId) values('" + dtpDate.Value.ToShortDateString() + "','" + dtpTime.Value.ToShortTimeString() + "'," + WadId + "," + TableID + ",'" + Type_I + "','" + CustmerLogo + "','" + PrintQuality + "','" + BoardThikness + "','" + BoardType + "','" + FoilThikness + "','" + FoilSpecs + "','" + SealantThikness + "','" + SealentSpecs + "','" + OuterDia + "','" + Thikness + "','" + Weight + "','" + AverageWeight + "','" + VisualAppearance + "','" + SideFinishing + "','" + Bend + "','" + FitmentWithCap + "','" + TopLoadTest + "','" + InkTest + "','" + IndSealTest + "'," + BusinessLayer.UserId_Static + ")";
+                            Result = objBL.Function_ExecuteNonQuery();
+
+                            if (Result > 0)
+                                Result++;
+                        }
+                    }
+                    if (Result > 0)
+                    {
+                        if (FlagDelete)
+                            objRL.ShowMessage(9, 1);
+                        else
+                            objRL.ShowMessage(7, 1);
+
+                        ClearAll();
+                        FillGrid();
+                    }
+                }
+            }
+            else
+            {
+                objRL.ShowMessage(17, 4);
+                return;
+            }
         }
     }
 }

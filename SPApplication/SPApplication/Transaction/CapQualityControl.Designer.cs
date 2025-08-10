@@ -28,20 +28,20 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle13 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle14 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle29 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle30 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle31 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle32 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle33 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle34 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle35 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle36 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle37 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle38 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle39 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle40 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle41 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle42 = new System.Windows.Forms.DataGridViewCellStyle();
             this.dtpTime = new System.Windows.Forms.DateTimePicker();
             this.label6 = new System.Windows.Forms.Label();
             this.dtpDate = new System.Windows.Forms.DateTimePicker();
@@ -75,12 +75,6 @@
             this.gbValue = new System.Windows.Forms.GroupBox();
             this.label24 = new System.Windows.Forms.Label();
             this.dgvValues = new System.Windows.Forms.DataGridView();
-            this.label26 = new System.Windows.Forms.Label();
-            this.label27 = new System.Windows.Forms.Label();
-            this.btnDelete = new System.Windows.Forms.Button();
-            this.btnClear = new System.Windows.Forms.Button();
-            this.btnSave = new System.Windows.Forms.Button();
-            this.btnExit = new System.Windows.Forms.Button();
             this.clmId = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.clmSrNo = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.clmType = new System.Windows.Forms.DataGridViewComboBoxColumn();
@@ -98,6 +92,12 @@
             this.clmFitmentWithBottleJar = new System.Windows.Forms.DataGridViewComboBoxColumn();
             this.clmInkTest = new System.Windows.Forms.DataGridViewComboBoxColumn();
             this.clmDropTest = new System.Windows.Forms.DataGridViewComboBoxColumn();
+            this.label26 = new System.Windows.Forms.Label();
+            this.label27 = new System.Windows.Forms.Label();
+            this.btnDelete = new System.Windows.Forms.Button();
+            this.btnClear = new System.Windows.Forms.Button();
+            this.btnSave = new System.Windows.Forms.Button();
+            this.btnExit = new System.Windows.Forms.Button();
             this.gbCapDetails.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.gbValue.SuspendLayout();
@@ -222,7 +222,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(561, 76);
+            this.label3.Location = new System.Drawing.Point(562, 76);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(62, 15);
             this.label3.TabIndex = 11502;
@@ -232,7 +232,7 @@
             // 
             this.lblCapName.BackColor = System.Drawing.Color.White;
             this.lblCapName.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.lblCapName.Location = new System.Drawing.Point(625, 71);
+            this.lblCapName.Location = new System.Drawing.Point(626, 71);
             this.lblCapName.Name = "lblCapName";
             this.lblCapName.Size = new System.Drawing.Size(431, 28);
             this.lblCapName.TabIndex = 11501;
@@ -253,7 +253,7 @@
             // 
             // txtInvoiceNumber
             // 
-            this.txtInvoiceNumber.Location = new System.Drawing.Point(625, 100);
+            this.txtInvoiceNumber.Location = new System.Drawing.Point(626, 100);
             this.txtInvoiceNumber.Name = "txtInvoiceNumber";
             this.txtInvoiceNumber.Size = new System.Drawing.Size(174, 23);
             this.txtInvoiceNumber.TabIndex = 11545;
@@ -261,7 +261,7 @@
             // label16
             // 
             this.label16.AutoSize = true;
-            this.label16.Location = new System.Drawing.Point(570, 127);
+            this.label16.Location = new System.Drawing.Point(571, 127);
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(53, 15);
             this.label16.TabIndex = 11544;
@@ -273,7 +273,7 @@
             this.cmbSupllier.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
             this.cmbSupllier.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbSupllier.FormattingEnabled = true;
-            this.cmbSupllier.Location = new System.Drawing.Point(625, 124);
+            this.cmbSupllier.Location = new System.Drawing.Point(626, 124);
             this.cmbSupllier.Name = "cmbSupllier";
             this.cmbSupllier.Size = new System.Drawing.Size(431, 23);
             this.cmbSupllier.TabIndex = 11543;
@@ -281,7 +281,7 @@
             // label37
             // 
             this.label37.AutoSize = true;
-            this.label37.Location = new System.Drawing.Point(530, 103);
+            this.label37.Location = new System.Drawing.Point(531, 103);
             this.label37.Name = "label37";
             this.label37.Size = new System.Drawing.Size(93, 15);
             this.label37.TabIndex = 11546;
@@ -290,7 +290,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(520, 150);
+            this.label4.Location = new System.Drawing.Point(521, 150);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(103, 15);
             this.label4.TabIndex = 11549;
@@ -302,7 +302,7 @@
             this.cmbQCCheckerName.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
             this.cmbQCCheckerName.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbQCCheckerName.FormattingEnabled = true;
-            this.cmbQCCheckerName.Location = new System.Drawing.Point(625, 148);
+            this.cmbQCCheckerName.Location = new System.Drawing.Point(626, 148);
             this.cmbQCCheckerName.Name = "cmbQCCheckerName";
             this.cmbQCCheckerName.Size = new System.Drawing.Size(431, 23);
             this.cmbQCCheckerName.TabIndex = 11548;
@@ -322,6 +322,7 @@
             this.txtSearchID.Name = "txtSearchID";
             this.txtSearchID.Size = new System.Drawing.Size(57, 23);
             this.txtSearchID.TabIndex = 11562;
+            this.txtSearchID.TextChanged += new System.EventHandler(this.txtSearchID_TextChanged);
             // 
             // label78
             // 
@@ -338,6 +339,7 @@
             this.txtSearch.Name = "txtSearch";
             this.txtSearch.Size = new System.Drawing.Size(191, 23);
             this.txtSearch.TabIndex = 11560;
+            this.txtSearch.TextChanged += new System.EventHandler(this.txtSearch_TextChanged);
             // 
             // lblTotalCount
             // 
@@ -357,6 +359,7 @@
             this.cbToday.TabIndex = 11557;
             this.cbToday.Text = "Today";
             this.cbToday.UseVisualStyleBackColor = true;
+            this.cbToday.CheckedChanged += new System.EventHandler(this.cbToday_CheckedChanged);
             // 
             // label5
             // 
@@ -392,6 +395,7 @@
             this.dataGridView1.Size = new System.Drawing.Size(1224, 133);
             this.dataGridView1.TabIndex = 11554;
             this.dataGridView1.TabStop = false;
+            this.dataGridView1.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellDoubleClick);
             // 
             // gbValue
             // 
@@ -411,9 +415,9 @@
             // 
             this.label24.BackColor = System.Drawing.Color.LavenderBlush;
             this.label24.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label24.Location = new System.Drawing.Point(7, 18);
+            this.label24.Location = new System.Drawing.Point(7, 19);
             this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(362, 22);
+            this.label24.Size = new System.Drawing.Size(377, 22);
             this.label24.TabIndex = 11498;
             this.label24.Text = "Plastic Caps";
             this.label24.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -452,14 +456,217 @@
             this.dgvValues.RowHeadersVisible = false;
             this.dgvValues.Size = new System.Drawing.Size(1226, 286);
             this.dgvValues.TabIndex = 0;
+            this.dgvValues.CellEndEdit += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvValues_CellEndEdit);
+            // 
+            // clmId
+            // 
+            this.clmId.HeaderText = "Id";
+            this.clmId.Name = "clmId";
+            this.clmId.ReadOnly = true;
+            this.clmId.Visible = false;
+            // 
+            // clmSrNo
+            // 
+            dataGridViewCellStyle29.BackColor = System.Drawing.Color.LavenderBlush;
+            this.clmSrNo.DefaultCellStyle = dataGridViewCellStyle29;
+            this.clmSrNo.HeaderText = "Sr. No";
+            this.clmSrNo.Name = "clmSrNo";
+            this.clmSrNo.ReadOnly = true;
+            this.clmSrNo.Width = 40;
+            // 
+            // clmType
+            // 
+            dataGridViewCellStyle30.BackColor = System.Drawing.Color.LavenderBlush;
+            this.clmType.DefaultCellStyle = dataGridViewCellStyle30;
+            this.clmType.HeaderText = "Type";
+            this.clmType.Items.AddRange(new object[] {
+            "Plain",
+            "Handle",
+            "Pilferproof",
+            "2Pc",
+            "Flip Top",
+            "Push Type",
+            "Sipper"});
+            this.clmType.Name = "clmType";
+            this.clmType.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.clmType.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            this.clmType.Width = 120;
+            // 
+            // clmCustmerLogo
+            // 
+            dataGridViewCellStyle31.BackColor = System.Drawing.Color.Honeydew;
+            this.clmCustmerLogo.DefaultCellStyle = dataGridViewCellStyle31;
+            this.clmCustmerLogo.HeaderText = "Custmer Logo";
+            this.clmCustmerLogo.Items.AddRange(new object[] {
+            "Printed",
+            "Engraved"});
+            this.clmCustmerLogo.Name = "clmCustmerLogo";
+            this.clmCustmerLogo.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.clmCustmerLogo.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            this.clmCustmerLogo.Width = 120;
+            // 
+            // clmPrintQuality
+            // 
+            dataGridViewCellStyle32.BackColor = System.Drawing.Color.Honeydew;
+            this.clmPrintQuality.DefaultCellStyle = dataGridViewCellStyle32;
+            this.clmPrintQuality.HeaderText = "Print Quality";
+            this.clmPrintQuality.Items.AddRange(new object[] {
+            "Ok",
+            "Not Ok",
+            "Not Applicable"});
+            this.clmPrintQuality.Name = "clmPrintQuality";
+            this.clmPrintQuality.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.clmPrintQuality.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            // 
+            // clmMaterial
+            // 
+            dataGridViewCellStyle33.BackColor = System.Drawing.Color.Honeydew;
+            this.clmMaterial.DefaultCellStyle = dataGridViewCellStyle33;
+            this.clmMaterial.HeaderText = "Material";
+            this.clmMaterial.Items.AddRange(new object[] {
+            "PP",
+            "HDPE",
+            "LDPE",
+            "PET"});
+            this.clmMaterial.Name = "clmMaterial";
+            this.clmMaterial.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.clmMaterial.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            this.clmMaterial.Width = 120;
+            // 
+            // clmOuterDia
+            // 
+            dataGridViewCellStyle34.BackColor = System.Drawing.Color.LemonChiffon;
+            this.clmOuterDia.DefaultCellStyle = dataGridViewCellStyle34;
+            this.clmOuterDia.HeaderText = "Outer Dia (mm)";
+            this.clmOuterDia.Name = "clmOuterDia";
+            this.clmOuterDia.Width = 60;
+            // 
+            // clmInnerDia
+            // 
+            dataGridViewCellStyle35.BackColor = System.Drawing.Color.LemonChiffon;
+            this.clmInnerDia.DefaultCellStyle = dataGridViewCellStyle35;
+            this.clmInnerDia.HeaderText = "Inner Dia  (mm)";
+            this.clmInnerDia.Name = "clmInnerDia";
+            this.clmInnerDia.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.clmInnerDia.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            this.clmInnerDia.Width = 60;
+            // 
+            // clmHeight
+            // 
+            dataGridViewCellStyle36.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.clmHeight.DefaultCellStyle = dataGridViewCellStyle36;
+            this.clmHeight.HeaderText = "Height (mm)";
+            this.clmHeight.Name = "clmHeight";
+            this.clmHeight.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.clmHeight.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            this.clmHeight.Width = 60;
+            // 
+            // clmWeight
+            // 
+            dataGridViewCellStyle37.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.clmWeight.DefaultCellStyle = dataGridViewCellStyle37;
+            this.clmWeight.HeaderText = "Weight (Gms)";
+            this.clmWeight.Name = "clmWeight";
+            this.clmWeight.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.clmWeight.Width = 60;
+            // 
+            // clmColor
+            // 
+            dataGridViewCellStyle38.BackColor = System.Drawing.Color.Honeydew;
+            this.clmColor.DefaultCellStyle = dataGridViewCellStyle38;
+            this.clmColor.HeaderText = "Color";
+            this.clmColor.Items.AddRange(new object[] {
+            "Ok",
+            "Not Ok"});
+            this.clmColor.Name = "clmColor";
+            this.clmColor.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.clmColor.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            this.clmColor.Width = 60;
+            // 
+            // clmVisualAppearance
+            // 
+            dataGridViewCellStyle39.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.clmVisualAppearance.DefaultCellStyle = dataGridViewCellStyle39;
+            this.clmVisualAppearance.DisplayStyle = System.Windows.Forms.DataGridViewComboBoxDisplayStyle.Nothing;
+            this.clmVisualAppearance.HeaderText = "Visual Appearance";
+            this.clmVisualAppearance.Items.AddRange(new object[] {
+            "Ok",
+            "Not Ok"});
+            this.clmVisualAppearance.Name = "clmVisualAppearance";
+            this.clmVisualAppearance.Width = 70;
+            // 
+            // clmFlashFinishing
+            // 
+            dataGridViewCellStyle40.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.clmFlashFinishing.DefaultCellStyle = dataGridViewCellStyle40;
+            this.clmFlashFinishing.DisplayStyle = System.Windows.Forms.DataGridViewComboBoxDisplayStyle.ComboBox;
+            this.clmFlashFinishing.HeaderText = "Flash Finishing";
+            this.clmFlashFinishing.Items.AddRange(new object[] {
+            "Ok",
+            "Not OK"});
+            this.clmFlashFinishing.Name = "clmFlashFinishing";
+            this.clmFlashFinishing.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.clmFlashFinishing.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            this.clmFlashFinishing.Width = 70;
+            // 
+            // clmBend
+            // 
+            dataGridViewCellStyle41.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.clmBend.DefaultCellStyle = dataGridViewCellStyle41;
+            this.clmBend.DisplayStyle = System.Windows.Forms.DataGridViewComboBoxDisplayStyle.Nothing;
+            this.clmBend.HeaderText = "Bend";
+            this.clmBend.Items.AddRange(new object[] {
+            "Ok",
+            "Slight Bend",
+            "Heavy bend"});
+            this.clmBend.Name = "clmBend";
+            this.clmBend.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.clmBend.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            // 
+            // clmFitmentWithBottleJar
+            // 
+            dataGridViewCellStyle42.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.clmFitmentWithBottleJar.DefaultCellStyle = dataGridViewCellStyle42;
+            this.clmFitmentWithBottleJar.DisplayStyle = System.Windows.Forms.DataGridViewComboBoxDisplayStyle.Nothing;
+            this.clmFitmentWithBottleJar.HeaderText = "Fitment With Bottle/Jar";
+            this.clmFitmentWithBottleJar.Items.AddRange(new object[] {
+            "Ok",
+            "Not Ok"});
+            this.clmFitmentWithBottleJar.Name = "clmFitmentWithBottleJar";
+            this.clmFitmentWithBottleJar.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.clmFitmentWithBottleJar.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            this.clmFitmentWithBottleJar.Width = 70;
+            // 
+            // clmInkTest
+            // 
+            this.clmInkTest.HeaderText = "Ink Test";
+            this.clmInkTest.Items.AddRange(new object[] {
+            "Passed",
+            "Failed"});
+            this.clmInkTest.Name = "clmInkTest";
+            this.clmInkTest.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            this.clmInkTest.Width = 70;
+            // 
+            // clmDropTest
+            // 
+            this.clmDropTest.HeaderText = "Drop Test";
+            this.clmDropTest.Items.AddRange(new object[] {
+            "Ok",
+            "Not Ok"});
+            this.clmDropTest.Name = "clmDropTest";
+            this.clmDropTest.ReadOnly = true;
+            this.clmDropTest.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.clmDropTest.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            this.clmDropTest.Visible = false;
+            this.clmDropTest.Width = 70;
             // 
             // label26
             // 
             this.label26.BackColor = System.Drawing.Color.LemonChiffon;
             this.label26.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label26.Location = new System.Drawing.Point(375, 19);
+            this.label26.Location = new System.Drawing.Point(390, 19);
             this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(313, 22);
+            this.label26.Size = new System.Drawing.Size(354, 22);
             this.label26.TabIndex = 11496;
             this.label26.Text = "Specifications";
             this.label26.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -468,9 +675,9 @@
             // 
             this.label27.BackColor = System.Drawing.Color.Honeydew;
             this.label27.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label27.Location = new System.Drawing.Point(694, 19);
+            this.label27.Location = new System.Drawing.Point(750, 19);
             this.label27.Name = "label27";
-            this.label27.Size = new System.Drawing.Size(445, 22);
+            this.label27.Size = new System.Drawing.Size(437, 22);
             this.label27.TabIndex = 11495;
             this.label27.Text = "Tests";
             this.label27.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -523,207 +730,6 @@
             this.btnExit.TabIndex = 11552;
             this.btnExit.UseVisualStyleBackColor = false;
             this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
-            // 
-            // clmId
-            // 
-            this.clmId.HeaderText = "Id";
-            this.clmId.Name = "clmId";
-            this.clmId.ReadOnly = true;
-            this.clmId.Visible = false;
-            // 
-            // clmSrNo
-            // 
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.LavenderBlush;
-            this.clmSrNo.DefaultCellStyle = dataGridViewCellStyle1;
-            this.clmSrNo.HeaderText = "Sr. No";
-            this.clmSrNo.Name = "clmSrNo";
-            this.clmSrNo.ReadOnly = true;
-            this.clmSrNo.Width = 25;
-            // 
-            // clmType
-            // 
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.LavenderBlush;
-            this.clmType.DefaultCellStyle = dataGridViewCellStyle2;
-            this.clmType.HeaderText = "Type";
-            this.clmType.Items.AddRange(new object[] {
-            "Plain",
-            "Handle",
-            "Pilferproof",
-            "2Pc",
-            "Flip Top",
-            "Push Type",
-            "Sipper"});
-            this.clmType.Name = "clmType";
-            this.clmType.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.clmType.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
-            this.clmType.Width = 120;
-            // 
-            // clmCustmerLogo
-            // 
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.Honeydew;
-            this.clmCustmerLogo.DefaultCellStyle = dataGridViewCellStyle3;
-            this.clmCustmerLogo.HeaderText = "Custmer Logo";
-            this.clmCustmerLogo.Items.AddRange(new object[] {
-            "Printed",
-            "Engraved"});
-            this.clmCustmerLogo.Name = "clmCustmerLogo";
-            this.clmCustmerLogo.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.clmCustmerLogo.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
-            this.clmCustmerLogo.Width = 120;
-            // 
-            // clmPrintQuality
-            // 
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.Honeydew;
-            this.clmPrintQuality.DefaultCellStyle = dataGridViewCellStyle4;
-            this.clmPrintQuality.HeaderText = "Print Quality";
-            this.clmPrintQuality.Items.AddRange(new object[] {
-            "Ok",
-            "Not OK",
-            "Not Applicable"});
-            this.clmPrintQuality.Name = "clmPrintQuality";
-            this.clmPrintQuality.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.clmPrintQuality.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
-            // 
-            // clmMaterial
-            // 
-            dataGridViewCellStyle5.BackColor = System.Drawing.Color.Honeydew;
-            this.clmMaterial.DefaultCellStyle = dataGridViewCellStyle5;
-            this.clmMaterial.HeaderText = "Material";
-            this.clmMaterial.Items.AddRange(new object[] {
-            "PP",
-            "HDPE",
-            "LDPE",
-            "PET"});
-            this.clmMaterial.Name = "clmMaterial";
-            this.clmMaterial.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.clmMaterial.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
-            this.clmMaterial.Width = 120;
-            // 
-            // clmOuterDia
-            // 
-            dataGridViewCellStyle6.BackColor = System.Drawing.Color.LemonChiffon;
-            this.clmOuterDia.DefaultCellStyle = dataGridViewCellStyle6;
-            this.clmOuterDia.HeaderText = "Outer Dia (mm)";
-            this.clmOuterDia.Name = "clmOuterDia";
-            this.clmOuterDia.Width = 50;
-            // 
-            // clmInnerDia
-            // 
-            dataGridViewCellStyle7.BackColor = System.Drawing.Color.LemonChiffon;
-            this.clmInnerDia.DefaultCellStyle = dataGridViewCellStyle7;
-            this.clmInnerDia.HeaderText = "Inner Dia  (mm)";
-            this.clmInnerDia.Name = "clmInnerDia";
-            this.clmInnerDia.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.clmInnerDia.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            this.clmInnerDia.Width = 50;
-            // 
-            // clmHeight
-            // 
-            dataGridViewCellStyle8.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.clmHeight.DefaultCellStyle = dataGridViewCellStyle8;
-            this.clmHeight.HeaderText = "Height (mm)";
-            this.clmHeight.Name = "clmHeight";
-            this.clmHeight.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.clmHeight.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            this.clmHeight.Width = 50;
-            // 
-            // clmWeight
-            // 
-            dataGridViewCellStyle9.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.clmWeight.DefaultCellStyle = dataGridViewCellStyle9;
-            this.clmWeight.HeaderText = "Weight (Gms)";
-            this.clmWeight.Name = "clmWeight";
-            this.clmWeight.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.clmWeight.Width = 50;
-            // 
-            // clmColor
-            // 
-            dataGridViewCellStyle10.BackColor = System.Drawing.Color.Honeydew;
-            this.clmColor.DefaultCellStyle = dataGridViewCellStyle10;
-            this.clmColor.HeaderText = "Color";
-            this.clmColor.Items.AddRange(new object[] {
-            "GSM"});
-            this.clmColor.Name = "clmColor";
-            this.clmColor.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.clmColor.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
-            this.clmColor.Width = 60;
-            // 
-            // clmVisualAppearance
-            // 
-            dataGridViewCellStyle11.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.clmVisualAppearance.DefaultCellStyle = dataGridViewCellStyle11;
-            this.clmVisualAppearance.DisplayStyle = System.Windows.Forms.DataGridViewComboBoxDisplayStyle.Nothing;
-            this.clmVisualAppearance.HeaderText = "Visual Appearance";
-            this.clmVisualAppearance.Items.AddRange(new object[] {
-            "Ok",
-            "Not OK"});
-            this.clmVisualAppearance.Name = "clmVisualAppearance";
-            this.clmVisualAppearance.Width = 70;
-            // 
-            // clmFlashFinishing
-            // 
-            dataGridViewCellStyle12.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.clmFlashFinishing.DefaultCellStyle = dataGridViewCellStyle12;
-            this.clmFlashFinishing.DisplayStyle = System.Windows.Forms.DataGridViewComboBoxDisplayStyle.ComboBox;
-            this.clmFlashFinishing.HeaderText = "Flash Finishing";
-            this.clmFlashFinishing.Items.AddRange(new object[] {
-            "Ok",
-            "Not OK"});
-            this.clmFlashFinishing.Name = "clmFlashFinishing";
-            this.clmFlashFinishing.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.clmFlashFinishing.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
-            this.clmFlashFinishing.Width = 70;
-            // 
-            // clmBend
-            // 
-            dataGridViewCellStyle13.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.clmBend.DefaultCellStyle = dataGridViewCellStyle13;
-            this.clmBend.DisplayStyle = System.Windows.Forms.DataGridViewComboBoxDisplayStyle.Nothing;
-            this.clmBend.HeaderText = "Bend";
-            this.clmBend.Items.AddRange(new object[] {
-            "OK",
-            "Slight Bend",
-            "Heavy bend"});
-            this.clmBend.Name = "clmBend";
-            this.clmBend.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.clmBend.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
-            // 
-            // clmFitmentWithBottleJar
-            // 
-            dataGridViewCellStyle14.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.clmFitmentWithBottleJar.DefaultCellStyle = dataGridViewCellStyle14;
-            this.clmFitmentWithBottleJar.DisplayStyle = System.Windows.Forms.DataGridViewComboBoxDisplayStyle.Nothing;
-            this.clmFitmentWithBottleJar.HeaderText = "Fitment With Bottle/Jar";
-            this.clmFitmentWithBottleJar.Items.AddRange(new object[] {
-            "Ok",
-            "Not OK"});
-            this.clmFitmentWithBottleJar.Name = "clmFitmentWithBottleJar";
-            this.clmFitmentWithBottleJar.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.clmFitmentWithBottleJar.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
-            this.clmFitmentWithBottleJar.Width = 70;
-            // 
-            // clmInkTest
-            // 
-            this.clmInkTest.HeaderText = "Ink Test";
-            this.clmInkTest.Items.AddRange(new object[] {
-            "Passed",
-            "Failed"});
-            this.clmInkTest.Name = "clmInkTest";
-            this.clmInkTest.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
-            this.clmInkTest.Width = 70;
-            // 
-            // clmDropTest
-            // 
-            this.clmDropTest.HeaderText = "Drop Test";
-            this.clmDropTest.Items.AddRange(new object[] {
-            "Ok",
-            "Not OK"});
-            this.clmDropTest.Name = "clmDropTest";
-            this.clmDropTest.ReadOnly = true;
-            this.clmDropTest.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.clmDropTest.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
-            this.clmDropTest.Visible = false;
-            this.clmDropTest.Width = 70;
             // 
             // CapQualityControl
             // 

@@ -126,29 +126,33 @@ namespace SPApplication.Master
                     TableID = objRL.Check_Null_Integer(objRL.Check_Null_String(Convert.ToString(dataGridView1.Rows[e.RowIndex].Cells[0].Value)));
                     txtCapName.Text = objRL.Check_Null_String(Convert.ToString(dataGridView1.Rows[e.RowIndex].Cells[1].Value));
                     cmbIsWad.Text = objRL.Check_Null_String(Convert.ToString(dataGridView1.Rows[e.RowIndex].Cells[2].Value));
-
-                    txtNeckSizeStandard.Text = objRL.Check_Null_String(Convert.ToString(dataGridView1.Rows[e.RowIndex].Cells[3].Value));
-                    txtNeckSizeTolerance.Text = objRL.Check_Null_String(Convert.ToString(dataGridView1.Rows[e.RowIndex].Cells[4].Value));
-                    txtNeckSizeMinValue.Text = objRL.Check_Null_String(Convert.ToString(dataGridView1.Rows[e.RowIndex].Cells[5].Value));
-                    txtNeckSizeMaxValue.Text = objRL.Check_Null_String(Convert.ToString(dataGridView1.Rows[e.RowIndex].Cells[6].Value));
-                    txtCapWeightStandard.Text = objRL.Check_Null_String(Convert.ToString(dataGridView1.Rows[e.RowIndex].Cells[7].Value));
-                    txtCapWeightTolerance.Text = objRL.Check_Null_String(Convert.ToString(dataGridView1.Rows[e.RowIndex].Cells[8].Value));
-                    txtCapWeightMinValue.Text = objRL.Check_Null_String(Convert.ToString(dataGridView1.Rows[e.RowIndex].Cells[9].Value));
-                    txtCapWeightMaxValue.Text = objRL.Check_Null_String(Convert.ToString(dataGridView1.Rows[e.RowIndex].Cells[10].Value));
+                    
+                    txtOuterDiaStandard.Text = objRL.Check_Null_String(Convert.ToString(dataGridView1.Rows[e.RowIndex].Cells[3].Value));
+                    txtOuterDiaTolerance.Text = objRL.Check_Null_String(Convert.ToString(dataGridView1.Rows[e.RowIndex].Cells[4].Value));
+                    txtOuterDiaMinValue.Text = objRL.Check_Null_String(Convert.ToString(dataGridView1.Rows[e.RowIndex].Cells[5].Value));
+                    txtOuterDiaMaxValue.Text = objRL.Check_Null_String(Convert.ToString(dataGridView1.Rows[e.RowIndex].Cells[6].Value));
+                    txtInnerDiaWithThreadStandard.Text = objRL.Check_Null_String(Convert.ToString(dataGridView1.Rows[e.RowIndex].Cells[7].Value));
+                    txtInnerDiaWithThreadTolerance.Text = objRL.Check_Null_String(Convert.ToString(dataGridView1.Rows[e.RowIndex].Cells[8].Value));
+                    txtInnerDiaWithThreadMinValue.Text = objRL.Check_Null_String(Convert.ToString(dataGridView1.Rows[e.RowIndex].Cells[9].Value));
+                    txtInnerDiaWithThreadMaxValue.Text = objRL.Check_Null_String(Convert.ToString(dataGridView1.Rows[e.RowIndex].Cells[10].Value));
                     txtInnerDiaWOThreadStandard.Text = objRL.Check_Null_String(Convert.ToString(dataGridView1.Rows[e.RowIndex].Cells[11].Value));
                     txtInnerDiaWOThreadTolerance.Text = objRL.Check_Null_String(Convert.ToString(dataGridView1.Rows[e.RowIndex].Cells[12].Value));
                     txtInnerDiaWOThreadMinValue.Text = objRL.Check_Null_String(Convert.ToString(dataGridView1.Rows[e.RowIndex].Cells[13].Value));
                     txtInnerDiaWOThreadMaxValue.Text = objRL.Check_Null_String(Convert.ToString(dataGridView1.Rows[e.RowIndex].Cells[14].Value));
-                    txtInnerDiaWithThreadStandard.Text = objRL.Check_Null_String(Convert.ToString(dataGridView1.Rows[e.RowIndex].Cells[15].Value));
-                    txtInnerDiaWithThreadTolerance.Text = objRL.Check_Null_String(Convert.ToString(dataGridView1.Rows[e.RowIndex].Cells[16].Value));
-                    txtInnerDiaWithThreadMinValue.Text = objRL.Check_Null_String(Convert.ToString(dataGridView1.Rows[e.RowIndex].Cells[17].Value));
-                    txtInnerDiaWithThreadMaxValue.Text = objRL.Check_Null_String(Convert.ToString(dataGridView1.Rows[e.RowIndex].Cells[18].Value));
-                    txtOuterDiaStandard.Text = objRL.Check_Null_String(Convert.ToString(dataGridView1.Rows[e.RowIndex].Cells[19].Value));
-                    txtOuterDiaTolerance.Text = objRL.Check_Null_String(Convert.ToString(dataGridView1.Rows[e.RowIndex].Cells[20].Value));
-                    txtOuterDiaMinValue.Text = objRL.Check_Null_String(Convert.ToString(dataGridView1.Rows[e.RowIndex].Cells[21].Value));
-                    txtOuterDiaMaxValue.Text = objRL.Check_Null_String(Convert.ToString(dataGridView1.Rows[e.RowIndex].Cells[22].Value));
-                    cmbStatus.Text = objRL.Check_Null_String(Convert.ToString(dataGridView1.Rows[e.RowIndex].Cells[23].Value));
-                    txtRemarks.Text = objRL.Check_Null_String(Convert.ToString(dataGridView1.Rows[e.RowIndex].Cells[24].Value));
+                    txtCapHeightStandard.Text = objRL.Check_Null_String(Convert.ToString(dataGridView1.Rows[e.RowIndex].Cells[15].Value));
+                    txtCapHeightTolerance.Text = objRL.Check_Null_String(Convert.ToString(dataGridView1.Rows[e.RowIndex].Cells[16].Value));
+                    txtCapHeightMinValue.Text = objRL.Check_Null_String(Convert.ToString(dataGridView1.Rows[e.RowIndex].Cells[17].Value));
+                    txtCapHeightMaxValue.Text = objRL.Check_Null_String(Convert.ToString(dataGridView1.Rows[e.RowIndex].Cells[18].Value));
+                    txtInnerDepthStandard.Text = objRL.Check_Null_String(Convert.ToString(dataGridView1.Rows[e.RowIndex].Cells[19].Value));
+                    txtInnerDepthTolerance.Text = objRL.Check_Null_String(Convert.ToString(dataGridView1.Rows[e.RowIndex].Cells[20].Value));
+                    txtInnerDepthMinValue.Text = objRL.Check_Null_String(Convert.ToString(dataGridView1.Rows[e.RowIndex].Cells[21].Value));
+                    txtInnerDepthMaxValue.Text = objRL.Check_Null_String(Convert.ToString(dataGridView1.Rows[e.RowIndex].Cells[22].Value));
+                    txtCapWeightStandard.Text = objRL.Check_Null_String(Convert.ToString(dataGridView1.Rows[e.RowIndex].Cells[23].Value));
+                    txtCapWeightTolerance.Text = objRL.Check_Null_String(Convert.ToString(dataGridView1.Rows[e.RowIndex].Cells[24].Value));
+                    txtCapWeightMinValue.Text = objRL.Check_Null_String(Convert.ToString(dataGridView1.Rows[e.RowIndex].Cells[25].Value));
+                    txtCapWeightMaxValue.Text = objRL.Check_Null_String(Convert.ToString(dataGridView1.Rows[e.RowIndex].Cells[26].Value));
+                    cmbStatus.Text = objRL.Check_Null_String(Convert.ToString(dataGridView1.Rows[e.RowIndex].Cells[27].Value));
+                    txtRemarks.Text = objRL.Check_Null_String(Convert.ToString(dataGridView1.Rows[e.RowIndex].Cells[28].Value));
                 }
             }
             catch (Exception ex1)
@@ -179,27 +183,30 @@ namespace SPApplication.Master
             TableID = 0;
             txtCapName.Text = "";
             cmbIsWad.SelectedIndex = -1;
-
-            txtNeckSizeStandard.Text = "";
-            txtNeckSizeTolerance.Text = "";
-            txtNeckSizeMinValue.Text = "";
-            txtNeckSizeMaxValue.Text = "";
-            txtCapWeightStandard.Text = "";
-            txtCapWeightTolerance.Text = "";
-            txtCapWeightMinValue.Text = "";
-            txtCapWeightMaxValue.Text = "";
-            txtInnerDiaWOThreadStandard.Text = "";
-            txtInnerDiaWOThreadTolerance.Text = "";
-            txtInnerDiaWOThreadMinValue.Text = "";
-            txtInnerDiaWOThreadMaxValue.Text = "";
-            txtInnerDiaWithThreadStandard.Text = "";
-            txtInnerDiaWithThreadTolerance.Text = "";
-            txtInnerDiaWithThreadMinValue.Text = "";
-            txtInnerDiaWithThreadMaxValue.Text = "";
             txtOuterDiaStandard.Text = "";
             txtOuterDiaTolerance.Text = "";
             txtOuterDiaMinValue.Text = "";
             txtOuterDiaMaxValue.Text = "";
+            txtInnerDiaWithThreadStandard.Text = "";
+            txtInnerDiaWithThreadTolerance.Text = "";
+            txtInnerDiaWithThreadMinValue.Text = "";
+            txtInnerDiaWithThreadMaxValue.Text = "";
+            txtInnerDiaWOThreadStandard.Text = "";
+            txtInnerDiaWOThreadTolerance.Text = "";
+            txtInnerDiaWOThreadMinValue.Text = "";
+            txtInnerDiaWOThreadMaxValue.Text = "";
+            txtCapHeightStandard.Text = "";
+            txtCapHeightTolerance.Text = "";
+            txtCapHeightMinValue.Text = "";
+            txtCapHeightMaxValue.Text = "";
+            txtInnerDepthStandard.Text = "";
+            txtInnerDepthTolerance.Text = "";
+            txtInnerDepthMinValue.Text = "";
+            txtInnerDepthMaxValue.Text = "";
+            txtCapWeightStandard.Text = "";
+            txtCapWeightTolerance.Text = "";
+            txtCapWeightMinValue.Text = "";
+            txtCapWeightMaxValue.Text = "";
             cmbStatus.SelectedIndex = -1;
             txtRemarks.Text = "";
             txtSearch.Text = "";
@@ -224,9 +231,9 @@ namespace SPApplication.Master
                         if (FlagDelete)
                             objBL.Query = "update CapMaster set CancelTag=1 where ID=" + TableID + "";
                         else
-                            objBL.Query = "update CapMaster set CapName='" + AposValue.Replace("'", "''") + "',Wad='" + cmbIsWad.Text + "',NeckSizeStandard='" + txtNeckSizeStandard.Text + "',NeckSizeTolerance='" + txtNeckSizeTolerance.Text + "',NeckSizeMinValue='" + txtNeckSizeMinValue.Text + "',NeckSizeMaxValue='" + txtNeckSizeMaxValue.Text + "',CapWeightStandard='" + txtCapWeightStandard.Text + "',CapWeightTolerance='" + txtCapWeightTolerance.Text + "',CapWeightMinValue='" + txtCapWeightMinValue.Text + "',CapWeightMaxValue='" + txtCapWeightMaxValue.Text + "',InnerDiaWOThreadStandard='" + txtInnerDiaWOThreadStandard.Text + "',InnerDiaWOThreadTolerance='" + txtInnerDiaWOThreadTolerance.Text + "',InnerDiaWOThreadMinValue='" + txtInnerDiaWOThreadMinValue.Text + "',InnerDiaWOThreadMaxValue='" + txtInnerDiaWOThreadMaxValue.Text + "',InnerDiaWithThreadStandard='" + txtInnerDiaWithThreadStandard.Text + "',InnerDiaWithThreadTolerance='" + txtInnerDiaWithThreadTolerance.Text + "',InnerDiaWithThreadMinValue='" + txtInnerDiaWithThreadMinValue.Text + "',InnerDiaWithThreadMaxValue='" + txtInnerDiaWithThreadMaxValue.Text + "',OuterDiaStandard='" + txtOuterDiaStandard.Text + "',OuterDiaTolerance='" + txtOuterDiaTolerance.Text + "',OuterDiaMinValue='" + txtOuterDiaMinValue.Text + "',OuterDiaMaxValue='" + txtOuterDiaMaxValue.Text + "',Status='" + cmbStatus.Text + "',Remarks='" + txtRemarks.Text + "',UserId=" + BusinessLayer.UserId_Static + " where ID=" + TableID + "";
+                            objBL.Query = "update CapMaster set CapName='" + AposValue.Replace("'", "''") + "',Wad='" + cmbIsWad.Text + "',OuterDiaStandard='" + txtOuterDiaStandard.Text + "',OuterDiaTolerance='" + txtOuterDiaTolerance.Text + "',OuterDiaMinValue='" + txtOuterDiaMinValue.Text + "',OuterDiaMaxValue='" + txtOuterDiaMaxValue.Text + "',InnerDiaWithThreadStandard='" + txtInnerDiaWithThreadStandard.Text + "',InnerDiaWithThreadTolerance='" + txtInnerDiaWithThreadTolerance.Text + "',InnerDiaWithThreadMinValue='" + txtInnerDiaWithThreadMinValue.Text + "',InnerDiaWithThreadMaxValue='" + txtInnerDiaWithThreadMaxValue.Text + "',InnerDiaWOThreadStandard='" + txtInnerDiaWOThreadStandard.Text + "',InnerDiaWOThreadTolerance='" + txtInnerDiaWOThreadTolerance.Text + "',InnerDiaWOThreadMinValue='" + txtInnerDiaWOThreadMinValue.Text + "',InnerDiaWOThreadMaxValue='" + txtInnerDiaWOThreadMaxValue.Text + "',CapHeightStandard='" + txtCapHeightStandard.Text + "',CapHeightTolerance='" + txtCapHeightTolerance.Text + "',CapHeightMinValue='" + txtCapHeightMinValue.Text + "',CapHeightMaxValue='" + txtCapHeightMaxValue.Text + "',InnerDepthStandard='" + txtInnerDepthStandard.Text + "',InnerDepthTolerance='" + txtInnerDepthTolerance.Text + "',InnerDepthMinValue='" + txtInnerDepthMinValue.Text + "',InnerDepthMaxValue='" + txtInnerDepthMaxValue.Text + "',CapWeightStandard='" + txtCapWeightStandard.Text + "',CapWeightTolerance='" + txtCapWeightTolerance.Text + "',CapWeightMinValue='" + txtCapWeightMinValue.Text + "',CapWeightMaxValue='" + txtCapWeightMaxValue.Text + "',Status='" + cmbStatus.Text + "',Remarks='" + txtRemarks.Text + "',UserId=" + BusinessLayer.UserId_Static + " where ID=" + TableID + "";
                     else
-                        objBL.Query = "insert into CapMaster(CapName,Wad,NeckSizeStandard,NeckSizeTolerance,NeckSizeMinValue,NeckSizeMaxValue,CapWeightStandard,CapWeightTolerance,CapWeightMinValue,CapWeightMaxValue,InnerDiaWOThreadStandard,InnerDiaWOThreadTolerance,InnerDiaWOThreadMinValue,InnerDiaWOThreadMaxValue,InnerDiaWithThreadStandard,InnerDiaWithThreadTolerance,InnerDiaWithThreadMinValue,InnerDiaWithThreadMaxValue,OuterDiaStandard,OuterDiaTolerance,OuterDiaMinValue,OuterDiaMaxValue,Status,Remarks,UserId) values('" + AposValue.Replace("'", "''") + "','" + cmbIsWad.Text + "','" + txtNeckSizeStandard.Text + "','" + txtNeckSizeTolerance.Text + "','" + txtNeckSizeMinValue.Text + "','" + txtNeckSizeMaxValue.Text + "','" + txtCapWeightStandard.Text + "','" + txtCapWeightTolerance.Text + "','" + txtCapWeightMinValue.Text + "','" + txtCapWeightMaxValue.Text + "','" + txtInnerDiaWOThreadStandard.Text + "','" + txtInnerDiaWOThreadTolerance.Text + "','" + txtInnerDiaWOThreadMinValue.Text + "','" + txtInnerDiaWOThreadMaxValue.Text + "','" + txtInnerDiaWithThreadStandard.Text + "','" + txtInnerDiaWithThreadTolerance.Text + "','" + txtInnerDiaWithThreadMinValue.Text + "','" + txtInnerDiaWithThreadMaxValue.Text + "','" + txtOuterDiaStandard.Text + "','" + txtOuterDiaTolerance.Text + "','" + txtOuterDiaMinValue.Text + "','" + txtOuterDiaMaxValue.Text + "','" + cmbStatus.Text + "','" + txtRemarks.Text + "'," + BusinessLayer.UserId_Static + ")";
+                        objBL.Query = "insert into CapMaster(CapName,Wad,OuterDiaStandard,OuterDiaTolerance,OuterDiaMinValue,OuterDiaMaxValue,InnerDiaWithThreadStandard,InnerDiaWithThreadTolerance,InnerDiaWithThreadMinValue,InnerDiaWithThreadMaxValue,InnerDiaWOThreadStandard,InnerDiaWOThreadTolerance,InnerDiaWOThreadMinValue,InnerDiaWOThreadMaxValue,CapHeightStandard,CapHeightTolerance,CapHeightMinValue,CapHeightMaxValue,InnerDepthStandard,InnerDepthTolerance,InnerDepthMinValue,InnerDepthMaxValue,CapWeightStandard,CapWeightTolerance,CapWeightMinValue,CapWeightMaxValue,Status,Remarks,UserId) values('" + AposValue.Replace("'", "''") + "','" + cmbIsWad.Text + "','" + txtOuterDiaStandard.Text + "','" + txtOuterDiaTolerance.Text + "','" + txtOuterDiaMinValue.Text + "','" + txtOuterDiaMaxValue.Text + "','" + txtInnerDiaWithThreadStandard.Text + "','" + txtInnerDiaWithThreadTolerance.Text + "','" + txtInnerDiaWithThreadMinValue.Text + "','" + txtInnerDiaWithThreadMaxValue.Text + "','" + txtInnerDiaWOThreadStandard.Text + "','" + txtInnerDiaWOThreadTolerance.Text + "','" + txtInnerDiaWOThreadMinValue.Text + "','" + txtInnerDiaWOThreadMaxValue.Text + "','" + txtCapHeightStandard.Text + "','" + txtCapHeightTolerance.Text + "','" + txtCapHeightMinValue.Text + "','" + txtCapHeightMaxValue.Text + "','" + txtInnerDepthStandard.Text + "','" + txtInnerDepthTolerance.Text + "','" + txtInnerDepthMinValue.Text + "','" + txtInnerDepthMaxValue.Text + "','" + txtCapWeightStandard.Text + "','" + txtCapWeightTolerance.Text + "','" + txtCapWeightMinValue.Text + "','" + txtCapWeightMaxValue.Text + "','" + cmbStatus.Text + "','" + txtRemarks.Text + "'," + BusinessLayer.UserId_Static + ")";
 
                     Result = objBL.Function_ExecuteNonQuery();
                     if (Result > 0)
@@ -291,29 +298,36 @@ namespace SPApplication.Master
             dataGridView1.DataSource = null;
             DataSet ds = new DataSet();
 
+            //OuterDiaStandard,OuterDiaTolerance,OuterDiaMinValue,OuterDiaMaxValue,InnerDiaWithThreadStandard,InnerDiaWithThreadTolerance,InnerDiaWithThreadMinValue,InnerDiaWithThreadMaxValue,InnerDiaWOThreadStandard,InnerDiaWOThreadTolerance,InnerDiaWOThreadMinValue,InnerDiaWOThreadMaxValue,CapHeightStandard,CapHeightTolerance,CapHeightMinValue,CapHeightMaxValue,InnerDepthStandard,InnerDepthTolerance,InnerDepthMinValue,InnerDepthMaxValue,CapWeightStandard,CapWeightTolerance,CapWeightMinValue,CapWeightMaxValue
+
             MainQuery = "select " +
                           "ID,"+
                           "CapName as [Cap Name],"+
-                          "Wad,NeckSizeStandard as [Neck Size Standard]," +
-                          "NeckSizeTolerance as [Neck Size Tolerance]," +
-                          "NeckSizeMinValue as [Neck Size Min Value]," +
-                          "NeckSizeMaxValue as [Neck Size Max Value]," +
-                          "CapWeightStandard as [Cap Weight Standard]," +
-                          "CapWeightTolerance as [Cap Weight Tolerance]," +
-                          "CapWeightMinValue as [Cap Weight Min Value]," +
-                          "CapWeightMaxValue as [Cap Weight Max Value]," +
-                          "InnerDiaWOThreadStandard as [Inner Dia WO Thread Standard]," +
-                          "InnerDiaWOThreadTolerance as [Inner Dia WO Thread Tolerance]," +
-                          "InnerDiaWOThreadMinValue as [Inner Dia WO Thread Min Value]," +
-                          "InnerDiaWOThreadMaxValue as [Inner Dia WO Thread Max Value]," +
-                          "InnerDiaWithThreadStandard as [Inner Dia With Thread Standard]," +
-                          "InnerDiaWithThreadTolerance as [Inner Dia With Thread Tolerance]," +
-                          "InnerDiaWithThreadMinValue as [Inner Dia With Thread Min Value]," +
-                          "InnerDiaWithThreadMaxValue as [Inner Dia With Thread Max Value]," +
+                          "Wad," +
                           "OuterDiaStandard as [Outer Dia Standard]," +
                           "OuterDiaTolerance as [Outer Dia Tolerance]," +
                           "OuterDiaMinValue as [Outer Dia Min Value]," +
                           "OuterDiaMaxValue as [Outer Dia Max Value]," +
+                          "InnerDiaWithThreadStandard as [Inner Dia With Thread Standard]," +
+                          "InnerDiaWithThreadTolerance as [Inner Dia With Thread Tolerance]," +
+                          "InnerDiaWithThreadMinValue as [Inner Dia With Thread Min Value]," +
+                          "InnerDiaWithThreadMaxValue as [Inner Dia With Thread Max Value]," +
+                          "InnerDiaWOThreadStandard as [Inner Dia WO Thread Standard]," +
+                          "InnerDiaWOThreadTolerance as [Inner Dia WO Thread Tolerance]," +
+                          "InnerDiaWOThreadMinValue as [Inner Dia WO Thread Min Value]," +
+                          "InnerDiaWOThreadMaxValue as [Inner Dia WO Thread Max Value]," +
+                          "CapHeightStandard as [Cap Height Standard]," +
+                          "CapHeightTolerance as [Cap Height Tolerance]," +
+                          "CapHeightMinValue as [Cap Height Min Value]," +
+                          "CapHeightMaxValue as [Cap Height Max Value]," +
+                          "InnerDepthStandard as [Inner Depth Standard]," +
+                          "InnerDepthTolerance as [Inner Depth Tolerance]," +
+                          "InnerDepthMinValue as [Inner Depth Min Value]," +
+                          "InnerDepthMaxValue as [Inner Depth Max Value]," +
+                          "CapWeightStandard as [Cap Weight Standard]," +
+                          "CapWeightTolerance as [Cap Weight Tolerance]," +
+                          "CapWeightMinValue as [Cap Weight Min Value]," +
+                          "CapWeightMaxValue as [Cap Weight Max Value]," +
                           "Status," +
                           "Remarks " + 
                           " from CapMaster where CancelTag=0";
@@ -383,12 +397,12 @@ namespace SPApplication.Master
 
         private void txtNeckSizeStandard_KeyPress(object sender, KeyPressEventArgs e)
         {
-            objRL.FloatValue(sender, e, txtNeckSizeStandard);
+            objRL.FloatValue(sender, e, txtCapHeightStandard);
         }
 
         private void txtNeckSizeTolerance_KeyPress(object sender, KeyPressEventArgs e)
         {
-            objRL.FloatValue(sender, e, txtNeckSizeTolerance);
+            objRL.FloatValue(sender, e, txtCapHeightTolerance);
         }
 
         private void txtCapWeightStandard_KeyPress(object sender, KeyPressEventArgs e)
@@ -431,22 +445,22 @@ namespace SPApplication.Master
             objRL.FloatValue(sender, e, txtOuterDiaTolerance);
         }
 
-        private void txtNeckSizeStandard_TextChanged(object sender, EventArgs e)
+        private void txtOuterDiaStandard_TextChanged(object sender, EventArgs e)
         {
             CalculateValue(1);
         }
 
-        private void txtNeckSizeTolerance_TextChanged(object sender, EventArgs e)
+        private void txtOuterDiaTolerance_TextChanged(object sender, EventArgs e)
         {
             CalculateValue(1);
         }
 
-        private void txtCapWeightStandard_TextChanged(object sender, EventArgs e)
+        private void txtInnerDiaWithThreadStandard_TextChanged(object sender, EventArgs e)
         {
             CalculateValue(2);
         }
 
-        private void txtCapWeightTolerance_TextChanged(object sender, EventArgs e)
+        private void txtInnerDiaWithThreadTolerance_TextChanged(object sender, EventArgs e)
         {
             CalculateValue(2);
         }
@@ -461,44 +475,58 @@ namespace SPApplication.Master
             CalculateValue(3);
         }
 
-        private void txtInnerDiaWithThreadStandard_TextChanged(object sender, EventArgs e)
+        private void txtCapHeightStandard_TextChanged(object sender, EventArgs e)
         {
             CalculateValue(4);
         }
 
-        private void txtInnerDiaWithThreadTolerance_TextChanged(object sender, EventArgs e)
+        private void txtCapHeightTolerance_TextChanged(object sender, EventArgs e)
         {
             CalculateValue(4);
         }
 
-        private void txtOuterDiaStandard_TextChanged(object sender, EventArgs e)
+        private void txtInnerDepthStandard_TextChanged(object sender, EventArgs e)
         {
             CalculateValue(5);
         }
 
-        private void txtOuterDiaTolerance_TextChanged(object sender, EventArgs e)
+        private void txtInnerDepthTolerance_TextChanged(object sender, EventArgs e)
         {
             CalculateValue(5);
         }
+
+        private void txtCapWeightStandard_TextChanged(object sender, EventArgs e)
+        {
+            CalculateValue(6);
+        }
+
+        private void txtCapWeightTolerance_TextChanged(object sender, EventArgs e)
+        {
+            CalculateValue(6);
+        }
+        
 
         public void CalculateValue(int CheckValue)
         {
             switch (CheckValue)
             {
                 case 1:
-                    SetValueMinMax(txtNeckSizeStandard, txtNeckSizeTolerance, txtNeckSizeMinValue, txtNeckSizeMaxValue);
+                    SetValueMinMax(txtOuterDiaStandard, txtOuterDiaTolerance, txtOuterDiaMinValue, txtOuterDiaMaxValue);
                     break;
                 case 2:
-                    SetValueMinMax(txtCapWeightStandard, txtCapWeightTolerance, txtCapWeightMinValue, txtCapWeightMaxValue);
+                    SetValueMinMax(txtInnerDiaWithThreadStandard, txtInnerDiaWithThreadTolerance, txtInnerDiaWithThreadMinValue, txtInnerDiaWithThreadMaxValue);
                     break;
                 case 3:
                     SetValueMinMax(txtInnerDiaWOThreadStandard, txtInnerDiaWOThreadTolerance, txtInnerDiaWOThreadMinValue, txtInnerDiaWOThreadMaxValue);
                     break;
                 case 4:
-                    SetValueMinMax(txtInnerDiaWithThreadStandard, txtInnerDiaWithThreadTolerance, txtInnerDiaWithThreadMinValue, txtInnerDiaWithThreadMaxValue);
+                    SetValueMinMax(txtCapHeightStandard, txtCapHeightTolerance, txtCapHeightMinValue, txtCapHeightMaxValue);
                     break;
                 case 5:
-                    SetValueMinMax(txtOuterDiaStandard, txtOuterDiaTolerance, txtOuterDiaMinValue, txtOuterDiaMaxValue);
+                    SetValueMinMax(txtInnerDepthStandard, txtInnerDepthTolerance, txtInnerDepthMinValue, txtInnerDepthMaxValue);
+                    break;
+                case 6:
+                    SetValueMinMax(txtCapWeightStandard, txtCapWeightTolerance, txtCapWeightMinValue, txtCapWeightMaxValue);
                     break;
             }
         }
@@ -535,13 +563,13 @@ namespace SPApplication.Master
         private void cmbIsWad_KeyDown(object sender, KeyEventArgs e)
         {
             if (e.KeyCode == Keys.Enter)
-                txtNeckSizeStandard.Focus();
+                txtCapHeightStandard.Focus();
         }
 
         private void txtNeckSizeStandard_KeyDown(object sender, KeyEventArgs e)
         {
             if (e.KeyCode == Keys.Enter)
-                txtNeckSizeTolerance.Focus();
+                txtCapHeightTolerance.Focus();
         }
 
         private void txtNeckSizeTolerance_KeyDown(object sender, KeyEventArgs e)
@@ -609,5 +637,7 @@ namespace SPApplication.Master
             if (e.KeyCode == Keys.Enter)
                 btnSave.Focus();
         }
+
+       
     }
 }

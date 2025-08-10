@@ -162,3 +162,4 @@ D:\GitProjects\SKPI\SPApplication\BusinessLayerUtility\obj\x86\Debug\BusinessLay
 D:\GitProjects\SKPI\SPApplication\BusinessLayerUtility\obj\x86\Debug\BusinessLayerUtility.csproj.GenerateResource.Cache
 D:\GitProjects\SKPI\SPApplication\BusinessLayerUtility\obj\x86\Debug\BusinessLayerUtility.dll
 D:\GitProjects\SKPI\SPApplication\BusinessLayerUtility\obj\x86\Debug\BusinessLayerUtility.pdb
+D:\GitProjects\SKPI\SPApplication\BusinessLayerUtility\obj\x86\Debug\BusinessLayerUtility.csprojResolveAssemblyReference.cache

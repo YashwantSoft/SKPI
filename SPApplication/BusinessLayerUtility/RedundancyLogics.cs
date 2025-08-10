@@ -3806,7 +3806,99 @@ namespace BusinessLayerUtility
             get { return materialname; }
             set { materialname = value; }
         }
-        
+
+        //Cap Details
+
+        private static string outerdiastandard;
+        public string OuterDiaStandard
+        {
+            get { return outerdiastandard; }
+            set { outerdiastandard = value; }
+        }
+
+        private static string outerdiatolerance;
+        public string OuterDiaTolerance
+        {
+            get { return outerdiatolerance; }
+            set { outerdiatolerance = value; }
+        }
+
+        private static string outerdiaminvalue;
+        public string OuterDiaMinValue
+        {
+            get { return outerdiaminvalue; }
+            set { outerdiaminvalue = value; }
+        }
+
+        private static string outerdiamaxvalue;
+        public string OuterDiaMaxValue
+        {
+            get { return outerdiamaxvalue; }
+            set { outerdiamaxvalue = value; }
+        }
+
+        private static string innerdiaWiththreadstandard;
+        public string InnerDiaWithThreadStandard
+        {
+            get { return innerdiaWiththreadstandard; }
+            set { innerdiaWiththreadstandard = value; }
+        }
+
+        private static string innerdiawiththreadtolerance;
+        public string InnerDiaWithThreadTolerance
+        {
+            get { return innerdiawiththreadtolerance; }
+            set { innerdiawiththreadtolerance = value; }
+        }
+
+        private static string innerdiawiththreadminvalue;
+        public string InnerDiaWithThreadMinValue
+        {
+            get { return innerdiawiththreadminvalue; }
+            set { innerdiawiththreadminvalue = value; }
+        }
+
+        private static string innerdiawiththreadmaxvalue;
+        public string InnerDiaWithThreadMaxValue
+        {
+            get { return innerdiawiththreadmaxvalue; }
+            set { innerdiawiththreadmaxvalue = value; }
+        }
+
+        private static string innerdiawothreadstandard;
+        public string InnerDiaWOThreadStandard
+        {
+            get { return innerdiawothreadstandard; }
+            set { innerdiawothreadstandard = value; }
+        }
+
+        private static string innerdiawothreadtolerance;
+        public string InnerDiaWOThreadTolerance
+        {
+            get { return innerdiawothreadtolerance; }
+            set { innerdiawothreadtolerance = value; }
+        }
+
+        private static string innerdiawothreadminvalue;
+        public string InnerDiaWOThreadMinValue
+        {
+            get { return innerdiawothreadminvalue; }
+            set { innerdiawothreadminvalue = value; }
+        }
+
+        private static string innerdiawothreadmaxvalue;
+        public string InnerDiaWOThreadMaxValue
+        {
+            get { return innerdiawothreadmaxvalue; }
+            set { innerdiawothreadmaxvalue = value; }
+        }
+
+        //private static string innerdiawothreadmaxvalue;
+        //public string InnerDiaWOThreadMaxValue
+        //{
+        //    get { return innerdiawothreadmaxvalue; }
+        //    set { innerdiawothreadmaxvalue = value; }
+        //}
         private void PreformRecords_ClearAll()
         {
             PreformType = string.Empty;
@@ -4249,6 +4341,7 @@ namespace BusinessLayerUtility
             CapName = string.Empty;
             Wad = string.Empty;
         }
+
 
         public void Get_Cap_Records_By_Id(int CapId_F)
         {
