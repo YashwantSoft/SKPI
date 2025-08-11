@@ -20,6 +20,7 @@ namespace SPApplication
     {
         BusinessLayer objBL = new BusinessLayer();
         RedundancyLogics objRL = new RedundancyLogics();
+        DesignLayer objDL = new DesignLayer();
 
         System.Windows.Forms.Timer tmr = null;
 
@@ -52,6 +53,12 @@ namespace SPApplication
             btnKanBan.BackgroundImage = BusinessResources.DispatchSchedule;
             btnMaintenance.BackgroundImage = BusinessResources.Maintenance;
             btnShiftEntry.BackgroundImage = BusinessResources.ShiftSchedule;
+
+            btnCapQualityControl.BackColor = objDL.GetBackgroundColor();
+            btnCapQualityControl.ForeColor = objDL.GetForeColor();
+            btnWadQualityControl.BackColor = objDL.GetBackgroundColor();
+            btnWadQualityControl.ForeColor = objDL.GetForeColor();
+
             this.Icon = BusinessResources.ICOLogo;
 
             btnOtherProduct.BackgroundImage = BusinessResources.OtherProducts;

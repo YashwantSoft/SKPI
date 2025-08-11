@@ -28,20 +28,22 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle13 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle14 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle17 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle18 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle19 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle20 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle21 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle22 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle23 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle24 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle25 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle26 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle27 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle28 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle29 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle30 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle31 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle32 = new System.Windows.Forms.DataGridViewCellStyle();
             this.dtpTime = new System.Windows.Forms.DateTimePicker();
             this.label6 = new System.Windows.Forms.Label();
             this.dtpDate = new System.Windows.Forms.DateTimePicker();
@@ -461,6 +463,9 @@
             this.dgvValues.Size = new System.Drawing.Size(1226, 286);
             this.dgvValues.TabIndex = 0;
             this.dgvValues.CellEndEdit += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvValues_CellEndEdit);
+            this.dgvValues.CellValueChanged += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvValues_CellValueChanged);
+            this.dgvValues.CurrentCellDirtyStateChanged += new System.EventHandler(this.dgvValues_CurrentCellDirtyStateChanged);
+            this.dgvValues.EditingControlShowing += new System.Windows.Forms.DataGridViewEditingControlShowingEventHandler(this.dgvValues_EditingControlShowing);
             // 
             // label26
             // 
@@ -468,7 +473,7 @@
             this.label26.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label26.Location = new System.Drawing.Point(390, 19);
             this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(354, 22);
+            this.label26.Size = new System.Drawing.Size(478, 22);
             this.label26.TabIndex = 11496;
             this.label26.Text = "Specifications";
             this.label26.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -477,9 +482,9 @@
             // 
             this.label27.BackColor = System.Drawing.Color.Honeydew;
             this.label27.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label27.Location = new System.Drawing.Point(750, 19);
+            this.label27.Location = new System.Drawing.Point(874, 19);
             this.label27.Name = "label27";
-            this.label27.Size = new System.Drawing.Size(437, 22);
+            this.label27.Size = new System.Drawing.Size(355, 22);
             this.label27.TabIndex = 11495;
             this.label27.Text = "Tests";
             this.label27.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -542,8 +547,8 @@
             // 
             // clmSrNo
             // 
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.LavenderBlush;
-            this.clmSrNo.DefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle17.BackColor = System.Drawing.Color.LavenderBlush;
+            this.clmSrNo.DefaultCellStyle = dataGridViewCellStyle17;
             this.clmSrNo.HeaderText = "Sr. No";
             this.clmSrNo.Name = "clmSrNo";
             this.clmSrNo.ReadOnly = true;
@@ -551,8 +556,8 @@
             // 
             // clmType
             // 
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.LavenderBlush;
-            this.clmType.DefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle18.BackColor = System.Drawing.Color.LavenderBlush;
+            this.clmType.DefaultCellStyle = dataGridViewCellStyle18;
             this.clmType.HeaderText = "Type";
             this.clmType.Items.AddRange(new object[] {
             "Plain",
@@ -569,8 +574,8 @@
             // 
             // clmCustmerLogo
             // 
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.Honeydew;
-            this.clmCustmerLogo.DefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle19.BackColor = System.Drawing.Color.Honeydew;
+            this.clmCustmerLogo.DefaultCellStyle = dataGridViewCellStyle19;
             this.clmCustmerLogo.HeaderText = "Custmer Logo";
             this.clmCustmerLogo.Items.AddRange(new object[] {
             "Printed",
@@ -582,8 +587,8 @@
             // 
             // clmPrintQuality
             // 
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.Honeydew;
-            this.clmPrintQuality.DefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle20.BackColor = System.Drawing.Color.Honeydew;
+            this.clmPrintQuality.DefaultCellStyle = dataGridViewCellStyle20;
             this.clmPrintQuality.HeaderText = "Print Quality";
             this.clmPrintQuality.Items.AddRange(new object[] {
             "Ok",
@@ -595,8 +600,8 @@
             // 
             // clmMaterial
             // 
-            dataGridViewCellStyle5.BackColor = System.Drawing.Color.Honeydew;
-            this.clmMaterial.DefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle21.BackColor = System.Drawing.Color.LemonChiffon;
+            this.clmMaterial.DefaultCellStyle = dataGridViewCellStyle21;
             this.clmMaterial.HeaderText = "Material";
             this.clmMaterial.Items.AddRange(new object[] {
             "PP",
@@ -610,16 +615,16 @@
             // 
             // clmOuterDia
             // 
-            dataGridViewCellStyle6.BackColor = System.Drawing.Color.LemonChiffon;
-            this.clmOuterDia.DefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle22.BackColor = System.Drawing.Color.LemonChiffon;
+            this.clmOuterDia.DefaultCellStyle = dataGridViewCellStyle22;
             this.clmOuterDia.HeaderText = "Outer Dia (mm)";
             this.clmOuterDia.Name = "clmOuterDia";
             this.clmOuterDia.Width = 60;
             // 
             // clmInnerDiaWithThread
             // 
-            dataGridViewCellStyle7.BackColor = System.Drawing.Color.LemonChiffon;
-            this.clmInnerDiaWithThread.DefaultCellStyle = dataGridViewCellStyle7;
+            dataGridViewCellStyle23.BackColor = System.Drawing.Color.LemonChiffon;
+            this.clmInnerDiaWithThread.DefaultCellStyle = dataGridViewCellStyle23;
             this.clmInnerDiaWithThread.HeaderText = "Inner Dia With Thread  (mm)";
             this.clmInnerDiaWithThread.Name = "clmInnerDiaWithThread";
             this.clmInnerDiaWithThread.Resizable = System.Windows.Forms.DataGridViewTriState.True;
@@ -628,8 +633,8 @@
             // 
             // clmInnerDiaWOThread
             // 
-            dataGridViewCellStyle8.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.clmInnerDiaWOThread.DefaultCellStyle = dataGridViewCellStyle8;
+            dataGridViewCellStyle24.BackColor = System.Drawing.Color.LemonChiffon;
+            this.clmInnerDiaWOThread.DefaultCellStyle = dataGridViewCellStyle24;
             this.clmInnerDiaWOThread.HeaderText = "Inner Dia WO Thread (mm)";
             this.clmInnerDiaWOThread.Name = "clmInnerDiaWOThread";
             this.clmInnerDiaWOThread.Resizable = System.Windows.Forms.DataGridViewTriState.True;
@@ -638,8 +643,8 @@
             // 
             // clmCapHeight
             // 
-            dataGridViewCellStyle9.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.clmCapHeight.DefaultCellStyle = dataGridViewCellStyle9;
+            dataGridViewCellStyle25.BackColor = System.Drawing.Color.LemonChiffon;
+            this.clmCapHeight.DefaultCellStyle = dataGridViewCellStyle25;
             this.clmCapHeight.HeaderText = "Cap Height (mm)";
             this.clmCapHeight.Name = "clmCapHeight";
             this.clmCapHeight.Resizable = System.Windows.Forms.DataGridViewTriState.True;
@@ -647,20 +652,24 @@
             // 
             // clmInnerDepth
             // 
+            dataGridViewCellStyle26.BackColor = System.Drawing.Color.LemonChiffon;
+            this.clmInnerDepth.DefaultCellStyle = dataGridViewCellStyle26;
             this.clmInnerDepth.HeaderText = "Inner Depth (mm)";
             this.clmInnerDepth.Name = "clmInnerDepth";
             this.clmInnerDepth.Width = 60;
             // 
             // clmCapWeight
             // 
+            dataGridViewCellStyle27.BackColor = System.Drawing.Color.LemonChiffon;
+            this.clmCapWeight.DefaultCellStyle = dataGridViewCellStyle27;
             this.clmCapWeight.HeaderText = "Cap Weight";
             this.clmCapWeight.Name = "clmCapWeight";
             this.clmCapWeight.Width = 60;
             // 
             // clmColor
             // 
-            dataGridViewCellStyle10.BackColor = System.Drawing.Color.Honeydew;
-            this.clmColor.DefaultCellStyle = dataGridViewCellStyle10;
+            dataGridViewCellStyle28.BackColor = System.Drawing.Color.Honeydew;
+            this.clmColor.DefaultCellStyle = dataGridViewCellStyle28;
             this.clmColor.HeaderText = "Color";
             this.clmColor.Items.AddRange(new object[] {
             "Ok",
@@ -672,8 +681,8 @@
             // 
             // clmVisualAppearance
             // 
-            dataGridViewCellStyle11.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.clmVisualAppearance.DefaultCellStyle = dataGridViewCellStyle11;
+            dataGridViewCellStyle29.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.clmVisualAppearance.DefaultCellStyle = dataGridViewCellStyle29;
             this.clmVisualAppearance.DisplayStyle = System.Windows.Forms.DataGridViewComboBoxDisplayStyle.Nothing;
             this.clmVisualAppearance.HeaderText = "Visual Appearance";
             this.clmVisualAppearance.Items.AddRange(new object[] {
@@ -684,8 +693,8 @@
             // 
             // clmFlashFinishing
             // 
-            dataGridViewCellStyle12.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.clmFlashFinishing.DefaultCellStyle = dataGridViewCellStyle12;
+            dataGridViewCellStyle30.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.clmFlashFinishing.DefaultCellStyle = dataGridViewCellStyle30;
             this.clmFlashFinishing.DisplayStyle = System.Windows.Forms.DataGridViewComboBoxDisplayStyle.ComboBox;
             this.clmFlashFinishing.HeaderText = "Flash Finishing";
             this.clmFlashFinishing.Items.AddRange(new object[] {
@@ -698,8 +707,8 @@
             // 
             // clmBend
             // 
-            dataGridViewCellStyle13.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.clmBend.DefaultCellStyle = dataGridViewCellStyle13;
+            dataGridViewCellStyle31.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.clmBend.DefaultCellStyle = dataGridViewCellStyle31;
             this.clmBend.DisplayStyle = System.Windows.Forms.DataGridViewComboBoxDisplayStyle.Nothing;
             this.clmBend.HeaderText = "Bend";
             this.clmBend.Items.AddRange(new object[] {
@@ -712,8 +721,8 @@
             // 
             // clmFitmentWithBottleJar
             // 
-            dataGridViewCellStyle14.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.clmFitmentWithBottleJar.DefaultCellStyle = dataGridViewCellStyle14;
+            dataGridViewCellStyle32.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.clmFitmentWithBottleJar.DefaultCellStyle = dataGridViewCellStyle32;
             this.clmFitmentWithBottleJar.DisplayStyle = System.Windows.Forms.DataGridViewComboBoxDisplayStyle.Nothing;
             this.clmFitmentWithBottleJar.HeaderText = "Fitment With Bottle/Jar";
             this.clmFitmentWithBottleJar.Items.AddRange(new object[] {
@@ -741,10 +750,7 @@
             "Ok",
             "Not Ok"});
             this.clmDropTest.Name = "clmDropTest";
-            this.clmDropTest.ReadOnly = true;
-            this.clmDropTest.Resizable = System.Windows.Forms.DataGridViewTriState.True;
             this.clmDropTest.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
-            this.clmDropTest.Visible = false;
             this.clmDropTest.Width = 70;
             // 
             // CapQualityControl

@@ -3837,6 +3837,8 @@ namespace BusinessLayerUtility
             set { outerdiamaxvalue = value; }
         }
 
+         
+
         private static string innerdiaWiththreadstandard;
         public string InnerDiaWithThreadStandard
         {
@@ -3983,6 +3985,88 @@ namespace BusinessLayerUtility
             get { return remarks; }
             set { remarks = value; }
         }
+
+        //Wad Details
+
+        private static string thicknessstandard;
+        public string ThicknessStandard
+        {
+            get { return thicknessstandard; }
+            set { thicknessstandard = value; }
+        }
+
+        private static string thicknesstolerance;
+        public string ThicknessTolerance
+        {
+            get { return thicknesstolerance; }
+            set { thicknesstolerance = value; }
+        }
+
+        private static string thicknessminvalue;
+        public string ThicknessMinValue
+        {
+            get { return thicknessminvalue; }
+            set { thicknessminvalue = value; }
+        }
+        private static string thicknessmaxvalue;
+        public string ThicknessMaxValue
+        {
+            get { return thicknessmaxvalue; }
+            set { thicknessmaxvalue = value; }
+        }
+        private static string weightstandard;
+        public string WeightStandard
+        {
+            get { return weightstandard; }
+            set { weightstandard = value; }
+        }
+        private static string weighttolerance;
+        public string WeightTolerance
+        {
+            get { return weighttolerance; }
+            set { weighttolerance = value; }
+        }
+        private static string weightminvalue;
+        public string WeightMinValue
+        {
+            get { return weightminvalue; }
+            set { weightminvalue = value; }
+        }
+        private static string weightmaxvalue;
+        public string WeightMaxValue
+        {
+            get { return weightmaxvalue; }
+            set { weightmaxvalue = value; }
+        }
+
+        private static string averageweightstandard;
+        public string AverageWeightStandard
+        {
+            get { return averageweightstandard; }
+            set { averageweightstandard = value; }
+        }
+
+        private static string averageweighttolerance;
+        public string AverageWeightTolerance
+        {
+            get { return averageweighttolerance; }
+            set { averageweighttolerance = value; }
+        }
+
+        private static string averageweightminvalue;
+        public string AverageWeightMinValue
+        {
+            get { return averageweightminvalue; }
+            set { averageweightminvalue = value; }
+        }
+
+        private static string averageweightmaxvalue;
+        public string AverageWeightMaxValue
+        {
+            get { return averageweightmaxvalue; }
+            set { averageweightmaxvalue = value; }
+        }
+                    
 
         private void PreformRecords_ClearAll()
         {
@@ -4420,21 +4504,15 @@ namespace BusinessLayerUtility
             }
         }
 
-        private void Clear_CapRecords()
-        {
-            CapId = 0;
-            CapName = string.Empty;
-            Wad = string.Empty;
-        }
-
+       
 
         public void Get_Cap_Records_By_Id(int CapId_F)
         {
             if (CapId_F != 0)
             {
-                Clear_CapRecords();
+                Clear_Cap_Values();
                 DataSet ds = new DataSet();
-                objBL.Query = "select ID,CapName,Wad from CapMaster where CancelTag=0 and ID=" + CapId_F + "";
+                objBL.Query = "select * from CapMaster where CancelTag=0 and ID=" + CapId_F + "";
            
                 ds = objBL.ReturnDataSet();
                 if (ds.Tables[0].Rows.Count > 0)
@@ -4482,30 +4560,105 @@ namespace BusinessLayerUtility
             }
         }
 
-        private void Clear_WadRecords()
+        public void Clear_Cap_Values()
+        {
+            CapId = 0;
+            CapName = string.Empty;
+            Wad = string.Empty;
+            OuterDiaStandard = string.Empty;
+            OuterDiaTolerance = string.Empty;
+            OuterDiaMinValue = string.Empty;
+            OuterDiaMaxValue = string.Empty;
+            InnerDiaWithThreadStandard = string.Empty;
+            InnerDiaWithThreadTolerance = string.Empty;
+            InnerDiaWithThreadMinValue = string.Empty;
+            InnerDiaWithThreadMaxValue = string.Empty;
+            InnerDiaWOThreadStandard = string.Empty;
+            InnerDiaWOThreadTolerance = string.Empty;
+            InnerDiaWOThreadMinValue = string.Empty;
+            InnerDiaWOThreadMaxValue = string.Empty;
+            CapHeightStandard = string.Empty;
+            CapHeightTolerance = string.Empty;
+            CapHeightMinValue = string.Empty;
+            CapHeightMaxValue = string.Empty;
+            InnerDepthStandard = string.Empty;
+            InnerDepthTolerance = string.Empty;
+            InnerDepthMinValue = string.Empty;
+            InnerDepthMaxValue = string.Empty;
+            CapWeightStandard = string.Empty;
+            CapWeightTolerance = string.Empty;
+            CapWeightMinValue = string.Empty;
+            CapWeightMaxValue = string.Empty;
+            Status = string.Empty;
+            Remarks = string.Empty;
+        }
+        
+        public void Clear_Wad_Values()
         {
             WadId = 0;
             WadName = string.Empty;
+
+            OuterDiaStandard = string.Empty;
+            OuterDiaTolerance = string.Empty;
+            OuterDiaMinValue = string.Empty;
+            OuterDiaMaxValue = string.Empty;
+
+            ThicknessStandard = string.Empty;
+            ThicknessTolerance = string.Empty;
+            ThicknessMinValue = string.Empty;
+            ThicknessMaxValue = string.Empty;
+
+            WeightStandard = string.Empty;
+            WeightTolerance = string.Empty;
+            WeightMinValue = string.Empty;
+            WeightMaxValue = string.Empty;
+
+            AverageWeightStandard = string.Empty;
+            AverageWeightTolerance = string.Empty;
+            AverageWeightMinValue = string.Empty;
+            AverageWeightMaxValue = string.Empty;
+
+            Status = string.Empty;
+            Remarks = string.Empty;
         }
 
         public void Get_Wad_Records_By_Id(int WadId_F)
         {
             if (WadId_F != 0)
             {
-                Clear_WadRecords();
+                Clear_Wad_Values();
                 DataSet ds = new DataSet();
-                objBL.Query = "select ID,WadName from WadMaster where CancelTag=0 and ID=" + WadId_F + "";
+                objBL.Query = "select * from WadMaster where CancelTag=0 and ID=" + WadId_F + "";
 
                 ds = objBL.ReturnDataSet();
                 if (ds.Tables[0].Rows.Count > 0)
                 {
-                    if (CheckNull_String(Convert.ToString(ds.Tables[0].Rows[0]["ID"])))
-                        WadId = Convert.ToInt32(ds.Tables[0].Rows[0]["ID"].ToString());
-                    else
-                        WadId = 0;
+                    WadId = Check_Null_Integer(Check_Null_String(Convert.ToString(ds.Tables[0].Rows[0]["ID"])));
+                    WadName = Check_Null_String(Convert.ToString(ds.Tables[0].Rows[0]["WadName"]));
 
-                    if (CheckNull_String(Convert.ToString(ds.Tables[0].Rows[0]["WadName"])))
-                        WadName = ds.Tables[0].Rows[0]["WadName"].ToString();
+                    OuterDiaStandard = Check_Null_String(Convert.ToString(ds.Tables[0].Rows[0]["OuterDiaStandard"]));
+                    OuterDiaTolerance = Check_Null_String(Convert.ToString(ds.Tables[0].Rows[0]["OuterDiaTolerance"]));
+                    OuterDiaMinValue = Check_Null_String(Convert.ToString(ds.Tables[0].Rows[0]["OuterDiaMinValue"]));
+                    OuterDiaMaxValue = Check_Null_String(Convert.ToString(ds.Tables[0].Rows[0]["OuterDiaMaxValue"]));
+
+                    ThicknessStandard = Check_Null_String(Convert.ToString(ds.Tables[0].Rows[0]["ThicknessStandard"]));
+                    ThicknessTolerance = Check_Null_String(Convert.ToString(ds.Tables[0].Rows[0]["ThicknessTolerance"]));
+                    ThicknessMinValue = Check_Null_String(Convert.ToString(ds.Tables[0].Rows[0]["ThicknessMinValue"]));
+                    ThicknessMaxValue = Check_Null_String(Convert.ToString(ds.Tables[0].Rows[0]["ThicknessMaxValue"]));
+
+                    WeightStandard = Check_Null_String(Convert.ToString(ds.Tables[0].Rows[0]["WeightStandard"]));
+                    WeightTolerance = Check_Null_String(Convert.ToString(ds.Tables[0].Rows[0]["WeightTolerance"]));
+                    WeightMinValue = Check_Null_String(Convert.ToString(ds.Tables[0].Rows[0]["WeightMinValue"]));
+                    WeightMaxValue = Check_Null_String(Convert.ToString(ds.Tables[0].Rows[0]["WeightMaxValue"]));
+
+                    AverageWeightStandard = Check_Null_String(Convert.ToString(ds.Tables[0].Rows[0]["AverageWeightStandard"]));
+                    AverageWeightTolerance = Check_Null_String(Convert.ToString(ds.Tables[0].Rows[0]["AverageWeightTolerance"]));
+                    AverageWeightMinValue = Check_Null_String(Convert.ToString(ds.Tables[0].Rows[0]["AverageWeightMinValue"]));
+                    AverageWeightMaxValue = Check_Null_String(Convert.ToString(ds.Tables[0].Rows[0]["AverageWeightMaxValue"]));
+                   
+                    Status = Check_Null_String(Convert.ToString(ds.Tables[0].Rows[0]["Status"]));
+                    Remarks = Check_Null_String(Convert.ToString(ds.Tables[0].Rows[0]["Remarks"]));
+
                 }
             }
         }
@@ -4514,7 +4667,7 @@ namespace BusinessLayerUtility
         {
             if (MaterialId_F != 0)
             {
-                Clear_WadRecords();
+                Clear_Wad_Values();
                 DataSet ds = new DataSet();
                 objBL.Query = "select ID,MaterialName from OtherMaterial where CancelTag=0 and ID=" + MaterialId_F + "";
 

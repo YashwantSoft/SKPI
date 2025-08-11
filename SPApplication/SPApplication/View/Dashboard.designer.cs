@@ -447,7 +447,7 @@
             this.button2.BackColor = System.Drawing.Color.Transparent;
             this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button2.Location = new System.Drawing.Point(187, 143);
+            this.button2.Location = new System.Drawing.Point(321, 12);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(100, 100);
             this.button2.TabIndex = 11358;
@@ -479,7 +479,7 @@
             this.btnWadQualityControl.BackColor = System.Drawing.Color.Transparent;
             this.btnWadQualityControl.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btnWadQualityControl.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnWadQualityControl.Location = new System.Drawing.Point(333, 143);
+            this.btnWadQualityControl.Location = new System.Drawing.Point(187, 143);
             this.btnWadQualityControl.Name = "btnWadQualityControl";
             this.btnWadQualityControl.Size = new System.Drawing.Size(100, 100);
             this.btnWadQualityControl.TabIndex = 11359;
@@ -492,7 +492,7 @@
             this.btnCapQualityControl.BackColor = System.Drawing.Color.Transparent;
             this.btnCapQualityControl.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btnCapQualityControl.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnCapQualityControl.Location = new System.Drawing.Point(771, 143);
+            this.btnCapQualityControl.Location = new System.Drawing.Point(333, 143);
             this.btnCapQualityControl.Name = "btnCapQualityControl";
             this.btnCapQualityControl.Size = new System.Drawing.Size(100, 100);
             this.btnCapQualityControl.TabIndex = 11360;
