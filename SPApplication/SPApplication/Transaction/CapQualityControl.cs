@@ -86,8 +86,6 @@ namespace SPApplication.Transaction
             if (TableID == 0)
                 CapId = Convert.ToInt32(lbCap.SelectedValue);
 
-            
-
             if (CapId != 0)
             {
                 lblCapName.Text = "";

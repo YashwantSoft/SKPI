@@ -1033,6 +1033,15 @@ namespace BusinessLayerUtility {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to CAP Certificate of Analysis REPORT.
+        /// </summary>
+        public static string LBL_HEADER_CAPCOAREPORT {
+            get {
+                return ResourceManager.GetString("LBL_HEADER_CAPCOAREPORT", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Cap Label.
         /// </summary>
         public static string LBL_HEADER_CAPLABEL {

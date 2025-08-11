@@ -63,7 +63,9 @@
             "Batch Wise Quality Control Report",
             "Quality Control Product Wise Report",
             "Production Quantity Report",
-            "Grade Notice Bord Report"});
+            "Grade Notice Bord Report",
+            "Cap Certificate of Analysis",
+            "Wad Certificate of Analysis"});
             this.lbReportList.Location = new System.Drawing.Point(19, 35);
             this.lbReportList.Name = "lbReportList";
             this.lbReportList.Size = new System.Drawing.Size(478, 308);

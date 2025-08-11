@@ -973,4 +973,7 @@
   <data name="LBL_HEADER_WADQUALITYCONTROL" xml:space="preserve">
     <value>WAD QUALITY CONTROL</value>
   </data>
+  <data name="LBL_HEADER_CAPCOAREPORT" xml:space="preserve">
+    <value>CAP Certificate of Analysis REPORT</value>
+  </data>
 </root>

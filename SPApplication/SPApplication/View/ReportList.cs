@@ -104,6 +104,16 @@ namespace SPApplication
                     GradeNoticeBordReport objForm = new GradeNoticeBordReport();
                     objForm.ShowDialog(this);
                 }
+                else if (lbReportList.Text == "Cap Certificate of Analysis")
+                {
+                    CapCOAReport objForm = new CapCOAReport();
+                    objForm.ShowDialog(this);
+                }
+                else if (lbReportList.Text == "Wad Certificate of Analysis")
+                {
+                    CapCOAReport objForm = new CapCOAReport();
+                    objForm.ShowDialog(this);
+                }
                 else
                     MessageBox.Show("Enter Valid selection");
             }
