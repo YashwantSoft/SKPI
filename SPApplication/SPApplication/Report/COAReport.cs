@@ -748,7 +748,7 @@ namespace SPApplication.Report
 
             RowCount++; BorderFlag = true;
             AFlag = 0;
-            Fill_Merge_Cell("A", "G", misValue, myExcelWorksheet, "Remark - All 17 Points are within Standards");
+            Fill_Merge_Cell("A", "G", misValue, myExcelWorksheet, "Remark - All 18 Points are within Standards");
             RowCount++;
             Fill_Merge_Cell("A", "G", misValue, myExcelWorksheet, "Inspected by- " + PlantIncharge + ", Tested by - " + VolumeCheckerName + "");
 
