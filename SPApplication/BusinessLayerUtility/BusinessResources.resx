@@ -640,7 +640,7 @@
   <data name="FORMATPATH_SKPI" xml:space="preserve">
     <value>\\192.168.1.3\d\Softwares\Sticker Printing\Data\Format\</value>
   </data>
-  <data name="DATABASEPATH" xml:space="preserve">
+  <data name="DATABASEPATH_MY" xml:space="preserve">
     <value>D:\GitProjects\SKPI\SPApplication\SPApplication\bin\Debug\Data\Database\SKPIDB.mdb</value>
   </data>
   <data name="BTN_BROWSEEXCELFILE" xml:space="preserve">
@@ -975,5 +975,8 @@
   </data>
   <data name="LBL_HEADER_CAPCOAREPORT" xml:space="preserve">
     <value>CAP Certificate of Analysis REPORT</value>
+  </data>
+  <data name="DATABASEPATH" xml:space="preserve">
+    <value>\\skpi\D\Softwares\CapTest\Data\Database\SKPIDB.mdb</value>
   </data>
 </root>

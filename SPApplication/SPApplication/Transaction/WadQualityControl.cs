@@ -190,9 +190,7 @@ namespace SPApplication.Transaction
         private void lbWad_KeyDown(object sender, KeyEventArgs e)
         {
             if (e.KeyCode == Keys.Enter)
-            {
                 Fill_Wad_Information();
-            }
         }
 
         private void lbWad_Click(object sender, EventArgs e)

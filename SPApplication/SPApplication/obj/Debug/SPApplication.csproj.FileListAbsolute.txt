@@ -1509,3 +1509,4 @@ D:\GitProjects\SKPI\SPApplication\SPApplication\obj\Debug\SPApplication.Transact
 D:\GitProjects\SKPI\SPApplication\SPApplication\obj\Debug\SPApplication.Transaction.WADQC.resources
 D:\GitProjects\SKPI\SPApplication\SPApplication\obj\Debug\SPApplication.Transaction.SampleStickers.resources
 D:\GitProjects\SKPI\SPApplication\SPApplication\obj\Debug\SPApplication.Report.CapCOAReport.resources
+D:\GitProjects\SKPI\SPApplication\SPApplication\obj\Debug\SPApplication.Report.WadCOAReport.resources

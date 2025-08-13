@@ -220,6 +220,12 @@
     <Compile Include="Report\ViewReportW.Designer.cs">
       <DependentUpon>ViewReportW.cs</DependentUpon>
     </Compile>
+    <Compile Include="Report\WadCOAReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Report\WadCOAReport.Designer.cs">
+      <DependentUpon>WadCOAReport.cs</DependentUpon>
+    </Compile>
     <Compile Include="Transaction\CapQualityControl.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -689,6 +695,9 @@
     <EmbeddedResource Include="Report\RDLCReport\StickerTest.rdlc" />
     <EmbeddedResource Include="Report\ViewReportW.resx">
       <DependentUpon>ViewReportW.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\WadCOAReport.resx">
+      <DependentUpon>WadCOAReport.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Transaction\CapQualityControl.resx">
       <DependentUpon>CapQualityControl.cs</DependentUpon>

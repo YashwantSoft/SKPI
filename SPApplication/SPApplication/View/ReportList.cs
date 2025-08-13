@@ -111,7 +111,7 @@ namespace SPApplication
                 }
                 else if (lbReportList.Text == "Wad Certificate of Analysis")
                 {
-                    CapCOAReport objForm = new CapCOAReport();
+                    WadCOAReport objForm = new WadCOAReport();
                     objForm.ShowDialog(this);
                 }
                 else

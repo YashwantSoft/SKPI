@@ -222,8 +222,10 @@ namespace SPApplication.Report
                 lblCapName.Text = objRL.CapName.ToString();
                 lblCapName.BackColor = Color.Cyan;
                 //txtInvoiceNumber.Focus();
+
                 FillGrid();
                 Fill_DGV_VALUES();
+                
             }
         }
 

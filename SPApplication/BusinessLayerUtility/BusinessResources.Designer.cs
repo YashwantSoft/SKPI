@@ -460,7 +460,7 @@ namespace BusinessLayerUtility {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to D:\GitProjects\SKPI\SPApplication\SPApplication\bin\Debug\Data\Database\SKPIDB.mdb.
+        ///   Looks up a localized string similar to \\skpi\D\Softwares\CapTest\Data\Database\SKPIDB.mdb.
         /// </summary>
         public static string DATABASEPATH {
             get {
@@ -474,6 +474,15 @@ namespace BusinessLayerUtility {
         public static string DATABASEPATH_IP {
             get {
                 return ResourceManager.GetString("DATABASEPATH_IP", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to D:\GitProjects\SKPI\SPApplication\SPApplication\bin\Debug\Data\Database\SKPIDB.mdb.
+        /// </summary>
+        public static string DATABASEPATH_MY {
+            get {
+                return ResourceManager.GetString("DATABASEPATH_MY", resourceCulture);
             }
         }
         
