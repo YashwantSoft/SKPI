@@ -97,62 +97,76 @@ namespace SPApplication.Master
                     ClearAll();
                     btnDelete.Enabled = true;
 
-                    //0 "ID," +
-                    //1 "CapName as [Cap Name]," +
-                    //2 "Wad,
-                    //3 "NeckSizeStandard as [Neck Size Standard]," +
-                    //4 "NeckSizeTolerance as [Neck Size Tolerance]," +
-                    //5 "NeckSizeMinValue as [Neck Size Min Value]," +
-                    //6 "NeckSizeMaxValue as [Neck Size Max Value]," +
-                    //7 "CapWeightStandard as [Cap Weight Standard]," +
-                    //8 "CapWeightTolerance as [Cap Weight Tolerance]," +
-                    //9 "CapWeightMinValue as [Cap Weight Min Value]," +
-                    //10 "CapWeightMaxValue as [Cap Weight Max Value]," +
-                    //12 "InnerDiaWOThreadStandard as [Inner Dia WO Thread Standard]," +
-                    //12 "InnerDiaWOThreadTolerance as [Inner Dia WO Thread Tolerance]," +
-                    //13 "InnerDiaWOThreadMinValue as [Inner Dia WO Thread Min Value]," +
-                    //14 "InnerDiaWOThreadMaxValue as [Inner Dia WO Thread Max Value]," +
-                    //15 "InnerDiaWithThreadStandard as [Inner Dia With Thread Standard]," +
-                    //16 "InnerDiaWithThreadTolerance as [Inner Dia With Thread Tolerance]," +
-                    //17 "InnerDiaWithThreadMinValue as [Inner Dia With Thread Min Value]," +
-                    //18 "InnerDiaWithThreadMaxValue as [Inner Dia With Thread Max Value]," +
-                    //19 "OuterDiaStandard as [Outer Dia Standard]," +
-                    //20 "OuterDiaTolerance as [Outer Dia Tolerance]," +
-                    //21 "OuterDiaMinValue as [Outer Dia Min Value]," +
-                    //22 "OuterDiaMaxValue as [Outer Dia Max Value]," +
-                    //23 "Status," +
-                    //24 "Remarks " + 
+                    //0	"ID,"+
+                    //1	"CapName as [Cap Name],"+
+                    //2	"Wad," +
+                    //3	"MaterialUsed," +
+                    //4	"CapColor," +
+                    //5	"CapType," +
+                    //6	"CustomerLogo as [Customer Logo]," +
+                    //7	"PrintType as [Print Type]," +
+                    //8	"MasterBatchDetails as [Master Batch Details]," +
+                    //9	"OuterDiaStandard as [Outer Dia Standard]," +
+                    //10	"OuterDiaTolerance as [Outer Dia Tolerance]," +
+                    //11	"OuterDiaMinValue as [Outer Dia Min Value]," +
+                    //12	"OuterDiaMaxValue as [Outer Dia Max Value]," +
+                    //13	"InnerDiaWithThreadStandard as [Inner Dia With Thread Standard]," +
+                    //14	"InnerDiaWithThreadTolerance as [Inner Dia With Thread Tolerance]," +
+                    //15	"InnerDiaWithThreadMinValue as [Inner Dia With Thread Min Value]," +
+                    //16	"InnerDiaWithThreadMaxValue as [Inner Dia With Thread Max Value]," +
+                    //17	"InnerDiaWOThreadStandard as [Inner Dia WO Thread Standard]," +
+                    //18	"InnerDiaWOThreadTolerance as [Inner Dia WO Thread Tolerance]," +
+                    //19	"InnerDiaWOThreadMinValue as [Inner Dia WO Thread Min Value]," +
+                    //20	"InnerDiaWOThreadMaxValue as [Inner Dia WO Thread Max Value]," +
+                    //21	"CapHeightStandard as [Cap Height Standard]," +
+                    //22	"CapHeightTolerance as [Cap Height Tolerance]," +
+                    //23	"CapHeightMinValue as [Cap Height Min Value]," +
+                    //24	"CapHeightMaxValue as [Cap Height Max Value]," +
+                    //25	"InnerDepthStandard as [Inner Depth Standard]," +
+                    //26	"InnerDepthTolerance as [Inner Depth Tolerance]," +
+                    //27	"InnerDepthMinValue as [Inner Depth Min Value]," +
+                    //28	"InnerDepthMaxValue as [Inner Depth Max Value]," +
+                    //29	"CapWeightStandard as [Cap Weight Standard]," +
+                    //30	"CapWeightTolerance as [Cap Weight Tolerance]," +
+                    //31	"CapWeightMinValue as [Cap Weight Min Value]," +
+                    //32	"CapWeightMaxValue as [Cap Weight Max Value]," +
+                    //33	"Status," +
 
                     TableID = objRL.Check_Null_Integer(objRL.Check_Null_String(Convert.ToString(dataGridView1.Rows[e.RowIndex].Cells[0].Value)));
                     txtCapName.Text = objRL.Check_Null_String(Convert.ToString(dataGridView1.Rows[e.RowIndex].Cells[1].Value));
                     cmbIsWad.Text = objRL.Check_Null_String(Convert.ToString(dataGridView1.Rows[e.RowIndex].Cells[2].Value));
-                    
-                    txtOuterDiaStandard.Text = objRL.Check_Null_String(Convert.ToString(dataGridView1.Rows[e.RowIndex].Cells[3].Value));
-                    txtOuterDiaTolerance.Text = objRL.Check_Null_String(Convert.ToString(dataGridView1.Rows[e.RowIndex].Cells[4].Value));
-                    txtOuterDiaMinValue.Text = objRL.Check_Null_String(Convert.ToString(dataGridView1.Rows[e.RowIndex].Cells[5].Value));
-                    txtOuterDiaMaxValue.Text = objRL.Check_Null_String(Convert.ToString(dataGridView1.Rows[e.RowIndex].Cells[6].Value));
-                    txtInnerDiaWithThreadStandard.Text = objRL.Check_Null_String(Convert.ToString(dataGridView1.Rows[e.RowIndex].Cells[7].Value));
-                    txtInnerDiaWithThreadTolerance.Text = objRL.Check_Null_String(Convert.ToString(dataGridView1.Rows[e.RowIndex].Cells[8].Value));
-                    txtInnerDiaWithThreadMinValue.Text = objRL.Check_Null_String(Convert.ToString(dataGridView1.Rows[e.RowIndex].Cells[9].Value));
-                    txtInnerDiaWithThreadMaxValue.Text = objRL.Check_Null_String(Convert.ToString(dataGridView1.Rows[e.RowIndex].Cells[10].Value));
-                    txtInnerDiaWOThreadStandard.Text = objRL.Check_Null_String(Convert.ToString(dataGridView1.Rows[e.RowIndex].Cells[11].Value));
-                    txtInnerDiaWOThreadTolerance.Text = objRL.Check_Null_String(Convert.ToString(dataGridView1.Rows[e.RowIndex].Cells[12].Value));
-                    txtInnerDiaWOThreadMinValue.Text = objRL.Check_Null_String(Convert.ToString(dataGridView1.Rows[e.RowIndex].Cells[13].Value));
-                    txtInnerDiaWOThreadMaxValue.Text = objRL.Check_Null_String(Convert.ToString(dataGridView1.Rows[e.RowIndex].Cells[14].Value));
-                    txtCapHeightStandard.Text = objRL.Check_Null_String(Convert.ToString(dataGridView1.Rows[e.RowIndex].Cells[15].Value));
-                    txtCapHeightTolerance.Text = objRL.Check_Null_String(Convert.ToString(dataGridView1.Rows[e.RowIndex].Cells[16].Value));
-                    txtCapHeightMinValue.Text = objRL.Check_Null_String(Convert.ToString(dataGridView1.Rows[e.RowIndex].Cells[17].Value));
-                    txtCapHeightMaxValue.Text = objRL.Check_Null_String(Convert.ToString(dataGridView1.Rows[e.RowIndex].Cells[18].Value));
-                    txtInnerDepthStandard.Text = objRL.Check_Null_String(Convert.ToString(dataGridView1.Rows[e.RowIndex].Cells[19].Value));
-                    txtInnerDepthTolerance.Text = objRL.Check_Null_String(Convert.ToString(dataGridView1.Rows[e.RowIndex].Cells[20].Value));
-                    txtInnerDepthMinValue.Text = objRL.Check_Null_String(Convert.ToString(dataGridView1.Rows[e.RowIndex].Cells[21].Value));
-                    txtInnerDepthMaxValue.Text = objRL.Check_Null_String(Convert.ToString(dataGridView1.Rows[e.RowIndex].Cells[22].Value));
-                    txtCapWeightStandard.Text = objRL.Check_Null_String(Convert.ToString(dataGridView1.Rows[e.RowIndex].Cells[23].Value));
-                    txtCapWeightTolerance.Text = objRL.Check_Null_String(Convert.ToString(dataGridView1.Rows[e.RowIndex].Cells[24].Value));
-                    txtCapWeightMinValue.Text = objRL.Check_Null_String(Convert.ToString(dataGridView1.Rows[e.RowIndex].Cells[25].Value));
-                    txtCapWeightMaxValue.Text = objRL.Check_Null_String(Convert.ToString(dataGridView1.Rows[e.RowIndex].Cells[26].Value));
-                    cmbStatus.Text = objRL.Check_Null_String(Convert.ToString(dataGridView1.Rows[e.RowIndex].Cells[27].Value));
-                    txtRemarks.Text = objRL.Check_Null_String(Convert.ToString(dataGridView1.Rows[e.RowIndex].Cells[28].Value));
+                    cmbMaterialUsed.Text = objRL.Check_Null_String(Convert.ToString(dataGridView1.Rows[e.RowIndex].Cells[3].Value));
+                    cmbCapColor.Text = objRL.Check_Null_String(Convert.ToString(dataGridView1.Rows[e.RowIndex].Cells[4].Value));
+                    cmbCapType.Text = objRL.Check_Null_String(Convert.ToString(dataGridView1.Rows[e.RowIndex].Cells[5].Value));
+                    cmbCustomerLogo.Text = objRL.Check_Null_String(Convert.ToString(dataGridView1.Rows[e.RowIndex].Cells[6].Value));
+                    cmbPrintType.Text = objRL.Check_Null_String(Convert.ToString(dataGridView1.Rows[e.RowIndex].Cells[7].Value));
+                    txtMasterBatchDetails.Text = objRL.Check_Null_String(Convert.ToString(dataGridView1.Rows[e.RowIndex].Cells[8].Value));
+                    txtOuterDiaStandard.Text = objRL.Check_Null_String(Convert.ToString(dataGridView1.Rows[e.RowIndex].Cells[9].Value));
+                    txtOuterDiaTolerance.Text = objRL.Check_Null_String(Convert.ToString(dataGridView1.Rows[e.RowIndex].Cells[10].Value));
+                    txtOuterDiaMinValue.Text = objRL.Check_Null_String(Convert.ToString(dataGridView1.Rows[e.RowIndex].Cells[11].Value));
+                    txtOuterDiaMaxValue.Text = objRL.Check_Null_String(Convert.ToString(dataGridView1.Rows[e.RowIndex].Cells[12].Value));
+                    txtInnerDiaWithThreadStandard.Text = objRL.Check_Null_String(Convert.ToString(dataGridView1.Rows[e.RowIndex].Cells[13].Value));
+                    txtInnerDiaWithThreadTolerance.Text = objRL.Check_Null_String(Convert.ToString(dataGridView1.Rows[e.RowIndex].Cells[14].Value));
+                    txtInnerDiaWithThreadMinValue.Text = objRL.Check_Null_String(Convert.ToString(dataGridView1.Rows[e.RowIndex].Cells[15].Value));
+                    txtInnerDiaWithThreadMaxValue.Text = objRL.Check_Null_String(Convert.ToString(dataGridView1.Rows[e.RowIndex].Cells[16].Value));
+                    txtInnerDiaWOThreadStandard.Text = objRL.Check_Null_String(Convert.ToString(dataGridView1.Rows[e.RowIndex].Cells[17].Value));
+                    txtInnerDiaWOThreadTolerance.Text = objRL.Check_Null_String(Convert.ToString(dataGridView1.Rows[e.RowIndex].Cells[18].Value));
+                    txtInnerDiaWOThreadMinValue.Text = objRL.Check_Null_String(Convert.ToString(dataGridView1.Rows[e.RowIndex].Cells[19].Value));
+                    txtInnerDiaWOThreadMaxValue.Text = objRL.Check_Null_String(Convert.ToString(dataGridView1.Rows[e.RowIndex].Cells[20].Value));
+                    txtCapHeightStandard.Text = objRL.Check_Null_String(Convert.ToString(dataGridView1.Rows[e.RowIndex].Cells[21].Value));
+                    txtCapHeightTolerance.Text = objRL.Check_Null_String(Convert.ToString(dataGridView1.Rows[e.RowIndex].Cells[22].Value));
+                    txtCapHeightMinValue.Text = objRL.Check_Null_String(Convert.ToString(dataGridView1.Rows[e.RowIndex].Cells[23].Value));
+                    txtCapHeightMaxValue.Text = objRL.Check_Null_String(Convert.ToString(dataGridView1.Rows[e.RowIndex].Cells[24].Value));
+                    txtInnerDepthStandard.Text = objRL.Check_Null_String(Convert.ToString(dataGridView1.Rows[e.RowIndex].Cells[25].Value));
+                    txtInnerDepthTolerance.Text = objRL.Check_Null_String(Convert.ToString(dataGridView1.Rows[e.RowIndex].Cells[26].Value));
+                    txtInnerDepthMinValue.Text = objRL.Check_Null_String(Convert.ToString(dataGridView1.Rows[e.RowIndex].Cells[27].Value));
+                    txtInnerDepthMaxValue.Text = objRL.Check_Null_String(Convert.ToString(dataGridView1.Rows[e.RowIndex].Cells[28].Value));
+                    txtCapWeightStandard.Text = objRL.Check_Null_String(Convert.ToString(dataGridView1.Rows[e.RowIndex].Cells[29].Value));
+                    txtCapWeightTolerance.Text = objRL.Check_Null_String(Convert.ToString(dataGridView1.Rows[e.RowIndex].Cells[30].Value));
+                    txtCapWeightMinValue.Text = objRL.Check_Null_String(Convert.ToString(dataGridView1.Rows[e.RowIndex].Cells[31].Value));
+                    txtCapWeightMaxValue.Text = objRL.Check_Null_String(Convert.ToString(dataGridView1.Rows[e.RowIndex].Cells[32].Value));
+                    cmbStatus.Text = objRL.Check_Null_String(Convert.ToString(dataGridView1.Rows[e.RowIndex].Cells[33].Value));
+                    txtRemarks.Text = objRL.Check_Null_String(Convert.ToString(dataGridView1.Rows[e.RowIndex].Cells[34].Value));
                 }
             }
             catch (Exception ex1)
@@ -183,6 +197,12 @@ namespace SPApplication.Master
             TableID = 0;
             txtCapName.Text = "";
             cmbIsWad.SelectedIndex = -1;
+            cmbMaterialUsed.SelectedIndex = -1;
+            cmbCapColor.SelectedIndex = -1;
+            cmbCapType.SelectedIndex = -1;
+            cmbCustomerLogo.SelectedIndex = -1;
+            cmbPrintType.SelectedIndex = -1;
+            txtMasterBatchDetails.Text = "";
             txtOuterDiaStandard.Text = "";
             txtOuterDiaTolerance.Text = "";
             txtOuterDiaMinValue.Text = "";
@@ -231,9 +251,9 @@ namespace SPApplication.Master
                         if (FlagDelete)
                             objBL.Query = "update CapMaster set CancelTag=1 where ID=" + TableID + "";
                         else
-                            objBL.Query = "update CapMaster set CapName='" + AposValue.Replace("'", "''") + "',Wad='" + cmbIsWad.Text + "',OuterDiaStandard='" + txtOuterDiaStandard.Text + "',OuterDiaTolerance='" + txtOuterDiaTolerance.Text + "',OuterDiaMinValue='" + txtOuterDiaMinValue.Text + "',OuterDiaMaxValue='" + txtOuterDiaMaxValue.Text + "',InnerDiaWithThreadStandard='" + txtInnerDiaWithThreadStandard.Text + "',InnerDiaWithThreadTolerance='" + txtInnerDiaWithThreadTolerance.Text + "',InnerDiaWithThreadMinValue='" + txtInnerDiaWithThreadMinValue.Text + "',InnerDiaWithThreadMaxValue='" + txtInnerDiaWithThreadMaxValue.Text + "',InnerDiaWOThreadStandard='" + txtInnerDiaWOThreadStandard.Text + "',InnerDiaWOThreadTolerance='" + txtInnerDiaWOThreadTolerance.Text + "',InnerDiaWOThreadMinValue='" + txtInnerDiaWOThreadMinValue.Text + "',InnerDiaWOThreadMaxValue='" + txtInnerDiaWOThreadMaxValue.Text + "',CapHeightStandard='" + txtCapHeightStandard.Text + "',CapHeightTolerance='" + txtCapHeightTolerance.Text + "',CapHeightMinValue='" + txtCapHeightMinValue.Text + "',CapHeightMaxValue='" + txtCapHeightMaxValue.Text + "',InnerDepthStandard='" + txtInnerDepthStandard.Text + "',InnerDepthTolerance='" + txtInnerDepthTolerance.Text + "',InnerDepthMinValue='" + txtInnerDepthMinValue.Text + "',InnerDepthMaxValue='" + txtInnerDepthMaxValue.Text + "',CapWeightStandard='" + txtCapWeightStandard.Text + "',CapWeightTolerance='" + txtCapWeightTolerance.Text + "',CapWeightMinValue='" + txtCapWeightMinValue.Text + "',CapWeightMaxValue='" + txtCapWeightMaxValue.Text + "',Status='" + cmbStatus.Text + "',Remarks='" + txtRemarks.Text + "',UserId=" + BusinessLayer.UserId_Static + " where ID=" + TableID + "";
+                            objBL.Query = "update CapMaster set CapName='" + AposValue.Replace("'", "''") + "',Wad='" + cmbIsWad.Text + "',MaterialUsed='" + cmbMaterialUsed.Text + "',CapColor='" + cmbCapColor.Text + "',CapType='" + cmbCapType.Text + "',CustomerLogo='" + cmbCustomerLogo.Text + "',PrintType='" + cmbPrintType.Text + "',MasterBatchDetails='" + txtMasterBatchDetails.Text + "',OuterDiaStandard='" + txtOuterDiaStandard.Text + "',OuterDiaTolerance='" + txtOuterDiaTolerance.Text + "',OuterDiaMinValue='" + txtOuterDiaMinValue.Text + "',OuterDiaMaxValue='" + txtOuterDiaMaxValue.Text + "',InnerDiaWithThreadStandard='" + txtInnerDiaWithThreadStandard.Text + "',InnerDiaWithThreadTolerance='" + txtInnerDiaWithThreadTolerance.Text + "',InnerDiaWithThreadMinValue='" + txtInnerDiaWithThreadMinValue.Text + "',InnerDiaWithThreadMaxValue='" + txtInnerDiaWithThreadMaxValue.Text + "',InnerDiaWOThreadStandard='" + txtInnerDiaWOThreadStandard.Text + "',InnerDiaWOThreadTolerance='" + txtInnerDiaWOThreadTolerance.Text + "',InnerDiaWOThreadMinValue='" + txtInnerDiaWOThreadMinValue.Text + "',InnerDiaWOThreadMaxValue='" + txtInnerDiaWOThreadMaxValue.Text + "',CapHeightStandard='" + txtCapHeightStandard.Text + "',CapHeightTolerance='" + txtCapHeightTolerance.Text + "',CapHeightMinValue='" + txtCapHeightMinValue.Text + "',CapHeightMaxValue='" + txtCapHeightMaxValue.Text + "',InnerDepthStandard='" + txtInnerDepthStandard.Text + "',InnerDepthTolerance='" + txtInnerDepthTolerance.Text + "',InnerDepthMinValue='" + txtInnerDepthMinValue.Text + "',InnerDepthMaxValue='" + txtInnerDepthMaxValue.Text + "',CapWeightStandard='" + txtCapWeightStandard.Text + "',CapWeightTolerance='" + txtCapWeightTolerance.Text + "',CapWeightMinValue='" + txtCapWeightMinValue.Text + "',CapWeightMaxValue='" + txtCapWeightMaxValue.Text + "',Status='" + cmbStatus.Text + "',Remarks='" + txtRemarks.Text + "',UserId=" + BusinessLayer.UserId_Static + " where ID=" + TableID + "";
                     else
-                        objBL.Query = "insert into CapMaster(CapName,Wad,OuterDiaStandard,OuterDiaTolerance,OuterDiaMinValue,OuterDiaMaxValue,InnerDiaWithThreadStandard,InnerDiaWithThreadTolerance,InnerDiaWithThreadMinValue,InnerDiaWithThreadMaxValue,InnerDiaWOThreadStandard,InnerDiaWOThreadTolerance,InnerDiaWOThreadMinValue,InnerDiaWOThreadMaxValue,CapHeightStandard,CapHeightTolerance,CapHeightMinValue,CapHeightMaxValue,InnerDepthStandard,InnerDepthTolerance,InnerDepthMinValue,InnerDepthMaxValue,CapWeightStandard,CapWeightTolerance,CapWeightMinValue,CapWeightMaxValue,Status,Remarks,UserId) values('" + AposValue.Replace("'", "''") + "','" + cmbIsWad.Text + "','" + txtOuterDiaStandard.Text + "','" + txtOuterDiaTolerance.Text + "','" + txtOuterDiaMinValue.Text + "','" + txtOuterDiaMaxValue.Text + "','" + txtInnerDiaWithThreadStandard.Text + "','" + txtInnerDiaWithThreadTolerance.Text + "','" + txtInnerDiaWithThreadMinValue.Text + "','" + txtInnerDiaWithThreadMaxValue.Text + "','" + txtInnerDiaWOThreadStandard.Text + "','" + txtInnerDiaWOThreadTolerance.Text + "','" + txtInnerDiaWOThreadMinValue.Text + "','" + txtInnerDiaWOThreadMaxValue.Text + "','" + txtCapHeightStandard.Text + "','" + txtCapHeightTolerance.Text + "','" + txtCapHeightMinValue.Text + "','" + txtCapHeightMaxValue.Text + "','" + txtInnerDepthStandard.Text + "','" + txtInnerDepthTolerance.Text + "','" + txtInnerDepthMinValue.Text + "','" + txtInnerDepthMaxValue.Text + "','" + txtCapWeightStandard.Text + "','" + txtCapWeightTolerance.Text + "','" + txtCapWeightMinValue.Text + "','" + txtCapWeightMaxValue.Text + "','" + cmbStatus.Text + "','" + txtRemarks.Text + "'," + BusinessLayer.UserId_Static + ")";
+                        objBL.Query = "insert into CapMaster(CapName,Wad,MaterialUsed,CapColor,CapType,CustomerLogo,PrintType,MasterBatchDetails,OuterDiaStandard,OuterDiaTolerance,OuterDiaMinValue,OuterDiaMaxValue,InnerDiaWithThreadStandard,InnerDiaWithThreadTolerance,InnerDiaWithThreadMinValue,InnerDiaWithThreadMaxValue,InnerDiaWOThreadStandard,InnerDiaWOThreadTolerance,InnerDiaWOThreadMinValue,InnerDiaWOThreadMaxValue,CapHeightStandard,CapHeightTolerance,CapHeightMinValue,CapHeightMaxValue,InnerDepthStandard,InnerDepthTolerance,InnerDepthMinValue,InnerDepthMaxValue,CapWeightStandard,CapWeightTolerance,CapWeightMinValue,CapWeightMaxValue,Status,Remarks,UserId) values('" + AposValue.Replace("'", "''") + "','" + cmbIsWad.Text + "','" + cmbMaterialUsed.Text + "','" + cmbCapColor.Text + "','" + cmbCapType.Text + "','" + cmbCustomerLogo.Text + "','" + cmbPrintType.Text + "','" + txtMasterBatchDetails.Text + "','" + txtOuterDiaStandard.Text + "','" + txtOuterDiaTolerance.Text + "','" + txtOuterDiaMinValue.Text + "','" + txtOuterDiaMaxValue.Text + "','" + txtInnerDiaWithThreadStandard.Text + "','" + txtInnerDiaWithThreadTolerance.Text + "','" + txtInnerDiaWithThreadMinValue.Text + "','" + txtInnerDiaWithThreadMaxValue.Text + "','" + txtInnerDiaWOThreadStandard.Text + "','" + txtInnerDiaWOThreadTolerance.Text + "','" + txtInnerDiaWOThreadMinValue.Text + "','" + txtInnerDiaWOThreadMaxValue.Text + "','" + txtCapHeightStandard.Text + "','" + txtCapHeightTolerance.Text + "','" + txtCapHeightMinValue.Text + "','" + txtCapHeightMaxValue.Text + "','" + txtInnerDepthStandard.Text + "','" + txtInnerDepthTolerance.Text + "','" + txtInnerDepthMinValue.Text + "','" + txtInnerDepthMaxValue.Text + "','" + txtCapWeightStandard.Text + "','" + txtCapWeightTolerance.Text + "','" + txtCapWeightMinValue.Text + "','" + txtCapWeightMaxValue.Text + "','" + cmbStatus.Text + "','" + txtRemarks.Text + "'," + BusinessLayer.UserId_Static + ")";
 
                     Result = objBL.Function_ExecuteNonQuery();
                     if (Result > 0)
@@ -304,6 +324,12 @@ namespace SPApplication.Master
                           "ID,"+
                           "CapName as [Cap Name],"+
                           "Wad," +
+                          "MaterialUsed," +
+                          "CapColor," +
+                          "CapType," +
+                          "CustomerLogo as [Customer Logo]," +
+                          "PrintType as [Print Type]," +
+                          "MasterBatchDetails as [Master Batch Details]," +
                           "OuterDiaStandard as [Outer Dia Standard]," +
                           "OuterDiaTolerance as [Outer Dia Tolerance]," +
                           "OuterDiaMinValue as [Outer Dia Min Value]," +
@@ -345,30 +371,40 @@ namespace SPApplication.Master
 
             if (ds.Tables[0].Rows.Count > 0)
             {
-                //0 "ID," +
-                //1 "CapName as [Cap Name]," +
-                //2 "Wad,NeckSizeStandard as [Neck Size Standard]," +
-                //3 "NeckSizeTolerance as [Neck Size Tolerance]," +
-                //4 "NeckSizeMinValue as [Neck Size Min Value]," +
-                //5 "NeckSizeMaxValue as [Neck Size Max Value]," +
-                //6 "CapWeightStandard as [Cap Weight Standard]," +
-                //7 "CapWeightTolerance as [Cap Weight Tolerance]," +
-                //8 "CapWeightMinValue as [Cap Weight Min Value]," +
-                //9 "CapWeightMaxValue as [Cap Weight Max Value]," +
-                //10 "InnerDiaWOThreadStandard as [Inner Dia WO Thread Standard]," +
-                //11 "InnerDiaWOThreadTolerance as [Inner Dia WO Thread Tolerance]," +
-                //12 "InnerDiaWOThreadMinValue as [Inner Dia WO Thread Min Value]," +
-                //13 "InnerDiaWOThreadMaxValue as [Inner Dia WO Thread Max Value]," +
-                //14 "InnerDiaWithThreadStandard as [Inner Dia With Thread Standard]," +
-                //15 "InnerDiaWithThreadTolerance as [Inner Dia With Thread Tolerance]," +
-                //16 "InnerDiaWithThreadMinValue as [Inner Dia With Thread Min Value]," +
-                //17 "InnerDiaWithThreadMaxValue as [Inner Dia With Thread Max Value]," +
-                //18 "OuterDiaStandard as [Outer Dia Standard]," +
-                //19 "OuterDiaTolerance as [Outer Dia Tolerance]," +
-                //20 "OuterDiaMinValue as [Outer Dia Min Value]," +
-                //21 "OuterDiaMaxValue as [Outer Dia Max Value]," +
-                //22 "Status," +
-                //23 "Remarks " + 
+                //0	"ID,"+
+                //1	"CapName as [Cap Name],"+
+                //2	"Wad," +
+                //3	"MaterialUsed," +
+                //4	"CapColor," +
+                //5	"CapType," +
+                //6	"CustomerLogo as [Customer Logo]," +
+                //7	"PrintType as [Print Type]," +
+                //8	"MasterBatchDetails as [Master Batch Details]," +
+                //9	"OuterDiaStandard as [Outer Dia Standard]," +
+                //10	"OuterDiaTolerance as [Outer Dia Tolerance]," +
+                //11	"OuterDiaMinValue as [Outer Dia Min Value]," +
+                //12	"OuterDiaMaxValue as [Outer Dia Max Value]," +
+                //13	"InnerDiaWithThreadStandard as [Inner Dia With Thread Standard]," +
+                //14	"InnerDiaWithThreadTolerance as [Inner Dia With Thread Tolerance]," +
+                //15	"InnerDiaWithThreadMinValue as [Inner Dia With Thread Min Value]," +
+                //16	"InnerDiaWithThreadMaxValue as [Inner Dia With Thread Max Value]," +
+                //17	"InnerDiaWOThreadStandard as [Inner Dia WO Thread Standard]," +
+                //18	"InnerDiaWOThreadTolerance as [Inner Dia WO Thread Tolerance]," +
+                //19	"InnerDiaWOThreadMinValue as [Inner Dia WO Thread Min Value]," +
+                //20	"InnerDiaWOThreadMaxValue as [Inner Dia WO Thread Max Value]," +
+                //21	"CapHeightStandard as [Cap Height Standard]," +
+                //22	"CapHeightTolerance as [Cap Height Tolerance]," +
+                //23	"CapHeightMinValue as [Cap Height Min Value]," +
+                //24	"CapHeightMaxValue as [Cap Height Max Value]," +
+                //25	"InnerDepthStandard as [Inner Depth Standard]," +
+                //26	"InnerDepthTolerance as [Inner Depth Tolerance]," +
+                //27	"InnerDepthMinValue as [Inner Depth Min Value]," +
+                //28	"InnerDepthMaxValue as [Inner Depth Max Value]," +
+                //29	"CapWeightStandard as [Cap Weight Standard]," +
+                //30	"CapWeightTolerance as [Cap Weight Tolerance]," +
+                //31	"CapWeightMinValue as [Cap Weight Min Value]," +
+                //32	"CapWeightMaxValue as [Cap Weight Max Value]," +
+                //33	"Status," +
 
                 dataGridView1.DataSource = ds.Tables[0];
                 dataGridView1.Columns[0].Visible = false;

@@ -46,7 +46,7 @@ namespace SPApplication.Report
         {
             InitializeComponent();
             objDL.SetDesignMaster(this, lblHeader, btnSave, btnClear, btnDelete, btnExit, BusinessResources.LBL_HEADER_WADQUALITYCONTROL);
-            objRL.Fill_Wad_ListBox(lbWad, txtSearchWad.Text, "All");
+            objRL.Fill_Wad_ListBox_Report(lbWad, txtSearchWad.Text, "All");
             btnSave.Text = BusinessResources.BTN_REPORT;
         }
 
@@ -71,12 +71,12 @@ namespace SPApplication.Report
             ClearAll_Wad();
             if (txtSearchWad.Text != "")
             {
-                objRL.Fill_Wad_ListBox(lbWad, txtSearchWad.Text, "Text");
+                objRL.Fill_Wad_ListBox_Report(lbWad, txtSearchWad.Text, "Text");
                 //lbItem.Focus();
             }
             else
             {
-                objRL.Fill_Wad_ListBox(lbWad, txtSearchWad.Text, "All");
+                objRL.Fill_Wad_ListBox_Report(lbWad, txtSearchWad.Text, "All");
             }
         }
 
@@ -237,7 +237,7 @@ namespace SPApplication.Report
 
         //string[] DGValues = { "Type", "Custmer Logo", "Print Quality", "Outer Dia (mm)", "Inner Dia With Thread (mm)", "Neck Height (mm)", "Inner Dia WO Thread (mm)", "Cap Height (mm)", "Inner Depth (mm)", "Cap Weight (gms)", "Color", "Visual Appearance", "Flash Finishing", "Bend", "Wad Sealing", "Fitmen tWit hBottle", "Ink Test", "Drop Test" };
         //string[] DGValues = { "Type", "Custmer Logo", "Print Quality", "Board Thikness", "Board Type", "Foil Thikness", "Foil Specs", "Sealant Thikness", "Sealent Specs", "Outer Dia (mm)", "Thikness (mm)", "Weight (gms)", "Average Weight (gms)", "Visual Appearance", "Side Finishing", "Bend", "Fitment With Cap", "Ink Test", "Ind Seal Test" };
-        string[] DGValues = { "Outer Dia (mm)", "Thikness (mm)", "Weight (gms)", "Average Weight (gms)", "Visual Appearance", "Side Finishing", "Bend", "Fitment With Cap", "Ink Test", "Ind Seal Test" };
+        string[] DGValues = { "Outer Dia (mm)", "Thikness (µm)", "Weight (gms)", "Average Weight (gms)", "Visual Appearance", "Print Quality", "Side Finishing", "Bend", "Fitment With Cap", "Ink Test", "Ind Seal Test" };
         private void Fill_DGV_VALUES()
         {
             SrNo = 1;
@@ -277,6 +277,14 @@ namespace SPApplication.Report
                           "CQC.EntryTime as [Time]," +
                           "CQC.WadId," +
                           "C.WadName as [Wad Name]," +
+                          "C.WadType," +
+                          "C.CustomerLogo," +
+                          "C.BoardThickness," +
+                          "C.BoardType," +
+                          "C.FoilThickness," +
+                          "C.FoilSpecs," +
+                          "C.SealantThickness," +
+                          "C.SealentSpecs," +
                           "C.OuterDiaStandard," +
                           "C.OuterDiaTolerance," +
                           "C.OuterDiaMinValue," +
@@ -298,20 +306,12 @@ namespace SPApplication.Report
                           "S.SupplierName," +
                           "CQC.QCCheckerId," +
                           "E.FullName," +
-                          "CQCV.Type," +
-                          "CQCV.CustmerLogo," +
-                          "CQCV.PrintQuality," +
-                          "CQCV.BoardThikness," +
-                          "CQCV.BoardType," +
-                          "CQCV.FoilThikness," +
-                          "CQCV.FoilSpecs," +
-                          "CQCV.SealantThikness," +
-                          "CQCV.SealentSpecs," +
                           "CQCV.OuterDia," +
-                          "CQCV.Thikness," +
+                          "CQCV.Thickness," +
                           "CQCV.Weight," +
                           "CQCV.AverageWeight," +
                           "CQCV.VisualAppearance," +
+                          "CQCV.PrintQuality," +
                           "CQCV.SideFinishing," +
                           "CQCV.Bend, " +
                           "CQCV.FitmentWithCap, " +
@@ -360,11 +360,11 @@ namespace SPApplication.Report
                     //dgvValues.Rows[i].Cells["clmQCValue"].Value = objRL.Check_Null_String(Convert.ToString(ds.Tables[0].Rows[0]["PrintQuality"]));
                     //i++;
 
-                    BoardThikness = objRL.Check_Null_String(Convert.ToString(ds.Tables[0].Rows[0]["BoardThikness"]));
+                    BoardThikness = objRL.Check_Null_String(Convert.ToString(ds.Tables[0].Rows[0]["BoardThickness"]));
                     BoardType = objRL.Check_Null_String(Convert.ToString(ds.Tables[0].Rows[0]["BoardType"]));
-                    FoilThikness = objRL.Check_Null_String(Convert.ToString(ds.Tables[0].Rows[0]["FoilThikness"]));
+                    FoilThikness = objRL.Check_Null_String(Convert.ToString(ds.Tables[0].Rows[0]["FoilThickness"]));
                     FoilSpecs = objRL.Check_Null_String(Convert.ToString(ds.Tables[0].Rows[0]["FoilSpecs"]));
-                    SealantThikness = objRL.Check_Null_String(Convert.ToString(ds.Tables[0].Rows[0]["SealantThikness"]));
+                    SealantThikness = objRL.Check_Null_String(Convert.ToString(ds.Tables[0].Rows[0]["SealantThickness"]));
                     SealentSpecs = objRL.Check_Null_String(Convert.ToString(ds.Tables[0].Rows[0]["SealentSpecs"]));
 
                     //dgvValues.Rows[i].Cells["clmStandards"].Value = "-";
@@ -405,7 +405,7 @@ namespace SPApplication.Report
 
                     dgvValues.Rows[i].Cells["clmStandards"].Value = objRL.Check_Null_String(Convert.ToString(ds.Tables[0].Rows[0]["ThicknessStandard"]));
                     dgvValues.Rows[i].Cells["clmTolerance"].Value = objRL.Check_Null_String(Convert.ToString(ds.Tables[0].Rows[0]["ThicknessTolerance"]));
-                    dgvValues.Rows[i].Cells["clmQCValue"].Value = objRL.Check_Null_String(Convert.ToString(ds.Tables[0].Rows[0]["Thikness"]));
+                    dgvValues.Rows[i].Cells["clmQCValue"].Value = objRL.Check_Null_String(Convert.ToString(ds.Tables[0].Rows[0]["Thickness"]));
                     i++;
 
                     dgvValues.Rows[i].Cells["clmStandards"].Value = objRL.Check_Null_String(Convert.ToString(ds.Tables[0].Rows[0]["WeightStandard"]));
@@ -421,6 +421,11 @@ namespace SPApplication.Report
                     dgvValues.Rows[i].Cells["clmStandards"].Value = "Ok";
                     dgvValues.Rows[i].Cells["clmTolerance"].Value = "Ok";
                     dgvValues.Rows[i].Cells["clmQCValue"].Value = objRL.Check_Null_String(Convert.ToString(ds.Tables[0].Rows[0]["VisualAppearance"]));
+                    i++;
+
+                    dgvValues.Rows[i].Cells["clmStandards"].Value = "Ok";
+                    dgvValues.Rows[i].Cells["clmTolerance"].Value = "Ok";
+                    dgvValues.Rows[i].Cells["clmQCValue"].Value = objRL.Check_Null_String(Convert.ToString(ds.Tables[0].Rows[0]["PrintQuality"]));
                     i++;
 
                     dgvValues.Rows[i].Cells["clmStandards"].Value = "Ok";
@@ -461,6 +466,35 @@ namespace SPApplication.Report
                     ConcatSupplierMaterialRefrences= BoardThikness +" gms "+BoardType+", "+FoilThikness+" µm "+FoilSpecs + SealantThikness+" µm "+ SealentSpecs;
 
                     txtSupplierMaterialRef.Text = ConcatSupplierMaterialRefrences.ToString();
+
+                    txtFailureCount.Text = "";
+
+                    DataSet dsSum = new DataSet();
+                    
+                    objBL.Query = "SELECT "+
+                                    " TOP 1 ID," +
+                                    " IIF(OuterDiaResult = 1, 1, 0) +"+
+                                    " IIF(ThicknessResult = 1, 1, 0) +"+
+                                    " IIF(WeightResult = 1, 1, 0) +"+
+                                    " IIF(AverageWeightResult = 1, 1, 0) +"+
+                                    " IIF(VisualAppearanceResult = 1, 1, 0) +"+
+                                    " IIF(PrintQualityResult = 1, 1, 0) +"+
+                                    " IIF(SideFinishingResult = 1, 1, 0) +"+
+                                    " IIF(BendResult = 1, 1, 0) +"+
+                                    " IIF(FitmentWithCapResult = 1, 1, 0) +"+
+                                    " IIF(InkTestResult = 1, 1, 0) +"+
+                                    " IIF(IndSealTestResult = 1, 1, 0) AS FailureCount "+
+                                " FROM WadQualityControlValues"+
+                                " WHERE CancelTag = 0  and WadId=" + WadId + " ORDER BY ID DESC ";
+
+                    //objBL.Query = "SELECT COUNT(*) FROM WadQualityControlValues WHERE OuterDiaResult=1 OR ThicknessResult=1 OR WeightResult=1 OR AverageWeightResult=1 OR VisualAppearanceResult=1 OR PrintQualityResult=1 OR SideFinishingResult=1 OR BendResult=1 OR FitmentWithCapResult=1 OR InkTestResult=1 OR IndSealTestResult=1 and CancelTag=0 and WadId=" + WadId + " ";
+                    dsSum = objBL.ReturnDataSet();
+                    txtFailureCount.Text = "";
+
+                    if (dsSum.Tables[0].Rows.Count > 0)
+                    {
+                        txtFailureCount.Text = objRL.Check_Null_String(Convert.ToString(dsSum.Tables[0].Rows[0]["FailureCount"]));
+                    }
                 } 
             }
         }
@@ -508,19 +542,25 @@ namespace SPApplication.Report
             //myExcelWorksheet.get_Range("J7", misValue).Formula = dtpOrderDate.Value.ToString(BusinessResources.DATEFORMATDDMMYYYY);
 
             myExcelWorksheet.get_Range("C5", misValue).Formula = objRL.WadName;
+            myExcelWorksheet.get_Range("C8", misValue).Formula = "Quality Check reports (Randam Samples different cavities)";
+            myExcelWorksheet.get_Range("C9", misValue).Formula = txtSupplierName.Text;
+            myExcelWorksheet.get_Range("C10", misValue).Formula = txtSupplierMaterialRef.Text;
+            myExcelWorksheet.get_Range("C11", misValue).Formula = objRL.WadType;
+            myExcelWorksheet.get_Range("C12", misValue).Formula = objRL.CustomerLogo;
+
             //myExcelWorksheet.get_Range("C7", misValue).Formula = txtSupplierName.Text;
             myExcelWorksheet.get_Range("G5", misValue).Formula = dtpDate.Value.ToString(BusinessResources.DATEFORMATDDMMYYYY);
             myExcelWorksheet.get_Range("G6", misValue).Formula = txtID.Text;
             myExcelWorksheet.get_Range("G7", misValue).Formula = txtBatchNo.Text;
-            myExcelWorksheet.get_Range("C8", misValue).Formula = "Quality Check reports (Randam Samples different cavities)";
-            myExcelWorksheet.get_Range("C9", misValue).Formula = objRL.WadName;
-            myExcelWorksheet.get_Range("C10", misValue).Formula = txtSupplierName.Text;
-            myExcelWorksheet.get_Range("C11", misValue).Formula = Colour_Excel.ToString();
-            myExcelWorksheet.get_Range("A13", misValue).Formula = txtSupplierMaterialRef.Text;
+
+            //myExcelWorksheet.get_Range("C9", misValue).Formula = objRL.WadName;
+            
+            //myExcelWorksheet.get_Range("C11", misValue).Formula = Colour_Excel.ToString();
+          
 
             //250GMS Pulp Board, 25 µm Aluminum Foil,23µm HSPET
 
-            SrNo = 1; RowCount = 20; BorderFlag = false;
+            SrNo = 1; RowCount = 15; BorderFlag = false;
 
             for (int i = 0; i < dgvValues.Rows.Count; i++)
             {
@@ -554,10 +594,14 @@ namespace SPApplication.Report
             }
 
             RowCount++; BorderFlag = true;
+
             AFlag = 0;
-            Fill_Merge_Cell("A", "G", misValue, myExcelWorksheet, "Remark - All 10 Points are within Standards");
+            Fill_Merge_Cell("A", "G", misValue, myExcelWorksheet, "Failure Result Count-" + txtFailureCount.Text);
             RowCount++;
-            Fill_Merge_Cell("A", "G", misValue, myExcelWorksheet, "Inspected by- Firoj Rashid Shaikh, QC Check by - " + CheckerName_Excel + "");
+            AFlag = 0;
+            Fill_Merge_Cell("A", "G", misValue, myExcelWorksheet, "Remark - All 11 Points are within Standards");
+            RowCount++;
+            Fill_Merge_Cell("A", "G", misValue, myExcelWorksheet, "QC Checker Name  - " + CheckerName_Excel + "");
 
             myExcelWorkbook.Save();
             string PDFReport = objRL.RL_DestinationPath.Replace(".xlsx", ".pdf");
@@ -631,6 +675,28 @@ namespace SPApplication.Report
         private void btnExit_Click(object sender, EventArgs e)
         {
             this.Dispose();
+        }
+
+        private void txtSearchWad_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Down)
+            {
+                if (lbWad.Items.Count > 0)
+                {
+                    if (lbWad.SelectedIndex < 0)
+                    {
+                        // No selection yet – select the first item
+                        lbWad.SelectedIndex = 0;
+                    }
+                    else if (lbWad.SelectedIndex < lbWad.Items.Count - 1)
+                    {
+                        // Move to next item
+                        lbWad.SelectedIndex++;
+                    }
+                    lbWad.Focus(); // Move focus so Up/Down works in the list
+                    e.Handled = true;
+                }
+            }
         }
     }
 }

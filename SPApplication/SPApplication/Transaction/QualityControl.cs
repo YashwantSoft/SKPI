@@ -1506,7 +1506,7 @@ namespace SPApplication.Transaction
         {
             if (ProductId != 0)
             {
-                Tolerance objForm = new Tolerance(ProductId);
+                ProductTolerance objForm = new ProductTolerance(ProductId);
                 objForm.ShowDialog(this);
             }
         }

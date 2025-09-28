@@ -93,7 +93,7 @@ namespace SPApplication.Transaction
             //txtShift.Text = Shift.ToString();
 
             Shift = objRL.ShiftCode();
-            txtShift.Text = Shift.ToString();
+            txtShift.Text =  Shift.ToString();
         }
 
         private void GetID()

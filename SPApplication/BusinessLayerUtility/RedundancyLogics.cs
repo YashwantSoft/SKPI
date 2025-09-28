@@ -13,6 +13,8 @@ using System.Globalization;
 using System.Threading;
 using System.Net.Mail;
 using System.Diagnostics;
+using BusinessLayerUtility.Classes;
+using System.Data.OleDb;
 
 namespace BusinessLayerUtility
 {
@@ -2500,6 +2502,7 @@ namespace BusinessLayerUtility
             objBL.Query = "Select ID,RoomNo from RoomMaster where CancelTag=0";
             objBL.FillComboBox(cmbRoomNo, "RoomNo", "ID");
         }
+
         public void FillItemDetailsRichTextBox(RichTextBox rtb, int ItemId_F)
         {
             if (ItemId_F != 0)
@@ -2895,6 +2898,26 @@ namespace BusinessLayerUtility
             }
         }
 
+        public void Fill_Cap_ListBox_Report(ListBox lb, string SearchText, string SearchType)
+        {
+            lb.DataSource = null;
+            DataSet ds = new DataSet();
+            if (SearchType == "Text")
+                objBL.Query = "select ID,CapName from CapMaster where CancelTag=0 and ID IN(select CapId from CapQualityControl where CancelTag=0) and CapName like '%" + SearchText + "%'";
+            else
+                objBL.Query = "select ID,CapName from CapMaster where CancelTag=0 and ID IN(select CapId from CapQualityControl where CancelTag=0) order by ID";
+
+            ds = objBL.ReturnDataSet();
+            if (ds.Tables[0].Rows.Count > 0)
+            {
+                lb.Visible = true;
+                lb.DataSource = ds.Tables[0];
+                lb.DisplayMember = "CapName";
+                lb.ValueMember = "ID";
+                lb.SelectedIndex = 0;
+            }
+        }
+
         //Fill Part Master
         public void Fill_Part_ListBox(ListBox lb, string SearchText, string SearchType)
         {
@@ -2945,6 +2968,26 @@ namespace BusinessLayerUtility
                 objBL.Query = "select ID,WadName from WadMaster where CancelTag=0 and WadName like '%" + SearchText + "%'";
             else
                 objBL.Query = "select ID,WadName from WadMaster where CancelTag=0 order by WadName asc";
+
+            ds = objBL.ReturnDataSet();
+            if (ds.Tables[0].Rows.Count > 0)
+            {
+                lb.Visible = true;
+                lb.DataSource = ds.Tables[0];
+                lb.DisplayMember = "WadName";
+                lb.ValueMember = "ID";
+                lb.SelectedIndex = 0;
+            }
+        }
+
+        public void Fill_Wad_ListBox_Report(ListBox lb, string SearchText, string SearchType)
+        {
+            lb.DataSource = null;
+            DataSet ds = new DataSet();
+            if (SearchType == "Text")
+                objBL.Query = "select ID,WadName from WadMaster where CancelTag=0 and ID IN(select WadId from WadQualityControl where CancelTag=0) and WadName like '%" + SearchText + "%'";
+            else
+                objBL.Query = "select ID,WadName from WadMaster where CancelTag=0 and ID IN(select WadId from WadQualityControl where CancelTag=0) order by WadName asc";
 
             ds = objBL.ReturnDataSet();
             if (ds.Tables[0].Rows.Count > 0)
@@ -3793,6 +3836,20 @@ namespace BusinessLayerUtility
             set { wadname = value; }
         }
 
+        private static string wadtype;
+        public string WadType
+        {
+            get { return wadtype; }
+            set { wadtype = value; }
+        }
+
+        //private static string wadname;
+        //public string CustomerLogoWad
+        //{
+        //    get { return wadname; }
+        //    set { wadname = value; }
+        //}
+
         private static int  materialid;
         public int MaterialID
         {
@@ -3809,12 +3866,59 @@ namespace BusinessLayerUtility
 
         //Cap Details
 
+        private static string materialused;
+        public string MaterialUsed
+        {
+            get { return materialused; }
+            set { materialused = value; }
+        }
+
+        private static string capcolor;
+        public string CapColor
+        {
+            get { return capcolor; }
+            set { capcolor = value; }
+        }
+
+        private static string captype;
+        public string CapType
+        {
+            get { return captype; }
+            set { captype = value; }
+        }
+
+        private static string customerlogo;
+        public string CustomerLogo
+        {
+            get { return customerlogo; }
+            set { customerlogo = value; }
+        }
+
+        private static string printtype;
+        public string PrintType
+        {
+            get { return printtype; }
+            set { printtype = value; }
+        }
+
+        private static string masterbatchdetails;
+         public string MasterBatchDetails
+        {
+            get { return masterbatchdetails; }
+            set { masterbatchdetails = value; }
+        }
+        
         private static string outerdiastandard;
         public string OuterDiaStandard
         {
             get { return outerdiastandard; }
             set { outerdiastandard = value; }
         }
+
+
+
+
+
 
         private static string outerdiatolerance;
         public string OuterDiaTolerance
@@ -3988,6 +4092,48 @@ namespace BusinessLayerUtility
 
         //Wad Details
 
+        private static string boardthickness;
+        public string BoardThickness
+        {
+            get { return boardthickness; }
+            set { boardthickness = value; }
+        }
+
+         private static string boardtype;
+        public string BoardType
+        {
+            get { return boardtype; }
+            set { boardtype = value; }
+        }
+
+        private static string foilthickness;
+        public string FoilThickness
+        {
+            get { return foilthickness; }
+            set { foilthickness = value; }
+        }
+
+         private static string foilspecs;
+        public string FoilSpecs
+        {
+            get { return foilspecs; }
+            set { foilspecs = value; }
+        }
+
+        private static string sealantthickness;
+        public string SealantThickness
+        {
+            get { return sealantthickness; }
+            set { sealantthickness = value; }
+        }
+
+         private static string sealentspecs;
+        public string SealentSpecs
+        {
+            get { return sealentspecs; }
+            set { sealentspecs = value; }
+        }
+         
         private static string thicknessstandard;
         public string ThicknessStandard
         {
@@ -4504,8 +4650,6 @@ namespace BusinessLayerUtility
             }
         }
 
-       
-
         public void Get_Cap_Records_By_Id(int CapId_F)
         {
             if (CapId_F != 0)
@@ -4530,6 +4674,14 @@ namespace BusinessLayerUtility
                     CapId = Check_Null_Integer(Check_Null_String(Convert.ToString(ds.Tables[0].Rows[0]["ID"])));
                     CapName = Check_Null_String(Convert.ToString(ds.Tables[0].Rows[0]["CapName"]));
                     Wad = Check_Null_String(Convert.ToString(ds.Tables[0].Rows[0]["Wad"]));
+
+                    MaterialUsed = Check_Null_String(Convert.ToString(ds.Tables[0].Rows[0]["MaterialUsed"]));
+                    CapColor = Check_Null_String(Convert.ToString(ds.Tables[0].Rows[0]["CapColor"]));
+                    CapType = Check_Null_String(Convert.ToString(ds.Tables[0].Rows[0]["CapType"]));
+                    CustomerLogo = Check_Null_String(Convert.ToString(ds.Tables[0].Rows[0]["CustomerLogo"]));
+                    PrintType = Check_Null_String(Convert.ToString(ds.Tables[0].Rows[0]["PrintType"]));
+                    MasterBatchDetails = Check_Null_String(Convert.ToString(ds.Tables[0].Rows[0]["MasterBatchDetails"]));
+
                     OuterDiaStandard = Check_Null_String(Convert.ToString(ds.Tables[0].Rows[0]["OuterDiaStandard"]));
                     OuterDiaTolerance = Check_Null_String(Convert.ToString(ds.Tables[0].Rows[0]["OuterDiaTolerance"]));
                     OuterDiaMinValue = Check_Null_String(Convert.ToString(ds.Tables[0].Rows[0]["OuterDiaMinValue"]));
@@ -4560,11 +4712,43 @@ namespace BusinessLayerUtility
             }
         }
 
+        public void FillCapDetailsRichTextBox(RichTextBox rtb, int ItemId_F)
+        {
+            if (ItemId_F != 0)
+            {
+                Get_Cap_Records_By_Id(ItemId_F);
+                Cap_Details_RichTextBox();
+                rtb.Text = CapDetails_RTB.ToString();
+            }
+        }
+
+       
+
+        public string CapDetails_RTB = string.Empty;
+        private void Cap_Details_RichTextBox()
+        {
+            CapDetails_RTB = string.Empty;
+            CapDetails_RTB = "Cap No:\t\t" + CapId + "\n" +
+                             "Cap Name:\t" + CapName + "\n" +
+                             "Wad:\t\t" + Wad + "\n" +
+                             "Material Used:\t" + MaterialUsed + "\n" +
+                             "Cap Color:\t" + CapColor + "\n" +
+                             "Cap Type:\t" + CapType + "\n" +
+                             "Customer Logo:\t" + CustomerLogo + "\n" +
+                             "Print Type:\t" + CapType + "\n" +
+                             "Master Batch:\t" + MasterBatchDetails;
+        }
+
         public void Clear_Cap_Values()
         {
             CapId = 0;
             CapName = string.Empty;
             Wad = string.Empty;
+            MaterialUsed = string.Empty;
+            CapColor = string.Empty;
+            CapType = string.Empty;
+            CustomerLogo = string.Empty;
+            PrintType = string.Empty;
             OuterDiaStandard = string.Empty;
             OuterDiaTolerance = string.Empty;
             OuterDiaMinValue = string.Empty;
@@ -4598,6 +4782,13 @@ namespace BusinessLayerUtility
             WadId = 0;
             WadName = string.Empty;
 
+            BoardThickness = string.Empty;
+            BoardType = string.Empty;
+            FoilThickness = string.Empty;
+            FoilSpecs = string.Empty;
+            SealantThickness = string.Empty;
+            SealentSpecs = string.Empty;
+
             OuterDiaStandard = string.Empty;
             OuterDiaTolerance = string.Empty;
             OuterDiaMinValue = string.Empty;
@@ -4622,6 +4813,32 @@ namespace BusinessLayerUtility
             Remarks = string.Empty;
         }
 
+        public void FillWadDetailsRichTextBox(RichTextBox rtb, int ItemId_F)
+        {
+            if (ItemId_F != 0)
+            {
+                Get_Wad_Records_By_Id(ItemId_F);
+                Wad_Details_RichTextBox();
+                rtb.Text = WadDetails_RTB.ToString();
+            }
+        }
+
+        public string WadDetails_RTB = string.Empty;
+        private void Wad_Details_RichTextBox()
+        {
+            WadDetails_RTB = string.Empty;
+            WadDetails_RTB = "Wad No:\t\t" + WadId + "\n" +
+                             "Wad Name:\t" + WadName + "\n" +
+                             "Wad Type:\t" + WadType + "\n" +
+                             "Customer Logo:\t" + CustomerLogo + "\n" +
+                             "Board Thikness:\t" + BoardThickness + "\n" +
+                             "Board Type:\t" + BoardType + "\n" +
+                             "Foil Thikness:\t" + FoilThickness + "\n" +
+                             "Foil Specs:\t" + FoilSpecs + "\n" +
+                             "Sealant Thikness:\t" + SealantThickness + "\n" +
+                             "Sealent Specs:\t" + SealentSpecs;
+        }
+
         public void Get_Wad_Records_By_Id(int WadId_F)
         {
             if (WadId_F != 0)
@@ -4635,6 +4852,16 @@ namespace BusinessLayerUtility
                 {
                     WadId = Check_Null_Integer(Check_Null_String(Convert.ToString(ds.Tables[0].Rows[0]["ID"])));
                     WadName = Check_Null_String(Convert.ToString(ds.Tables[0].Rows[0]["WadName"]));
+
+                    WadType = Check_Null_String(Convert.ToString(ds.Tables[0].Rows[0]["WadType"]));
+                    CustomerLogo = Check_Null_String(Convert.ToString(ds.Tables[0].Rows[0]["CustomerLogo"]));
+
+                    BoardThickness = Check_Null_String(Convert.ToString(ds.Tables[0].Rows[0]["BoardThickness"]));
+                    BoardType = Check_Null_String(Convert.ToString(ds.Tables[0].Rows[0]["BoardType"]));
+                    FoilThickness = Check_Null_String(Convert.ToString(ds.Tables[0].Rows[0]["FoilThickness"]));
+                    FoilSpecs = Check_Null_String(Convert.ToString(ds.Tables[0].Rows[0]["FoilSpecs"]));
+                    SealantThickness = Check_Null_String(Convert.ToString(ds.Tables[0].Rows[0]["SealantThickness"]));
+                    SealentSpecs = Check_Null_String(Convert.ToString(ds.Tables[0].Rows[0]["SealentSpecs"]));
 
                     OuterDiaStandard = Check_Null_String(Convert.ToString(ds.Tables[0].Rows[0]["OuterDiaStandard"]));
                     OuterDiaTolerance = Check_Null_String(Convert.ToString(ds.Tables[0].Rows[0]["OuterDiaTolerance"]));
@@ -4841,5 +5068,9 @@ namespace BusinessLayerUtility
             //WhatsAppNoLink = @"https://web.whatsapp.com/send?phone=+91" + WhatsAppNo + "";
             Process.Start(WhatsAppNoLink);
         }
+
+      
+
+
     }
 }

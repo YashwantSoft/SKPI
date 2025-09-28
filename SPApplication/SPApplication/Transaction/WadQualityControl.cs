@@ -1,8 +1,10 @@
 ﻿using BusinessLayerUtility;
+using BusinessLayerUtility.Classes;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.OleDb;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -26,11 +28,21 @@ namespace SPApplication.Transaction
         {
             InitializeComponent();
             objDL.SetDesignMaster(this, lblHeader, btnSave, btnClear, btnDelete, btnExit, BusinessResources.LBL_HEADER_WADQUALITYCONTROL);
-            objRL.Fill_Supplier(cmbSupllier);
+            // objRL.Fill_Supplier(cmbSupllier);
             objRL.Fill_Wad_ListBox(lbWad, txtSearchWad.Text, "All");
             objRL.Fill_Employee_By_Designation(cmbQCCheckerName, "Volume Checker");
             btnAddQCSpecs.BackColor = objDL.GetBackgroundColor();
             btnAddQCSpecs.ForeColor = objDL.GetForeColor();
+
+            btnTollerance.BackColor = objDL.GetBackgroundColor();
+            btnTollerance.ForeColor = objDL.GetForeColor();
+            //LoadSuppliers();
+
+            txtSearchSupplier.TextChanged += TxtSearch_TextChanged;
+            lstResults.Click += LstResults_Click;
+            lstResults.KeyDown += LstResults_KeyDown;
+            lstResults.Visible = false;
+
         }
 
         private void btnExit_Click(object sender, EventArgs e)
@@ -62,7 +74,7 @@ namespace SPApplication.Transaction
         int WadId = 0; bool GridFlag = false;
         private void ClearAll_Wad()
         {
-            if(!GridFlag)
+            if (!GridFlag)
                 WadId = 0;
 
             lblWadName.Text = "";
@@ -74,6 +86,40 @@ namespace SPApplication.Transaction
             ClearAll();
             FillGrid();
             lbWad.Focus();
+
+            //LoadSupplierData();
+            //SetupComboBox();
+
+        }
+
+        DataTable supplierTable = new DataTable();
+
+        private void LoadSupplierData()
+        {
+            using (OleDbConnection conn = new OleDbConnection(objBL.conString))
+            {
+                string query = "SELECT ID, SupplierName FROM Supplier ";
+                OleDbDataAdapter adapter = new OleDbDataAdapter(query, conn);
+                adapter.Fill(supplierTable);
+            }
+        }
+
+        private void SetupComboBox()
+        {
+            cmbSupllier.DataSource = supplierTable;
+            cmbSupllier.DisplayMember = "SupplierName";
+            cmbSupllier.ValueMember = "ID";
+
+            // Set AutoComplete
+            AutoCompleteStringCollection autoCollection = new AutoCompleteStringCollection();
+            foreach (DataRow row in supplierTable.Rows)
+            {
+                autoCollection.Add(row["SupplierName"].ToString());
+            }
+
+            cmbSupllier.AutoCompleteCustomSource = autoCollection;
+            cmbSupllier.AutoCompleteMode = AutoCompleteMode.SuggestAppend;
+            cmbSupllier.AutoCompleteSource = AutoCompleteSource.CustomSource;
         }
 
         private void ClearAll()
@@ -119,7 +165,7 @@ namespace SPApplication.Transaction
         string UserClause = string.Empty;
         bool DateFlag = false;
         bool IDFlag = false;
-        
+
         protected void FillGrid()
         {
             MainQuery = string.Empty;
@@ -211,12 +257,24 @@ namespace SPApplication.Transaction
                 lblWadName.Text = "";
                 objRL.Get_Wad_Records_By_Id(WadId);
 
-                if (!string.IsNullOrEmpty(Convert.ToString(objRL.WadName)))
-                    WadName = objRL.WadName;
+                objRL.FillWadDetailsRichTextBox(rtbWadDetails, WadId);
 
-                lblWadName.Text = objRL.WadName.ToString();
-                lblWadName.BackColor = Color.Yellow;
-                txtInvoiceNumber.Focus();
+                if (!string.IsNullOrEmpty(objRL.WadDetails_RTB))
+                {
+                    rtbWadDetails.Visible = true;
+                    lbWad.Visible = false;
+                    WadId = Convert.ToInt32(objRL.WadId);
+                    lblWadName.Text = objRL.WadName.ToString();
+                    lblWadName.BackColor = Color.Yellow;
+                    cmbQCCheckerName.Focus();
+                }
+                else
+                    lbWad.Visible = true;
+
+                //if (!string.IsNullOrEmpty(Convert.ToString(objRL.WadName)))
+                //    WadName = objRL.WadName;
+
+
             }
         }
 
@@ -229,7 +287,7 @@ namespace SPApplication.Transaction
                 if (dgvValues.Rows.Count == 0)
                 {
                     dgvValues.Rows.Add();
-                     Grid_Serial_Number();
+                    Grid_Serial_Number();
                 }
                 Grid_Serial_Number();
             }
@@ -266,10 +324,10 @@ namespace SPApplication.Transaction
                 objEP.SetError(txtInvoiceNumber, "Enter Invoice Number");
                 return true;
             }
-            else if (cmbSupllier.SelectedIndex == -1)
+            else if (SupplierId == 0)
             {
-                cmbSupllier.Focus();
-                objEP.SetError(cmbSupllier, "Enter Supllier");
+                txtSearchSupplier.Focus();
+                objEP.SetError(txtSearchSupplier, "Enter Supllier");
                 return true;
             }
             else if (cmbQCCheckerName.SelectedIndex == -1)
@@ -290,11 +348,14 @@ namespace SPApplication.Transaction
 
         int WadQualityControlId = 0;
         static int dgvRowIndex;
+        int OuterDiaResult = 0, ThicknessResult = 0, WeightResult = 0, AverageWeightResult = 0, VisualAppearanceResult = 0, PrintQualityResult = 0, SideFinishingResult = 0, BendResult = 0, FitmentWithCapResult = 0, InkTestResult = 0, IndSealTestResult = 0;
 
-        string Type_I = string.Empty, CustmerLogo = string.Empty, PrintQuality = string.Empty, BoardThikness = string.Empty, BoardType = string.Empty, FoilThikness = string.Empty, FoilSpecs = string.Empty, SealantThikness = string.Empty, SealentSpecs = string.Empty, OuterDia = string.Empty, Thikness = string.Empty, Weight = string.Empty, AverageWeight = string.Empty, VisualAppearance = string.Empty, SideFinishing = string.Empty, Bend = string.Empty, FitmentWithCap = string.Empty, InkTest = string.Empty, IndSealTest = string.Empty;
+        string Type_I = string.Empty, CustmerLogo = string.Empty, PrintQuality = string.Empty, BoardThikness = string.Empty, BoardType = string.Empty, FoilThikness = string.Empty, FoilSpecs = string.Empty, SealantThikness = string.Empty, SealentSpecs = string.Empty, OuterDia = string.Empty, Thickness = string.Empty, Weight = string.Empty, AverageWeight = string.Empty, VisualAppearance = string.Empty, SideFinishing = string.Empty, Bend = string.Empty, FitmentWithCap = string.Empty, InkTest = string.Empty, IndSealTest = string.Empty;
+
         private void ClearGrid_Values()
         {
-            WadQualityControlId = 0; Type_I = string.Empty; CustmerLogo = string.Empty; PrintQuality = string.Empty; BoardThikness = string.Empty; BoardType = string.Empty; FoilThikness = string.Empty; FoilSpecs = string.Empty; SealantThikness = string.Empty; SealentSpecs = string.Empty; OuterDia = string.Empty; Thikness = string.Empty; Weight = string.Empty; AverageWeight = string.Empty; VisualAppearance = string.Empty; SideFinishing = string.Empty; Bend = string.Empty; FitmentWithCap = string.Empty;  InkTest = string.Empty; IndSealTest = string.Empty;
+            WadQualityControlId = 0; Type_I = string.Empty; CustmerLogo = string.Empty; PrintQuality = string.Empty; BoardThikness = string.Empty; BoardType = string.Empty; FoilThikness = string.Empty; FoilSpecs = string.Empty; SealantThikness = string.Empty; SealentSpecs = string.Empty; OuterDia = string.Empty; Thickness = string.Empty; Weight = string.Empty; AverageWeight = string.Empty; VisualAppearance = string.Empty; SideFinishing = string.Empty; Bend = string.Empty; FitmentWithCap = string.Empty; InkTest = string.Empty; IndSealTest = string.Empty;
+            OuterDiaResult = 0; ThicknessResult = 0; WeightResult = 0; AverageWeightResult = 0; VisualAppearanceResult = 0; PrintQualityResult = 0; SideFinishingResult = 0; BendResult = 0; FitmentWithCapResult = 0; InkTestResult = 0; IndSealTestResult = 0;
         }
 
 
@@ -338,6 +399,12 @@ namespace SPApplication.Transaction
                 objEP.SetError(dgvValues, "Enter QC Entry");
                 return true;
             }
+            else if (SupplierId == 0)
+            {
+                txtSearchSupplier.Focus();
+                objEP.SetError(txtSearchSupplier, "Select Supplier");
+                return true;
+            }
             //else if (!ValidateDataGridView())
             //{
             //    return true;
@@ -359,11 +426,11 @@ namespace SPApplication.Transaction
                 WadQualityControlId = 0;
 
                 if (TableID == 0)
-                    objBL.Query = "insert into WadQualityControl(EntryDate,EntryTime,WadId,InvoiceNumber,SupplierId,QCCheckerId,UserId) values('" + dtpDate.Value.ToShortDateString() + "','" + dtpTime.Value.ToShortTimeString() + "'," + WadId + ",'" + txtInvoiceNumber.Text + "'," + cmbSupllier.SelectedValue + "," + cmbQCCheckerName.SelectedValue + "," + BusinessLayer.UserId_Static + ") ";
+                    objBL.Query = "insert into WadQualityControl(EntryDate,EntryTime,WadId,InvoiceNumber,SupplierId,QCCheckerId,UserId) values('" + dtpDate.Value.ToShortDateString() + "','" + dtpTime.Value.ToShortTimeString() + "'," + WadId + ",'" + txtInvoiceNumber.Text + "'," + SupplierId + "," + cmbQCCheckerName.SelectedValue + "," + BusinessLayer.UserId_Static + ") ";
                 else
                 {
                     if (!FlagDelete)
-                        objBL.Query = "Update WadQualityControl set WadId=" + WadId + ",InvoiceNumber='" + txtInvoiceNumber.Text + "',SupplierId=" + cmbSupllier.SelectedValue + ",QCCheckerId=" + cmbQCCheckerName.SelectedValue + ",ModifiedId=" + BusinessLayer.UserId_Static + " where ID=" + TableID + " ";
+                        objBL.Query = "Update WadQualityControl set WadId=" + WadId + ",InvoiceNumber='" + txtInvoiceNumber.Text + "',SupplierId=" + SupplierId + ",QCCheckerId=" + cmbQCCheckerName.SelectedValue + ",ModifiedId=" + BusinessLayer.UserId_Static + " where ID=" + TableID + " ";
                     else
                         objBL.Query = "Delete from WadQualityControl where ID=" + TableID + " ";
                 }
@@ -376,11 +443,8 @@ namespace SPApplication.Transaction
                         TableID = objRL.ReturnMaxID_Fix("WadQualityControl", "ID");
                     else
                     {
-                        if (FlagDelete)
-                        {
-                            objBL.Query = "Delete from WadQualityControlValues where ID=" + TableID + " ";
-                            Result = objBL.Function_ExecuteNonQuery();
-                        }
+                        objBL.Query = "Delete from WadQualityControlValues where WadQualityControlId=" + TableID + " ";
+                        Result = objBL.Function_ExecuteNonQuery();
                     }
 
                     if (TableID > 0 && dgvValues.Rows.Count > 0 && !FlagDelete)
@@ -388,30 +452,33 @@ namespace SPApplication.Transaction
                         for (int i = 0; i < dgvValues.Rows.Count; i++)
                         {
                             ClearGrid_Values();
-                            if (!string.IsNullOrWhiteSpace(Convert.ToString(dgvValues.Rows[i].Cells["clmType"].Value)) && !string.IsNullOrWhiteSpace(Convert.ToString(dgvValues.Rows[i].Cells["clmOuterDia"].Value)))
+                            if (!string.IsNullOrWhiteSpace(Convert.ToString(dgvValues.Rows[i].Cells["clmOuterDia"].Value)) && !string.IsNullOrWhiteSpace(Convert.ToString(dgvValues.Rows[i].Cells["clmThickness"].Value)))
                             {
-
-                                Type_I = objRL.Check_Null_String(Convert.ToString(dgvValues.Rows[i].Cells["clmType"].Value));
-                                CustmerLogo = objRL.Check_Null_String(Convert.ToString(dgvValues.Rows[i].Cells["clmCustmerLogo"].Value));
-                                PrintQuality = objRL.Check_Null_String(Convert.ToString(dgvValues.Rows[i].Cells["clmPrintQuality"].Value));
-                                BoardThikness = objRL.Check_Null_String(Convert.ToString(dgvValues.Rows[i].Cells["clmBoardThikness"].Value));
-                                BoardType = objRL.Check_Null_String(Convert.ToString(dgvValues.Rows[i].Cells["clmBoardType"].Value));
-                                FoilThikness = objRL.Check_Null_String(Convert.ToString(dgvValues.Rows[i].Cells["clmFoilThikness"].Value));
-                                FoilSpecs = objRL.Check_Null_String(Convert.ToString(dgvValues.Rows[i].Cells["clmFoilSpecs"].Value));
-                                SealantThikness = objRL.Check_Null_String(Convert.ToString(dgvValues.Rows[i].Cells["clmSealantThikness"].Value));
-                                SealentSpecs = objRL.Check_Null_String(Convert.ToString(dgvValues.Rows[i].Cells["clmSealentSpecs"].Value));
                                 OuterDia = objRL.Check_Null_String(Convert.ToString(dgvValues.Rows[i].Cells["clmOuterDia"].Value));
-                                Thikness = objRL.Check_Null_String(Convert.ToString(dgvValues.Rows[i].Cells["clmThikness"].Value));
+                                OuterDiaResult = objRL.Check_Null_Integer(objRL.Check_Null_String(Convert.ToString(dgvValues.Rows[i].Cells["clmOuterDiaResult"].Value)));
+                                Thickness = objRL.Check_Null_String(Convert.ToString(dgvValues.Rows[i].Cells["clmThickness"].Value));
+                                ThicknessResult = objRL.Check_Null_Integer(objRL.Check_Null_String(Convert.ToString(dgvValues.Rows[i].Cells["clmThicknessResult"].Value)));
                                 Weight = objRL.Check_Null_String(Convert.ToString(dgvValues.Rows[i].Cells["clmWeight"].Value));
+                                WeightResult = objRL.Check_Null_Integer(objRL.Check_Null_String(Convert.ToString(dgvValues.Rows[i].Cells["clmWeightResult"].Value)));
                                 AverageWeight = objRL.Check_Null_String(Convert.ToString(dgvValues.Rows[i].Cells["clmAverageWeight"].Value));
+                                AverageWeightResult = objRL.Check_Null_Integer(objRL.Check_Null_String(Convert.ToString(dgvValues.Rows[i].Cells["clmAverageWeightResult"].Value)));
                                 VisualAppearance = objRL.Check_Null_String(Convert.ToString(dgvValues.Rows[i].Cells["clmVisualAppearance"].Value));
+                                VisualAppearanceResult = objRL.Check_Null_Integer(objRL.Check_Null_String(Convert.ToString(dgvValues.Rows[i].Cells["clmVisualAppearanceResult"].Value)));
+                                PrintQuality = objRL.Check_Null_String(Convert.ToString(dgvValues.Rows[i].Cells["clmPrintQuality"].Value));
+                                PrintQualityResult = objRL.Check_Null_Integer(objRL.Check_Null_String(Convert.ToString(dgvValues.Rows[i].Cells["clmPrintQualityResult"].Value)));
                                 SideFinishing = objRL.Check_Null_String(Convert.ToString(dgvValues.Rows[i].Cells["clmSideFinishing"].Value));
+                                SideFinishingResult = objRL.Check_Null_Integer(objRL.Check_Null_String(Convert.ToString(dgvValues.Rows[i].Cells["clmSideFinishingResult"].Value)));
                                 Bend = objRL.Check_Null_String(Convert.ToString(dgvValues.Rows[i].Cells["clmBend"].Value));
+                                BendResult = objRL.Check_Null_Integer(objRL.Check_Null_String(Convert.ToString(dgvValues.Rows[i].Cells["clmBendResult"].Value)));
                                 FitmentWithCap = objRL.Check_Null_String(Convert.ToString(dgvValues.Rows[i].Cells["clmFitmentWithCap"].Value));
+                                FitmentWithCapResult = objRL.Check_Null_Integer(objRL.Check_Null_String(Convert.ToString(dgvValues.Rows[i].Cells["clmFitmentWithCapResult"].Value)));
                                 InkTest = objRL.Check_Null_String(Convert.ToString(dgvValues.Rows[i].Cells["clmInkTest"].Value));
+                                InkTestResult = objRL.Check_Null_Integer(objRL.Check_Null_String(Convert.ToString(dgvValues.Rows[i].Cells["clmInkTestResult"].Value)));
                                 IndSealTest = objRL.Check_Null_String(Convert.ToString(dgvValues.Rows[i].Cells["clmIndSealTest"].Value));
+                                IndSealTestResult = objRL.Check_Null_Integer(objRL.Check_Null_String(Convert.ToString(dgvValues.Rows[i].Cells["clmIndSealTestResult"].Value)));
 
-                                objBL.Query = "insert into WadQualityControlValues(EntryDate,EntryTime,WadId,WadQualityControlId,[Type],CustmerLogo,PrintQuality,BoardThikness,BoardType,FoilThikness,FoilSpecs,SealantThikness,SealentSpecs,OuterDia,Thikness,Weight,AverageWeight,VisualAppearance,SideFinishing,Bend,FitmentWithCap,InkTest,IndSealTest,UserId) values('" + dtpDate.Value.ToShortDateString() + "','" + dtpTime.Value.ToShortTimeString() + "'," + WadId + "," + TableID + ",'" + Type_I + "','" + CustmerLogo + "','" + PrintQuality + "','" + BoardThikness + "','" + BoardType + "','" + FoilThikness + "','" + FoilSpecs + "','" + SealantThikness + "','" + SealentSpecs + "','" + OuterDia + "','" + Thikness + "','" + Weight + "','" + AverageWeight + "','" + VisualAppearance + "','" + SideFinishing + "','" + Bend + "','" + FitmentWithCap + "','" + InkTest + "','" + IndSealTest + "'," + BusinessLayer.UserId_Static + ")";
+
+                                objBL.Query = "insert into WadQualityControlValues(EntryDate,EntryTime,WadId,WadQualityControlId,OuterDia,OuterDiaResult,Thickness,ThicknessResult,Weight,WeightResult,AverageWeight,AverageWeightResult,VisualAppearance,VisualAppearanceResult,PrintQuality,PrintQualityResult,SideFinishing,SideFinishingResult,Bend,BendResult,FitmentWithCap,FitmentWithCapResult,InkTest,InkTestResult,IndSealTest,IndSealTestResult,UserId) values('" + dtpDate.Value.ToShortDateString() + "','" + dtpTime.Value.ToShortTimeString() + "'," + WadId + "," + TableID + ",'" + OuterDia + "'," + OuterDiaResult + ",'" + Thickness + "'," + ThicknessResult + ",'" + Weight + "'," + WeightResult + ",'" + AverageWeight + "'," + AverageWeightResult + ",'" + VisualAppearance + "'," + VisualAppearanceResult + ",'" + PrintQuality + "'," + PrintQualityResult + ",'" + SideFinishing + "'," + SideFinishingResult + ",'" + Bend + "'," + BendResult + ",'" + FitmentWithCap + "'," + FitmentWithCapResult + ",'" + InkTest + "'," + InkTestResult + ",'" + IndSealTest + "'," + IndSealTestResult + "," + BusinessLayer.UserId_Static + ")";
                                 Result = objBL.Function_ExecuteNonQuery();
 
                                 if (Result > 0)
@@ -452,6 +519,14 @@ namespace SPApplication.Transaction
                 {
                     int ColInd = e.ColumnIndex;
 
+                    // Get the column name
+                    string columnName = dgvValues.Columns[e.ColumnIndex].Name;
+                    
+                    // Optionally, get the new value of the edited cell
+                    //object newValue = dgv.Rows[e.RowIndex].Cells[e.ColumnIndex].Value;
+
+                    // Debug output
+                    //Console.WriteLine($"Edited column: {columnName}, New value: {newValue}");
 
                     //0 Id  ||
                     //1 Sr.No     ||
@@ -477,27 +552,32 @@ namespace SPApplication.Transaction
                     //18 Leak Test
                     //19 Drop Test
                     //20 Top Load Test
+                    int CID = 0;
 
-                    if (ColInd == 11 || ColInd == 12 || ColInd == 13 || ColInd == 14) // || ColInd == 10 || ColInd == 11 || ColInd == 12 || ColInd == 13 || ColInd == 14 || ColInd == 16 || ColInd == 18)//  || ColInd == 12)//  || ColInd == 10 || ColInd == 11 || ColInd == 12)
+                    if (ColInd == 2 || ColInd == 4 || ColInd == 6 || ColInd == 8 || ColInd == 9 || ColInd == 10 || ColInd == 11 || ColInd == 12)//  || ColInd == 12)//  || ColInd == 10 || ColInd == 11 || ColInd == 12)
                     {
                         if (!string.IsNullOrEmpty(Convert.ToString(dgvValues.Rows[e.RowIndex].Cells[e.ColumnIndex].Value)))
                         {
                             double ColumnValue = 0;
                             ColumnValue = objRL.Check_Null_Double(objRL.Check_Null_String(Convert.ToString(dgvValues.Rows[e.RowIndex].Cells[e.ColumnIndex].Value)));
-                            CheckTollarance(e.ColumnIndex, ColumnValue);
+                            CheckTollarance(columnName, ColumnValue);
 
                             if (ResultValue)
+                            {
                                 dgvValues.Rows[e.RowIndex].Cells[e.ColumnIndex].Style.BackColor = Color.Red;
+                                CID = e.ColumnIndex + 1;
+                                dgvValues.Rows[e.RowIndex].Cells[CID].Value = 1;
+                            }
                             else
                             {
-
+                                dgvValues.Rows[e.RowIndex].Cells[CID].Value = 0;
                                 //if (ColInd == 2)
                                 //    dgvValues.Rows[e.RowIndex].Cells[e.ColumnIndex].Style.BackColor = Color.LavenderBlush;
                                 //else if (ColInd == 4 || ColInd == 5 || ColInd == 6 || ColInd == 7 || ColInd == 8)
                                 //    dgvValues.Rows[e.RowIndex].Cells[e.ColumnIndex].Style.BackColor = Color.Honeydew;
                                 //else if (ColInd == 9 || ColInd == 10 || ColInd == 11 || ColInd == 12 || ColInd == 13)
 
-                                if (ColInd == 11 || ColInd == 12 || ColInd == 13 || ColInd == 14)
+                                if (ColInd == 2 || ColInd == 3 || ColInd == 4 || ColInd == 5)
                                     dgvValues.Rows[e.RowIndex].Cells[e.ColumnIndex].Style.BackColor = Color.LemonChiffon;
                                 else
                                     dgvValues.Rows[e.RowIndex].Cells[e.ColumnIndex].Style.BackColor = Color.White;
@@ -506,14 +586,13 @@ namespace SPApplication.Transaction
                             if (NullValueFlag)
                                 dgvValues.Rows[e.RowIndex].Cells[e.ColumnIndex].Value = null;
 
-                            if (ColInd == 6 || ColInd == 17 || ColInd == 18 || ColInd == 20 || ColInd == 22)
+                            if (ColInd == 6 || ColInd == 7 || ColInd == 8 || ColInd == 10 || ColInd == 12)
                             {
                                 Set_OK_Value(e.RowIndex);
                             }
 
                             btnSave.Enabled = true;
                         }
-                         
                     }
                 }
             }
@@ -527,11 +606,11 @@ namespace SPApplication.Transaction
         private void Set_OK_Value(int RowIndexDGV)
         {
             //ColInd == 12 || ColInd == 13 || ColInd == 14 || ColInd == 16 || ColInd == 18)
+            dgvValues.Rows[RowIndexDGV].Cells[6].Value = "Ok";
+            dgvValues.Rows[RowIndexDGV].Cells[7].Value = "Ok";
+            dgvValues.Rows[RowIndexDGV].Cells[8].Value = "Ok";
+            dgvValues.Rows[RowIndexDGV].Cells[10].Value = "Ok";
             dgvValues.Rows[RowIndexDGV].Cells[12].Value = "Ok";
-            dgvValues.Rows[RowIndexDGV].Cells[13].Value = "Ok";
-            dgvValues.Rows[RowIndexDGV].Cells[14].Value = "Ok";
-            dgvValues.Rows[RowIndexDGV].Cells[16].Value = "Ok";
-            dgvValues.Rows[RowIndexDGV].Cells[18].Value = "Ok";
             //dgvValues.Rows[RowIndexDGV].Cells[17].Value = "Ok";
             //dgvValues.Rows[RowIndexDGV].Cells[18].Value = "Ok";
             //dgvValues.Rows[RowIndexDGV].Cells[19].Value = "Ok";
@@ -543,7 +622,7 @@ namespace SPApplication.Transaction
             //    dgvValues.Rows[RowIndexDGV].Cells[21].Value = "Yes";
         }
 
-        public void CheckTollarance(int ColumnIndex, double ColumnValue)
+        public void CheckTollarance(string ColumnIndex, double ColumnValue)
         {
             //double MinValue, double MaxValue
             switch (ColumnIndex)
@@ -574,16 +653,16 @@ namespace SPApplication.Transaction
 
                 //ColInd == 6 || ColInd == 7 || ColInd == 8 || ColInd == 9)
 
-                case 11: //ProductWeight   Datagridviewcolumn- //02 Weight
+                case "clmOuterDia": //ProductWeight   Datagridviewcolumn- //02 Weight
                     SetRemark(ColumnValue.ToString(), objRL.OuterDiaMinValue, objRL.OuterDiaMaxValue);
                     break;
-                case 12: //ProductNeckSize Datagridviewcolumn- //04 Size
+                case "clmThickness": //ProductNeckSize Datagridviewcolumn- //04 Size
                     SetRemark(ColumnValue.ToString(), objRL.ThicknessMinValue, objRL.ThicknessMaxValue);
                     break;
-                case 13: //ProductNeckID    Datagridviewcolumn- //05 Inner Dia
+                case "clmWeight": //ProductNeckID    Datagridviewcolumn- //05 Inner Dia
                     SetRemark(ColumnValue.ToString(), objRL.WeightMinValue, objRL.WeightMaxValue);
                     break;
-                case 14: //ProductNeckOD Datagridviewcolumn- //06 Outer Dia
+                case "clmAverageWeight": //ProductNeckOD Datagridviewcolumn- //06 Outer Dia
                     SetRemark(ColumnValue.ToString(), objRL.AverageWeightMinValue, objRL.AverageWeightMaxValue);
                     break;
             }
@@ -642,7 +721,7 @@ namespace SPApplication.Transaction
             e.Control.KeyPress -= new KeyPressEventHandler(Column1_KeyPress);
             int ColInd = dgvValues.CurrentCell.ColumnIndex;
             // if (dataGridView1.CurrentCell.ColumnIndex == 0) //Desired Column
-            if (ColInd == 11 || ColInd == 12 || ColInd == 13 || ColInd ==14 || ColInd == 5 || ColInd == 7 || ColInd == 9) // || ColInd == 10 || ColInd == 11 || ColInd == 12)
+            if (ColInd == 11 || ColInd == 12 || ColInd == 13 || ColInd == 14 || ColInd == 5 || ColInd == 7 || ColInd == 9) // || ColInd == 10 || ColInd == 11 || ColInd == 12)
             {
                 System.Windows.Forms.TextBox tb = e.Control as System.Windows.Forms.TextBox;
                 if (tb != null)
@@ -706,7 +785,8 @@ namespace SPApplication.Transaction
                     WadId = objRL.Check_Null_Integer(objRL.Check_Null_String(Convert.ToString(dataGridView1.Rows[e.RowIndex].Cells[3].Value)));
                     Fill_Wad_Information();
                     txtInvoiceNumber.Text = objRL.Check_Null_String(Convert.ToString(dataGridView1.Rows[e.RowIndex].Cells[5].Value));
-                    cmbSupllier.Text = objRL.Check_Null_String(Convert.ToString(dataGridView1.Rows[e.RowIndex].Cells[7].Value));
+                    SupplierId = objRL.Check_Null_Integer(objRL.Check_Null_String(Convert.ToString(dataGridView1.Rows[e.RowIndex].Cells[6].Value)));
+                    txtSearchSupplier.Text = objRL.Check_Null_String(Convert.ToString(dataGridView1.Rows[e.RowIndex].Cells[7].Value));
                     cmbQCCheckerName.Text = objRL.Check_Null_String(Convert.ToString(dataGridView1.Rows[e.RowIndex].Cells[9].Value));
                     Fill_QC_Values_Grid();
                 }
@@ -735,43 +815,66 @@ namespace SPApplication.Transaction
                 {
                     ClearGrid_Values();
                     dgvValues.Rows.Add();
-                    dgvValues.Rows[i].Cells["clmType"].Value = objRL.Check_Null_String(Convert.ToString(ds.Tables[0].Rows[i]["Type"]));
-                    dgvValues.Rows[i].Cells["clmCustmerLogo"].Value = objRL.Check_Null_String(Convert.ToString(ds.Tables[0].Rows[i]["CustmerLogo"]));
-                    dgvValues.Rows[i].Cells["clmPrintQuality"].Value = objRL.Check_Null_String(Convert.ToString(ds.Tables[0].Rows[i]["PrintQuality"]));
 
-                    dgvValues.Rows[i].Cells["clmBoardThikness"].Value = objRL.Check_Null_String(Convert.ToString(ds.Tables[0].Rows[i]["BoardThikness"]));
-                    dgvValues.Rows[i].Cells["clmBoardType"].Value = objRL.Check_Null_String(Convert.ToString(ds.Tables[0].Rows[i]["BoardType"]));
-                    dgvValues.Rows[i].Cells["clmFoilThikness"].Value = objRL.Check_Null_String(Convert.ToString(ds.Tables[0].Rows[i]["FoilThikness"]));
-                    dgvValues.Rows[i].Cells["clmFoilSpecs"].Value = objRL.Check_Null_String(Convert.ToString(ds.Tables[0].Rows[i]["FoilSpecs"]));
-                    dgvValues.Rows[i].Cells["clmSealantThikness"].Value = objRL.Check_Null_String(Convert.ToString(ds.Tables[0].Rows[i]["SealantThikness"]));
-                    dgvValues.Rows[i].Cells["clmSealentSpecs"].Value = objRL.Check_Null_String(Convert.ToString(ds.Tables[0].Rows[i]["SealentSpecs"]));
-                    
+                    //dgvValues.Rows[i].Cells["clmType"].Value = objRL.Check_Null_String(Convert.ToString(ds.Tables[0].Rows[i]["Type"]));
+                    //dgvValues.Rows[i].Cells["clmCustmerLogo"].Value = objRL.Check_Null_String(Convert.ToString(ds.Tables[0].Rows[i]["CustmerLogo"]));
+                    //dgvValues.Rows[i].Cells["clmBoardThikness"].Value = objRL.Check_Null_String(Convert.ToString(ds.Tables[0].Rows[i]["BoardThikness"]));
+                    //dgvValues.Rows[i].Cells["clmBoardType"].Value = objRL.Check_Null_String(Convert.ToString(ds.Tables[0].Rows[i]["BoardType"]));
+                    //dgvValues.Rows[i].Cells["clmFoilThikness"].Value = objRL.Check_Null_String(Convert.ToString(ds.Tables[0].Rows[i]["FoilThikness"]));
+                    //dgvValues.Rows[i].Cells["clmFoilSpecs"].Value = objRL.Check_Null_String(Convert.ToString(ds.Tables[0].Rows[i]["FoilSpecs"]));
+                    //dgvValues.Rows[i].Cells["clmSealantThikness"].Value = objRL.Check_Null_String(Convert.ToString(ds.Tables[0].Rows[i]["SealantThikness"]));
+                    //dgvValues.Rows[i].Cells["clmSealentSpecs"].Value = objRL.Check_Null_String(Convert.ToString(ds.Tables[0].Rows[i]["SealentSpecs"]));
+
                     dgvValues.Rows[i].Cells["clmOuterDia"].Value = objRL.Check_Null_String(Convert.ToString(ds.Tables[0].Rows[i]["OuterDia"]));
-                    CheckTollarance(11, objRL.Check_Null_Double(objRL.Check_Null_String(Convert.ToString(ds.Tables[0].Rows[i]["OuterDia"]))));
+                    dgvValues.Rows[i].Cells["clmOuterDiaResult"].Value = objRL.Check_Null_Integer(objRL.Check_Null_String(Convert.ToString(ds.Tables[0].Rows[i]["OuterDiaResult"])));
+                    CheckTollarance("clmOuterDia", objRL.Check_Null_Double(objRL.Check_Null_String(Convert.ToString(ds.Tables[0].Rows[i]["OuterDia"]))));
                     if (ResultValue)
+                    {
                         dgvValues.Rows[i].Cells["clmOuterDia"].Style.BackColor = Color.Red;
+                        dgvValues.Rows[i].Cells["clmOuterDiaResult"].Value = 1;
+                    }
                     
-                    dgvValues.Rows[i].Cells["clmThikness"].Value = objRL.Check_Null_String(Convert.ToString(ds.Tables[0].Rows[i]["Thikness"]));
-                    CheckTollarance(12, objRL.Check_Null_Double(objRL.Check_Null_String(Convert.ToString(ds.Tables[0].Rows[i]["Thikness"]))));
+                    dgvValues.Rows[i].Cells["clmThickness"].Value = objRL.Check_Null_String(Convert.ToString(ds.Tables[0].Rows[i]["Thickness"]));
+                    dgvValues.Rows[i].Cells["clmThicknessResult"].Value = objRL.Check_Null_Integer(objRL.Check_Null_String(Convert.ToString(ds.Tables[0].Rows[i]["ThicknessResult"])));
+                    CheckTollarance("clmThickness", objRL.Check_Null_Double(objRL.Check_Null_String(Convert.ToString(ds.Tables[0].Rows[i]["Thickness"]))));
                     if (ResultValue)
-                        dgvValues.Rows[i].Cells["clmThikness"].Style.BackColor = Color.Red;
+                    {
+                        dgvValues.Rows[i].Cells["clmThickness"].Style.BackColor = Color.Red;
+                        dgvValues.Rows[i].Cells["clmThicknessResult"].Value = 1;
+                    }
 
                     dgvValues.Rows[i].Cells["clmWeight"].Value = objRL.Check_Null_String(Convert.ToString(ds.Tables[0].Rows[i]["Weight"]));
-                    CheckTollarance(13, objRL.Check_Null_Double(objRL.Check_Null_String(Convert.ToString(ds.Tables[0].Rows[i]["Weight"]))));
+                    dgvValues.Rows[i].Cells["clmWeightResult"].Value = objRL.Check_Null_Integer(objRL.Check_Null_String(Convert.ToString(ds.Tables[0].Rows[i]["WeightResult"])));
+                    CheckTollarance("clmWeight", objRL.Check_Null_Double(objRL.Check_Null_String(Convert.ToString(ds.Tables[0].Rows[i]["Weight"]))));
                     if (ResultValue)
+                    {
                         dgvValues.Rows[i].Cells["clmWeight"].Style.BackColor = Color.Red;
+                        dgvValues.Rows[i].Cells["clmWeightResult"].Value = 1;
+                    }
 
                     dgvValues.Rows[i].Cells["clmAverageWeight"].Value = objRL.Check_Null_String(Convert.ToString(ds.Tables[0].Rows[i]["AverageWeight"]));
-                    CheckTollarance(14, objRL.Check_Null_Double(objRL.Check_Null_String(Convert.ToString(ds.Tables[0].Rows[i]["AverageWeight"]))));
+                    dgvValues.Rows[i].Cells["clmAverageWeightResult"].Value = objRL.Check_Null_Integer(objRL.Check_Null_String(Convert.ToString(ds.Tables[0].Rows[i]["AverageWeightResult"])));
+                    CheckTollarance("clmAverageWeight", objRL.Check_Null_Double(objRL.Check_Null_String(Convert.ToString(ds.Tables[0].Rows[i]["AverageWeight"]))));
                     if (ResultValue)
+                    {
                         dgvValues.Rows[i].Cells["clmAverageWeight"].Style.BackColor = Color.Red;
+                        dgvValues.Rows[i].Cells["clmAverageWeightResult"].Value = 1;
+                    }
 
                     dgvValues.Rows[i].Cells["clmVisualAppearance"].Value = objRL.Check_Null_String(Convert.ToString(ds.Tables[0].Rows[i]["VisualAppearance"]));
+                    dgvValues.Rows[i].Cells["clmVisualAppearanceResult"].Value = objRL.Check_Null_Integer(objRL.Check_Null_String(Convert.ToString(ds.Tables[0].Rows[i]["VisualAppearanceResult"])));
+                    dgvValues.Rows[i].Cells["clmPrintQuality"].Value = objRL.Check_Null_String(Convert.ToString(ds.Tables[0].Rows[i]["PrintQuality"]));
+                    dgvValues.Rows[i].Cells["clmPrintQualityResult"].Value = objRL.Check_Null_Integer(objRL.Check_Null_String(Convert.ToString(ds.Tables[0].Rows[i]["PrintQualityResult"])));
                     dgvValues.Rows[i].Cells["clmSideFinishing"].Value = objRL.Check_Null_String(Convert.ToString(ds.Tables[0].Rows[i]["SideFinishing"]));
+                    dgvValues.Rows[i].Cells["clmSideFinishingResult"].Value = objRL.Check_Null_Integer(objRL.Check_Null_String(Convert.ToString(ds.Tables[0].Rows[i]["SideFinishingResult"])));
                     dgvValues.Rows[i].Cells["clmBend"].Value = objRL.Check_Null_String(Convert.ToString(ds.Tables[0].Rows[i]["Bend"]));
+                    dgvValues.Rows[i].Cells["clmBendResult"].Value = objRL.Check_Null_Integer(objRL.Check_Null_String(Convert.ToString(ds.Tables[0].Rows[i]["BendResult"])));
                     dgvValues.Rows[i].Cells["clmFitmentWithCap"].Value = objRL.Check_Null_String(Convert.ToString(ds.Tables[0].Rows[i]["FitmentWithCap"]));
+                    dgvValues.Rows[i].Cells["clmFitmentWithCapResult"].Value = objRL.Check_Null_Integer(objRL.Check_Null_String(Convert.ToString(ds.Tables[0].Rows[i]["FitmentWithCapResult"])));
                     dgvValues.Rows[i].Cells["clmInkTest"].Value = objRL.Check_Null_String(Convert.ToString(ds.Tables[0].Rows[i]["InkTest"])); ;
+                    dgvValues.Rows[i].Cells["clmInkTestResult"].Value = objRL.Check_Null_Integer(objRL.Check_Null_String(Convert.ToString(ds.Tables[0].Rows[i]["InkTestResult"])));
                     dgvValues.Rows[i].Cells["clmIndSealTest"].Value = objRL.Check_Null_String(Convert.ToString(ds.Tables[0].Rows[i]["IndSealTest"]));
+                    dgvValues.Rows[i].Cells["clmIndSealTestResult"].Value = objRL.Check_Null_Integer(objRL.Check_Null_String(Convert.ToString(ds.Tables[0].Rows[i]["IndSealTestResult"])));
                 }
                 Grid_Serial_Number();
             }
@@ -817,6 +920,267 @@ namespace SPApplication.Transaction
         private void btnClear_Click(object sender, EventArgs e)
         {
             ClearAll();
+        }
+
+        //private Dictionary<string, int> supplierDict = new Dictionary<string, int>();
+        Dictionary<string, int> supplierDict = new Dictionary<string, int>();
+
+        //private void cmbSupllier_TextChanged(object sender, EventArgs e)
+        //{
+        //    string typedText = cmbSupllier.Text.ToLower();
+        //    var filteredList = suppliers
+        //        .Where(item => item.ToLower().Contains(typedText))
+        //        .ToArray();
+
+        //    var autoSource = new AutoCompleteStringCollection();
+        //    autoSource.AddRange(filteredList);
+
+        //    cmbSupllier.AutoCompleteCustomSource = autoSource;
+        //}
+
+        //private void InitializeComboBox()
+        //{
+        //    cmbSupllier.AutoCompleteMode = AutoCompleteMode.SuggestAppend;
+        //    cmbSupllier.AutoCompleteSource = AutoCompleteSource.CustomSource;
+        //    cmbSupllier.DropDownStyle = ComboBoxStyle.DropDown;
+
+        //    // Set up the AutoCompleteCustomSource initially
+        //    var autoSource = new AutoCompleteStringCollection();
+        //    autoSource.AddRange(dataSource.ToArray());
+        //    cmbSupllier.AutoCompleteCustomSource = autoSource;
+
+        //    // Optional: Bind to dropdown list as well
+        //    cmbSupllier.Items.AddRange(dataSource.ToArray());
+
+        //    // Handle text changed event
+        //    cmbSupllier.TextChanged += cmbSupllier_TextChanged;
+        //}
+
+        //List<SupplierClass> suppliers = new List<SupplierClass>();
+        OleDbDataReader reader;
+
+        //// Load data from MySQL
+        //private void LoadSuppliersFromDatabase()
+        //{
+        //    try
+        //    {
+        //        objBL.Query = "SELECT ID, SupplierName FROM suppliers ORDER BY name";
+        //        reader = objBL.ReturnDataReader();
+
+        //        suppliers.Clear();
+
+        //        while (reader.Read())
+        //        {
+        //            suppliers.Add(new SupplierClass
+        //            {
+        //                ID = reader.GetInt32("ID"),
+        //                SupplierName = reader.GetString("SupplierName")
+        //            });
+        //        }
+
+        //        reader.Close();
+        //    }
+        //    catch (Exception ex)
+        //    {
+        //        MessageBox.Show("Error loading data: " + ex.Message);
+        //    }
+        //}
+
+        //private void LoadSuppliers()
+        //{
+        //    // Path to your Access database
+
+        //    objBL.Connect();
+        //    string connectionString = objBL.conString;
+
+        //    string query = "SELECT ID, SupplierName FROM Supplier where CancelTag=0";
+
+        //    AutoCompleteStringCollection autoComplete = new AutoCompleteStringCollection();
+
+        //    using (OleDbConnection conn = new OleDbConnection(connectionString))
+        //    {
+        //        using (OleDbCommand cmd = new OleDbCommand(query, conn))
+        //        {
+        //            conn.Open();
+
+        //            using (OleDbDataReader reader = cmd.ExecuteReader())
+        //            {
+        //                while (reader.Read())
+        //                {
+        //                    int id = reader.GetInt32(0);
+        //                    string name = reader.GetString(1);
+
+        //                    // Add to ComboBox
+        //                    cmbSupllier.Items.Add(name);
+
+        //                    // Add to autocomplete collection
+        //                    autoComplete.Add(name);
+
+        //                    // Save mapping
+        //                    if (!supplierDict.ContainsKey(name))
+        //                        supplierDict.Add(name, id);
+        //                }
+        //            }
+        //        }
+        //    }
+
+        //    cmbSupllier.AutoCompleteCustomSource = autoComplete;
+        //}
+
+        private void cmbSupllier_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            string selectedName = cmbSupllier.Text;
+
+            if (supplierDict.ContainsKey(selectedName))
+            {
+                int selectedID = supplierDict[selectedName];
+                //MessageBox.Show($"Selected Supplier ID: {selectedID}");
+            }
+        }
+
+        private void TxtSearch_TextChanged(object sender, EventArgs e)
+        {
+            objBL.Connect();
+
+            string keyword = txtSearchSupplier.Text.Trim();
+
+            if (keyword.Length == 0)
+            {
+                lstResults.Visible = false;
+                return;
+            }
+
+            // Query Access DB using LIKE
+            string query = "SELECT ID, SupplierName FROM Supplier WHERE SupplierName LIKE @kw";
+
+            lstResults.Items.Clear();
+            supplierDict.Clear();
+
+            //objBL.Query = "SELECT ID, SupplierName FROM Suppliers WHERE SupplierName LIKE @kw ORDER BY SupplierName";
+            //reader = objBL.ReturnDataReader();
+
+            using (OleDbConnection conn = new OleDbConnection(objBL.conString))
+            using (OleDbCommand cmd = new OleDbCommand(query, conn))
+            {
+                cmd.Parameters.AddWithValue("@kw", "%" + keyword + "%");
+
+                conn.Open();
+                using (OleDbDataReader reader = cmd.ExecuteReader())
+                {
+                    while (reader.Read())
+                    {
+                        int ID = reader.GetInt32(0);
+                        string SupplierName = reader.GetString(1);
+
+                        lstResults.Items.Add(SupplierName);
+                        supplierDict[SupplierName] = ID;
+                    }
+                }
+            }
+
+            lstResults.Visible = lstResults.Items.Count > 0;
+           
+        }
+
+
+        int SupplierId = 0; string selectedName = string.Empty, selectedNameGrid = string.Empty;
+
+        private void LstResults_Click(object sender, EventArgs e)
+        {
+            Get_SupplierId();
+        }
+
+        private void LstResults_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                // Do something when Enter is pressed
+                if (lstResults.SelectedItem != null)
+                {
+                    Get_SupplierId();
+                }
+            }
+        }
+
+        private void Get_SupplierId()
+        {
+            SupplierId = 0;selectedName = string.Empty;
+
+            if (lstResults.SelectedItem != null)
+            {
+              
+                selectedName = lstResults.SelectedItem.ToString();
+                
+                txtSearchSupplier.Text = selectedName;
+                lstResults.Visible = false;
+
+                //supplierDict.TryGetValue(selectedName,out 
+
+                if (supplierDict.TryGetValue(selectedName, out SupplierId))
+                {
+                   // MessageBox.Show(SupplierId.ToString());
+                    // You can now use supplierId in your app logic
+                }
+            }
+        }
+
+        private void txtSearchSupplier_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Down)
+            {
+                if (lstResults.Items.Count > 0)
+                {
+                    if (lstResults.SelectedIndex < 0)
+                    {
+                        // No selection yet – select the first item
+                        lstResults.SelectedIndex = 0;
+                    }
+                    else if (lstResults.SelectedIndex < lstResults.Items.Count - 1)
+                    {
+                        // Move to next item
+                        lstResults.SelectedIndex++;
+                    }
+
+                    lstResults.Focus(); // Move focus so Up/Down works in the list
+                    e.Handled = true;
+                }
+            }
+        }
+
+        private void txtSearchWad_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Down)
+            {
+                if (lbWad.Items.Count > 0)
+                {
+                    if (lbWad.SelectedIndex < 0)
+                    {
+                        // No selection yet – select the first item
+                        lbWad.SelectedIndex = 0;
+                    }
+                    else if (lbWad.SelectedIndex < lbWad.Items.Count - 1)
+                    {
+                        // Move to next item
+                        lbWad.SelectedIndex++;
+                    }
+                    lbWad.Focus(); // Move focus so Up/Down works in the list
+                    e.Handled = true;
+                }
+            }
+        }
+
+        private void txtSearchSupplier_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnTollerance_Click(object sender, EventArgs e)
+        {
+            if (WadId != 0)
+            {
+                WadTolerance objForm = new WadTolerance(WadId);
+                objForm.ShowDialog(this);
+            }
         }
     }
 }

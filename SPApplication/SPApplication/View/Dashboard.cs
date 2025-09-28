@@ -423,5 +423,11 @@ namespace SPApplication
             SampleStickers objForm = new SampleStickers();
             objForm.ShowDialog(this);
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            TestTanuja objForm = new TestTanuja();
+            objForm.ShowDialog(this);
+        }
     }
 }

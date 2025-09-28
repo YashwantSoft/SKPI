@@ -189,6 +189,12 @@
     <Compile Include="Master\MachineMaster.Designer.cs">
       <DependentUpon>MachineMaster.cs</DependentUpon>
     </Compile>
+    <Compile Include="Master\TestTanuja.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Master\TestTanuja.Designer.cs">
+      <DependentUpon>TestTanuja.cs</DependentUpon>
+    </Compile>
     <Compile Include="Master\WadMaster.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -231,6 +237,12 @@
     </Compile>
     <Compile Include="Transaction\CapQualityControl.Designer.cs">
       <DependentUpon>CapQualityControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Transaction\CapTolerance.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Transaction\CapTolerance.Designer.cs">
+      <DependentUpon>CapTolerance.cs</DependentUpon>
     </Compile>
     <Compile Include="Transaction\DispatchSchedule.cs">
       <SubType>Form</SubType>
@@ -570,11 +582,11 @@
     <Compile Include="Transaction\ShiftScheduleNew.Designer.cs">
       <DependentUpon>ShiftScheduleNew.cs</DependentUpon>
     </Compile>
-    <Compile Include="Transaction\Tolerance.cs">
+    <Compile Include="Transaction\ProductTolerance.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Transaction\Tolerance.Designer.cs">
-      <DependentUpon>Tolerance.cs</DependentUpon>
+    <Compile Include="Transaction\ProductTolerance.Designer.cs">
+      <DependentUpon>ProductTolerance.cs</DependentUpon>
     </Compile>
     <Compile Include="Transaction\WADQC.cs">
       <SubType>Form</SubType>
@@ -587,6 +599,12 @@
     </Compile>
     <Compile Include="Transaction\WadQualityControl.Designer.cs">
       <DependentUpon>WadQualityControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Transaction\WadTolerance.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Transaction\WadTolerance.Designer.cs">
+      <DependentUpon>WadTolerance.cs</DependentUpon>
     </Compile>
     <Compile Include="View\Dashboard.cs">
       <SubType>Form</SubType>
@@ -674,6 +692,9 @@
     <EmbeddedResource Include="Master\MachineMaster.resx">
       <DependentUpon>MachineMaster.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Master\TestTanuja.resx">
+      <DependentUpon>TestTanuja.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Master\WadMaster.resx">
       <DependentUpon>WadMaster.cs</DependentUpon>
     </EmbeddedResource>
@@ -701,6 +722,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Transaction\CapQualityControl.resx">
       <DependentUpon>CapQualityControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Transaction\CapTolerance.resx">
+      <DependentUpon>CapTolerance.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Transaction\DispatchSchedule.resx">
       <DependentUpon>DispatchSchedule.cs</DependentUpon>
@@ -867,14 +891,17 @@
     <EmbeddedResource Include="Transaction\ShiftScheduleNew.resx">
       <DependentUpon>ShiftScheduleNew.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Transaction\Tolerance.resx">
-      <DependentUpon>Tolerance.cs</DependentUpon>
+    <EmbeddedResource Include="Transaction\ProductTolerance.resx">
+      <DependentUpon>ProductTolerance.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Transaction\WADQC.resx">
       <DependentUpon>WADQC.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Transaction\WadQualityControl.resx">
       <DependentUpon>WadQualityControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Transaction\WadTolerance.resx">
+      <DependentUpon>WadTolerance.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View\Dashboard.resx">
       <DependentUpon>Dashboard.cs</DependentUpon>

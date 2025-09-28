@@ -28,10 +28,11 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
             this.lblHeader = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
             this.txtBatchNo = new System.Windows.Forms.TextBox();
@@ -42,6 +43,12 @@
             this.btnSave = new System.Windows.Forms.Button();
             this.btnExit = new System.Windows.Forms.Button();
             this.gbCOAParameters = new System.Windows.Forms.GroupBox();
+            this.txtFailureCount = new System.Windows.Forms.TextBox();
+            this.label7 = new System.Windows.Forms.Label();
+            this.txtSupplierMaterialRef = new System.Windows.Forms.TextBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.txtSubject = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
             this.txtQCCheckerName = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.txtSupplierName = new System.Windows.Forms.TextBox();
@@ -52,12 +59,6 @@
             this.btnReport = new System.Windows.Forms.Button();
             this.lblSearchItem = new System.Windows.Forms.Label();
             this.dgvValues = new System.Windows.Forms.DataGridView();
-            this.clmId = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.clmSrNo = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.clmParameters = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.clmStandards = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.clmTolerance = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.clmQCValue = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.txtSearchItemName = new System.Windows.Forms.TextBox();
             this.dtpTime = new System.Windows.Forms.DateTimePicker();
             this.label6 = new System.Windows.Forms.Label();
@@ -67,13 +68,16 @@
             this.lblCapName = new System.Windows.Forms.Label();
             this.gbCapDetails = new System.Windows.Forms.GroupBox();
             this.lbCap = new System.Windows.Forms.ListBox();
+            this.rtbCapDetails = new System.Windows.Forms.RichTextBox();
             this.txtSearchCap = new System.Windows.Forms.TextBox();
             this.label21 = new System.Windows.Forms.Label();
             this.label18 = new System.Windows.Forms.Label();
-            this.txtSubject = new System.Windows.Forms.TextBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.txtSupplierMaterialRef = new System.Windows.Forms.TextBox();
-            this.label5 = new System.Windows.Forms.Label();
+            this.clmId = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.clmSrNo = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.clmParameters = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.clmStandards = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.clmTolerance = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.clmQCValue = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.gbCOAParameters.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvValues)).BeginInit();
@@ -180,6 +184,8 @@
             // 
             // gbCOAParameters
             // 
+            this.gbCOAParameters.Controls.Add(this.txtFailureCount);
+            this.gbCOAParameters.Controls.Add(this.label7);
             this.gbCOAParameters.Controls.Add(this.txtSupplierMaterialRef);
             this.gbCOAParameters.Controls.Add(this.label5);
             this.gbCOAParameters.Controls.Add(this.txtSubject);
@@ -199,10 +205,68 @@
             this.gbCOAParameters.TabStop = false;
             this.gbCOAParameters.Text = "COA Parameters";
             // 
+            // txtFailureCount
+            // 
+            this.txtFailureCount.BackColor = System.Drawing.Color.White;
+            this.txtFailureCount.Location = new System.Drawing.Point(108, 217);
+            this.txtFailureCount.Name = "txtFailureCount";
+            this.txtFailureCount.ReadOnly = true;
+            this.txtFailureCount.Size = new System.Drawing.Size(88, 23);
+            this.txtFailureCount.TabIndex = 11564;
+            this.txtFailureCount.TabStop = false;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(25, 220);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(81, 15);
+            this.label7.TabIndex = 11565;
+            this.label7.Text = "Failure Count";
+            // 
+            // txtSupplierMaterialRef
+            // 
+            this.txtSupplierMaterialRef.BackColor = System.Drawing.Color.White;
+            this.txtSupplierMaterialRef.Location = new System.Drawing.Point(108, 139);
+            this.txtSupplierMaterialRef.Multiline = true;
+            this.txtSupplierMaterialRef.Name = "txtSupplierMaterialRef";
+            this.txtSupplierMaterialRef.ReadOnly = true;
+            this.txtSupplierMaterialRef.Size = new System.Drawing.Size(412, 77);
+            this.txtSupplierMaterialRef.TabIndex = 11562;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(48, 142);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(58, 45);
+            this.label5.TabIndex = 11563;
+            this.label5.Text = "Supplier \r\nMaterial \r\nRef";
+            // 
+            // txtSubject
+            // 
+            this.txtSubject.BackColor = System.Drawing.Color.White;
+            this.txtSubject.Location = new System.Drawing.Point(108, 115);
+            this.txtSubject.Name = "txtSubject";
+            this.txtSubject.ReadOnly = true;
+            this.txtSubject.Size = new System.Drawing.Size(412, 23);
+            this.txtSubject.TabIndex = 11560;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(59, 118);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(47, 15);
+            this.label4.TabIndex = 11561;
+            this.label4.Text = "Subject";
+            // 
             // txtQCCheckerName
             // 
+            this.txtQCCheckerName.BackColor = System.Drawing.Color.White;
             this.txtQCCheckerName.Location = new System.Drawing.Point(108, 91);
             this.txtQCCheckerName.Name = "txtQCCheckerName";
+            this.txtQCCheckerName.ReadOnly = true;
             this.txtQCCheckerName.Size = new System.Drawing.Size(412, 23);
             this.txtQCCheckerName.TabIndex = 11558;
             // 
@@ -217,8 +281,10 @@
             // 
             // txtSupplierName
             // 
+            this.txtSupplierName.BackColor = System.Drawing.Color.White;
             this.txtSupplierName.Location = new System.Drawing.Point(108, 67);
             this.txtSupplierName.Name = "txtSupplierName";
+            this.txtSupplierName.ReadOnly = true;
             this.txtSupplierName.Size = new System.Drawing.Size(412, 23);
             this.txtSupplierName.TabIndex = 11556;
             // 
@@ -233,8 +299,10 @@
             // 
             // txtInvoiceNumber
             // 
+            this.txtInvoiceNumber.BackColor = System.Drawing.Color.White;
             this.txtInvoiceNumber.Location = new System.Drawing.Point(108, 43);
             this.txtInvoiceNumber.Name = "txtInvoiceNumber";
+            this.txtInvoiceNumber.ReadOnly = true;
             this.txtInvoiceNumber.Size = new System.Drawing.Size(412, 23);
             this.txtInvoiceNumber.TabIndex = 11554;
             // 
@@ -308,57 +376,6 @@
             this.dgvValues.Size = new System.Drawing.Size(599, 422);
             this.dgvValues.TabIndex = 11525;
             // 
-            // clmId
-            // 
-            this.clmId.HeaderText = "Id";
-            this.clmId.Name = "clmId";
-            this.clmId.ReadOnly = true;
-            this.clmId.Visible = false;
-            // 
-            // clmSrNo
-            // 
-            dataGridViewCellStyle9.BackColor = System.Drawing.Color.LavenderBlush;
-            this.clmSrNo.DefaultCellStyle = dataGridViewCellStyle9;
-            this.clmSrNo.HeaderText = "Sr. No";
-            this.clmSrNo.Name = "clmSrNo";
-            this.clmSrNo.ReadOnly = true;
-            this.clmSrNo.Width = 62;
-            // 
-            // clmParameters
-            // 
-            dataGridViewCellStyle10.BackColor = System.Drawing.Color.LavenderBlush;
-            this.clmParameters.DefaultCellStyle = dataGridViewCellStyle10;
-            this.clmParameters.HeaderText = "Parameters";
-            this.clmParameters.Name = "clmParameters";
-            this.clmParameters.ReadOnly = true;
-            this.clmParameters.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.clmParameters.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            this.clmParameters.Width = 200;
-            // 
-            // clmStandards
-            // 
-            dataGridViewCellStyle11.BackColor = System.Drawing.Color.LavenderBlush;
-            this.clmStandards.DefaultCellStyle = dataGridViewCellStyle11;
-            this.clmStandards.HeaderText = "Standards";
-            this.clmStandards.Name = "clmStandards";
-            this.clmStandards.ReadOnly = true;
-            // 
-            // clmTolerance
-            // 
-            this.clmTolerance.HeaderText = "Tolerance";
-            this.clmTolerance.Name = "clmTolerance";
-            this.clmTolerance.ReadOnly = true;
-            // 
-            // clmQCValue
-            // 
-            dataGridViewCellStyle12.BackColor = System.Drawing.Color.LavenderBlush;
-            this.clmQCValue.DefaultCellStyle = dataGridViewCellStyle12;
-            this.clmQCValue.HeaderText = "QC Value";
-            this.clmQCValue.Name = "clmQCValue";
-            this.clmQCValue.ReadOnly = true;
-            this.clmQCValue.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.clmQCValue.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            // 
             // txtSearchItemName
             // 
             this.txtSearchItemName.Location = new System.Drawing.Point(882, 505);
@@ -422,12 +439,13 @@
             // gbCapDetails
             // 
             this.gbCapDetails.Controls.Add(this.lbCap);
+            this.gbCapDetails.Controls.Add(this.rtbCapDetails);
             this.gbCapDetails.Controls.Add(this.txtSearchCap);
             this.gbCapDetails.Controls.Add(this.label21);
             this.gbCapDetails.Controls.Add(this.label18);
             this.gbCapDetails.Location = new System.Drawing.Point(10, 30);
             this.gbCapDetails.Name = "gbCapDetails";
-            this.gbCapDetails.Size = new System.Drawing.Size(528, 149);
+            this.gbCapDetails.Size = new System.Drawing.Size(528, 166);
             this.gbCapDetails.TabIndex = 11531;
             this.gbCapDetails.TabStop = false;
             this.gbCapDetails.Text = "Cap Details";
@@ -437,13 +455,21 @@
             this.lbCap.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbCap.FormattingEnabled = true;
             this.lbCap.ItemHeight = 19;
-            this.lbCap.Location = new System.Drawing.Point(94, 41);
+            this.lbCap.Location = new System.Drawing.Point(94, 40);
             this.lbCap.Name = "lbCap";
-            this.lbCap.Size = new System.Drawing.Size(428, 99);
+            this.lbCap.Size = new System.Drawing.Size(428, 118);
             this.lbCap.TabIndex = 11498;
             this.lbCap.Visible = false;
             this.lbCap.Click += new System.EventHandler(this.lbCap_Click);
             this.lbCap.KeyDown += new System.Windows.Forms.KeyEventHandler(this.lbCap_KeyDown);
+            // 
+            // rtbCapDetails
+            // 
+            this.rtbCapDetails.Location = new System.Drawing.Point(94, 40);
+            this.rtbCapDetails.Name = "rtbCapDetails";
+            this.rtbCapDetails.Size = new System.Drawing.Size(391, 121);
+            this.rtbCapDetails.TabIndex = 11502;
+            this.rtbCapDetails.Text = "";
             // 
             // txtSearchCap
             // 
@@ -452,6 +478,7 @@
             this.txtSearchCap.Size = new System.Drawing.Size(428, 23);
             this.txtSearchCap.TabIndex = 11497;
             this.txtSearchCap.TextChanged += new System.EventHandler(this.txtSearchCap_TextChanged);
+            this.txtSearchCap.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtSearchCap_KeyDown);
             // 
             // label21
             // 
@@ -471,38 +498,58 @@
             this.label18.TabIndex = 11499;
             this.label18.Text = "Cap Name";
             // 
-            // txtSubject
+            // clmId
             // 
-            this.txtSubject.Location = new System.Drawing.Point(108, 115);
-            this.txtSubject.Name = "txtSubject";
-            this.txtSubject.Size = new System.Drawing.Size(412, 23);
-            this.txtSubject.TabIndex = 11560;
+            this.clmId.HeaderText = "Id";
+            this.clmId.Name = "clmId";
+            this.clmId.ReadOnly = true;
+            this.clmId.Visible = false;
             // 
-            // label4
+            // clmSrNo
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(59, 118);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(47, 15);
-            this.label4.TabIndex = 11561;
-            this.label4.Text = "Subject";
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
+            this.clmSrNo.DefaultCellStyle = dataGridViewCellStyle1;
+            this.clmSrNo.HeaderText = "Sr. No";
+            this.clmSrNo.Name = "clmSrNo";
+            this.clmSrNo.ReadOnly = true;
+            this.clmSrNo.Width = 62;
             // 
-            // txtSupplierMaterialRef
+            // clmParameters
             // 
-            this.txtSupplierMaterialRef.Location = new System.Drawing.Point(108, 139);
-            this.txtSupplierMaterialRef.Multiline = true;
-            this.txtSupplierMaterialRef.Name = "txtSupplierMaterialRef";
-            this.txtSupplierMaterialRef.Size = new System.Drawing.Size(412, 84);
-            this.txtSupplierMaterialRef.TabIndex = 11562;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.White;
+            this.clmParameters.DefaultCellStyle = dataGridViewCellStyle2;
+            this.clmParameters.HeaderText = "Parameters";
+            this.clmParameters.Name = "clmParameters";
+            this.clmParameters.ReadOnly = true;
+            this.clmParameters.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.clmParameters.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            this.clmParameters.Width = 200;
             // 
-            // label5
+            // clmStandards
             // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(48, 142);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(58, 45);
-            this.label5.TabIndex = 11563;
-            this.label5.Text = "Supplier \r\nMaterial \r\nRef";
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
+            this.clmStandards.DefaultCellStyle = dataGridViewCellStyle3;
+            this.clmStandards.HeaderText = "Standards";
+            this.clmStandards.Name = "clmStandards";
+            this.clmStandards.ReadOnly = true;
+            // 
+            // clmTolerance
+            // 
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.White;
+            this.clmTolerance.DefaultCellStyle = dataGridViewCellStyle4;
+            this.clmTolerance.HeaderText = "Tolerance";
+            this.clmTolerance.Name = "clmTolerance";
+            this.clmTolerance.ReadOnly = true;
+            // 
+            // clmQCValue
+            // 
+            dataGridViewCellStyle5.BackColor = System.Drawing.Color.Beige;
+            this.clmQCValue.DefaultCellStyle = dataGridViewCellStyle5;
+            this.clmQCValue.HeaderText = "QC Value";
+            this.clmQCValue.Name = "clmQCValue";
+            this.clmQCValue.ReadOnly = true;
+            this.clmQCValue.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.clmQCValue.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
             // 
             // CapCOAReport
             // 
@@ -577,12 +624,6 @@
         private System.Windows.Forms.TextBox txtSearchCap;
         private System.Windows.Forms.Label label21;
         private System.Windows.Forms.Label label18;
-        private System.Windows.Forms.DataGridViewTextBoxColumn clmId;
-        private System.Windows.Forms.DataGridViewTextBoxColumn clmSrNo;
-        private System.Windows.Forms.DataGridViewTextBoxColumn clmParameters;
-        private System.Windows.Forms.DataGridViewTextBoxColumn clmStandards;
-        private System.Windows.Forms.DataGridViewTextBoxColumn clmTolerance;
-        private System.Windows.Forms.DataGridViewTextBoxColumn clmQCValue;
         private System.Windows.Forms.TextBox txtInvoiceNumber;
         private System.Windows.Forms.Label label37;
         private System.Windows.Forms.TextBox txtQCCheckerName;
@@ -593,5 +634,14 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TextBox txtSubject;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.RichTextBox rtbCapDetails;
+        private System.Windows.Forms.TextBox txtFailureCount;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.DataGridViewTextBoxColumn clmId;
+        private System.Windows.Forms.DataGridViewTextBoxColumn clmSrNo;
+        private System.Windows.Forms.DataGridViewTextBoxColumn clmParameters;
+        private System.Windows.Forms.DataGridViewTextBoxColumn clmStandards;
+        private System.Windows.Forms.DataGridViewTextBoxColumn clmTolerance;
+        private System.Windows.Forms.DataGridViewTextBoxColumn clmQCValue;
     }
 }

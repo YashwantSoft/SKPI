@@ -1490,7 +1490,6 @@ D:\GitProjects\SKPI\SPApplication\SPApplication\obj\Debug\SPApplication.Transact
 D:\GitProjects\SKPI\SPApplication\SPApplication\obj\Debug\SPApplication.Transaction.ProductSwitchReason.resources
 D:\GitProjects\SKPI\SPApplication\SPApplication\obj\Debug\SPApplication.Transaction.ShiftSchedule.resources
 D:\GitProjects\SKPI\SPApplication\SPApplication\obj\Debug\SPApplication.Transaction.ShiftScheduleNew.resources
-D:\GitProjects\SKPI\SPApplication\SPApplication\obj\Debug\SPApplication.Transaction.Tolerance.resources
 D:\GitProjects\SKPI\SPApplication\SPApplication\obj\Debug\SPApplication.Dashboard.resources
 D:\GitProjects\SKPI\SPApplication\SPApplication\obj\Debug\SPApplication.View.Dashboard1.resources
 D:\GitProjects\SKPI\SPApplication\SPApplication\obj\Debug\SPApplication.View.MaintenanceDashboard.resources
@@ -1510,3 +1509,7 @@ D:\GitProjects\SKPI\SPApplication\SPApplication\obj\Debug\SPApplication.Transact
 D:\GitProjects\SKPI\SPApplication\SPApplication\obj\Debug\SPApplication.Transaction.SampleStickers.resources
 D:\GitProjects\SKPI\SPApplication\SPApplication\obj\Debug\SPApplication.Report.CapCOAReport.resources
 D:\GitProjects\SKPI\SPApplication\SPApplication\obj\Debug\SPApplication.Report.WadCOAReport.resources
+D:\GitProjects\SKPI\SPApplication\SPApplication\obj\Debug\SPApplication.Transaction.ProductTolerance.resources
+D:\GitProjects\SKPI\SPApplication\SPApplication\obj\Debug\SPApplication.Transaction.WadTolerance.resources
+D:\GitProjects\SKPI\SPApplication\SPApplication\obj\Debug\SPApplication.Transaction.CapTolerance.resources
+D:\GitProjects\SKPI\SPApplication\SPApplication\obj\Debug\SPApplication.Master.TestTanuja.resources

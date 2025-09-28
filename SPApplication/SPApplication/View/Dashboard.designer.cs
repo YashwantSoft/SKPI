@@ -66,6 +66,7 @@
             this.btnWadQualityControl = new System.Windows.Forms.Button();
             this.btnCapQualityControl = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pbProductLogo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbClientLogo)).BeginInit();
             this.SuspendLayout();
@@ -513,12 +514,26 @@
             this.button1.Visible = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
+            // button3
+            // 
+            this.button3.BackColor = System.Drawing.Color.Transparent;
+            this.button3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.button3.Location = new System.Drawing.Point(771, 143);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(100, 100);
+            this.button3.TabIndex = 11362;
+            this.button3.Text = "Test";
+            this.button3.UseVisualStyleBackColor = false;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
+            // 
             // Dashboard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1204, 671);
+            this.Controls.Add(this.button3);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.btnCapQualityControl);
             this.Controls.Add(this.btnWadQualityControl);
@@ -611,5 +626,6 @@
         private System.Windows.Forms.Button btnWadQualityControl;
         private System.Windows.Forms.Button btnCapQualityControl;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button3;
     }
 }

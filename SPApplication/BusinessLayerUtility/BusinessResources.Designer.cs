@@ -460,11 +460,20 @@ namespace BusinessLayerUtility {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to \\skpi\D\Softwares\CapTest\Data\Database\SKPIDB.mdb.
+        ///   Looks up a localized string similar to D:\GitProjects\SKPI\SPApplication\SPApplication\bin\Debug\Data\Database\SKPIDB.mdb.
         /// </summary>
         public static string DATABASEPATH {
             get {
                 return ResourceManager.GetString("DATABASEPATH", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to \\skpi\D\Softwares\CapTest\Data\Database\SKPIDB.mdb.
+        /// </summary>
+        public static string DATABASEPATH_C {
+            get {
+                return ResourceManager.GetString("DATABASEPATH_C", resourceCulture);
             }
         }
         
@@ -474,15 +483,6 @@ namespace BusinessLayerUtility {
         public static string DATABASEPATH_IP {
             get {
                 return ResourceManager.GetString("DATABASEPATH_IP", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to D:\GitProjects\SKPI\SPApplication\SPApplication\bin\Debug\Data\Database\SKPIDB.mdb.
-        /// </summary>
-        public static string DATABASEPATH_MY {
-            get {
-                return ResourceManager.GetString("DATABASEPATH_MY", resourceCulture);
             }
         }
         
@@ -1830,6 +1830,15 @@ namespace BusinessLayerUtility {
         public static string LBL_HEADER_WADQUALITYCONTROL {
             get {
                 return ResourceManager.GetString("LBL_HEADER_WADQUALITYCONTROL", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Wad&apos;s Standard and Tolerance Messurements.
+        /// </summary>
+        public static string LBL_HEADER_WADTOLLARANCEVALUE1 {
+            get {
+                return ResourceManager.GetString("LBL_HEADER_WADTOLLARANCEVALUE1", resourceCulture);
             }
         }
         

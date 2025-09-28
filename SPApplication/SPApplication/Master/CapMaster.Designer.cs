@@ -42,6 +42,18 @@
             this.cmbIsWad = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.txtMasterBatchDetails = new System.Windows.Forms.TextBox();
+            this.label25 = new System.Windows.Forms.Label();
+            this.cmbPrintType = new System.Windows.Forms.ComboBox();
+            this.label24 = new System.Windows.Forms.Label();
+            this.cmbCustomerLogo = new System.Windows.Forms.ComboBox();
+            this.label23 = new System.Windows.Forms.Label();
+            this.cmbCapColor = new System.Windows.Forms.ComboBox();
+            this.label22 = new System.Windows.Forms.Label();
+            this.cmbMaterialUsed = new System.Windows.Forms.ComboBox();
+            this.label21 = new System.Windows.Forms.Label();
+            this.cmbCapType = new System.Windows.Forms.ComboBox();
+            this.label20 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
             this.label17 = new System.Windows.Forms.Label();
             this.label18 = new System.Windows.Forms.Label();
@@ -98,6 +110,7 @@
             this.label16 = new System.Windows.Forms.Label();
             this.txtRemarks = new System.Windows.Forms.TextBox();
             this.label14 = new System.Windows.Forms.Label();
+            this.label26 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.groupBox2.SuspendLayout();
             this.SuspendLayout();
@@ -105,7 +118,7 @@
             // lblTotalCount
             // 
             this.lblTotalCount.AutoSize = true;
-            this.lblTotalCount.Location = new System.Drawing.Point(16, 394);
+            this.lblTotalCount.Location = new System.Drawing.Point(14, 306);
             this.lblTotalCount.Name = "lblTotalCount";
             this.lblTotalCount.Size = new System.Drawing.Size(73, 15);
             this.lblTotalCount.TabIndex = 84;
@@ -121,20 +134,20 @@
             this.dataGridView1.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.GridColor = System.Drawing.Color.Black;
-            this.dataGridView1.Location = new System.Drawing.Point(12, 412);
+            this.dataGridView1.Location = new System.Drawing.Point(12, 325);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
             this.dataGridView1.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
             this.dataGridView1.RowHeadersVisible = false;
             this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridView1.Size = new System.Drawing.Size(1174, 281);
+            this.dataGridView1.Size = new System.Drawing.Size(1174, 366);
             this.dataGridView1.TabIndex = 80;
             this.dataGridView1.TabStop = false;
             this.dataGridView1.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellDoubleClick);
             // 
             // txtSearch
             // 
-            this.txtSearch.Location = new System.Drawing.Point(886, 383);
+            this.txtSearch.Location = new System.Drawing.Point(886, 294);
             this.txtSearch.Name = "txtSearch";
             this.txtSearch.Size = new System.Drawing.Size(300, 23);
             this.txtSearch.TabIndex = 18;
@@ -143,11 +156,11 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(837, 386);
+            this.label5.Location = new System.Drawing.Point(813, 298);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(47, 15);
+            this.label5.Size = new System.Drawing.Size(71, 15);
             this.label5.TabIndex = 83;
-            this.label5.Text = "Search ";
+            this.label5.Text = "Search  Cap";
             // 
             // btnDelete
             // 
@@ -155,7 +168,7 @@
             this.btnDelete.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnDelete.Enabled = false;
             this.btnDelete.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnDelete.Location = new System.Drawing.Point(601, 378);
+            this.btnDelete.Location = new System.Drawing.Point(601, 289);
             this.btnDelete.Name = "btnDelete";
             this.btnDelete.Size = new System.Drawing.Size(75, 30);
             this.btnDelete.TabIndex = 16;
@@ -167,7 +180,7 @@
             this.btnClear.BackColor = System.Drawing.Color.Transparent;
             this.btnClear.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnClear.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnClear.Location = new System.Drawing.Point(522, 378);
+            this.btnClear.Location = new System.Drawing.Point(522, 289);
             this.btnClear.Name = "btnClear";
             this.btnClear.Size = new System.Drawing.Size(75, 30);
             this.btnClear.TabIndex = 15;
@@ -179,7 +192,7 @@
             this.btnSave.BackColor = System.Drawing.Color.Transparent;
             this.btnSave.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnSave.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnSave.Location = new System.Drawing.Point(443, 378);
+            this.btnSave.Location = new System.Drawing.Point(443, 289);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(75, 30);
             this.btnSave.TabIndex = 14;
@@ -191,7 +204,7 @@
             this.btnExit.BackColor = System.Drawing.Color.Transparent;
             this.btnExit.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnExit.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnExit.Location = new System.Drawing.Point(680, 378);
+            this.btnExit.Location = new System.Drawing.Point(680, 289);
             this.btnExit.Name = "btnExit";
             this.btnExit.Size = new System.Drawing.Size(75, 30);
             this.btnExit.TabIndex = 17;
@@ -251,6 +264,18 @@
             // 
             // groupBox2
             // 
+            this.groupBox2.Controls.Add(this.txtMasterBatchDetails);
+            this.groupBox2.Controls.Add(this.label25);
+            this.groupBox2.Controls.Add(this.cmbPrintType);
+            this.groupBox2.Controls.Add(this.label24);
+            this.groupBox2.Controls.Add(this.cmbCustomerLogo);
+            this.groupBox2.Controls.Add(this.label23);
+            this.groupBox2.Controls.Add(this.cmbCapColor);
+            this.groupBox2.Controls.Add(this.label22);
+            this.groupBox2.Controls.Add(this.cmbMaterialUsed);
+            this.groupBox2.Controls.Add(this.label21);
+            this.groupBox2.Controls.Add(this.cmbCapType);
+            this.groupBox2.Controls.Add(this.label20);
             this.groupBox2.Controls.Add(this.label15);
             this.groupBox2.Controls.Add(this.label17);
             this.groupBox2.Controls.Add(this.label18);
@@ -305,16 +330,179 @@
             this.groupBox2.Controls.Add(this.label4);
             this.groupBox2.Location = new System.Drawing.Point(29, 80);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(1141, 184);
+            this.groupBox2.Size = new System.Drawing.Size(1141, 178);
             this.groupBox2.TabIndex = 2;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "CAP Messurements";
+            // 
+            // txtMasterBatchDetails
+            // 
+            this.txtMasterBatchDetails.Location = new System.Drawing.Point(136, 147);
+            this.txtMasterBatchDetails.Name = "txtMasterBatchDetails";
+            this.txtMasterBatchDetails.Size = new System.Drawing.Size(297, 23);
+            this.txtMasterBatchDetails.TabIndex = 395;
+            this.txtMasterBatchDetails.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // label25
+            // 
+            this.label25.AutoSize = true;
+            this.label25.Location = new System.Drawing.Point(12, 150);
+            this.label25.Name = "label25";
+            this.label25.Size = new System.Drawing.Size(122, 15);
+            this.label25.TabIndex = 396;
+            this.label25.Text = "Master Batch Details";
+            // 
+            // cmbPrintType
+            // 
+            this.cmbPrintType.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
+            this.cmbPrintType.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
+            this.cmbPrintType.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbPrintType.FormattingEnabled = true;
+            this.cmbPrintType.Items.AddRange(new object[] {
+            "Running Logo Printing",
+            "Single Logo",
+            "Centre logo",
+            "Un Printed",
+            "Multi Color Logo",
+            "NA"});
+            this.cmbPrintType.Location = new System.Drawing.Point(136, 123);
+            this.cmbPrintType.Name = "cmbPrintType";
+            this.cmbPrintType.Size = new System.Drawing.Size(297, 23);
+            this.cmbPrintType.TabIndex = 393;
+            // 
+            // label24
+            // 
+            this.label24.AutoSize = true;
+            this.label24.Location = new System.Drawing.Point(73, 126);
+            this.label24.Name = "label24";
+            this.label24.Size = new System.Drawing.Size(61, 15);
+            this.label24.TabIndex = 394;
+            this.label24.Text = "Print Type";
+            // 
+            // cmbCustomerLogo
+            // 
+            this.cmbCustomerLogo.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
+            this.cmbCustomerLogo.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
+            this.cmbCustomerLogo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbCustomerLogo.FormattingEnabled = true;
+            this.cmbCustomerLogo.Items.AddRange(new object[] {
+            "Printed",
+            "Unprinted",
+            "Engraved",
+            "Plain",
+            "NA"});
+            this.cmbCustomerLogo.Location = new System.Drawing.Point(136, 99);
+            this.cmbCustomerLogo.Name = "cmbCustomerLogo";
+            this.cmbCustomerLogo.Size = new System.Drawing.Size(297, 23);
+            this.cmbCustomerLogo.TabIndex = 391;
+            // 
+            // label23
+            // 
+            this.label23.AutoSize = true;
+            this.label23.Location = new System.Drawing.Point(47, 102);
+            this.label23.Name = "label23";
+            this.label23.Size = new System.Drawing.Size(87, 15);
+            this.label23.TabIndex = 392;
+            this.label23.Text = "Customer Logo";
+            // 
+            // cmbCapColor
+            // 
+            this.cmbCapColor.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
+            this.cmbCapColor.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
+            this.cmbCapColor.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbCapColor.FormattingEnabled = true;
+            this.cmbCapColor.Items.AddRange(new object[] {
+            "White",
+            "Black",
+            "Red",
+            "Blue",
+            "Green",
+            "Yellow",
+            "Orange",
+            "Purple",
+            "Pink",
+            "Brown",
+            "Gray",
+            "Clear",
+            "Transparent",
+            "Gold (metallic)",
+            "Silver (metallic)",
+            "Natural",
+            "Custom Colors",
+            "NA"});
+            this.cmbCapColor.Location = new System.Drawing.Point(136, 51);
+            this.cmbCapColor.Name = "cmbCapColor";
+            this.cmbCapColor.Size = new System.Drawing.Size(297, 23);
+            this.cmbCapColor.TabIndex = 389;
+            // 
+            // label22
+            // 
+            this.label22.AutoSize = true;
+            this.label22.Location = new System.Drawing.Point(73, 54);
+            this.label22.Name = "label22";
+            this.label22.Size = new System.Drawing.Size(61, 15);
+            this.label22.TabIndex = 390;
+            this.label22.Text = "Cap Color";
+            // 
+            // cmbMaterialUsed
+            // 
+            this.cmbMaterialUsed.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
+            this.cmbMaterialUsed.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
+            this.cmbMaterialUsed.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbMaterialUsed.FormattingEnabled = true;
+            this.cmbMaterialUsed.Items.AddRange(new object[] {
+            "PP",
+            "HDPE",
+            "LDPE",
+            "PET"});
+            this.cmbMaterialUsed.Location = new System.Drawing.Point(136, 27);
+            this.cmbMaterialUsed.Name = "cmbMaterialUsed";
+            this.cmbMaterialUsed.Size = new System.Drawing.Size(297, 23);
+            this.cmbMaterialUsed.TabIndex = 387;
+            // 
+            // label21
+            // 
+            this.label21.AutoSize = true;
+            this.label21.Location = new System.Drawing.Point(49, 30);
+            this.label21.Name = "label21";
+            this.label21.Size = new System.Drawing.Size(85, 15);
+            this.label21.TabIndex = 388;
+            this.label21.Text = "Material Used";
+            // 
+            // cmbCapType
+            // 
+            this.cmbCapType.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
+            this.cmbCapType.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
+            this.cmbCapType.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbCapType.FormattingEnabled = true;
+            this.cmbCapType.Items.AddRange(new object[] {
+            "Plain",
+            "Handle",
+            "Pilfer Proof",
+            "2Pc",
+            "Flip Top",
+            "Push Type",
+            "Sipper",
+            "NA"});
+            this.cmbCapType.Location = new System.Drawing.Point(136, 75);
+            this.cmbCapType.Name = "cmbCapType";
+            this.cmbCapType.Size = new System.Drawing.Size(297, 23);
+            this.cmbCapType.TabIndex = 213;
+            // 
+            // label20
+            // 
+            this.label20.AutoSize = true;
+            this.label20.Location = new System.Drawing.Point(79, 78);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(55, 15);
+            this.label20.TabIndex = 214;
+            this.label20.Text = "Cap Type";
             // 
             // label15
             // 
             this.label15.AutoSize = true;
             this.label15.BackColor = System.Drawing.Color.AliceBlue;
-            this.label15.Location = new System.Drawing.Point(824, 133);
+            this.label15.Location = new System.Drawing.Point(1026, 129);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(35, 15);
             this.label15.TabIndex = 386;
@@ -324,7 +512,7 @@
             // 
             this.label17.AutoSize = true;
             this.label17.BackColor = System.Drawing.Color.AliceBlue;
-            this.label17.Location = new System.Drawing.Point(702, 133);
+            this.label17.Location = new System.Drawing.Point(904, 129);
             this.label17.Name = "label17";
             this.label17.Size = new System.Drawing.Size(35, 15);
             this.label17.TabIndex = 385;
@@ -334,7 +522,7 @@
             // 
             this.label18.AutoSize = true;
             this.label18.BackColor = System.Drawing.Color.AliceBlue;
-            this.label18.Location = new System.Drawing.Point(495, 133);
+            this.label18.Location = new System.Drawing.Point(697, 129);
             this.label18.Name = "label18";
             this.label18.Size = new System.Drawing.Size(35, 15);
             this.label18.TabIndex = 384;
@@ -342,7 +530,7 @@
             // 
             // txtInnerDepthTolerance
             // 
-            this.txtInnerDepthTolerance.Location = new System.Drawing.Point(548, 128);
+            this.txtInnerDepthTolerance.Location = new System.Drawing.Point(750, 124);
             this.txtInnerDepthTolerance.Name = "txtInnerDepthTolerance";
             this.txtInnerDepthTolerance.Size = new System.Drawing.Size(48, 23);
             this.txtInnerDepthTolerance.TabIndex = 380;
@@ -352,7 +540,7 @@
             // txtInnerDepthMaxValue
             // 
             this.txtInnerDepthMaxValue.BackColor = System.Drawing.Color.White;
-            this.txtInnerDepthMaxValue.Location = new System.Drawing.Point(742, 128);
+            this.txtInnerDepthMaxValue.Location = new System.Drawing.Point(944, 124);
             this.txtInnerDepthMaxValue.Name = "txtInnerDepthMaxValue";
             this.txtInnerDepthMaxValue.ReadOnly = true;
             this.txtInnerDepthMaxValue.Size = new System.Drawing.Size(80, 23);
@@ -363,7 +551,7 @@
             // txtInnerDepthMinValue
             // 
             this.txtInnerDepthMinValue.BackColor = System.Drawing.Color.White;
-            this.txtInnerDepthMinValue.Location = new System.Drawing.Point(620, 128);
+            this.txtInnerDepthMinValue.Location = new System.Drawing.Point(822, 124);
             this.txtInnerDepthMinValue.Name = "txtInnerDepthMinValue";
             this.txtInnerDepthMinValue.ReadOnly = true;
             this.txtInnerDepthMinValue.Size = new System.Drawing.Size(80, 23);
@@ -373,7 +561,7 @@
             // 
             // txtInnerDepthStandard
             // 
-            this.txtInnerDepthStandard.Location = new System.Drawing.Point(413, 128);
+            this.txtInnerDepthStandard.Location = new System.Drawing.Point(615, 124);
             this.txtInnerDepthStandard.Name = "txtInnerDepthStandard";
             this.txtInnerDepthStandard.Size = new System.Drawing.Size(80, 23);
             this.txtInnerDepthStandard.TabIndex = 379;
@@ -383,7 +571,7 @@
             // label19
             // 
             this.label19.AutoSize = true;
-            this.label19.Location = new System.Drawing.Point(340, 131);
+            this.label19.Location = new System.Drawing.Point(542, 127);
             this.label19.Name = "label19";
             this.label19.Size = new System.Drawing.Size(71, 15);
             this.label19.TabIndex = 383;
@@ -393,7 +581,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.AliceBlue;
-            this.label2.Location = new System.Drawing.Point(824, 35);
+            this.label2.Location = new System.Drawing.Point(1026, 31);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(35, 15);
             this.label2.TabIndex = 378;
@@ -403,7 +591,7 @@
             // 
             this.label9.AutoSize = true;
             this.label9.BackColor = System.Drawing.Color.AliceBlue;
-            this.label9.Location = new System.Drawing.Point(702, 35);
+            this.label9.Location = new System.Drawing.Point(904, 31);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(35, 15);
             this.label9.TabIndex = 377;
@@ -413,7 +601,7 @@
             // 
             this.label10.AutoSize = true;
             this.label10.BackColor = System.Drawing.Color.AliceBlue;
-            this.label10.Location = new System.Drawing.Point(495, 35);
+            this.label10.Location = new System.Drawing.Point(697, 31);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(35, 15);
             this.label10.TabIndex = 376;
@@ -422,7 +610,7 @@
             // txtOuterDiaMaxValue
             // 
             this.txtOuterDiaMaxValue.BackColor = System.Drawing.Color.White;
-            this.txtOuterDiaMaxValue.Location = new System.Drawing.Point(742, 32);
+            this.txtOuterDiaMaxValue.Location = new System.Drawing.Point(944, 28);
             this.txtOuterDiaMaxValue.Name = "txtOuterDiaMaxValue";
             this.txtOuterDiaMaxValue.ReadOnly = true;
             this.txtOuterDiaMaxValue.Size = new System.Drawing.Size(80, 23);
@@ -432,7 +620,7 @@
             // 
             // txtOuterDiaStandard
             // 
-            this.txtOuterDiaStandard.Location = new System.Drawing.Point(413, 32);
+            this.txtOuterDiaStandard.Location = new System.Drawing.Point(615, 28);
             this.txtOuterDiaStandard.Name = "txtOuterDiaStandard";
             this.txtOuterDiaStandard.Size = new System.Drawing.Size(80, 23);
             this.txtOuterDiaStandard.TabIndex = 10;
@@ -443,7 +631,7 @@
             // 
             // txtOuterDiaTolerance
             // 
-            this.txtOuterDiaTolerance.Location = new System.Drawing.Point(548, 32);
+            this.txtOuterDiaTolerance.Location = new System.Drawing.Point(750, 28);
             this.txtOuterDiaTolerance.Name = "txtOuterDiaTolerance";
             this.txtOuterDiaTolerance.Size = new System.Drawing.Size(48, 23);
             this.txtOuterDiaTolerance.TabIndex = 11;
@@ -455,7 +643,7 @@
             // label13
             // 
             this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(351, 35);
+            this.label13.Location = new System.Drawing.Point(553, 31);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(60, 15);
             this.label13.TabIndex = 375;
@@ -464,7 +652,7 @@
             // txtOuterDiaMinValue
             // 
             this.txtOuterDiaMinValue.BackColor = System.Drawing.Color.White;
-            this.txtOuterDiaMinValue.Location = new System.Drawing.Point(620, 32);
+            this.txtOuterDiaMinValue.Location = new System.Drawing.Point(822, 28);
             this.txtOuterDiaMinValue.Name = "txtOuterDiaMinValue";
             this.txtOuterDiaMinValue.ReadOnly = true;
             this.txtOuterDiaMinValue.Size = new System.Drawing.Size(80, 23);
@@ -476,7 +664,7 @@
             // 
             this.label6.AutoSize = true;
             this.label6.BackColor = System.Drawing.Color.AliceBlue;
-            this.label6.Location = new System.Drawing.Point(824, 83);
+            this.label6.Location = new System.Drawing.Point(1026, 79);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(35, 15);
             this.label6.TabIndex = 370;
@@ -486,7 +674,7 @@
             // 
             this.label7.AutoSize = true;
             this.label7.BackColor = System.Drawing.Color.AliceBlue;
-            this.label7.Location = new System.Drawing.Point(702, 83);
+            this.label7.Location = new System.Drawing.Point(904, 79);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(35, 15);
             this.label7.TabIndex = 369;
@@ -496,7 +684,7 @@
             // 
             this.label8.AutoSize = true;
             this.label8.BackColor = System.Drawing.Color.AliceBlue;
-            this.label8.Location = new System.Drawing.Point(495, 83);
+            this.label8.Location = new System.Drawing.Point(697, 79);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(35, 15);
             this.label8.TabIndex = 368;
@@ -505,7 +693,7 @@
             // txtInnerDiaWOThreadMaxValue
             // 
             this.txtInnerDiaWOThreadMaxValue.BackColor = System.Drawing.Color.White;
-            this.txtInnerDiaWOThreadMaxValue.Location = new System.Drawing.Point(742, 80);
+            this.txtInnerDiaWOThreadMaxValue.Location = new System.Drawing.Point(944, 76);
             this.txtInnerDiaWOThreadMaxValue.Name = "txtInnerDiaWOThreadMaxValue";
             this.txtInnerDiaWOThreadMaxValue.ReadOnly = true;
             this.txtInnerDiaWOThreadMaxValue.Size = new System.Drawing.Size(80, 23);
@@ -515,7 +703,7 @@
             // 
             // txtInnerDiaWOThreadStandard
             // 
-            this.txtInnerDiaWOThreadStandard.Location = new System.Drawing.Point(413, 80);
+            this.txtInnerDiaWOThreadStandard.Location = new System.Drawing.Point(615, 76);
             this.txtInnerDiaWOThreadStandard.Name = "txtInnerDiaWOThreadStandard";
             this.txtInnerDiaWOThreadStandard.Size = new System.Drawing.Size(80, 23);
             this.txtInnerDiaWOThreadStandard.TabIndex = 6;
@@ -526,7 +714,7 @@
             // 
             // txtInnerDiaWOThreadTolerance
             // 
-            this.txtInnerDiaWOThreadTolerance.Location = new System.Drawing.Point(548, 80);
+            this.txtInnerDiaWOThreadTolerance.Location = new System.Drawing.Point(750, 76);
             this.txtInnerDiaWOThreadTolerance.Name = "txtInnerDiaWOThreadTolerance";
             this.txtInnerDiaWOThreadTolerance.Size = new System.Drawing.Size(48, 23);
             this.txtInnerDiaWOThreadTolerance.TabIndex = 7;
@@ -538,7 +726,7 @@
             // txtInnerDiaWOThreadMinValue
             // 
             this.txtInnerDiaWOThreadMinValue.BackColor = System.Drawing.Color.White;
-            this.txtInnerDiaWOThreadMinValue.Location = new System.Drawing.Point(620, 80);
+            this.txtInnerDiaWOThreadMinValue.Location = new System.Drawing.Point(822, 76);
             this.txtInnerDiaWOThreadMinValue.Name = "txtInnerDiaWOThreadMinValue";
             this.txtInnerDiaWOThreadMinValue.ReadOnly = true;
             this.txtInnerDiaWOThreadMinValue.Size = new System.Drawing.Size(80, 23);
@@ -549,7 +737,7 @@
             // label12
             // 
             this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(285, 85);
+            this.label12.Location = new System.Drawing.Point(487, 81);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(126, 15);
             this.label12.TabIndex = 359;
@@ -559,7 +747,7 @@
             // 
             this.label45.AutoSize = true;
             this.label45.BackColor = System.Drawing.Color.AliceBlue;
-            this.label45.Location = new System.Drawing.Point(824, 109);
+            this.label45.Location = new System.Drawing.Point(1026, 105);
             this.label45.Name = "label45";
             this.label45.Size = new System.Drawing.Size(35, 15);
             this.label45.TabIndex = 344;
@@ -569,7 +757,7 @@
             // 
             this.label48.AutoSize = true;
             this.label48.BackColor = System.Drawing.Color.AliceBlue;
-            this.label48.Location = new System.Drawing.Point(702, 109);
+            this.label48.Location = new System.Drawing.Point(904, 105);
             this.label48.Name = "label48";
             this.label48.Size = new System.Drawing.Size(35, 15);
             this.label48.TabIndex = 343;
@@ -579,7 +767,7 @@
             // 
             this.label49.AutoSize = true;
             this.label49.BackColor = System.Drawing.Color.AliceBlue;
-            this.label49.Location = new System.Drawing.Point(495, 109);
+            this.label49.Location = new System.Drawing.Point(697, 105);
             this.label49.Name = "label49";
             this.label49.Size = new System.Drawing.Size(35, 15);
             this.label49.TabIndex = 342;
@@ -588,7 +776,7 @@
             // txtCapWeightMinValue
             // 
             this.txtCapWeightMinValue.BackColor = System.Drawing.Color.White;
-            this.txtCapWeightMinValue.Location = new System.Drawing.Point(620, 152);
+            this.txtCapWeightMinValue.Location = new System.Drawing.Point(822, 148);
             this.txtCapWeightMinValue.Name = "txtCapWeightMinValue";
             this.txtCapWeightMinValue.ReadOnly = true;
             this.txtCapWeightMinValue.Size = new System.Drawing.Size(80, 23);
@@ -600,7 +788,7 @@
             // 
             this.label56.AutoSize = true;
             this.label56.BackColor = System.Drawing.Color.AliceBlue;
-            this.label56.Location = new System.Drawing.Point(702, 156);
+            this.label56.Location = new System.Drawing.Point(904, 152);
             this.label56.Name = "label56";
             this.label56.Size = new System.Drawing.Size(31, 15);
             this.label56.TabIndex = 254;
@@ -609,7 +797,7 @@
             // txtCapWeightMaxValue
             // 
             this.txtCapWeightMaxValue.BackColor = System.Drawing.Color.White;
-            this.txtCapWeightMaxValue.Location = new System.Drawing.Point(742, 152);
+            this.txtCapWeightMaxValue.Location = new System.Drawing.Point(944, 148);
             this.txtCapWeightMaxValue.Name = "txtCapWeightMaxValue";
             this.txtCapWeightMaxValue.ReadOnly = true;
             this.txtCapWeightMaxValue.Size = new System.Drawing.Size(80, 23);
@@ -621,7 +809,7 @@
             // 
             this.label31.AutoSize = true;
             this.label31.BackColor = System.Drawing.Color.AliceBlue;
-            this.label31.Location = new System.Drawing.Point(495, 156);
+            this.label31.Location = new System.Drawing.Point(697, 152);
             this.label31.Name = "label31";
             this.label31.Size = new System.Drawing.Size(31, 15);
             this.label31.TabIndex = 220;
@@ -630,7 +818,7 @@
             // label35
             // 
             this.label35.AutoSize = true;
-            this.label35.Location = new System.Drawing.Point(341, 156);
+            this.label35.Location = new System.Drawing.Point(543, 152);
             this.label35.Name = "label35";
             this.label35.Size = new System.Drawing.Size(70, 15);
             this.label35.TabIndex = 217;
@@ -638,7 +826,7 @@
             // 
             // txtCapWeightStandard
             // 
-            this.txtCapWeightStandard.Location = new System.Drawing.Point(413, 152);
+            this.txtCapWeightStandard.Location = new System.Drawing.Point(615, 148);
             this.txtCapWeightStandard.Name = "txtCapWeightStandard";
             this.txtCapWeightStandard.Size = new System.Drawing.Size(80, 23);
             this.txtCapWeightStandard.TabIndex = 4;
@@ -651,7 +839,7 @@
             // 
             this.label64.AutoSize = true;
             this.label64.BackColor = System.Drawing.Color.AliceBlue;
-            this.label64.Location = new System.Drawing.Point(824, 156);
+            this.label64.Location = new System.Drawing.Point(1026, 152);
             this.label64.Name = "label64";
             this.label64.Size = new System.Drawing.Size(31, 15);
             this.label64.TabIndex = 271;
@@ -659,7 +847,7 @@
             // 
             // txtCapWeightTolerance
             // 
-            this.txtCapWeightTolerance.Location = new System.Drawing.Point(548, 152);
+            this.txtCapWeightTolerance.Location = new System.Drawing.Point(750, 148);
             this.txtCapWeightTolerance.Name = "txtCapWeightTolerance";
             this.txtCapWeightTolerance.Size = new System.Drawing.Size(48, 23);
             this.txtCapWeightTolerance.TabIndex = 5;
@@ -672,7 +860,7 @@
             // 
             this.label32.AutoSize = true;
             this.label32.BackColor = System.Drawing.Color.AliceBlue;
-            this.label32.Location = new System.Drawing.Point(824, 59);
+            this.label32.Location = new System.Drawing.Point(1026, 55);
             this.label32.Name = "label32";
             this.label32.Size = new System.Drawing.Size(35, 15);
             this.label32.TabIndex = 320;
@@ -682,7 +870,7 @@
             // 
             this.label11.AutoSize = true;
             this.label11.BackColor = System.Drawing.Color.AliceBlue;
-            this.label11.Location = new System.Drawing.Point(702, 59);
+            this.label11.Location = new System.Drawing.Point(904, 55);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(35, 15);
             this.label11.TabIndex = 315;
@@ -692,7 +880,7 @@
             // 
             this.label75.AutoSize = true;
             this.label75.BackColor = System.Drawing.Color.AliceBlue;
-            this.label75.Location = new System.Drawing.Point(495, 59);
+            this.label75.Location = new System.Drawing.Point(697, 55);
             this.label75.Name = "label75";
             this.label75.Size = new System.Drawing.Size(35, 15);
             this.label75.TabIndex = 310;
@@ -701,7 +889,7 @@
             // txtInnerDiaWithThreadMaxValue
             // 
             this.txtInnerDiaWithThreadMaxValue.BackColor = System.Drawing.Color.White;
-            this.txtInnerDiaWithThreadMaxValue.Location = new System.Drawing.Point(742, 56);
+            this.txtInnerDiaWithThreadMaxValue.Location = new System.Drawing.Point(944, 52);
             this.txtInnerDiaWithThreadMaxValue.Name = "txtInnerDiaWithThreadMaxValue";
             this.txtInnerDiaWithThreadMaxValue.ReadOnly = true;
             this.txtInnerDiaWithThreadMaxValue.Size = new System.Drawing.Size(80, 23);
@@ -711,7 +899,7 @@
             // 
             // txtInnerDiaWithThreadStandard
             // 
-            this.txtInnerDiaWithThreadStandard.Location = new System.Drawing.Point(413, 56);
+            this.txtInnerDiaWithThreadStandard.Location = new System.Drawing.Point(615, 52);
             this.txtInnerDiaWithThreadStandard.Name = "txtInnerDiaWithThreadStandard";
             this.txtInnerDiaWithThreadStandard.Size = new System.Drawing.Size(80, 23);
             this.txtInnerDiaWithThreadStandard.TabIndex = 8;
@@ -722,7 +910,7 @@
             // 
             // txtInnerDiaWithThreadTolerance
             // 
-            this.txtInnerDiaWithThreadTolerance.Location = new System.Drawing.Point(548, 56);
+            this.txtInnerDiaWithThreadTolerance.Location = new System.Drawing.Point(750, 52);
             this.txtInnerDiaWithThreadTolerance.Name = "txtInnerDiaWithThreadTolerance";
             this.txtInnerDiaWithThreadTolerance.Size = new System.Drawing.Size(48, 23);
             this.txtInnerDiaWithThreadTolerance.TabIndex = 9;
@@ -734,7 +922,7 @@
             // label34
             // 
             this.label34.AutoSize = true;
-            this.label34.Location = new System.Drawing.Point(282, 59);
+            this.label34.Location = new System.Drawing.Point(484, 55);
             this.label34.Name = "label34";
             this.label34.Size = new System.Drawing.Size(129, 15);
             this.label34.TabIndex = 214;
@@ -743,7 +931,7 @@
             // txtInnerDiaWithThreadMinValue
             // 
             this.txtInnerDiaWithThreadMinValue.BackColor = System.Drawing.Color.White;
-            this.txtInnerDiaWithThreadMinValue.Location = new System.Drawing.Point(620, 56);
+            this.txtInnerDiaWithThreadMinValue.Location = new System.Drawing.Point(822, 52);
             this.txtInnerDiaWithThreadMinValue.Name = "txtInnerDiaWithThreadMinValue";
             this.txtInnerDiaWithThreadMinValue.ReadOnly = true;
             this.txtInnerDiaWithThreadMinValue.Size = new System.Drawing.Size(80, 23);
@@ -753,7 +941,7 @@
             // 
             // txtCapHeightTolerance
             // 
-            this.txtCapHeightTolerance.Location = new System.Drawing.Point(548, 104);
+            this.txtCapHeightTolerance.Location = new System.Drawing.Point(750, 100);
             this.txtCapHeightTolerance.Name = "txtCapHeightTolerance";
             this.txtCapHeightTolerance.Size = new System.Drawing.Size(48, 23);
             this.txtCapHeightTolerance.TabIndex = 3;
@@ -765,7 +953,7 @@
             // label47
             // 
             this.label47.AutoSize = true;
-            this.label47.Location = new System.Drawing.Point(542, 15);
+            this.label47.Location = new System.Drawing.Point(744, 11);
             this.label47.Name = "label47";
             this.label47.Size = new System.Drawing.Size(60, 15);
             this.label47.TabIndex = 241;
@@ -774,7 +962,7 @@
             // txtCapHeightMaxValue
             // 
             this.txtCapHeightMaxValue.BackColor = System.Drawing.Color.White;
-            this.txtCapHeightMaxValue.Location = new System.Drawing.Point(742, 104);
+            this.txtCapHeightMaxValue.Location = new System.Drawing.Point(944, 100);
             this.txtCapHeightMaxValue.Name = "txtCapHeightMaxValue";
             this.txtCapHeightMaxValue.ReadOnly = true;
             this.txtCapHeightMaxValue.Size = new System.Drawing.Size(80, 23);
@@ -785,7 +973,7 @@
             // label66
             // 
             this.label66.AutoSize = true;
-            this.label66.Location = new System.Drawing.Point(749, 15);
+            this.label66.Location = new System.Drawing.Point(951, 11);
             this.label66.Name = "label66";
             this.label66.Size = new System.Drawing.Size(64, 15);
             this.label66.TabIndex = 264;
@@ -794,7 +982,7 @@
             // txtCapHeightMinValue
             // 
             this.txtCapHeightMinValue.BackColor = System.Drawing.Color.White;
-            this.txtCapHeightMinValue.Location = new System.Drawing.Point(620, 104);
+            this.txtCapHeightMinValue.Location = new System.Drawing.Point(822, 100);
             this.txtCapHeightMinValue.Name = "txtCapHeightMinValue";
             this.txtCapHeightMinValue.ReadOnly = true;
             this.txtCapHeightMinValue.Size = new System.Drawing.Size(80, 23);
@@ -804,7 +992,7 @@
             // 
             // txtCapHeightStandard
             // 
-            this.txtCapHeightStandard.Location = new System.Drawing.Point(413, 104);
+            this.txtCapHeightStandard.Location = new System.Drawing.Point(615, 100);
             this.txtCapHeightStandard.Name = "txtCapHeightStandard";
             this.txtCapHeightStandard.Size = new System.Drawing.Size(80, 23);
             this.txtCapHeightStandard.TabIndex = 2;
@@ -816,7 +1004,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(626, 15);
+            this.label3.Location = new System.Drawing.Point(828, 11);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(62, 15);
             this.label3.TabIndex = 163;
@@ -825,7 +1013,7 @@
             // label37
             // 
             this.label37.AutoSize = true;
-            this.label37.Location = new System.Drawing.Point(345, 107);
+            this.label37.Location = new System.Drawing.Point(547, 103);
             this.label37.Name = "label37";
             this.label37.Size = new System.Drawing.Size(66, 15);
             this.label37.TabIndex = 208;
@@ -834,7 +1022,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(423, 15);
+            this.label4.Location = new System.Drawing.Point(625, 11);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(57, 15);
             this.label4.TabIndex = 150;
@@ -849,7 +1037,7 @@
             this.cmbStatus.Items.AddRange(new object[] {
             "Active",
             "Inactive"});
-            this.cmbStatus.Location = new System.Drawing.Point(87, 342);
+            this.cmbStatus.Location = new System.Drawing.Point(87, 261);
             this.cmbStatus.Name = "cmbStatus";
             this.cmbStatus.Size = new System.Drawing.Size(115, 23);
             this.cmbStatus.TabIndex = 12;
@@ -858,7 +1046,7 @@
             // label16
             // 
             this.label16.AutoSize = true;
-            this.label16.Location = new System.Drawing.Point(44, 346);
+            this.label16.Location = new System.Drawing.Point(44, 265);
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(41, 15);
             this.label16.TabIndex = 211;
@@ -866,7 +1054,7 @@
             // 
             // txtRemarks
             // 
-            this.txtRemarks.Location = new System.Drawing.Point(286, 342);
+            this.txtRemarks.Location = new System.Drawing.Point(286, 261);
             this.txtRemarks.Name = "txtRemarks";
             this.txtRemarks.Size = new System.Drawing.Size(843, 23);
             this.txtRemarks.TabIndex = 13;
@@ -875,11 +1063,20 @@
             // label14
             // 
             this.label14.AutoSize = true;
-            this.label14.Location = new System.Drawing.Point(230, 346);
+            this.label14.Location = new System.Drawing.Point(230, 265);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(54, 15);
             this.label14.TabIndex = 212;
             this.label14.Text = "Remarks";
+            // 
+            // label26
+            // 
+            this.label26.AutoSize = true;
+            this.label26.Location = new System.Drawing.Point(286, 299);
+            this.label26.Name = "label26";
+            this.label26.Size = new System.Drawing.Size(45, 15);
+            this.label26.TabIndex = 213;
+            this.label26.Text = "Cust id";
             // 
             // CapMaster
             // 
@@ -888,6 +1085,7 @@
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1198, 698);
             this.ControlBox = false;
+            this.Controls.Add(this.label26);
             this.Controls.Add(this.cmbStatus);
             this.Controls.Add(this.label16);
             this.Controls.Add(this.txtRemarks);
@@ -991,5 +1189,18 @@
         private System.Windows.Forms.TextBox txtInnerDepthMinValue;
         private System.Windows.Forms.TextBox txtInnerDepthStandard;
         private System.Windows.Forms.Label label19;
+        private System.Windows.Forms.ComboBox cmbCapType;
+        private System.Windows.Forms.Label label20;
+        private System.Windows.Forms.ComboBox cmbMaterialUsed;
+        private System.Windows.Forms.Label label21;
+        private System.Windows.Forms.ComboBox cmbCapColor;
+        private System.Windows.Forms.Label label22;
+        private System.Windows.Forms.ComboBox cmbCustomerLogo;
+        private System.Windows.Forms.Label label23;
+        private System.Windows.Forms.ComboBox cmbPrintType;
+        private System.Windows.Forms.Label label24;
+        private System.Windows.Forms.TextBox txtMasterBatchDetails;
+        private System.Windows.Forms.Label label25;
+        private System.Windows.Forms.Label label26;
     }
 }

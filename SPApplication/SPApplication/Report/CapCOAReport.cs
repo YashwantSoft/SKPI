@@ -53,7 +53,6 @@ namespace SPApplication.Report
         {
             objDL.SetDesignMaster(this, lblHeader, btnSave, btnClear, btnDelete, btnExit, BusinessResources.LBL_HEADER_CAPCOAREPORT);
             objDL.SetButtonDesign(btnReport, BusinessResources.BTN_REPORT);
-            
         }
 
         private void GetID()
@@ -74,8 +73,8 @@ namespace SPApplication.Report
             objEP.Clear();
             ClearValues();
             ClearAllCap();
-            objRL.Fill_Cap_ListBox(lbCap, txtSearchCap.Text, "All");
-            gbCOAParameters.Enabled = false;
+            objRL.Fill_Cap_ListBox_Report(lbCap, txtSearchCap.Text, "All");
+            //gbCOAParameters.Enabled = false;
             dgvValues.Enabled = false;
             GetID();
             txtSearchCap.Focus();
@@ -94,13 +93,13 @@ namespace SPApplication.Report
             ClearAllCap();
             if (txtSearchCap.Text != "")
             {
-                objRL.Fill_Cap_ListBox(lbCap, txtSearchCap.Text, "Text");
+                objRL.Fill_Cap_ListBox_Report(lbCap, txtSearchCap.Text, "Text");
                 //lbItem.Focus();
             }
             else
             {
                 lbCap.Visible = true;
-                objRL.Fill_Cap_ListBox(lbCap, txtSearchCap.Text, "All");
+                objRL.Fill_Cap_ListBox_Report(lbCap, txtSearchCap.Text, "All");
             }
         }
 
@@ -213,19 +212,36 @@ namespace SPApplication.Report
                 Wad = string.Empty;
                 objRL.Get_Cap_Records_By_Id(CapId);
 
-                if (!string.IsNullOrEmpty(Convert.ToString(objRL.CapName)))
-                    CapDetails = objRL.CapName;
-                if (!string.IsNullOrEmpty(Convert.ToString(objRL.Wad)))
-                    Wad = objRL.Wad;
+                objRL.Get_Cap_Records_By_Id(CapId);
 
-                CapId = Convert.ToInt32(objRL.CapId);
-                lblCapName.Text = objRL.CapName.ToString();
-                lblCapName.BackColor = Color.Cyan;
-                //txtInvoiceNumber.Focus();
+                objRL.FillCapDetailsRichTextBox(rtbCapDetails, CapId);
 
-                FillGrid();
-                Fill_DGV_VALUES();
+                if (!string.IsNullOrEmpty(objRL.CapDetails_RTB))
+                {
+                    rtbCapDetails.Visible = true;
+                    lbCap.Visible = false;
+                    CapId = Convert.ToInt32(objRL.CapId);
+                    lblCapName.Text = objRL.CapName.ToString();
+                    lblCapName.BackColor = Color.Cyan;
+                //    txtInvoiceNumber.Focus();
+                    FillGrid();
+                    Fill_DGV_VALUES();
                 
+                }
+                else
+                    lbCap.Visible = true;
+
+                //if (!string.IsNullOrEmpty(Convert.ToString(objRL.CapName)))
+                //    CapDetails = objRL.CapName;
+                //if (!string.IsNullOrEmpty(Convert.ToString(objRL.Wad)))
+                //    Wad = objRL.Wad;
+
+                //CapId = Convert.ToInt32(objRL.CapId);
+                //lblCapName.Text = objRL.CapName.ToString();
+                //lblCapName.BackColor = Color.Cyan;
+                ////txtInvoiceNumber.Focus();
+
+               
             }
         }
 
@@ -254,7 +270,7 @@ namespace SPApplication.Report
             txtSubject.Text = "Quality Check reports (Randam Samples different cavities)";
             txtSupplierMaterialRef.Text = "Bottle Grade Pet Resin 0.76 to 0.84 I.V. from \n" +
                                           "Reliance industries ltd. \n" +
-                                           "chiripalpolyfilms \t RIL \n" +
+                                          "chiripalpolyfilms \t RIL \n" +
                                           "Dhunseri Petrochem";
 
         }
@@ -277,28 +293,21 @@ namespace SPApplication.Report
 
             myExcelWorkbook = myExcelWorkbooks.Open(objRL.RL_DestinationPath, misValue, misValue, misValue, misValue, misValue, misValue, misValue, misValue, misValue, misValue, misValue, misValue, misValue, misValue);
             Microsoft.Office.Interop.Excel.Worksheet myExcelWorksheet = (Microsoft.Office.Interop.Excel.Worksheet)myExcelWorkbook.ActiveSheet;
-
-            //myExcelWorksheet.get_Range("J6", misValue).Formula = dtpDated.Value.ToString(BusinessResources.DATEFORMATDDMMYYYY);
-            //myExcelWorksheet.get_Range("J9", misValue).Formula = BusinessLayer.UserName_Static.ToString();
-            //myExcelWorksheet.get_Range("C7", misValue).Formula = txtQuantity.Text;
-            //myExcelWorksheet.get_Range("C8", misValue).Formula = txtInvoiceNo.Text;
-            //myExcelWorksheet.get_Range("C10", misValue).Formula = txtNoOfPackages.Text;
-            //myExcelWorksheet.get_Range("C11", misValue).Formula = txtVehicalNo.Text;
-            //myExcelWorksheet.get_Range("C12", misValue).Formula = txtOrderReferanceNo.Text;
-            //myExcelWorksheet.get_Range("J7", misValue).Formula = dtpOrderDate.Value.ToString(BusinessResources.DATEFORMATDDMMYYYY);
-
+             
             myExcelWorksheet.get_Range("C5", misValue).Formula = objRL.CapName;
-            //myExcelWorksheet.get_Range("C7", misValue).Formula = txtSupplierName.Text;
             myExcelWorksheet.get_Range("G5", misValue).Formula = dtpDate.Value.ToString(BusinessResources.DATEFORMATDDMMYYYY);
             myExcelWorksheet.get_Range("G6", misValue).Formula = txtID.Text;
             myExcelWorksheet.get_Range("G7", misValue).Formula = txtBatchNo.Text;
             myExcelWorksheet.get_Range("C8", misValue).Formula = "Quality Check reports (Randam Samples different cavities)";
-            myExcelWorksheet.get_Range("C9", misValue).Formula = objRL.CapName;
-            myExcelWorksheet.get_Range("C10", misValue).Formula = txtSupplierName.Text;
-            myExcelWorksheet.get_Range("C11", misValue).Formula = Colour_Excel.ToString();
-            myExcelWorksheet.get_Range("A13", misValue).Formula = txtSupplierMaterialRef.Text;
+            myExcelWorksheet.get_Range("C9", misValue).Formula = txtSupplierName.Text;
+            myExcelWorksheet.get_Range("C10", misValue).Formula = objRL.MaterialUsed;
+            myExcelWorksheet.get_Range("C11", misValue).Formula = objRL.CapColor;
+            myExcelWorksheet.get_Range("C12", misValue).Formula = objRL.CapType;
+            myExcelWorksheet.get_Range("C13", misValue).Formula = objRL.CustomerLogo;
+            myExcelWorksheet.get_Range("C14", misValue).Formula = objRL.PrintType;
+            myExcelWorksheet.get_Range("C15", misValue).Formula = objRL.MasterBatchDetails;
 
-            SrNo = 1; RowCount = 20; BorderFlag = false;
+            SrNo = 1; RowCount = 18; BorderFlag = false;
 
             for (int i = 0; i < dgvValues.Rows.Count; i++)
             {
@@ -333,9 +342,12 @@ namespace SPApplication.Report
 
             RowCount++; BorderFlag = true;
             AFlag = 0;
-            Fill_Merge_Cell("A", "G", misValue, myExcelWorksheet, "Remark - All 12 Points are within Standards");
+            Fill_Merge_Cell("A", "G", misValue, myExcelWorksheet, "Failure Count-" + txtFailureCount.Text);
             RowCount++;
-            Fill_Merge_Cell("A", "G", misValue, myExcelWorksheet, "Inspected by- Firoj Rashid Shaikh, QC Check by - " + CheckerName_Excel + "");
+            AFlag = 0;
+            Fill_Merge_Cell("A", "G", misValue, myExcelWorksheet, "Remark - All 15 Points are within Standards");
+            RowCount++;
+            Fill_Merge_Cell("A", "G", misValue, myExcelWorksheet, "QC Checker Name - " + CheckerName_Excel + "");
 
             myExcelWorkbook.Save();
             string PDFReport = objRL.RL_DestinationPath.Replace(".xlsx", ".pdf");
@@ -412,7 +424,7 @@ namespace SPApplication.Report
         }
 
         //string[] DGValues = { "Type", "Custmer Logo", "Print Quality", "Outer Dia (mm)", "Inner Dia With Thread (mm)", "Neck Height (mm)", "Inner Dia WO Thread (mm)", "Cap Height (mm)", "Inner Depth (mm)", "Cap Weight (gms)", "Color", "Visual Appearance", "Flash Finishing", "Bend", "Wad Sealing", "Fitmen tWit hBottle", "Ink Test", "Drop Test" };
-        string[] DGValues = { "Type", "Custmer Logo", "Print Quality", "Outer Dia (mm)", "Inner Dia With Thread (mm)", "Inner Dia WO Thread (mm)", "Cap Height (mm)", "Inner Depth (mm)", "Cap Weight (gms)", "Color", "Visual Appearance", "Flash Finishing", "Bend", "Fitment With Bottle", "Ink Test", "Drop Test" };
+        string[] DGValues = { "Outer Dia (mm)", "Inner Dia With Thread (mm)", "Inner Dia WO Thread (mm)", "Cap Height (mm)", "Inner Depth (mm)", "Cap Weight (gms)", "Color", "Visual Appearance", "Flash Finishing", "Bend", "Fitment With Bottle", "Wad Fitment", "Wad Ink Test", "Drop Test std 1.4(Mtr)", "Print Quality" };
         private void Fill_DGV_VALUES()
         {
             SrNo = 1;
@@ -450,7 +462,13 @@ namespace SPApplication.Report
                           "CQC.EntryTime as [Time]," +
                           "CQC.CapId," +
                           "C.CapName as [Cap Name],"+
-                          "OuterDiaStandard," +
+                          "C.MaterialUsed," +
+                          "C.CapColor," +
+                          "C.CapType," +
+                          "C.CustomerLogo," +
+                          "C.PrintType," +
+                          "C.MasterBatchDetails," +
+                          "C.OuterDiaStandard," +
                           "C.OuterDiaTolerance," +
                           "C.OuterDiaMinValue," +
                           "C.OuterDiaMaxValue," +
@@ -479,9 +497,6 @@ namespace SPApplication.Report
                           "S.SupplierName," +
                           "CQC.QCCheckerId," +
                           "E.FullName,"+
-                          "CQCV.Type," +
-                          "CQCV.CustmerLogo," +
-                          "CQCV.PrintQuality," +
                           "CQCV.OuterDia," +
                           "CQCV.InnerDiaWithThread," +
                           "CQCV.InnerDiaWOThread," +
@@ -493,8 +508,10 @@ namespace SPApplication.Report
                           "CQCV.FlashFinishing," +
                           "CQCV.Bend," +
                           "CQCV.FitmentWithBottle," +
-                          "CQCV.InkTest," +
-                          "CQCV.DropTest " +
+                          "CQCV.WadFitment," +
+                          "CQCV.WadInkTest," +
+                          "CQCV.DropTest, " +
+                          "CQCV.PrintQuality " +
                           " from ((((CapQualityControl CQC inner join "+
                           " CapQualityControlValues CQCV on CQC.ID=CQCV.CapQualityControlId) inner join " +
                           " CapMaster C on C.ID=CQC.CapId) inner join " +
@@ -523,20 +540,20 @@ namespace SPApplication.Report
 
                     CheckerName_Excel = objRL.Check_Null_String(Convert.ToString(ds.Tables[0].Rows[0]["FullName"]));
 
-                    dgvValues.Rows[i].Cells["clmStandards"].Value = "-";
-                    dgvValues.Rows[i].Cells["clmTolerance"].Value = "-";
-                    dgvValues.Rows[i].Cells["clmQCValue"].Value = objRL.Check_Null_String(Convert.ToString(ds.Tables[0].Rows[0]["Type"]));
-                    i++;
+                    //dgvValues.Rows[i].Cells["clmStandards"].Value = "-";
+                    //dgvValues.Rows[i].Cells["clmTolerance"].Value = "-";
+                    //dgvValues.Rows[i].Cells["clmQCValue"].Value = objRL.Check_Null_String(Convert.ToString(ds.Tables[0].Rows[0]["Type"]));
+                    //i++;
 
-                    dgvValues.Rows[i].Cells["clmStandards"].Value = "-";
-                    dgvValues.Rows[i].Cells["clmTolerance"].Value = "-";
-                    dgvValues.Rows[i].Cells["clmQCValue"].Value = objRL.Check_Null_String(Convert.ToString(ds.Tables[0].Rows[0]["CustmerLogo"]));
-                    i++;
+                    //dgvValues.Rows[i].Cells["clmStandards"].Value = "-";
+                    //dgvValues.Rows[i].Cells["clmTolerance"].Value = "-";
+                    //dgvValues.Rows[i].Cells["clmQCValue"].Value = objRL.Check_Null_String(Convert.ToString(ds.Tables[0].Rows[0]["CustmerLogo"]));
+                    //i++;
 
-                    dgvValues.Rows[i].Cells["clmStandards"].Value = "-";
-                    dgvValues.Rows[i].Cells["clmTolerance"].Value = "Ok";
-                    dgvValues.Rows[i].Cells["clmQCValue"].Value = objRL.Check_Null_String(Convert.ToString(ds.Tables[0].Rows[0]["PrintQuality"]));
-                    i++;
+                    //dgvValues.Rows[i].Cells["clmStandards"].Value = "-";
+                    //dgvValues.Rows[i].Cells["clmTolerance"].Value = "Ok";
+                    //dgvValues.Rows[i].Cells["clmQCValue"].Value = objRL.Check_Null_String(Convert.ToString(ds.Tables[0].Rows[0]["PrintQuality"]));
+                    //i++;
 
                     dgvValues.Rows[i].Cells["clmStandards"].Value = objRL.Check_Null_String(Convert.ToString(ds.Tables[0].Rows[0]["OuterDiaStandard"]));
                     dgvValues.Rows[i].Cells["clmTolerance"].Value = objRL.Check_Null_String(Convert.ToString(ds.Tables[0].Rows[0]["OuterDiaTolerance"]));
@@ -568,7 +585,7 @@ namespace SPApplication.Report
                     dgvValues.Rows[i].Cells["clmQCValue"].Value = objRL.Check_Null_String(Convert.ToString(ds.Tables[0].Rows[0]["CapWeight"]));
                     i++;
 
-                    dgvValues.Rows[i].Cells["clmStandards"].Value = "-";
+                    dgvValues.Rows[i].Cells["clmStandards"].Value = "Ok";
                     dgvValues.Rows[i].Cells["clmTolerance"].Value = "Ok";
                     Colour_Excel = objRL.Check_Null_String(Convert.ToString(ds.Tables[0].Rows[0]["Color"]));
                     dgvValues.Rows[i].Cells["clmQCValue"].Value = Colour_Excel;
@@ -596,12 +613,22 @@ namespace SPApplication.Report
 
                     dgvValues.Rows[i].Cells["clmStandards"].Value = "Ok";
                     dgvValues.Rows[i].Cells["clmTolerance"].Value = "Ok";
-                    dgvValues.Rows[i].Cells["clmQCValue"].Value = objRL.Check_Null_String(Convert.ToString(ds.Tables[0].Rows[0]["InkTest"]));
+                    dgvValues.Rows[i].Cells["clmQCValue"].Value = objRL.Check_Null_String(Convert.ToString(ds.Tables[0].Rows[0]["WadFitment"]));
+                    i++;
+
+                    dgvValues.Rows[i].Cells["clmStandards"].Value = "Ok";
+                    dgvValues.Rows[i].Cells["clmTolerance"].Value = "Ok";
+                    dgvValues.Rows[i].Cells["clmQCValue"].Value = objRL.Check_Null_String(Convert.ToString(ds.Tables[0].Rows[0]["WadInkTest"]));
                     i++;
 
                     dgvValues.Rows[i].Cells["clmStandards"].Value = "Ok";
                     dgvValues.Rows[i].Cells["clmTolerance"].Value = "Ok";
                     dgvValues.Rows[i].Cells["clmQCValue"].Value = objRL.Check_Null_String(Convert.ToString(ds.Tables[0].Rows[0]["DropTest"]));
+                    i++;
+
+                    dgvValues.Rows[i].Cells["clmStandards"].Value = "Ok";
+                    dgvValues.Rows[i].Cells["clmTolerance"].Value = "Ok";
+                    dgvValues.Rows[i].Cells["clmQCValue"].Value = objRL.Check_Null_String(Convert.ToString(ds.Tables[0].Rows[0]["PrintQuality"]));
                     i++;
 
 
@@ -616,7 +643,61 @@ namespace SPApplication.Report
                     //dgvValues.Rows[i].Cells[5].Value = objRL.Check_Null_String(Convert.ToString(ds.Tables[0].Rows[0]["CapHeight"]));
                     //dgvValues.Rows[i].Cells[5].Value = objRL.Check_Null_String(Convert.ToString(ds.Tables[0].Rows[0]["InnerDepth"]));
                     //dgvValues.Rows[i].Cells[5].Value = objRL.Check_Null_String(Convert.ToString(ds.Tables[0].Rows[0]["CapWeight"]));
-                     
+
+                    txtFailureCount.Text = "";
+
+                    DataSet dsSum = new DataSet();
+
+                    objBL.Query = "SELECT " +
+                                    " TOP 1 ID," +
+                                    " IIF(OuterDiaResult = 1, 1, 0) +" +
+                                    " IIF(InnerDiaWithThreadResult = 1, 1, 0) +" +
+                                    " IIF(InnerDiaWOThreadResult = 1, 1, 0) +" +
+                                    " IIF(CapHeightResult = 1, 1, 0) +" +
+                                    " IIF(InnerDepthResult = 1, 1, 0) +" +
+                                    " IIF(CapWeightResult = 1, 1, 0) +" +
+                                    " IIF(ColorResult = 1, 1, 0) +" +
+                                    " IIF(VisualAppearanceResult = 1, 1, 0) +" +
+                                    " IIF(FlashFinishingResult = 1, 1, 0) +" +
+                                    " IIF(BendResult = 1, 1, 0) +" +
+                                    " IIF(FitmentWithBottleResult = 1, 1, 0) +" + 
+                                    " IIF(WadFitmentResult = 1, 1, 0) +" + 
+                                    " IIF(WadInkTestResult = 1, 1, 0) +" + 
+                                    " IIF(DropTestResult = 1, 1, 0) +" + 
+                                    " IIF(PrintQualityResult = 1, 1, 0) AS FailureCount " +
+                                " FROM CapQualityControlValues" +
+                                " WHERE CancelTag = 0 and CapId=" + CapId + " ORDER BY ID DESC ";
+
+                    //objBL.Query = "SELECT COUNT(*) FROM WadQualityControlValues WHERE OuterDiaResult=1 OR ThicknessResult=1 OR WeightResult=1 OR AverageWeightResult=1 OR VisualAppearanceResult=1 OR PrintQualityResult=1 OR SideFinishingResult=1 OR BendResult=1 OR FitmentWithCapResult=1 OR InkTestResult=1 OR IndSealTestResult=1 and CancelTag=0 and WadId=" + WadId + " ";
+                    dsSum = objBL.ReturnDataSet();
+                    txtFailureCount.Text = "";
+
+                    if (dsSum.Tables[0].Rows.Count > 0)
+                    {
+                        txtFailureCount.Text = objRL.Check_Null_String(Convert.ToString(dsSum.Tables[0].Rows[0]["FailureCount"]));
+                    }
+                }
+            }
+        }
+
+        private void txtSearchCap_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Down)
+            {
+                if (lbCap.Items.Count > 0)
+                {
+                    if (lbCap.SelectedIndex < 0)
+                    {
+                        // No selection yet – select the first item
+                        lbCap.SelectedIndex = 0;
+                    }
+                    else if (lbCap.SelectedIndex < lbCap.Items.Count - 1)
+                    {
+                        // Move to next item
+                        lbCap.SelectedIndex++;
+                    }
+                    lbCap.Focus(); // Move focus so Up/Down works in the list
+                    e.Handled = true;
                 }
             }
         }

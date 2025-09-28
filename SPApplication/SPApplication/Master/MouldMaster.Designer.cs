@@ -103,7 +103,7 @@ namespace SPApplication.Master
             // lblTotalCount
             // 
             this.lblTotalCount.AutoSize = true;
-            this.lblTotalCount.Location = new System.Drawing.Point(13, 373);
+            this.lblTotalCount.Location = new System.Drawing.Point(16, 381);
             this.lblTotalCount.Name = "lblTotalCount";
             this.lblTotalCount.Size = new System.Drawing.Size(73, 15);
             this.lblTotalCount.TabIndex = 83;

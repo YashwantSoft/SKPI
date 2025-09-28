@@ -81,6 +81,7 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>BusinessResources.resx</DependentUpon>
     </Compile>
+    <Compile Include="Classes\Supplier.cs" />
     <Compile Include="DesignLayer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RedundancyLogics.cs" />

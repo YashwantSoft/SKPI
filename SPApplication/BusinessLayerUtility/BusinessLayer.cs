@@ -21,6 +21,7 @@ namespace BusinessLayerUtility
         public string conString = null;
         public string Query = "";
         public OleDbDataAdapter da;
+        public OleDbDataReader reader;
         public static string UserName_Static;
         public static int UserId_Static;
 
@@ -29,7 +30,7 @@ namespace BusinessLayerUtility
         public static string FormatPath;
         public static string ApplicationPath;
 
-        public void Connect()
+       public void Connect()
         {
             ApplicationPath = AppDomain.CurrentDomain.BaseDirectory;
             DatabasePath = BusinessResources.DATABASEPATH;
@@ -100,6 +101,26 @@ namespace BusinessLayerUtility
             finally { GC.Collect(); objCon.Close(); }
 
             return ds;
+        }
+
+        public OleDbDataReader ReturnDataReader()
+        {
+            RedundancyLogics objRL = new RedundancyLogics();
+            
+            try
+            {
+                Connect();
+                objCmd = new OleDbCommand(Query, objCon);
+                reader = objCmd.ExecuteReader();
+
+                //da = new OleDbDataAdapter(objCmd);
+                
+                objCon.Close();
+            }
+            catch (Exception ex1) { objRL.ErrorMessge(ex1.ToString()); }
+            finally { GC.Collect(); objCon.Close(); }
+
+            return reader;
         }
 
         public DataTable ReturnDataTable()

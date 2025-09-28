@@ -33,6 +33,9 @@ namespace SPApplication.Master
         private void btnClear_Click(object sender, EventArgs e)
         {
             ClearAll();
+            txtSearch.Text = "";
+            SearchTag = false;
+            FillGrid();
         }
 
         private void btnSave_Click(object sender, EventArgs e)
@@ -79,6 +82,18 @@ namespace SPApplication.Master
             objEP.Clear();
             TableID = 0;
             txtWadName.Text = "";
+            cmbWadType.SelectedIndex = -1;
+            cmbCustomerLogo.SelectedIndex = -1;
+            txtBoardThickness.Text = "";
+
+            cmbBoardType.SelectedIndex = -1;
+            txtFoilThickness.Text = "";
+
+            cmbFoilSpecs.SelectedIndex = -1;
+            txtSealantThickness.Text = "";
+
+            cmbSealentSpecs.SelectedIndex = -1; 
+
             txtOuterDiaStandard.Text =""; 
             txtOuterDiaTolerance.Text =""; 
             txtOuterDiaMinValue.Text ="";  
@@ -120,9 +135,9 @@ namespace SPApplication.Master
                         if (FlagDelete)
                             objBL.Query = "update WadMaster set CancelTag=1 where ID=" + TableID + "";
                         else
-                            objBL.Query = "update WadMaster set WadName='" + AposValue.Replace("'", "''") + "',OuterDiaStandard='" + txtOuterDiaStandard.Text + "',OuterDiaTolerance='" + txtOuterDiaTolerance.Text + "',OuterDiaMinValue='" + txtOuterDiaMinValue.Text + "',OuterDiaMaxValue='" + txtOuterDiaMaxValue.Text + "',ThicknessStandard='" + txtThicknessStandard.Text + "',ThicknessTolerance='" + txtThicknessTolerance.Text + "',ThicknessMinValue='" + txtThicknessMinValue.Text + "',ThicknessMaxValue='" + txtThicknessMaxValue.Text + "',WeightStandard='" + txtWeightStandard.Text + "',WeightTolerance='" + txtWeightTolerance.Text + "',WeightMinValue='" + txtWeightMinValue.Text + "',WeightMaxValue='" + txtWeightMaxValue.Text + "',AverageWeightStandard='" + txtAverageWeightStandard.Text + "',AverageWeightTolerance='" + txtAverageWeightTolerance.Text + "',AverageWeightMinValue='" + txtAverageWeightMinValue.Text + "',AverageWeightMaxValue='" + txtAverageWeightMaxValue.Text + "',Status='" + cmbStatus.Text + "',Remarks='" + txtRemarks.Text + "',UserId=" + BusinessLayer.UserId_Static + " where ID=" + TableID + "";
+                            objBL.Query = "update WadMaster set WadName='" + AposValue.Replace("'", "''") + "',WadType='" + cmbWadType.Text + "',CustomerLogo='" + cmbCustomerLogo.Text + "',BoardThickness='" + txtBoardThickness.Text + "',BoardType='" + cmbBoardType.Text + "',FoilThickness='" + txtFoilThickness.Text + "',FoilSpecs='" + cmbFoilSpecs.Text + "',SealantThickness='" + txtSealantThickness.Text + "',SealentSpecs='" + cmbSealentSpecs.Text + "',OuterDiaStandard='" + txtOuterDiaStandard.Text + "',OuterDiaTolerance='" + txtOuterDiaTolerance.Text + "',OuterDiaMinValue='" + txtOuterDiaMinValue.Text + "',OuterDiaMaxValue='" + txtOuterDiaMaxValue.Text + "',ThicknessStandard='" + txtThicknessStandard.Text + "',ThicknessTolerance='" + txtThicknessTolerance.Text + "',ThicknessMinValue='" + txtThicknessMinValue.Text + "',ThicknessMaxValue='" + txtThicknessMaxValue.Text + "',WeightStandard='" + txtWeightStandard.Text + "',WeightTolerance='" + txtWeightTolerance.Text + "',WeightMinValue='" + txtWeightMinValue.Text + "',WeightMaxValue='" + txtWeightMaxValue.Text + "',AverageWeightStandard='" + txtAverageWeightStandard.Text + "',AverageWeightTolerance='" + txtAverageWeightTolerance.Text + "',AverageWeightMinValue='" + txtAverageWeightMinValue.Text + "',AverageWeightMaxValue='" + txtAverageWeightMaxValue.Text + "',Status='" + cmbStatus.Text + "',Remarks='" + txtRemarks.Text + "',UserId=" + BusinessLayer.UserId_Static + " where ID=" + TableID + "";
                     else
-                        objBL.Query = "insert into WadMaster(WadName,OuterDiaStandard,OuterDiaTolerance,OuterDiaMinValue,OuterDiaMaxValue,ThicknessStandard,ThicknessTolerance,ThicknessMinValue,ThicknessMaxValue,WeightStandard,WeightTolerance,WeightMinValue,WeightMaxValue,AverageWeightStandard,AverageWeightTolerance,AverageWeightMinValue,AverageWeightMaxValue,Status,Remarks,UserId) values('" + AposValue.Replace("'", "''") + "','" + txtOuterDiaStandard.Text + "','" + txtOuterDiaTolerance.Text + "','" + txtOuterDiaMinValue.Text + "','" + txtOuterDiaMaxValue.Text + "','" + txtThicknessStandard.Text + "','" + txtThicknessTolerance.Text + "','" + txtThicknessMinValue.Text + "','" + txtThicknessMaxValue.Text + "','" + txtWeightStandard.Text + "','" + txtWeightTolerance.Text + "','" + txtWeightMinValue.Text + "','" + txtWeightMaxValue.Text + "','" + txtAverageWeightStandard.Text + "','" + txtAverageWeightTolerance.Text + "','" + txtAverageWeightMinValue.Text + "','" + txtAverageWeightMaxValue.Text + "','" + cmbStatus.Text + "','" + txtRemarks.Text + "'," + BusinessLayer.UserId_Static + ")";
+                        objBL.Query = "insert into WadMaster(WadName,WadType,CustomerLogo,BoardThickness,BoardType,FoilThickness,FoilSpecs,SealantThickness,SealentSpecs,OuterDiaStandard,OuterDiaTolerance,OuterDiaMinValue,OuterDiaMaxValue,ThicknessStandard,ThicknessTolerance,ThicknessMinValue,ThicknessMaxValue,WeightStandard,WeightTolerance,WeightMinValue,WeightMaxValue,AverageWeightStandard,AverageWeightTolerance,AverageWeightMinValue,AverageWeightMaxValue,Status,Remarks,UserId) values('" + AposValue.Replace("'", "''") + "','" + cmbWadType.Text + "','" + cmbCustomerLogo.Text + "','" + txtBoardThickness.Text + "','" + cmbBoardType.Text + "','" + txtFoilThickness.Text + "','" + cmbFoilSpecs.Text + "','" + txtSealantThickness.Text + "','" + cmbSealentSpecs.Text + "','" + txtOuterDiaStandard.Text + "','" + txtOuterDiaTolerance.Text + "','" + txtOuterDiaMinValue.Text + "','" + txtOuterDiaMaxValue.Text + "','" + txtThicknessStandard.Text + "','" + txtThicknessTolerance.Text + "','" + txtThicknessMinValue.Text + "','" + txtThicknessMaxValue.Text + "','" + txtWeightStandard.Text + "','" + txtWeightTolerance.Text + "','" + txtWeightMinValue.Text + "','" + txtWeightMaxValue.Text + "','" + txtAverageWeightStandard.Text + "','" + txtAverageWeightTolerance.Text + "','" + txtAverageWeightMinValue.Text + "','" + txtAverageWeightMaxValue.Text + "','" + cmbStatus.Text + "','" + txtRemarks.Text + "'," + BusinessLayer.UserId_Static + ")";
 
                     Result = objBL.Function_ExecuteNonQuery();
                     if (Result > 0)
@@ -180,6 +195,14 @@ namespace SPApplication.Master
             MainQuery = "select "+
                         "ID,"+
                         "WadName as [Wad Name],"+
+                        "WadType as [Wad Type]," +
+                        "CustomerLogo as [Customer Logo]," +
+                        "BoardThickness as [Board Thickness]," +
+                        "BoardType as [Board Type]," +
+                        "FoilThickness as [Foil Thickness]," +
+                        "FoilSpecs as [Foil Specs]," +
+                        "SealantThickness as [Sealant Thickness]," +
+                        "SealentSpecs as [Sealent Specs]," +
                         "OuterDiaStandard as [Outer Dia Standard]," +
                         "OuterDiaTolerance as [Outer Dia Tolerance]," +
                         "OuterDiaMinValue as [Outer Dia Min Value]," +
@@ -212,26 +235,36 @@ namespace SPApplication.Master
 
             if (ds.Tables[0].Rows.Count > 0)
             {
-                //0 "ID," +
-                //1 "WadName as [Wad Name]," +
-                //2 "OuterDiaStandard as [Outer Dia Standard]," +
-                //3 "OuterDiaTolerance as [Outer Dia Tolerance]," +
-                //4 "OuterDiaMinValue as [Outer Dia Min Value]," +
-                //5 "OuterDiaMaxValue," +
-                //6 "ThicknessStandard as [Thickness Standard]," +
-                //7 "ThicknessTolerance as [Thickness Tolerance]," +
-                //8 "ThicknessMinValue as [Thickness Min Value]," +
-                //9 "ThicknessMaxValue as [Thickness Max Value]," +
-                //10 "WeightStandard as [Weight Standard]," +
-                //11 "WeightTolerance as [Weight Tolerance]," +
-                //12 "WeightMinValue as [Weight Min Value]," +
-                //13 "WeightMaxValue as [WeightMax Value]," +
-                //14 "AverageWeightStandard as [Average Weight Standard]," +
-                //15 "AverageWeightTolerance as [Average Weight Tolerance]," +
-                //16 "AverageWeightMinValue as [AverageWeight Min Value]," +
-                //17 "AverageWeightMaxValue as [Average Weight Max Value]" +
-                //18 "Status," +
-                //19 "Note," +
+                //0	ID,+
+                //1	"WadName as [Wad Name],"+
+                //2	"WadType as [Wad Type]," +
+                //3	"CustomerLogo as [Customer Logo]," +
+                //4	"BoardThikness as [Board Thikness]," +
+                //5	"BoardType as [Board Type]," +
+                //6	"FoilThikness as [Foil Thikness]," +
+                //7	"FoilSpecs as [Foil Specs]," +
+                //8	"SealantThikness as [Sealant Thikness]," +
+                //9	"SealentSpecs as [Sealent Specs]," +
+                //10	"OuterDiaStandard as [Outer Dia Standard]," +
+                //11	"OuterDiaTolerance as [Outer Dia Tolerance]," +
+                //12	"OuterDiaMinValue as [Outer Dia Min Value]," +
+                //13	"OuterDiaMaxValue," +
+                //14	"ThicknessStandard as [Thickness Standard]," +
+                //15	"ThicknessTolerance as [Thickness Tolerance]," +
+                //16	"ThicknessMinValue as [Thickness Min Value]," +
+                //17	"ThicknessMaxValue as [Thickness Max Value]," +
+                //18	"WeightStandard as [Weight Standard]," +
+                //19	"WeightTolerance as [Weight Tolerance]," +
+                //20	"WeightMinValue as [Weight Min Value]," +
+                //21	"WeightMaxValue as [WeightMax Value]," +
+                //22	"AverageWeightStandard as [Average Weight Standard]," +
+                //23	"AverageWeightTolerance as [Average Weight Tolerance]," +
+                //24	"AverageWeightMinValue as [AverageWeight Min Value]," +
+                //25	"AverageWeightMaxValue as [Average Weight Max Value]," +
+                //26	"Status," +
+                //27    "Remarks" +
+
+
 
                 dataGridView1.DataSource = ds.Tables[0];
                 dataGridView1.Columns[0].Visible = false;
@@ -268,52 +301,70 @@ namespace SPApplication.Master
                     ClearAll();
                     btnDelete.Enabled = true;
 
-                    //0 "ID," +
-                    //1 "WadName as [Wad Name]," +
-                    //2 "OuterDiaStandard as [Outer Dia Standard]," +
-                    //3 "OuterDiaTolerance as [Outer Dia Tolerance]," +
-                    //4 "OuterDiaMinValue as [Outer Dia Min Value]," +
-                    //5 "OuterDiaMaxValue," +
-                    //6 "ThicknessStandard as [Thickness Standard]," +
-                    //7 "ThicknessTolerance as [Thickness Tolerance]," +
-                    //8 "ThicknessMinValue as [Thickness Min Value]," +
-                    //9 "ThicknessMaxValue as [Thickness Max Value]," +
-                    //10 "WeightStandard as [Weight Standard]," +
-                    //11 "WeightTolerance as [Weight Tolerance]," +
-                    //12 "WeightMinValue as [Weight Min Value]," +
-                    //13 "WeightMaxValue as [WeightMax Value]," +
-                    //14 "AverageWeightStandard as [Average Weight Standard]," +
-                    //15 "AverageWeightTolerance as [Average Weight Tolerance]," +
-                    //16 "AverageWeightMinValue as [AverageWeight Min Value]," +
-                    //17 "AverageWeightMaxValue as [Average Weight Max Value]" +
-                    //18 "Status," +
-                    //19 "Note," +
+                    //0	ID,+
+                    //1	"WadName as [Wad Name],"+
+                    //2	"WadType as [Wad Type]," +
+                    //3	"CustomerLogo as [Customer Logo]," +
+                    //4	"BoardThikness as [Board Thikness]," +
+                    //5	"BoardType as [Board Type]," +
+                    //6	"FoilThikness as [Foil Thikness]," +
+                    //7	"FoilSpecs as [Foil Specs]," +
+                    //8	"SealantThikness as [Sealant Thikness]," +
+                    //9	"SealentSpecs as [Sealent Specs]," +
+                    //10	"OuterDiaStandard as [Outer Dia Standard]," +
+                    //11	"OuterDiaTolerance as [Outer Dia Tolerance]," +
+                    //12	"OuterDiaMinValue as [Outer Dia Min Value]," +
+                    //13	"OuterDiaMaxValue," +
+                    //14	"ThicknessStandard as [Thickness Standard]," +
+                    //15	"ThicknessTolerance as [Thickness Tolerance]," +
+                    //16	"ThicknessMinValue as [Thickness Min Value]," +
+                    //17	"ThicknessMaxValue as [Thickness Max Value]," +
+                    //18	"WeightStandard as [Weight Standard]," +
+                    //19	"WeightTolerance as [Weight Tolerance]," +
+                    //20	"WeightMinValue as [Weight Min Value]," +
+                    //21	"WeightMaxValue as [WeightMax Value]," +
+                    //22	"AverageWeightStandard as [Average Weight Standard]," +
+                    //23	"AverageWeightTolerance as [Average Weight Tolerance]," +
+                    //24	"AverageWeightMinValue as [AverageWeight Min Value]," +
+                    //25	"AverageWeightMaxValue as [Average Weight Max Value]," +
+                    //26	"Status," +
+                    //27	"Remarks," +
 
                     TableID = objRL.Check_Null_Integer(objRL.Check_Null_String(Convert.ToString(dataGridView1.Rows[e.RowIndex].Cells[0].Value)));
                     txtWadName.Text = objRL.Check_Null_String(Convert.ToString(dataGridView1.Rows[e.RowIndex].Cells[1].Value));
 
-                    txtOuterDiaStandard.Text = objRL.Check_Null_String(Convert.ToString(dataGridView1.Rows[e.RowIndex].Cells[2].Value));
-                    txtOuterDiaTolerance.Text = objRL.Check_Null_String(Convert.ToString(dataGridView1.Rows[e.RowIndex].Cells[3].Value));
-                    txtOuterDiaMinValue.Text = objRL.Check_Null_String(Convert.ToString(dataGridView1.Rows[e.RowIndex].Cells[4].Value));
-                    txtOuterDiaMaxValue.Text = objRL.Check_Null_String(Convert.ToString(dataGridView1.Rows[e.RowIndex].Cells[5].Value));
+                    cmbWadType.Text = objRL.Check_Null_String(Convert.ToString(dataGridView1.Rows[e.RowIndex].Cells[2].Value));
+                    cmbCustomerLogo.Text = objRL.Check_Null_String(Convert.ToString(dataGridView1.Rows[e.RowIndex].Cells[3].Value));
 
-                    txtThicknessStandard.Text = objRL.Check_Null_String(Convert.ToString(dataGridView1.Rows[e.RowIndex].Cells[6].Value));
-                    txtThicknessTolerance.Text = objRL.Check_Null_String(Convert.ToString(dataGridView1.Rows[e.RowIndex].Cells[7].Value));
-                    txtThicknessMinValue.Text = objRL.Check_Null_String(Convert.ToString(dataGridView1.Rows[e.RowIndex].Cells[8].Value));
-                    txtThicknessMaxValue.Text = objRL.Check_Null_String(Convert.ToString(dataGridView1.Rows[e.RowIndex].Cells[9].Value));
-                    
-                    txtWeightStandard.Text = objRL.Check_Null_String(Convert.ToString(dataGridView1.Rows[e.RowIndex].Cells[10].Value));
-                    txtWeightTolerance.Text = objRL.Check_Null_String(Convert.ToString(dataGridView1.Rows[e.RowIndex].Cells[11].Value));
-                    txtWeightMinValue.Text = objRL.Check_Null_String(Convert.ToString(dataGridView1.Rows[e.RowIndex].Cells[12].Value));
-                    txtWeightMaxValue.Text = objRL.Check_Null_String(Convert.ToString(dataGridView1.Rows[e.RowIndex].Cells[13].Value));
-                    
-                    txtAverageWeightStandard.Text = objRL.Check_Null_String(Convert.ToString(dataGridView1.Rows[e.RowIndex].Cells[14].Value));
-                    txtAverageWeightTolerance.Text = objRL.Check_Null_String(Convert.ToString(dataGridView1.Rows[e.RowIndex].Cells[15].Value));
-                    txtAverageWeightMinValue.Text = objRL.Check_Null_String(Convert.ToString(dataGridView1.Rows[e.RowIndex].Cells[16].Value));
-                    txtAverageWeightMaxValue.Text = objRL.Check_Null_String(Convert.ToString(dataGridView1.Rows[e.RowIndex].Cells[17].Value));
+                    txtBoardThickness.Text = objRL.Check_Null_String(Convert.ToString(dataGridView1.Rows[e.RowIndex].Cells[4].Value));
+                    cmbBoardType.Text = objRL.Check_Null_String(Convert.ToString(dataGridView1.Rows[e.RowIndex].Cells[5].Value));
+                    txtFoilThickness.Text = objRL.Check_Null_String(Convert.ToString(dataGridView1.Rows[e.RowIndex].Cells[6].Value));
+                    cmbFoilSpecs.Text = objRL.Check_Null_String(Convert.ToString(dataGridView1.Rows[e.RowIndex].Cells[7].Value));
+                    txtSealantThickness.Text = objRL.Check_Null_String(Convert.ToString(dataGridView1.Rows[e.RowIndex].Cells[8].Value));
+                    cmbSealentSpecs.Text = objRL.Check_Null_String(Convert.ToString(dataGridView1.Rows[e.RowIndex].Cells[9].Value));
 
-                    cmbStatus.Text = objRL.Check_Null_String(Convert.ToString(dataGridView1.Rows[e.RowIndex].Cells[18].Value));
-                    txtRemarks.Text = objRL.Check_Null_String(Convert.ToString(dataGridView1.Rows[e.RowIndex].Cells[19].Value));
+                    txtOuterDiaStandard.Text = objRL.Check_Null_String(Convert.ToString(dataGridView1.Rows[e.RowIndex].Cells[10].Value));
+                    txtOuterDiaTolerance.Text = objRL.Check_Null_String(Convert.ToString(dataGridView1.Rows[e.RowIndex].Cells[11].Value));
+                    txtOuterDiaMinValue.Text = objRL.Check_Null_String(Convert.ToString(dataGridView1.Rows[e.RowIndex].Cells[12].Value));
+                    txtOuterDiaMaxValue.Text = objRL.Check_Null_String(Convert.ToString(dataGridView1.Rows[e.RowIndex].Cells[13].Value));
+
+                    txtThicknessStandard.Text = objRL.Check_Null_String(Convert.ToString(dataGridView1.Rows[e.RowIndex].Cells[14].Value));
+                    txtThicknessTolerance.Text = objRL.Check_Null_String(Convert.ToString(dataGridView1.Rows[e.RowIndex].Cells[15].Value));
+                    txtThicknessMinValue.Text = objRL.Check_Null_String(Convert.ToString(dataGridView1.Rows[e.RowIndex].Cells[16].Value));
+                    txtThicknessMaxValue.Text = objRL.Check_Null_String(Convert.ToString(dataGridView1.Rows[e.RowIndex].Cells[17].Value));
+                    
+                    txtWeightStandard.Text = objRL.Check_Null_String(Convert.ToString(dataGridView1.Rows[e.RowIndex].Cells[18].Value));
+                    txtWeightTolerance.Text = objRL.Check_Null_String(Convert.ToString(dataGridView1.Rows[e.RowIndex].Cells[19].Value));
+                    txtWeightMinValue.Text = objRL.Check_Null_String(Convert.ToString(dataGridView1.Rows[e.RowIndex].Cells[20].Value));
+                    txtWeightMaxValue.Text = objRL.Check_Null_String(Convert.ToString(dataGridView1.Rows[e.RowIndex].Cells[21].Value));
+                    
+                    txtAverageWeightStandard.Text = objRL.Check_Null_String(Convert.ToString(dataGridView1.Rows[e.RowIndex].Cells[22].Value));
+                    txtAverageWeightTolerance.Text = objRL.Check_Null_String(Convert.ToString(dataGridView1.Rows[e.RowIndex].Cells[23].Value));
+                    txtAverageWeightMinValue.Text = objRL.Check_Null_String(Convert.ToString(dataGridView1.Rows[e.RowIndex].Cells[24].Value));
+                    txtAverageWeightMaxValue.Text = objRL.Check_Null_String(Convert.ToString(dataGridView1.Rows[e.RowIndex].Cells[25].Value));
+
+                    cmbStatus.Text = objRL.Check_Null_String(Convert.ToString(dataGridView1.Rows[e.RowIndex].Cells[26].Value));
+                    txtRemarks.Text = objRL.Check_Null_String(Convert.ToString(dataGridView1.Rows[e.RowIndex].Cells[27].Value));
                 }
             }
             catch (Exception ex1)
